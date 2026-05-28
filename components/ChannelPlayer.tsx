@@ -13,8 +13,8 @@ type Props = {
 
 export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const total = channel.videoIds.length;
-  const videoId = channel.videoIds[currentIndex];
+  const total = channel.videos.length;
+  const video = channel.videos[currentIndex];
 
   function goNext() {
     setCurrentIndex((i) => (i + 1) % total);
@@ -68,22 +68,25 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
         >
           <iframe
             key={`${channel.slug}-${currentIndex}`}
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`}
-            title={`${channel.name} — video ${currentIndex + 1} of ${total}`}
+            src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1`}
+            title={video.title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="absolute inset-0 w-full h-full border-0"
           />
         </div>
 
-        {/* Video counter + status bar */}
-        <div className="flex justify-between items-center mt-3 px-1">
-          <span className="text-[var(--phosphor-green)] text-xl tracking-widest">
-            VIDEO {currentIndex + 1} / {total}
-          </span>
-          <span className="text-[#444] text-lg tracking-widest">
-            ● REC
-          </span>
+        {/* Status bar: counter + now playing */}
+        <div className="mt-3 px-1">
+          <div className="flex justify-between items-center">
+            <span className="text-[var(--phosphor-green)] text-xl tracking-widest">
+              VIDEO {currentIndex + 1} / {total}
+            </span>
+            <span className="text-[#444] text-lg tracking-widest">● REC</span>
+          </div>
+          <p className="text-[#555] text-lg mt-1 tracking-wide truncate">
+            <span className="text-[#333]">NOW PLAYING: </span>{video.title}
+          </p>
         </div>
       </div>
 

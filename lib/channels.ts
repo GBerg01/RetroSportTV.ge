@@ -1,6 +1,6 @@
-import { CHANNELS, type Channel } from "@/data/channels";
+import { CHANNELS, type Channel, type Video } from "@/data/channels";
 
-export type { Channel };
+export type { Channel, Video };
 
 export function getAllChannels(): Channel[] {
   return CHANNELS;

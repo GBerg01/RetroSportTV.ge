@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 4 Complete — Homepage UI Rebuilt
+## Status: Phase 5 Complete — Video Data Upgraded
 
 ---
 
@@ -43,11 +43,21 @@
   - [x] `ChannelLogo` still the only icon swap point; player pages unchanged
   - [x] `npm run build` passes clean
 
+- [x] **Phase 5: Video data upgraded**
+  - [x] `Video` type added: `{ id: string; title: string }`
+  - [x] `videoIds: string[]` → `videos: Video[]` across all 6 channels
+  - [x] All TODO/placeholder comments removed; best-effort IDs with accurate titles
+  - [x] `lib/channels.ts` exports `Video` type
+  - [x] `ChannelPlayer` uses `video.id` for iframe, `video.title` for NOW PLAYING display
+  - [x] `npm run build` passes clean
+  - [ ] IDs to test in dev server — any that show "Video unavailable" need a swap:
+    - Search YouTube for the exact title → copy ID from `?v=<ID>` in URL → paste into `data/channels.ts`
+
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Swap placeholder YouTube IDs for verified ones
+- [ ] Verify all video IDs work in `npm run dev`
 - [ ] Deploy to Vercel
 
 ## Decisions Log

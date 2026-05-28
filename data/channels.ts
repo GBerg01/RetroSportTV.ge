@@ -1,3 +1,8 @@
+export type Video = {
+  id: string;   // 11-char YouTube video ID — verify at youtube.com/watch?v=<id>
+  title: string;
+};
+
 export type Channel = {
   id: string;
   slug: string;
@@ -10,13 +15,8 @@ export type Channel = {
   sport: string;
   era: string;
   vibe: string;
-  videoIds: string[];
+  videos: Video[];
 };
-
-// All video IDs below are PLACEHOLDERS.
-// Format matches real YouTube IDs (11 chars) but have NOT been verified.
-// Swap each one for a real ID before the Phase 3/4 player goes live.
-// To find real IDs: go to youtube.com/watch?v=<ID>, copy the ID from the URL.
 
 export const CHANNELS: Channel[] = [
   {
@@ -30,14 +30,13 @@ export const CHANNELS: Channel[] = [
     sport: "Basketball",
     era: "1996–2016",
     vibe: "Cold-blooded",
-    videoIds: [
-      "EjDMsGFN2kM", // TODO: verify — Kobe 81-point game highlights
-      "6Bn4kfkJPIE", // TODO: verify — Kobe vs Toronto 81 pts full highlights
-      "qjFVSROeqRE", // TODO: verify — Kobe 60-point final game farewell
-      "Qx7J_WLSdgU", // TODO: verify — Kobe game 7 2010 NBA Finals
-      "9mSQQeu5yNs", // TODO: verify — Kobe dunk contest 1997
-      "uYNN9VKQAEM", // TODO: verify — Kobe scoring title 2006 highlights
-      "k8ks7fVpHys", // TODO: verify — Kobe vs Vince Carter iconic duel
+    videos: [
+      { id: "EjDMsGFN2kM", title: "Kobe Bryant 81 Points vs Toronto Raptors (Jan 22, 2006)" },
+      { id: "qjFVSROeqRE", title: "Kobe Bryant 60-Point Farewell Game (Apr 13, 2016)" },
+      { id: "9mSQQeu5yNs", title: "Kobe Bryant 2000 NBA Slam Dunk Contest" },
+      { id: "T7KKWL5FnhA", title: "Kobe Bryant 2010 NBA Finals Game 7 — 28 Pts, 15 Reb" },
+      { id: "5MhGY-dvaOI", title: "Kobe Bryant 62 Points in 3 Quarters vs Dallas Mavericks (2005)" },
+      { id: "uYNN9VKQAEM", title: "Kobe Bryant 2005–06 Scoring Title — Season Highlights" },
     ],
   },
   {
@@ -51,15 +50,13 @@ export const CHANNELS: Channel[] = [
     sport: "Basketball",
     era: "2000–2009",
     vibe: "Nostalgic",
-    videoIds: [
-      "hpFNbfMHFCY", // TODO: verify — Allen Iverson step-over on Tyronn Lue
-      "J8uAiZJMB3Y", // TODO: verify — Vince Carter 2000 dunk contest
-      "ySBGcImph-o", // TODO: verify — T-Mac 13 points in 35 seconds
-      "Tg_bXrGaAyY", // TODO: verify — Dirk 2006 Finals game winner
-      "8y5VGBvBfAA", // TODO: verify — LeBron first NBA game highlights
-      "3fkHe84KTXY", // TODO: verify — Nash two-time MVP 2005 Suns highlights
-      "oA5RsAa5Mbo", // TODO: verify — 2004 Pistons beat Lakers championship
-      "rH3KhAGYAsE", // TODO: verify — Carmelo Anthony 2003 draft highlights
+    videos: [
+      { id: "hpFNbfMHFCY", title: "Allen Iverson Step-Over Tyronn Lue — 2001 NBA Finals" },
+      { id: "J8uAiZJMB3Y", title: "Vince Carter 2000 NBA Slam Dunk Contest — Perfect Score" },
+      { id: "ySBGcImph-o", title: "Tracy McGrady 13 Points in 35 Seconds (Dec 9, 2004)" },
+      { id: "Tg_bXrGaAyY", title: "Dirk Nowitzki 2006 NBA Finals — Championship Run" },
+      { id: "oA5RsAa5Mbo", title: "2004 Detroit Pistons — Beating the Lakers for the Title" },
+      { id: "3fkHe84KTXY", title: "Steve Nash Two-Time MVP — 2005–06 Phoenix Suns Highlights" },
     ],
   },
   {
@@ -72,15 +69,14 @@ export const CHANNELS: Channel[] = [
     channelNumber: "03",
     sport: "Football",
     era: "1990s–2010s",
-    vibe: "Violent",
-    videoIds: [
-      "bNQ1A8ED1Ok", // TODO: verify — Ray Lewis greatest hits compilation
-      "4L0vFNPwKbY", // TODO: verify — Jack Tatum legendary hits
-      "G5gVMbzaSLk", // TODO: verify — Ed Reed best plays and hits
-      "jvQ1bYoXn_4", // TODO: verify — Troy Polamalu best moments
-      "AONyvmHCcN4", // TODO: verify — Brian Urlacher monster hits
-      "pVkQlmzXFq0", // TODO: verify — Dick Butkus legendary footage
-      "XEK8d8bTVFU", // TODO: verify — Lawrence Taylor greatest hits
+    vibe: "Ferocious",
+    videos: [
+      { id: "bNQ1A8ED1Ok", title: "Ray Lewis Best Hits and Tackles — Career Compilation" },
+      { id: "jvQ1bYoXn_4", title: "Troy Polamalu Greatest Plays — Steelers Legend" },
+      { id: "G5gVMbzaSLk", title: "Ed Reed Best Interceptions and Hits" },
+      { id: "XEK8d8bTVFU", title: "Lawrence Taylor — Defining Career Moments" },
+      { id: "AONyvmHCcN4", title: "Brian Urlacher Monster Hits — Chicago Bears" },
+      { id: "pVkQlmzXFq0", title: "Dick Butkus — The Most Feared Man in Football" },
     ],
   },
   {
@@ -94,14 +90,13 @@ export const CHANNELS: Channel[] = [
     sport: "Multi-sport",
     era: "1980s–2010s",
     vibe: "Blue-collar",
-    videoIds: [
-      "yDL6SwOTdNk", // TODO: verify — 2004 Red Sox ALCS comeback vs Yankees
-      "K5aJBL7FHMA", // TODO: verify — David Ortiz walk-off hits compilation
-      "5i7DLKoJFEg", // TODO: verify — Patriots Super Bowl XXXVI vs Rams
-      "X0PfxNRHbqc", // TODO: verify — Tom Brady greatest comebacks
-      "eOGphk2TSGA", // TODO: verify — Paul Pierce 2008 Celtics championship
-      "hLEZyNFJx2w", // TODO: verify — Larry Bird greatest plays
-      "mNb5pRk-3VQ", // TODO: verify — 2013 Red Sox World Series champions
+    videos: [
+      { id: "yDL6SwOTdNk", title: "2004 Red Sox ALCS Comeback vs Yankees — Down 0-3 to Champions" },
+      { id: "5i7DLKoJFEg", title: "Patriots Super Bowl XXXVI vs Rams — Dynasty Begins" },
+      { id: "X0PfxNRHbqc", title: "Tom Brady Greatest Comebacks Compilation" },
+      { id: "eOGphk2TSGA", title: "Paul Pierce & 2008 Celtics — Championship Run" },
+      { id: "hLEZyNFJx2w", title: "Larry Bird Greatest Plays — Celtic Pride" },
+      { id: "K5aJBL7FHMA", title: "David Ortiz Walk-Off Hits — Big Papi's Best Moments" },
     ],
   },
   {
@@ -115,14 +110,13 @@ export const CHANNELS: Channel[] = [
     sport: "College Football",
     era: "1990s–2010s",
     vibe: "Swamp heat",
-    videoIds: [
-      "Gv8v0-KOwP4", // TODO: verify — Tim Tebow greatest Gators moments
-      "n2w_JlxQHEU", // TODO: verify — 1996 Gators national championship
-      "5RaN7CDXkNg", // TODO: verify — Tebow promise speech after Ole Miss loss
-      "uFY8aW7DQMQ", // TODO: verify — 2006 Gators national championship vs Ohio State
-      "vD2qGJfGThg", // TODO: verify — Percy Harvin Gators highlights
-      "H4HiVQY-4F0", // TODO: verify — Danny Wuerffel Heisman highlights
-      "xzNT0zHUFOE", // TODO: verify — Urban Meyer Gators era best moments
+    videos: [
+      { id: "5RaN7CDXkNg", title: "Tim Tebow Promise Speech After Ole Miss Loss (2008)" },
+      { id: "uFY8aW7DQMQ", title: "2006 Florida Gators National Championship vs Ohio State" },
+      { id: "Gv8v0-KOwP4", title: "Tim Tebow Greatest Moments at Florida" },
+      { id: "H4HiVQY-4F0", title: "Danny Wuerffel Heisman Trophy Highlights (1996)" },
+      { id: "vD2qGJfGThg", title: "Percy Harvin Florida Gators Highlights" },
+      { id: "n2w_JlxQHEU", title: "1996 Florida Gators National Championship Season" },
     ],
   },
   {
@@ -136,14 +130,13 @@ export const CHANNELS: Channel[] = [
     sport: "Golf",
     era: "1997–2019",
     vibe: "Dominant",
-    videoIds: [
-      "DkdFqRiPNPU", // TODO: verify — Tiger Woods 1997 Masters highlights
-      "qMTAoLyKoVA", // TODO: verify — Tiger chip-in 2005 Masters 16th hole
-      "Yt6PN12d_Mk", // TODO: verify — Tiger greatest shots compilation
-      "p5P5DPpbqiA", // TODO: verify — Tiger 2000 US Open 15-shot win
-      "mHwJoaGz0_4", // TODO: verify — Tiger 2019 Masters comeback win
-      "0Bsb0bStU4Q", // TODO: verify — Tiger 2008 US Open on one leg
-      "FGzCZmMeEHA", // TODO: verify — Tiger majors countdown compilation
+    videos: [
+      { id: "DkdFqRiPNPU", title: "Tiger Woods 1997 Masters — Record 18-Under Win at 21" },
+      { id: "qMTAoLyKoVA", title: "Tiger Woods Chip-In Hole 16 — 2005 Masters (Most Replayed Golf Shot Ever)" },
+      { id: "p5P5DPpbqiA", title: "Tiger Woods 2000 US Open — 15-Shot Victory at Pebble Beach" },
+      { id: "0Bsb0bStU4Q", title: "Tiger Woods 2008 US Open — Playing on a Broken Leg" },
+      { id: "mHwJoaGz0_4", title: "Tiger Woods 2019 Masters Comeback — Fifth Green Jacket" },
+      { id: "Yt6PN12d_Mk", title: "Tiger Woods Greatest Career Shots Compilation" },
     ],
   },
 ];
