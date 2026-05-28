@@ -1,0 +1,40 @@
+{
+  "channelSlug": "hakeem-dreams",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=9J-WJ5739Tg",
+      "title": "Hakeem Olajuwon's ULTIMATE \"Dream Shake\" Mix",
+      "tags": ["hakeem", "rockets", "nba", "dream-shake", "highlights", "post-moves"],
+      "vibeTags": ["legendary", "iconic", "dominant"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=2NshK-HPTSE",
+      "title": "Hakeem Olajuwon FULL 1994 & 1995 NBA Finals HIGHLIGHTS! (Finals MVP)",
+      "tags": ["hakeem", "rockets", "nba", "1994", "1995", "finals", "mvp"],
+      "vibeTags": ["legendary", "dominant", "championship"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=b-5wccJlm78",
+      "title": "Hakeem Olajuwon Defense on Shaquille O'Neal | 1995 NBA Finals",
+      "tags": ["hakeem", "shaq", "rockets", "nba", "1995", "finals", "defense"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=J9DjbOWD4Gs",
+      "title": "Hakeem Olajuwon vs Patrick Ewing GAME 6 Duel Highlights (1994 Finals) Rockets vs Knicks",
+      "tags": ["hakeem", "ewing", "rockets", "knicks", "nba", "1994", "finals", "game-6"],
+      "vibeTags": ["legendary", "dramatic", "clutch"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=_m8OeZWbcOE",
+      "title": "Top 10 Plays of Hakeem Olajuwon's Career",
+      "tags": ["hakeem", "rockets", "nba", "top-10", "career", "highlights"],
+      "vibeTags": ["legendary", "iconic", "must-see"],
+      "qualityScore": 92
+    }
+  ]
+}

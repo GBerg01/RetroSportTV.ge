@@ -1,0 +1,40 @@
+{
+  "channelSlug": "spurs-system-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CjadmjleQT8",
+      "title": "The Beautiful Game (2014 San Antonio Spurs)",
+      "tags": ["spurs", "nba", "2014", "finals", "duncan", "beautiful-game"],
+      "vibeTags": ["legendary", "beautiful", "dynasty"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1kPeEfuDcGA",
+      "title": "Tim Duncan Championship Highlights",
+      "tags": ["duncan", "spurs", "nba", "championship", "finals", "big-fundamental"],
+      "vibeTags": ["legendary", "dominant", "dynasty"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=i1ANov-Ogvg",
+      "title": "Spurs 39-15 Run vs. Heat (2014 Finals Game 5, Duncan Wins 5th Championship)",
+      "tags": ["spurs", "heat", "nba", "2014", "finals", "game-5", "duncan"],
+      "vibeTags": ["legendary", "dominant", "championship"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CZ-1m5nakx8",
+      "title": "How the Spurs Big Three Healed the 2013 Heartbreak to Win It All",
+      "tags": ["spurs", "nba", "2014", "big-three", "duncan", "ginobili", "parker"],
+      "vibeTags": ["legendary", "dynasty", "redemption"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=AJUhzQEPCvE",
+      "title": "Manu Ginobili's Best 20 Plays of His Career",
+      "tags": ["ginobili", "spurs", "nba", "highlights", "career", "euro-step"],
+      "vibeTags": ["legendary", "iconic", "flashy"],
+      "qualityScore": 92
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "niners-gold-rush",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=iNf_q2nNnNs",
+      "title": "Montana to Rice TOO GOOD! (Bengals vs. 49ers, Super Bowl 23)",
+      "tags": ["montana", "rice", "49ers", "super-bowl", "1988", "nfl"],
+      "vibeTags": ["legendary", "clutch", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=nRiGsReZGD0",
+      "title": "Inside the 49ers Dynasty: How Joe Montana & Jerry Rice Led the Way to Super Bowls",
+      "tags": ["montana", "rice", "49ers", "nfl", "dynasty", "documentary"],
+      "vibeTags": ["legendary", "dynasty", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=m7B4JZAiG6c",
+      "title": "Super Bowl XXIII: Montana & Rice's Legendary Performance | Bengals vs. 49ers | NFL Full Game",
+      "tags": ["montana", "rice", "49ers", "bengals", "super-bowl-23", "1988"],
+      "vibeTags": ["legendary", "classic", "clutch"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=70NAmxkYhSo",
+      "title": "1994 | San Francisco 49ers vs San Diego Chargers | NFL Super Bowl XXIX Highlights",
+      "tags": ["young", "rice", "49ers", "chargers", "super-bowl-29", "1994"],
+      "vibeTags": ["dominant", "championship", "legendary"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CFxboiJWGjE",
+      "title": "49ers 1994 Super Bowl Champions XXIX Best Highlights",
+      "tags": ["49ers", "super-bowl-29", "1994", "young", "rice", "championship"],
+      "vibeTags": ["dominant", "dynasty", "legendary"],
+      "qualityScore": 92
+    }
+  ]
+}

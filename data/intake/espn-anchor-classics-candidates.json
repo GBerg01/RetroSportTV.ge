@@ -1,0 +1,40 @@
+{
+  "channelSlug": "espn-anchor-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=z09pXNMtiFM",
+      "title": "Isaiah Armwood Dunks Over 7 People (Sportscenter #1 of the Top 10 Plays)",
+      "tags": ["sportscenter", "top-10", "dunk", "classic", "espn"],
+      "vibeTags": ["iconic", "legendary", "electric"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7W1v1tJ43QA",
+      "title": "SportsCenter HD Top 10 Embarrassing Moments",
+      "tags": ["sportscenter", "top-10", "espn", "embarrassing", "classic"],
+      "vibeTags": ["funny", "classic", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=eT-x_bI86NI",
+      "title": "Stuart Scott's Best 'This is SportsCenter' Commercials | ESPN Archive",
+      "tags": ["stuart-scott", "sportscenter", "espn", "commercials", "classic"],
+      "vibeTags": ["iconic", "nostalgic", "legendary"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SDegIDWkrnw",
+      "title": "Honoring Stuart Scott: SC Top 10 with his Signature Catchphrases and a Special Career",
+      "tags": ["stuart-scott", "sportscenter", "top-10", "espn", "tribute"],
+      "vibeTags": ["iconic", "legendary", "nostalgic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=yKlGTQasEBo",
+      "title": "Rich Eisen Gets Emotional Remembering Stuart Scott During His First SportsCenter in 22 Years",
+      "tags": ["rich-eisen", "stuart-scott", "sportscenter", "espn", "tribute"],
+      "vibeTags": ["emotional", "nostalgic", "legendary"],
+      "qualityScore": 92
+    }
+  ]
+}

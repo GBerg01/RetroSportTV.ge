@@ -1,0 +1,40 @@
+{
+  "channelSlug": "college-football-bcs-era",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=qY-2kPVfQVs",
+      "title": "2005 BCS National Championship Rose Bowl #2 Texas vs #1 USC HD",
+      "tags": ["texas", "usc", "bcs", "2005", "rose-bowl", "national-championship"],
+      "vibeTags": ["legendary", "historic", "dramatic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=21aHBqKgP3I",
+      "title": "Boise State Broncos vs. Oklahoma Sooners | 2007 Fiesta Bowl | FOX CFB Classics",
+      "tags": ["boise-state", "oklahoma", "fiesta-bowl", "2007", "upset", "classic"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=vhtOhlsLvCo",
+      "title": "#9 Boise State vs #7 Oklahoma 2007 Fiesta Bowl Extended Highlights | Greatest Finish in CFB History",
+      "tags": ["boise-state", "oklahoma", "fiesta-bowl", "2007", "upset", "greatest"],
+      "vibeTags": ["legendary", "chaos", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=YWKULiNY-VE",
+      "title": "BEST Finish in CFB History - Boise State Upsets Oklahoma: A Game to Remember",
+      "tags": ["boise-state", "oklahoma", "fiesta-bowl", "2007", "upset", "finish"],
+      "vibeTags": ["legendary", "chaos", "dramatic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=D6Wfg0n2EE8",
+      "title": "Boise State Statue of Liberty Play to Win the 2007 Fiesta Bowl",
+      "tags": ["boise-state", "statue-of-liberty", "fiesta-bowl", "2007", "trick-play"],
+      "vibeTags": ["legendary", "chaos", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}

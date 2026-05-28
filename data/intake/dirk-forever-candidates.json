@@ -1,0 +1,40 @@
+{
+  "channelSlug": "dirk-forever",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=nTsXOGuTVbk",
+      "title": "Dirk Nowitzki - 2011 Finals MVP Full Highlights vs Heat (720p HD)",
+      "tags": ["dirk", "mavericks", "nba", "2011", "finals", "mvp"],
+      "vibeTags": ["legendary", "clutch", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=QBWJ7MaJGmE",
+      "title": "Dirk Leads Mavericks To Title | 2011 Finals Mini-Movie",
+      "tags": ["dirk", "mavericks", "nba", "2011", "finals", "championship"],
+      "vibeTags": ["legendary", "championship", "dramatic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=AaonlbHgXqI",
+      "title": "Dirk Nowitzki Beat Kobe, KD x LeBron In One Legendary Run | 2011 Playoffs COMPLETE Highlights",
+      "tags": ["dirk", "mavericks", "nba", "2011", "playoffs", "kobe", "lebron"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=EIhqqRE1Suw",
+      "title": "Dirk Nowitzki 2011 NBA Finals MVP Full Highlights vs Heat 26.0 PPG",
+      "tags": ["dirk", "mavericks", "nba", "2011", "finals", "mvp"],
+      "vibeTags": ["dominant", "legendary", "clutch"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=H5QXbTUgG_A",
+      "title": "Dirk Nowitzki - 2011 Finals Highlights (HD)",
+      "tags": ["dirk", "mavericks", "nba", "2011", "finals"],
+      "vibeTags": ["legendary", "clutch", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}

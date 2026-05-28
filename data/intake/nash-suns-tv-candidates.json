@@ -1,0 +1,40 @@
+{
+  "channelSlug": "nash-suns-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=850QYpX3ZJQ",
+      "title": "Timeline of How Steve Nash and the 7 Seconds or Less Phoenix Suns Failed to Win an NBA Title",
+      "tags": ["nash", "suns", "nba", "7-seconds-or-less", "phoenix", "documentary"],
+      "vibeTags": ["nostalgic", "legendary", "dramatic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=6ktO2CWwZUs",
+      "title": "Phoenix Suns \"7 Seconds or Less\" Offense",
+      "tags": ["nash", "suns", "nba", "7-seconds-or-less", "offense", "phoenix"],
+      "vibeTags": ["explosive", "iconic", "legendary"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=C9kkUQ9wG2c",
+      "title": "7 Seconds or Less: 2004-2005 Phoenix Suns | Steve Nash | Amare Stoudemire | Mike D'Antoni",
+      "tags": ["nash", "amare", "suns", "nba", "2004-05", "7-seconds-or-less"],
+      "vibeTags": ["explosive", "legendary", "electric"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=KUmtjH21TtQ",
+      "title": "The Phoenix Suns and the Legendary 7 Seconds or Less Offense That Would Change the Game",
+      "tags": ["nash", "suns", "nba", "7-seconds-or-less", "offense", "revolution"],
+      "vibeTags": ["legendary", "nostalgic", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=HMo2ufgUVU4",
+      "title": "The Lasting Legacy of Steve Nash and the Seven Seconds or Less Phoenix Suns",
+      "tags": ["nash", "suns", "nba", "7-seconds-or-less", "legacy", "documentary"],
+      "vibeTags": ["nostalgic", "legendary", "bittersweet"],
+      "qualityScore": 91
+    }
+  ]
+}

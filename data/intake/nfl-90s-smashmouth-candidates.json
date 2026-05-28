@@ -1,0 +1,40 @@
+{
+  "channelSlug": "nfl-90s-smashmouth",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=N-y_nLpiUT0",
+      "title": "The Ultimate 1990s NFL Recap",
+      "tags": ["nfl", "1990s", "football", "decade", "recap", "classic"],
+      "vibeTags": ["nostalgic", "legendary", "old-school"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dFmLecNK_RU",
+      "title": "Barry Sanders ABSOLUTE SAVAGE Best Highlights",
+      "tags": ["barry-sanders", "lions", "nfl", "1990s", "highlights", "running-back"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=PBhn1wMyzV4",
+      "title": "Barry Sanders Top 50 Most Ridiculous Plays of All-Time | NFL Highlights",
+      "tags": ["barry-sanders", "lions", "nfl", "top-50", "highlights", "running-back"],
+      "vibeTags": ["legendary", "iconic", "must-see"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=03bZJd9Ijl8",
+      "title": "Deion Sanders 'Primetime' Career Highlight Feature | NFL",
+      "tags": ["deion-sanders", "nfl", "1990s", "primetime", "cornerback", "highlights"],
+      "vibeTags": ["legendary", "iconic", "flashy"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=JRIvIe7k5vM",
+      "title": "Barry vs. Emmitt! Detroit Lions vs. Dallas Cowboys FULL GAME | NFL 1994 Season Week 3",
+      "tags": ["barry-sanders", "emmitt-smith", "lions", "cowboys", "nfl", "1994"],
+      "vibeTags": ["classic", "old-school", "legendary"],
+      "qualityScore": 91
+    }
+  ]
+}
