@@ -18,6 +18,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#9333EA",
+    rowBackgroundUrl: "/channel-art/kobe-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/kobe-tv/row-bg.png",
     videos: [
       { id: "0RvPKROSXEQ", title: "Kobe Bryant 81 Point Game — Full Highlights (Jan 22, 2006)" },
       { id: "1fjhIWJSxfw", title: "Kobe Bryant's Top 40 Plays of His NBA Career" },
