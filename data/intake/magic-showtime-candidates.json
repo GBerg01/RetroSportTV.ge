@@ -1,0 +1,95 @@
+{
+  "channelSlug": "magic-showtime",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=08052UKMc8g",
+      "title": "Magic Johnson Highlights: No Look Passing to SHOWTIME",
+      "tags": [
+        "magic",
+        "lakers",
+        "nba",
+        "showtime",
+        "no-look-pass",
+        "1980s"
+      ],
+      "vibeTags": [
+        "legendary",
+        "fast-break",
+        "classic"
+      ],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=IMiTC54K-Gk",
+      "title": "Magic Johnson GREATEST MOMENTS of SHOWTIME \u2014 #Lakers Era",
+      "tags": [
+        "magic",
+        "lakers",
+        "nba",
+        "showtime",
+        "greatest-moments",
+        "1980s"
+      ],
+      "vibeTags": [
+        "legendary",
+        "iconic",
+        "nostalgic"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=U86o95e24vg",
+      "title": "Magic Johnson's Most UNSTOPPABLE Showtime Plays",
+      "tags": [
+        "magic",
+        "lakers",
+        "nba",
+        "showtime",
+        "unstoppable",
+        "fast-break"
+      ],
+      "vibeTags": [
+        "unstoppable",
+        "legendary",
+        "fast-break"
+      ],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Fn-VBB7Qerc",
+      "title": "Magic Johnson's Top 10 Showtime Plays of His Career",
+      "tags": [
+        "magic",
+        "lakers",
+        "nba",
+        "top-10",
+        "career",
+        "showtime"
+      ],
+      "vibeTags": [
+        "iconic",
+        "legendary",
+        "classic"
+      ],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=fwFxNxCc5Y8",
+      "title": "Magic Johnson's Best Career Highlights",
+      "tags": [
+        "magic",
+        "lakers",
+        "nba",
+        "career",
+        "best",
+        "highlights"
+      ],
+      "vibeTags": [
+        "legendary",
+        "iconic",
+        "nostalgic"
+      ],
+      "qualityScore": 90
+    }
+  ]
+}

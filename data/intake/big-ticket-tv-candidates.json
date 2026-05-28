@@ -1,0 +1,77 @@
+{
+  "channelSlug": "big-ticket-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BjqEmsGTTHg",
+      "title": "8 MINUTES Of PRIME Kevin Garnett ELECTRIFYING Highlights",
+      "tags": [
+        "garnett",
+        "timberwolves",
+        "celtics",
+        "nba",
+        "prime",
+        "intensity"
+      ],
+      "vibeTags": [
+        "electric",
+        "intense",
+        "dominant"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=b1W8Nl0Iwtw",
+      "title": "Kevin Garnett The ULTIMATE CELTICS HIGHLIGHT Mix",
+      "tags": [
+        "garnett",
+        "celtics",
+        "nba",
+        "championship",
+        "2008",
+        "highlights"
+      ],
+      "vibeTags": [
+        "legendary",
+        "intense",
+        "championship"
+      ],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7agdQxW1G3I",
+      "title": "Kevin Garnett Defensive Highlights Compilation",
+      "tags": [
+        "garnett",
+        "timberwolves",
+        "celtics",
+        "nba",
+        "defense",
+        "blocks"
+      ],
+      "vibeTags": [
+        "physical",
+        "intense",
+        "dominant"
+      ],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Ovyj7McvzFs",
+      "title": "Kevin Garnett's Intensity: Minnesota Timberwolves NBA",
+      "tags": [
+        "garnett",
+        "timberwolves",
+        "nba",
+        "intensity",
+        "minnesota",
+        "prime"
+      ],
+      "vibeTags": [
+        "intense",
+        "electric",
+        "legendary"
+      ],
+      "qualityScore": 90
+    }
+  ]
+}

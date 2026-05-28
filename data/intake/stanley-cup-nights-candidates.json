@@ -1,0 +1,96 @@
+{
+  "channelSlug": "stanley-cup-nights",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=IjUigb0gopM",
+      "title": "Most Iconic NHL Playoff Series-Clinching OT Goals Since 2000",
+      "tags": [
+        "nhl",
+        "stanley-cup",
+        "overtime",
+        "clutch",
+        "playoffs",
+        "series-clinching"
+      ],
+      "vibeTags": [
+        "legendary",
+        "clutch",
+        "iconic"
+      ],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CjINRDDZxjU",
+      "title": "NHL GAME 7 OT WINNERS (2011-2025)",
+      "tags": [
+        "nhl",
+        "game-7",
+        "overtime",
+        "playoffs",
+        "classic",
+        "winners"
+      ],
+      "vibeTags": [
+        "dramatic",
+        "clutch",
+        "legendary"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Z2ZYIMO210s",
+      "title": "Gretzky, Messier Win Stanley Cup in Game 7 | Retro Recap | Flyers vs Oilers",
+      "tags": [
+        "gretzky",
+        "messier",
+        "oilers",
+        "nhl",
+        "1987",
+        "game-7",
+        "stanley-cup"
+      ],
+      "vibeTags": [
+        "legendary",
+        "historic",
+        "dynasty"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZYYMaBaENJw",
+      "title": "Wayne Gretzky Highlights \u2014 The Great One",
+      "tags": [
+        "gretzky",
+        "oilers",
+        "nhl",
+        "career",
+        "highlights",
+        "greatest"
+      ],
+      "vibeTags": [
+        "legendary",
+        "iconic",
+        "greatest-ever"
+      ],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=391bDUJK-Z4",
+      "title": "Edmonton Oilers and Wayne Gretzky First Stanley Cup Win May 19, 1984",
+      "tags": [
+        "gretzky",
+        "oilers",
+        "nhl",
+        "1984",
+        "stanley-cup",
+        "dynasty"
+      ],
+      "vibeTags": [
+        "legendary",
+        "historic",
+        "dynasty"
+      ],
+      "qualityScore": 91
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "channelSlug": "nfl-2000s-primetime",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=H2fvtVLv93Y",
+      "title": "Tom Brady vs. Peyton Manning: Best Moments from Historic Rivalry!",
+      "tags": [
+        "brady",
+        "manning",
+        "nfl",
+        "2000s",
+        "rivalry",
+        "patriots",
+        "colts"
+      ],
+      "vibeTags": [
+        "classic",
+        "rivalry",
+        "legendary"
+      ],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5CB9nRUL4IE",
+      "title": "Brady vs Manning EPIC 24-0 Comeback! | 'Greatest Game Ever'",
+      "tags": [
+        "brady",
+        "manning",
+        "nfl",
+        "2000s",
+        "comeback",
+        "patriots",
+        "colts"
+      ],
+      "vibeTags": [
+        "dramatic",
+        "legendary",
+        "epic"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BBrcmMYRjSs",
+      "title": "Michael Vick's UNREAL Career Highlights | NFL Legends Highlights",
+      "tags": [
+        "vick",
+        "falcons",
+        "nfl",
+        "2000s",
+        "career",
+        "scramble",
+        "speed"
+      ],
+      "vibeTags": [
+        "electric",
+        "legendary",
+        "explosive"
+      ],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=s4WSW8nXB4Y",
+      "title": "LaDainian Tomlinson ULTIMATE Chargers Highlights (2001-2009)",
+      "tags": [
+        "lt",
+        "tomlinson",
+        "chargers",
+        "nfl",
+        "2000s",
+        "rushing",
+        "dominant"
+      ],
+      "vibeTags": [
+        "dominant",
+        "legendary",
+        "electric"
+      ],
+      "qualityScore": 92
+    }
+  ]
+}

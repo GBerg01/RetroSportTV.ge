@@ -1,0 +1,80 @@
+{
+  "channelSlug": "celtics-vault",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Tk-6zTmr8jc",
+      "title": "Kevin Garnett, Paul Pierce, and Ray Allen Winning Their First Title in 2008",
+      "tags": [
+        "celtics",
+        "nba",
+        "2008",
+        "kg",
+        "pierce",
+        "ray-allen",
+        "championship"
+      ],
+      "vibeTags": [
+        "legendary",
+        "championship",
+        "emotional"
+      ],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=GaDgbmv0b70",
+      "title": "Kevin Garnett, Ray Allen, and Paul Pierce 2007-2008 Boston Celtics Mix",
+      "tags": [
+        "celtics",
+        "nba",
+        "2008",
+        "kg",
+        "pierce",
+        "ray-allen",
+        "finals"
+      ],
+      "vibeTags": [
+        "dynasty",
+        "classic",
+        "legendary"
+      ],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZEYMIJLmS0o",
+      "title": "The Paul Pierce 'Wheelchair Game,' 2008 NBA Finals, Celtics vs. Lakers | ESPN Archives",
+      "tags": [
+        "pierce",
+        "celtics",
+        "lakers",
+        "nba",
+        "2008",
+        "finals",
+        "wheelchair"
+      ],
+      "vibeTags": [
+        "iconic",
+        "clutch",
+        "legendary"
+      ],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=n-U0g6U9bdw",
+      "title": "The LEGENDARY Story Behind the 2008 Celtics Championship | Anything is Possible | NBC Sports Boston",
+      "tags": [
+        "celtics",
+        "nba",
+        "2008",
+        "championship",
+        "documentary",
+        "anything-is-possible"
+      ],
+      "vibeTags": [
+        "legendary",
+        "emotional",
+        "historic"
+      ],
+      "qualityScore": 91
+    }
+  ]
+}
