@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 7 Complete — Cable Guide Homepage
+## Status: Phase 8 Complete — Two-Column Cable Guide + CRT Frame Masking
 
 ---
 
@@ -77,6 +77,16 @@
   - [x] `globals.css` — `.ticker-track` animation + `.no-scrollbar` utility
   - [x] `ChannelCard.tsx` and `ChannelGrid.tsx` preserved (unused but not deleted)
   - [x] `npm run build` passes clean; all 10 pages statically generated
+
+- [x] **Phase 8: Two-column cable guide + CRT frame masking**
+  - [x] `HomeHero` redesigned as compact broadcast header bar (branding + PKG/CH/SIG fields + boot line)
+  - [x] `ChannelBrowser.tsx` (new client component) — two-column layout: guide list left ~420px, preview panel right; owns `activeChannel` state; tabs reset preview on filter change
+  - [x] `ChannelPreview.tsx` (new) — YouTube thumbnail bg (22% opacity) + dark gradient + scanlines + `.crt-frame` edge masking; channel identity, description, NOW AIRING, TUNE IN CTA
+  - [x] `ChannelRow.tsx` updated — `isActive` highlight (green left border + bg tint + full vibe brightness), `onMouseEnter` callback, channel type label (PLAYER CH / ERA CH / etc.)
+  - [x] `ChannelPlayer.tsx` — separate scanlines + vignette divs replaced by single `.scanlines.crt-frame` div; edge-masking gradients (4% L/R, 5% top, 8% bottom) visually integrate iframe into TV environment
+  - [x] `globals.css` — `.crt-frame` class: 4-direction edge-masking gradients + inset box-shadow vignette
+  - [x] `app/page.tsx` — full-width header → centered ChannelBrowser → full-width ticker → footer
+  - [x] `npm run build` passes clean; all 10 pages generated
 
 ## In Progress
 - [ ] —

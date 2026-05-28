@@ -2,58 +2,78 @@ import Link from "next/link";
 import ChannelLogo from "@/components/ChannelLogo";
 import type { Channel } from "@/lib/channels";
 
-export default function ChannelRow({ channel }: { channel: Channel }) {
+type Props = {
+  channel: Channel;
+  isActive?: boolean;
+  onMouseEnter?: () => void;
+};
+
+export default function ChannelRow({ channel, isActive = false, onMouseEnter }: Props) {
+  const channelType = channel.categories?.[0]
+    ? `${channel.categories[0]} CH`
+    : "SPORTS CH";
+
   return (
     <Link
       href={`/channel/${channel.slug}`}
-      className="group flex items-start gap-0 border-b border-[#111] last:border-b-0
-                 px-4 py-4 bg-[#0a0a0a]
-                 hover:bg-[#0c150c]
-                 border-l-2 border-l-transparent hover:border-l-[var(--phosphor-green)]
-                 transition-colors duration-150"
+      onMouseEnter={onMouseEnter}
+      className={`group flex items-start gap-0 border-b border-[#0f0f0f] last:border-b-0
+                 px-4 py-3 border-l-2 transition-colors duration-150
+                 ${isActive
+                   ? "bg-[#0d1a0d] border-l-[var(--phosphor-green)]"
+                   : "bg-[#0a0a0a] border-l-transparent hover:bg-[#0d160d] hover:border-l-[var(--phosphor-green)]"
+                 }`}
     >
-      {/* CH number — fixed column */}
-      <div className="w-16 flex-shrink-0 pt-1">
-        <span className="text-[#2a2a2a] text-lg tracking-widest
-                         group-hover:text-[var(--phosphor-green)] transition-colors">
+      {/* CH number */}
+      <div className="w-14 flex-shrink-0 pt-0.5">
+        <span className={`text-base tracking-widest transition-colors ${
+          isActive
+            ? "text-[var(--phosphor-green)]"
+            : "text-[#2a2a2a] group-hover:text-[var(--phosphor-green)]"
+        }`}>
           CH {channel.channelNumber}
         </span>
       </div>
 
       {/* Logo */}
-      <div className="w-9 flex-shrink-0 pt-1">
-        <ChannelLogo channel={channel} className="text-2xl leading-none" />
+      <div className="w-8 flex-shrink-0 pt-0.5">
+        <ChannelLogo channel={channel} className="text-xl leading-none" />
       </div>
 
       {/* Main content */}
-      <div className="flex-1 min-w-0 pr-4">
-        <div className="flex items-baseline gap-x-3 flex-wrap leading-snug">
-          <span className="text-[#d8d8d8] text-xl tracking-wide
-                           group-hover:text-white transition-colors">
+      <div className="flex-1 min-w-0 pr-3">
+        <div className="flex items-baseline gap-2 flex-wrap">
+          <span className={`text-lg tracking-wide transition-colors ${
+            isActive ? "text-white" : "text-[#d0d0d0] group-hover:text-white"
+          }`}>
             {channel.name}
           </span>
-          <span className="text-[#2a2a2a] text-sm tracking-widest hidden sm:inline">
-            {channel.sport} · {channel.era}
+          <span className="text-[#1e1e1e] text-xs tracking-widest hidden sm:inline">
+            {channelType}
           </span>
-          <span className="text-[var(--phosphor-amber)] text-sm tracking-widest
-                           opacity-40 group-hover:opacity-100 transition-opacity hidden sm:inline">
+        </div>
+        <div className="flex items-center gap-2 mt-0.5 flex-wrap hidden sm:flex">
+          <span className="text-[#252525] text-xs tracking-widest">{channel.sport}</span>
+          <span className="text-[#161616]">·</span>
+          <span className="text-[#252525] text-xs tracking-widest">{channel.era}</span>
+          <span className="text-[#161616]">·</span>
+          <span className={`text-xs tracking-widest transition-opacity ${
+            isActive
+              ? "text-[var(--phosphor-amber)] opacity-100"
+              : "text-[var(--phosphor-amber)] opacity-30 group-hover:opacity-100"
+          }`}>
             {channel.vibe}
           </span>
         </div>
-        <p className="text-[#282828] text-base mt-1 leading-snug truncate
-                      group-hover:text-[#3e3e3e] transition-colors hidden sm:block">
-          {channel.description}
-        </p>
-        {/* Mobile meta — show below name on small screens */}
-        <p className="text-[#2a2a2a] text-sm tracking-widest mt-0.5 sm:hidden">
-          {channel.sport} · {channel.era}
-        </p>
       </div>
 
-      {/* TUNE IN — right rail */}
+      {/* TUNE IN */}
       <div className="flex-shrink-0 self-center">
-        <span className="text-[#1c1c1c] text-lg tracking-widest
-                         group-hover:text-[var(--phosphor-green)] transition-colors whitespace-nowrap">
+        <span className={`text-sm tracking-widest transition-colors whitespace-nowrap ${
+          isActive
+            ? "text-[var(--phosphor-green)]"
+            : "text-[#1a1a1a] group-hover:text-[var(--phosphor-green)]"
+        }`}>
           ▶ TUNE IN
         </span>
       </div>

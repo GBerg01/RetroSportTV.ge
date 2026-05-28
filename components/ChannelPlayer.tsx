@@ -161,17 +161,8 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
       {/* Transparent layer — keeps iframe from capturing clicks and pausing */}
       <div className="absolute inset-0 z-10" onClick={resetHideTimer} />
 
-      {/* Scanlines */}
-      <div className="absolute inset-0 scanlines z-20 pointer-events-none" />
-
-      {/* CRT vignette */}
-      <div
-        className="absolute inset-0 z-20 pointer-events-none"
-        style={{
-          boxShadow:
-            "inset 0 0 80px rgba(0,0,0,0.55), inset 0 0 200px rgba(0,0,0,0.25)",
-        }}
-      />
+      {/* CRT frame: scanlines + edge masking + vignette — integrates iframe into the TV environment */}
+      <div className="absolute inset-0 z-20 pointer-events-none scanlines crt-frame" />
 
       {/* Channel-change flash */}
       {isFlashing && (
