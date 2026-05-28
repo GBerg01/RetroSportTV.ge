@@ -1,0 +1,54 @@
+{
+  "channelSlug": "bulls-mj-era",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-gUQogRn0_g",
+      "title": "Michael Jordan 1991 NBA Finals MVP Full Highlights vs Lakers — First Ring (31.2 PPG)",
+      "tags": ["jordan", "bulls", "lakers", "1991", "nba-finals", "mvp", "first-ring"],
+      "vibeTags": ["dynasty", "finals", "historic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=fq4vfw_9U5g",
+      "title": "NBA Finals 1991 Game 1 — LA Lakers vs Chicago Bulls | Jordan 36, Magic 19",
+      "tags": ["jordan", "bulls", "lakers", "magic-johnson", "1991", "nba-finals"],
+      "vibeTags": ["dynasty", "classic", "finals"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=395kV56gsdA",
+      "title": "The Infamous Walk-Off — Bulls Sweep the Bad Boy Pistons | May 27, 1991",
+      "tags": ["bulls", "pistons", "bad-boys", "1991", "playoffs", "sweep"],
+      "vibeTags": ["rivalry", "historic", "dynasty"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=sSFZgB8KGD4",
+      "title": "MJ and Scottie Pippen DOMINATE '91 Detroit Pistons | 1991 NBA Playoffs",
+      "tags": ["jordan", "pippen", "bulls", "pistons", "1991", "playoffs"],
+      "vibeTags": ["rivalry", "domination", "playoff"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZlxFyc-R-RM",
+      "title": "Unstop-A-Bulls: The Official 1996 NBA Championship Documentary",
+      "tags": ["bulls", "1996", "documentary", "jordan", "pippen", "rodman", "championship"],
+      "vibeTags": ["dynasty", "nostalgic", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=s9QChnJzJ-E",
+      "title": "NBA Finals 1996 Game 6 Full Highlights — Seattle SuperSonics vs Chicago Bulls",
+      "tags": ["bulls", "supersonics", "1996", "nba-finals", "72-win-season"],
+      "vibeTags": ["dynasty", "finals", "championship"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=emQvB3iHoL4",
+      "title": "Bulls at Pacers Feb 1996 — Jordan 44 pts, Pippen 40 pts, Rodman 23 rebs",
+      "tags": ["jordan", "pippen", "rodman", "bulls", "pacers", "1996"],
+      "vibeTags": ["dynasty", "dominant", "trio"],
+      "qualityScore": 84
+    }
+  ]
+}

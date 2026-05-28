@@ -1,0 +1,54 @@
+{
+  "channelSlug": "jordan-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=gH0iCW4exEA",
+      "title": "Michael Jordan vs. Dominique Wilkins — 1988 NBA Dunk Contest | NBA Highlights",
+      "tags": ["jordan", "dunk-contest", "nba", "1988", "all-star"],
+      "vibeTags": ["iconic", "electric", "classic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Oso3WmURV7E",
+      "title": "Michael Jordan 63 Points at Boston — Full Highlights | 1986 Playoffs Career High",
+      "tags": ["jordan", "bulls", "celtics", "1986", "playoffs", "scoring"],
+      "vibeTags": ["godlike", "historic", "playoff"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=TMvj2Hy5q5E",
+      "title": "Michael Jordan 'Double Nickel' 55 Points at MSG — Full Highlights | March 28, 1995",
+      "tags": ["jordan", "bulls", "knicks", "1995", "return", "madison-square-garden"],
+      "vibeTags": ["comeback", "iconic", "classic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=nnzQx3syLEs",
+      "title": "Michael Jordan 1993 NBA Finals MVP Full Highlights vs Suns",
+      "tags": ["jordan", "bulls", "suns", "1993", "nba-finals", "mvp"],
+      "vibeTags": ["dynasty", "finals", "clutch"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=M7I_ntPTG8o",
+      "title": "Michael Jordan 1987-88 MVP Season Highlights — 35 PPG GOAT SZN",
+      "tags": ["jordan", "bulls", "1988", "mvp", "season-highlights"],
+      "vibeTags": ["godlike", "peak", "scoring"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=TbvfBDCgI3Q",
+      "title": "Michael Jordan 1988 NBA All-Star Game MVP — Full Highlights (40 Points)",
+      "tags": ["jordan", "all-star", "1988", "mvp", "nba"],
+      "vibeTags": ["iconic", "electric", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=yRsObkW6CF0",
+      "title": "Michael Jordan 59 Points vs Bad Boy Pistons — Full Game Highlights | April 3, 1988",
+      "tags": ["jordan", "bulls", "pistons", "1988", "scoring", "bad-boys"],
+      "vibeTags": ["explosive", "rivalry", "classic"],
+      "qualityScore": 83
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 17 Complete — First Priority Channel Batch
+## Status: Phase 18 In Progress — Candidate File Fulfillment (Batch A)
 
 ---
 
@@ -157,10 +157,24 @@
   - [x] Starter video IDs were checked through YouTube oEmbed before adding
   - [x] Existing 6 MVP channels preserved; no UI/player/database/auth/admin changes
 
+- [x] **Phase 18: Candidate file fulfillment — Batch A (Jordan TV + Bulls MJ Era)**
+  - [x] `data/intake/jordan-tv-candidates.json` — 7 verified YouTube candidates (Q83–Q92)
+    - 1988 Dunk Contest vs Wilkins (NBA Highlights), 63 pts @ Boston 1986, Double Nickel 55 pts 1995, 1993 Finals MVP vs Suns, 1987-88 MVP season, 1988 All-Star MVP, 59 pts vs Bad Boys 1988
+  - [x] `data/intake/bulls-mj-era-candidates.json` — 7 verified YouTube candidates (Q84–Q92)
+    - 1991 Finals MVP vs Lakers, 1991 Finals Game 1, Bulls sweep Bad Boys 1991, Pippen/MJ dominate '91 Pistons, Unstop-A-Bulls 1996 documentary, 1996 Finals Game 6, Jordan 44/Pippen 40/Rodman 23 vs Pacers
+  - [x] JSON validated, no duplicates vs live channels.ts
+  - [x] No live channel data modified
+
 ## In Progress
-- [ ] —
+- [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidate files
 
 ## Up Next
+- [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates
+- [ ] Batch C: Super Bowl Channel + NBA Finals Channel candidates
+- [ ] Batch D: Inside the NBA Classics + March Madness TV candidates
+- [ ] Batch E: Patriots Dynasty + College Football Chaos candidates
+- [ ] Batch F: Random Sports Compilations + Tiger Sundays Expansion candidates
+- [ ] Review + approve candidate imports into data/channels.ts
 - [ ] Verify all video IDs in `npm run dev`
 - [ ] Deploy to Vercel
 
