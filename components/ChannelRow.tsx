@@ -9,72 +9,94 @@ type Props = {
 };
 
 export default function ChannelRow({ channel, isActive = false, onMouseEnter }: Props) {
-  const channelType = channel.categories?.[0]
-    ? `${channel.categories[0]} CH`
-    : "SPORTS CH";
+  const accent = channel.accentColor ?? "#39ff14";
+  const categoryLabel = channel.categories?.[0] ?? "SPORTS";
 
   return (
     <Link
       href={`/channel/${channel.slug}`}
       onMouseEnter={onMouseEnter}
-      className={`group flex items-start gap-0 border-b border-[#0f0f0f] last:border-b-0
-                 px-4 py-3 border-l-2 transition-colors duration-150
-                 ${isActive
-                   ? "bg-[#0d1a0d] border-l-[var(--phosphor-green)]"
-                   : "bg-[#0a0a0a] border-l-transparent hover:bg-[#0d160d] hover:border-l-[var(--phosphor-green)]"
-                 }`}
+      className="group flex items-center gap-4 border-b border-[#0d0d0d] last:border-b-0
+                 px-4 py-4 border-l-[3px] transition-colors duration-100"
+      style={{
+        borderLeftColor: isActive ? accent : "transparent",
+        backgroundColor: isActive ? `${accent}0e` : "transparent",
+      }}
     >
-      {/* CH number */}
-      <div className="w-14 flex-shrink-0 pt-0.5">
-        <span className={`text-base tracking-widest transition-colors ${
-          isActive
-            ? "text-[var(--phosphor-green)]"
-            : "text-[#2a2a2a] group-hover:text-[var(--phosphor-green)]"
-        }`}>
-          CH {channel.channelNumber}
+      {/* CH number badge */}
+      <div
+        className="flex flex-col items-center justify-center w-[54px] h-[54px] flex-shrink-0 border"
+        style={{
+          backgroundColor: `${accent}${isActive ? "22" : "0d"}`,
+          borderColor: `${accent}${isActive ? "55" : "28"}`,
+        }}
+      >
+        <span
+          className="text-[9px] tracking-[0.25em] leading-none"
+          style={{ color: `${accent}99` }}
+        >
+          CH
+        </span>
+        <span
+          className="text-[22px] leading-tight tracking-tight"
+          style={{ color: accent }}
+        >
+          {channel.channelNumber}
         </span>
       </div>
 
       {/* Logo */}
-      <div className="w-8 flex-shrink-0 pt-0.5">
-        <ChannelLogo channel={channel} className="text-xl leading-none" />
+      <div className="flex-shrink-0 text-3xl leading-none">
+        <ChannelLogo channel={channel} className="text-3xl leading-none" />
       </div>
 
       {/* Main content */}
-      <div className="flex-1 min-w-0 pr-3">
-        <div className="flex items-baseline gap-2 flex-wrap">
-          <span className={`text-lg tracking-wide transition-colors ${
-            isActive ? "text-white" : "text-[#d0d0d0] group-hover:text-white"
-          }`}>
+      <div className="flex-1 min-w-0">
+        {/* Name + category badge */}
+        <div className="flex items-center gap-2 flex-wrap">
+          <span
+            className="text-[22px] sm:text-2xl tracking-wide leading-tight transition-colors"
+            style={{ color: isActive ? "#ffffff" : "#cccccc" }}
+          >
             {channel.name}
           </span>
-          <span className="text-[#1e1e1e] text-xs tracking-widest hidden sm:inline">
-            {channelType}
+          <span
+            className="text-[9px] tracking-[0.2em] px-1.5 py-px border hidden sm:inline-block"
+            style={{
+              borderColor: `${accent}35`,
+              color: `${accent}88`,
+              backgroundColor: `${accent}0a`,
+            }}
+          >
+            {categoryLabel}
           </span>
         </div>
-        <div className="flex items-center gap-2 mt-0.5 flex-wrap hidden sm:flex">
-          <span className="text-[#252525] text-xs tracking-widest">{channel.sport}</span>
-          <span className="text-[#161616]">·</span>
-          <span className="text-[#252525] text-xs tracking-widest">{channel.era}</span>
-          <span className="text-[#161616]">·</span>
-          <span className={`text-xs tracking-widest transition-opacity ${
-            isActive
-              ? "text-[var(--phosphor-amber)] opacity-100"
-              : "text-[var(--phosphor-amber)] opacity-30 group-hover:opacity-100"
-          }`}>
+
+        {/* Meta */}
+        <div className="flex items-center gap-2 mt-1 flex-wrap">
+          <span className="text-[11px] tracking-widest text-[#333]">{channel.sport}</span>
+          <span className="text-[#1e1e1e]">·</span>
+          <span className="text-[11px] tracking-widest text-[#333]">{channel.era}</span>
+          <span className="text-[#1e1e1e]">·</span>
+          <span
+            className="text-[11px] tracking-widest transition-opacity"
+            style={{
+              color: "var(--phosphor-amber)",
+              opacity: isActive ? 1 : 0.35,
+            }}
+          >
             {channel.vibe}
           </span>
         </div>
       </div>
 
       {/* TUNE IN */}
-      <div className="flex-shrink-0 self-center">
-        <span className={`text-sm tracking-widest transition-colors whitespace-nowrap ${
-          isActive
-            ? "text-[var(--phosphor-green)]"
-            : "text-[#1a1a1a] group-hover:text-[var(--phosphor-green)]"
-        }`}>
-          ▶ TUNE IN
+      <div className="flex-shrink-0 self-center hidden sm:block">
+        <span
+          className="text-sm tracking-[0.3em] whitespace-nowrap transition-colors"
+          style={{ color: isActive ? accent : "#262626" }}
+        >
+          ▶&nbsp;TUNE&nbsp;IN
         </span>
       </div>
     </Link>

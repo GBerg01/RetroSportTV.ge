@@ -18,6 +18,8 @@ export type Channel = {
   videos: Video[];
   // Category tags for homepage filtering: PLAYERS | ERAS | TEAMS | CHAOS | CLASSICS | COLLEGE | GOLF
   categories?: string[];
+  // Hex accent color for UI theming — drives CH badge, row highlight, and preview glow
+  accentColor?: string;
 };
 
 export const CHANNELS: Channel[] = [
@@ -33,6 +35,7 @@ export const CHANNELS: Channel[] = [
     era: "1996–2016",
     vibe: "Cold-blooded",
     categories: ["PLAYERS", "ERAS"],
+    accentColor: "#9333EA",
     videos: [
       { id: "0RvPKROSXEQ", title: "Kobe Bryant 81 Point Game — Full Highlights (Jan 22, 2006)" },
       { id: "1fjhIWJSxfw", title: "Kobe Bryant's Top 40 Plays of His NBA Career" },
@@ -54,6 +57,7 @@ export const CHANNELS: Channel[] = [
     era: "2000–2009",
     vibe: "Nostalgic",
     categories: ["ERAS", "CLASSICS"],
+    accentColor: "#F97316",
     videos: [
       { id: "-OJMLCF5oK4", title: "Vince Carter Puts on a Show in Legendary 2000 Slam Dunk Contest" },
       { id: "3wUOU4T7I6g", title: "Allen Iverson 48 Pts + Legendary Step Over Tyronn Lue — 2001 Finals G1" },
@@ -74,6 +78,7 @@ export const CHANNELS: Channel[] = [
     era: "1990s–2010s",
     vibe: "Ferocious",
     categories: ["CHAOS"],
+    accentColor: "#3B82F6",
     videos: [
       { id: "1T4RqdvU2ew", title: "Ray Lewis' Most Brutal Tackles | NFL Highlights" },
       { id: "ekF2BjPaHJ4", title: "Ray Lewis Biggest Hits Ever" },
@@ -94,6 +99,7 @@ export const CHANNELS: Channel[] = [
     era: "1980s–2010s",
     vibe: "Blue-collar",
     categories: ["TEAMS", "CLASSICS"],
+    accentColor: "#22C55E",
     videos: [
       { id: "VTUG-wrriaM", title: "Four Days in October — 2004 ALCS Red Sox vs Yankees Full Highlights" },
       { id: "GjrXL14dMKU", title: "The Bloody Sock Game — 2004 ALCS Game 6 | Red Sox vs Yankees" },
@@ -115,6 +121,7 @@ export const CHANNELS: Channel[] = [
     era: "1990s–2010s",
     vibe: "Swamp heat",
     categories: ["COLLEGE", "TEAMS"],
+    accentColor: "#FB923C",
     videos: [
       { id: "kI44yk9TSdI", title: "The Story of Tim Tebow's Promise Speech Inspiring the 2008 Gators | College GameDay" },
       { id: "BlIQFf7A5wY", title: "Tim Tebow's Original Promise Speech — Post-Game Press Conference (2008)" },
@@ -135,6 +142,7 @@ export const CHANNELS: Channel[] = [
     era: "1997–2019",
     vibe: "Dominant",
     categories: ["GOLF", "PLAYERS"],
+    accentColor: "#EF4444",
     videos: [
       { id: "4P5_Ld07sMA", title: "1997 Masters Tournament — Final Round Full Broadcast" },
       { id: "xt0D6BCGFKw", title: "Tiger Dominates for First Masters Win | The Masters Golf Tournament" },

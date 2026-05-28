@@ -74,6 +74,21 @@ body {
     inset 0 0 130px rgba(0,0,0,0.28);
 }
 
+/*
+  Accent-colored button driven by a CSS variable.
+  Set --btn-accent on the element via inline style.
+  Starts at 40% opacity, full brightness on hover.
+*/
+.accent-btn {
+  border-color: var(--btn-accent, #252525);
+  color: var(--btn-accent, #2a2a2a);
+  opacity: 0.45;
+  transition: opacity 0.15s ease;
+}
+.accent-btn:hover {
+  opacity: 1;
+}
+
 /* Hide scrollbar while keeping scroll functionality (used by category tabs on mobile) */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

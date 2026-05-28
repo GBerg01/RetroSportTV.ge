@@ -38,7 +38,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
     <div className="w-full max-w-6xl border border-[#151515]">
       <div className="flex flex-col lg:flex-row">
         {/* ── Left: channel guide ── */}
-        <div className="lg:w-[420px] xl:w-[460px] flex-shrink-0">
+        <div className="lg:w-[480px] xl:w-[520px] flex-shrink-0">
           {/* Guide header */}
           <div className="flex items-center justify-between px-4 py-2 bg-[#090909] border-b border-[#141414]">
             <span className="text-[var(--phosphor-green)] phosphor-glow text-sm tracking-[0.3em]">
@@ -50,15 +50,15 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
           </div>
 
           {/* Category tabs */}
-          <div className="flex gap-4 overflow-x-auto no-scrollbar px-4 py-2 bg-[#080808] border-b border-[#111]">
+          <div className="flex gap-1 overflow-x-auto no-scrollbar px-3 py-2 bg-[#080808] border-b border-[#111]">
             {TABS.map((tab) => (
               <button
                 key={tab}
                 onClick={() => handleTabChange(tab)}
-                className={`text-xs tracking-[0.3em] whitespace-nowrap transition-colors cursor-pointer pb-px ${
+                className={`text-sm tracking-[0.2em] whitespace-nowrap transition-colors cursor-pointer px-2 py-1 ${
                   activeTab === tab
-                    ? "text-[var(--phosphor-green)] phosphor-glow border-b border-[var(--phosphor-green)]"
-                    : "text-[#252525] hover:text-[#555]"
+                    ? "text-[var(--phosphor-green)] phosphor-glow bg-[#0a1a0a] border-b border-[var(--phosphor-green)]"
+                    : "text-[#333] hover:text-[#666]"
                 }`}
               >
                 {tab}

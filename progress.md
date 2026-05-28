@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 8 Complete — Two-Column Cable Guide + CRT Frame Masking
+## Status: Phase 9 Complete — Bold Broadcast Redesign + Per-Channel Accent Colors
 
 ---
 
@@ -87,6 +87,15 @@
   - [x] `globals.css` — `.crt-frame` class: 4-direction edge-masking gradients + inset box-shadow vignette
   - [x] `app/page.tsx` — full-width header → centered ChannelBrowser → full-width ticker → footer
   - [x] `npm run build` passes clean; all 10 pages generated
+
+- [x] **Phase 9: Bold broadcast redesign + per-channel accent colors**
+  - [x] `data/channels.ts` — `accentColor?: string` added to Channel type; all 6 channels assigned unique accent colors (purple/orange/blue/green/gator-orange/red)
+  - [x] `app/globals.css` — `.accent-btn` class: CSS variable `--btn-accent` drives border+color, opacity hover transition
+  - [x] `ChannelRow.tsx` — full rewrite: 54×54px CH badge, accent-colored left border + bg tint on active, `text-[22px]` channel names, `py-4` taller rows, category badge, `isActive` prop with `onMouseEnter` callback
+  - [x] `ChannelPreview.tsx` — bold redesign: 3px accent top bar, 35% thumbnail opacity, `text-4xl xl:text-5xl` channel name with per-channel accent glow, accent-colored TUNE IN button (`.accent-btn` + `--btn-accent`), more visible metadata
+  - [x] `ChannelBrowser.tsx` — wider left column (`lg:w-[480px] xl:w-[520px]`), `text-sm` tabs, active tab with `bg-[#0a1a0a]` highlight
+  - [x] `HomeHero.tsx` — larger wordmark (`text-3xl sm:text-4xl`), more visible status fields
+  - [x] `npm run build` passes clean; all 10 pages statically generated
 
 ## In Progress
 - [ ] —
