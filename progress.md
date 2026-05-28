@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 6 Complete — Immersive Player + Design North Star
+## Status: Phase 7 Complete — Cable Guide Homepage
 
 ---
 
@@ -67,11 +67,21 @@
   - [x] `DESIGN.md` created — product philosophy, visual language, 3 homepage concepts
   - [x] Cable Guide Mode recommended as next homepage direction
 
+- [x] **Phase 7: Cable Guide homepage redesign**
+  - [x] `Channel` type gains `categories?: string[]`; all 6 channels tagged
+  - [x] `ChannelRow.tsx` — horizontal guide row: CH column, logo, name+meta+desc, TUNE IN; hover highlights left border green
+  - [x] `ChannelGuide.tsx` — client component; 8 category tabs (ALL/PLAYERS/ERAS/TEAMS/CHAOS/CLASSICS/COLLEGE/GOLF); instant filter; tabs scrollable on mobile
+  - [x] `SportsTicker.tsx` — full-width CSS scrolling ticker; channel names, vibes, broadcast phrases; 90 s loop
+  - [x] `HomeHero.tsx` — denser broadcast status bar (PKG / CH / SIG fields)
+  - [x] `app/page.tsx` — full-width ticker outside centered column; SportsTicker + ChannelGuide wired up
+  - [x] `globals.css` — `.ticker-track` animation + `.no-scrollbar` utility
+  - [x] `ChannelCard.tsx` and `ChannelGrid.tsx` preserved (unused but not deleted)
+  - [x] `npm run build` passes clean; all 10 pages statically generated
+
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Homepage redesign: Cable Guide Mode (rows, not cards; TUNE IN; channel ticker)
 - [ ] Verify all video IDs in `npm run dev`
 - [ ] Deploy to Vercel
 
@@ -99,5 +109,8 @@
 | 2026-05-27 | Overlay UI for channel player | Full-screen TV feel; stacked page layout broke immersion |
 | 2026-05-27 | DESIGN.md created | Prevent future UI drift; establish cable TV / ESPN Classic as the design north star |
 | 2026-05-27 | Cable Guide Mode as next homepage | Rows > cards; truest expression of "choosing a channel"; works well with current data model |
+| 2026-05-27 | categories[] added to Channel type | Enables tab filter without routing; maps naturally to guide concept; easy to extend |
+| 2026-05-27 | SportsTicker full-width, outside centered column | Real TV tickers span the screen; constraining it to max-w-4xl kills the broadcast feel |
+| 2026-05-27 | ChannelGuide is client component, ChannelRow is server-compatible | Tab state lives in ChannelGuide; rows have no interactivity so they stay server-renderable |
 
 *Last updated: 2026-05-27*
