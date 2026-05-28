@@ -1,0 +1,54 @@
+{
+  "channelSlug": "march-madness-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=asziWjSFdfg",
+      "title": "Villanova vs Georgetown — 1985 National Championship | FULL GAME",
+      "tags": ["march-madness", "villanova", "georgetown", "1985", "ncaa", "championship"],
+      "vibeTags": ["cinderella", "classic", "championship"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FDNhnZb6hJA",
+      "title": "Duke vs Kentucky 1992 — Christian Laettner's Shot | FULL GAME",
+      "tags": ["march-madness", "duke", "kentucky", "1992", "ncaa", "laettner", "buzzer-beater"],
+      "vibeTags": ["iconic", "dramatic", "buzzer-beater"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=TIf8Wx0GhKw",
+      "title": "Greatest March Madness Upsets of All Time",
+      "tags": ["march-madness", "ncaa", "upsets", "history", "cinderella"],
+      "vibeTags": ["chaos", "underdog", "iconic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=m8xDrRcWSBU",
+      "title": "NC State vs Houston — 1983 National Championship | FULL GAME",
+      "tags": ["march-madness", "nc-state", "houston", "1983", "ncaa", "championship", "jimmy-v"],
+      "vibeTags": ["upset", "iconic", "championship"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=i6O0q50fayM",
+      "title": "Christian Laettner Hits THE SHOT vs Kentucky | Iconic March Madness Moment",
+      "tags": ["march-madness", "duke", "kentucky", "1992", "laettner", "buzzer-beater", "ncaa"],
+      "vibeTags": ["iconic", "clutch", "legendary"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=GfYb-JTmJs4",
+      "title": "Lorenzo Charles Dunk to Win the 1983 National Championship",
+      "tags": ["march-madness", "nc-state", "houston", "1983", "ncaa", "championship", "dunk"],
+      "vibeTags": ["shocking", "iconic", "buzzer-beater"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=diBsAZow0bo",
+      "title": "Best March Madness Clutch Shots — Last Four Seasons (2021-2024)",
+      "tags": ["march-madness", "ncaa", "clutch", "buzzer-beater", "2020s"],
+      "vibeTags": ["clutch", "dramatic", "chaos"],
+      "qualityScore": 85
+    }
+  ]
+}

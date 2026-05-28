@@ -1,0 +1,54 @@
+{
+  "channelSlug": "inside-the-nba-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=TOsI8z2Wi2A",
+      "title": "30 Minutes of Classic Inside the NBA Moments — Shaq, Barkley, Kenny, Ernie",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "kenny", "ernie", "compilation"],
+      "vibeTags": ["funny", "nostalgic", "classic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=kGJnKh7kDho",
+      "title": "Charles Barkley and Shaq Arguing For 8 Minutes Straight",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "argument", "debate"],
+      "vibeTags": ["funny", "chaotic", "classic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZWlFqWoD_3c",
+      "title": "Best Shaq & Charles Barkley Heated Moments | Inside the NBA",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "heated", "debate"],
+      "vibeTags": ["funny", "rivalry", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Map9Yo0Ficc",
+      "title": "Charles Barkley and Shaq Funniest Moments | Inside the NBA",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "funny"],
+      "vibeTags": ["funny", "nostalgic", "classic"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=u9yQwKZ_22A",
+      "title": "The Best of Charles Barkley Roasting the Lakers",
+      "tags": ["inside-the-nba", "tnt", "barkley", "lakers", "roast", "funny"],
+      "vibeTags": ["funny", "savage", "classic"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=F1vn7MhNAco",
+      "title": "Shaq, Chuck & Kenny Debate Coaching vs Player Talent | Inside the NBA",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "kenny", "debate"],
+      "vibeTags": ["funny", "debate", "classic"],
+      "qualityScore": 83
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dWX7h2dYjgc",
+      "title": "Shaq and Chuck Are At It Again — Heated Debate Breaks Out in Studio J | NBA on TNT",
+      "tags": ["inside-the-nba", "tnt", "barkley", "shaq", "argument", "studio-j"],
+      "vibeTags": ["funny", "chaotic", "rivalry"],
+      "qualityScore": 82
+    }
+  ]
+}

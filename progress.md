@@ -179,8 +179,15 @@
     - 2010 Finals G7 Celtics/Lakers extended, 2000 Finals G4 Kobe takes over, Lakers/Celtics Top 10 rivalry, 2000 Finals G1 Shaq 43, 2001 Finals G2 Shaq/Kobe, 1987 Finals CBS broadcast, 1985 Finals classic intro
   - [x] JSON validated, no duplicates vs live channels.ts
 
+- [x] **Phase 21: Candidate file fulfillment — Batch D (Inside the NBA Classics + March Madness TV)**
+  - [x] `data/intake/inside-the-nba-classics-candidates.json` — 7 verified YouTube candidates (Q82–Q90)
+    - 30 min classic Inside the NBA compilation, Shaq/Chuck 8 min argument, Best heated moments, Funniest moments, Barkley roasts Lakers, Coaching debate, Studio J debate
+  - [x] `data/intake/march-madness-tv-candidates.json` — 7 verified YouTube candidates (Q85–Q90)
+    - 1985 Villanova/Georgetown full game, 1992 Duke/Kentucky Laettner full game, Greatest upsets ever, 1983 NC State/Houston championship, Christian Laettner The Shot, Lorenzo Charles dunk 1983, Best clutch shots 2021-2024
+  - [x] JSON validated, no duplicates vs live channels.ts
+
 ## In Progress
-- [ ] Batch D: Inside the NBA Classics + March Madness TV candidates
+- [ ] Batch E: Patriots Dynasty + College Football Chaos candidates
 
 ## Up Next
 - [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates
