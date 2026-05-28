@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 16 Complete — Long-Term 100-Channel Expansion Roadmap
+## Status: Phase 17 Complete — First Priority Channel Batch
 
 ---
 
@@ -150,6 +150,13 @@
   - [x] `CONTENT_PIPELINE.md` updated to connect roadmap planning to research candidate files and import workflow
   - [x] No live channel data, UI, player, database, auth, or admin changes
 
+- [x] **Phase 17: First priority channel batch**
+  - [x] Added the first 12 priority roadmap channels to live `data/channels.ts`
+  - [x] New live channels assigned sequential channel numbers 07-18
+  - [x] Each new channel includes channel metadata, category tags, accent color, emoji fallback, playlist rules, and 3 starter videos
+  - [x] Starter video IDs were checked through YouTube oEmbed before adding
+  - [x] Existing 6 MVP channels preserved; no UI/player/database/auth/admin changes
+
 ## In Progress
 - [ ] —
 
@@ -178,6 +185,7 @@
 | 2026-05-28 | Candidate files are research staging only | Keeps future discovery work reviewable before any video is promoted into live channel data |
 | 2026-05-28 | 100-channel plan stays documentation-only | Gives future channel expansion a content map without changing MVP runtime data or UI |
 | 2026-05-28 | Channel roadmap is typed but not live data | Future agents can plan and research from `data/channelRoadmap.ts` without changing the homepage channel list |
+| 2026-05-28 | First live expansion batch starts at CH 07 | Preserves the original 6-channel MVP while proving roadmap channels can be promoted gradually |
 
 ## Blockers
 - None currently.
