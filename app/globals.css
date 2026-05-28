@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #e8e8e8;
+  --phosphor-green: #39ff14;
+  --phosphor-amber: #ffb000;
+  --screen-glow: rgba(57, 255, 20, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-phosphor-green: var(--phosphor-green);
+  --color-phosphor-amber: var(--phosphor-amber);
+  --font-retro: var(--font-vt323);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-vt323), monospace;
+  min-height: 100vh;
+}
+
+/* Scanline overlay — applied to CRT wrapper elements */
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.25) 3px,
+    rgba(0, 0, 0, 0.25) 4px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.phosphor-glow {
+  text-shadow: 0 0 8px var(--phosphor-green), 0 0 20px rgba(57, 255, 20, 0.4);
+}
+
+.amber-glow {
+  text-shadow: 0 0 8px var(--phosphor-amber), 0 0 20px rgba(255, 176, 0, 0.4);
+}

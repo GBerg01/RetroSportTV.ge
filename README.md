@@ -11,11 +11,11 @@ RetroSportTV.ge is a nostalgic sports highlight TV app where fans channel-surf c
 - Shareable channel URLs
 
 ## Stack
-- [Next.js](https://nextjs.org/) + React + TypeScript
-- Tailwind CSS + custom CSS retro effects
-- Official YouTube IFrame embeds
+- [Next.js](https://nextjs.org/) 16 + React 19 + TypeScript
+- Tailwind CSS v4 + custom CSS retro effects
+- Official YouTube IFrame embeds (no ripping or proxying)
 
-## Getting Started
+## Local Development
 
 ```bash
 npm install
@@ -24,10 +24,20 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Project Structure
+
+```
+app/          # Next.js App Router pages and layouts
+components/   # Shared React components
+data/         # Seed data — channels and video IDs
+lib/          # Utility functions
+styles/       # Additional CSS
+```
+
 ## Rules
 - YouTube embeds only — no downloading, ripping, or rehosting video
-- Retro effects are CSS overlays only
+- Retro effects are CSS overlays only (no canvas video manipulation)
 - MVP scope: no auth, no database, no payments
 
 ## Status
-**Planning** — see [MVP_TASKS.md](./MVP_TASKS.md) and [progress.md](./progress.md) for current status.
+**Phase 1 complete** — scaffold running. See [MVP_TASKS.md](./MVP_TASKS.md) and [progress.md](./progress.md) for current status.
