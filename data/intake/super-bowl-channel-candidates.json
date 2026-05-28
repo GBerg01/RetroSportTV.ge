@@ -1,0 +1,54 @@
+{
+  "channelSlug": "super-bowl-channel",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=m7B4JZAiG6c",
+      "title": "Super Bowl XXIII: Montana & Rice's Legendary Performance | Bengals vs 49ers | NFL Full Game",
+      "tags": ["super-bowl", "montana", "rice", "49ers", "bengals", "1989", "nfl"],
+      "vibeTags": ["legendary", "clutch", "classic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dVizBENi9cQ",
+      "title": "Top Plays in Super Bowl History | NFL Highlights",
+      "tags": ["super-bowl", "nfl", "top-plays", "history", "highlights"],
+      "vibeTags": ["iconic", "countdown", "nostalgic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=xzaYp15sZOw",
+      "title": "Super Bowl XXXIV In-Depth Highlights — Rams vs Titans | The Tackle at the One",
+      "tags": ["super-bowl", "rams", "titans", "2000", "the-tackle", "kurt-warner", "nfl"],
+      "vibeTags": ["dramatic", "clutch", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=2-DtKff04LY",
+      "title": "Super Bowl XXIV: 49ers vs Broncos | NFL Highlights",
+      "tags": ["super-bowl", "montana", "49ers", "broncos", "1990", "nfl"],
+      "vibeTags": ["dominant", "dynasty", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=O6MHk4hbUgw",
+      "title": "Joe Montana Super Bowl XXIV Highlights — 49ers vs Broncos | Top 50 SB Performances",
+      "tags": ["super-bowl", "montana", "49ers", "broncos", "1990", "nfl", "mvp"],
+      "vibeTags": ["dominant", "legendary", "mvp"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ARAARwQaTVo",
+      "title": "Top 10 Super Bowl Moments — Greatest Moments from Football's Biggest Stage",
+      "tags": ["super-bowl", "nfl", "top-10", "greatest-moments", "history"],
+      "vibeTags": ["iconic", "countdown", "nostalgic"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=sIfXiBi9Bro",
+      "title": "Best Plays in Super Bowl History | NFL Highlights HD",
+      "tags": ["super-bowl", "nfl", "best-plays", "history", "highlights"],
+      "vibeTags": ["iconic", "electric", "classic"],
+      "qualityScore": 84
+    }
+  ]
+}

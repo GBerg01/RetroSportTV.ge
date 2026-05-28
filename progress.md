@@ -172,8 +172,15 @@
     - Early 90s NBA rare footage, NBA Finals Top 10, ESPN Throwback Top 10, Jan 1990 Plays of Week, This Is SportsCenter 90s NBA commercials, April 22 1990 broadcast, Best 90s commercials
   - [x] JSON validated, no duplicates vs live channels.ts
 
+- [x] **Phase 20: Candidate file fulfillment — Batch C (Super Bowl Channel + NBA Finals Channel)**
+  - [x] `data/intake/super-bowl-channel-candidates.json` — 7 verified YouTube candidates (Q84–Q92)
+    - Super Bowl XXIII Montana/Rice full game, Top Plays in SB history, SB XXXIV Rams/Titans (The Tackle), SB XXIV 49ers/Broncos, Montana XXIV highlights, Top 10 SB moments, Best plays in SB history HD
+  - [x] `data/intake/nba-finals-channel-candidates.json` — 7 verified YouTube candidates (Q82–Q90)
+    - 2010 Finals G7 Celtics/Lakers extended, 2000 Finals G4 Kobe takes over, Lakers/Celtics Top 10 rivalry, 2000 Finals G1 Shaq 43, 2001 Finals G2 Shaq/Kobe, 1987 Finals CBS broadcast, 1985 Finals classic intro
+  - [x] JSON validated, no duplicates vs live channels.ts
+
 ## In Progress
-- [ ] Batch C: Super Bowl Channel + NBA Finals Channel candidates
+- [ ] Batch D: Inside the NBA Classics + March Madness TV candidates
 
 ## Up Next
 - [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates

@@ -1,0 +1,54 @@
+{
+  "channelSlug": "nba-finals-channel",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=yMBJr4nrbgc",
+      "title": "Celtics vs Lakers — 2010 NBA Finals Game 7 Legendary Extended Highlights",
+      "tags": ["nba-finals", "celtics", "lakers", "2010", "game-7", "kobe"],
+      "vibeTags": ["legendary", "dramatic", "classic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=JkrNl3x87no",
+      "title": "Kobe Takes Over in 2000 NBA Finals Game 4 | Classic Game",
+      "tags": ["nba-finals", "lakers", "pacers", "2000", "kobe", "shaq"],
+      "vibeTags": ["clutch", "iconic", "dynasty"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=c2QL6PoTl1w",
+      "title": "Lakers & Celtics — Top 10 Rivalry Moments in the NBA Finals | SportsCenter",
+      "tags": ["nba-finals", "lakers", "celtics", "rivalry", "top-10", "history"],
+      "vibeTags": ["iconic", "rivalry", "countdown"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=WxnDXjmD2uU",
+      "title": "NBA Finals 2000 Game 1 — Lakers vs Pacers | Shaq 43 Points HD",
+      "tags": ["nba-finals", "lakers", "pacers", "2000", "shaq", "championship"],
+      "vibeTags": ["dominant", "dynasty", "classic"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dZ-CYfybats",
+      "title": "NBA Finals 2001 Game 2 — Lakers vs 76ers | Shaq 28 pts, Kobe 31 pts",
+      "tags": ["nba-finals", "lakers", "sixers", "2001", "kobe", "shaq", "iverson"],
+      "vibeTags": ["dominant", "dynasty", "rivalry"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0JLN26C_Ed8",
+      "title": "1987 NBA Finals — Lakers at Celtics Game 4 Highlights (NBA on CBS Broadcast)",
+      "tags": ["nba-finals", "lakers", "celtics", "1987", "magic-johnson", "bird"],
+      "vibeTags": ["retro", "rivalry", "classic"],
+      "qualityScore": 84
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=DgXzQABXfZw",
+      "title": "Classic Intros: 1985 NBA Finals Game 1 — Lakers vs Celtics",
+      "tags": ["nba-finals", "lakers", "celtics", "1985", "magic-johnson", "bird", "vintage"],
+      "vibeTags": ["retro", "nostalgic", "rivalry"],
+      "qualityScore": 82
+    }
+  ]
+}
