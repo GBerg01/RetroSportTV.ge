@@ -186,8 +186,15 @@
     - 1985 Villanova/Georgetown full game, 1992 Duke/Kentucky Laettner full game, Greatest upsets ever, 1983 NC State/Houston championship, Christian Laettner The Shot, Lorenzo Charles dunk 1983, Best clutch shots 2021-2024
   - [x] JSON validated, no duplicates vs live channels.ts
 
+- [x] **Phase 22: Candidate file fulfillment — Batch E (Patriots Dynasty + College Football Chaos)**
+  - [x] `data/intake/patriots-dynasty-candidates.json` — 7 verified YouTube candidates (Q83–Q92)
+    - SB XXXVI Dynasty Begins (NFL Films), SB XLIX Brady/Belichick, SB LI Comeback (NFL Turning Point), Brady's Final Drive 2002, Greatest Comeback doc recap, 6th Super Bowl doc recap, Randy Moss era doc recap
+  - [x] `data/intake/college-football-chaos-candidates.json` — 6 verified YouTube candidates (Q85–Q92)
+    - The Play (Cal vs Stanford 1982), Kick Six (Auburn vs Alabama 2013), Doug Flutie Hail Mary (BC vs Miami 1984), App State vs Michigan 2007 (FOX CFB Classics), Greatest Hail Mary TDs CFB history, Greatest Hail Marys compilation
+  - [x] JSON validated, no duplicates vs live channels.ts
+
 ## In Progress
-- [ ] Batch E: Patriots Dynasty + College Football Chaos candidates
+- [ ] Batch F: Random Sports Compilations + Tiger Sundays Expansion candidates
 
 ## Up Next
 - [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates

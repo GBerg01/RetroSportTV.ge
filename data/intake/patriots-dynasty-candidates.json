@@ -1,0 +1,54 @@
+{
+  "channelSlug": "patriots-dynasty",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5HTJQE2BLBo",
+      "title": "Super Bowl XXXVI: Patriots Dynasty Begins — Rams vs Patriots | NFL Films",
+      "tags": ["patriots", "rams", "super-bowl", "2002", "brady", "belichick", "nfl"],
+      "vibeTags": ["dynasty", "legendary", "origin"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CJ9M-TJ0wZU",
+      "title": "Super Bowl XLIX: Brady & Belichick's Quest — Patriots vs Seahawks | NFL Highlights",
+      "tags": ["patriots", "seahawks", "super-bowl", "2015", "brady", "belichick", "butler-interception"],
+      "vibeTags": ["clutch", "dynasty", "dramatic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FyLPJ5JWZYk",
+      "title": "Patriots Unbelievable Comeback in Super Bowl LI to Beat the Falcons | NFL Turning Point",
+      "tags": ["patriots", "falcons", "super-bowl", "2017", "brady", "overtime", "comeback"],
+      "vibeTags": ["comeback", "dynasty", "legendary"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0WNBQmcPh24",
+      "title": "Super Bowl XXXVI — Tom Brady's Final Drive (2002)",
+      "tags": ["patriots", "rams", "super-bowl", "2002", "brady", "drive", "vinatieri"],
+      "vibeTags": ["clutch", "iconic", "dynasty"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=mjtQfdB-bB8",
+      "title": "Tom Brady Leads the Greatest Comeback in Super Bowl History | Patriots Dynasty Doc Recap",
+      "tags": ["patriots", "brady", "super-bowl", "comeback", "dynasty", "documentary"],
+      "vibeTags": ["comeback", "dynasty", "legendary"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5ENVoSrif3U",
+      "title": "Tom Brady and the Patriots Win Their 6th Super Bowl | Patriots Dynasty Doc Recap",
+      "tags": ["patriots", "rams", "brady", "super-bowl", "2019", "6th-ring", "documentary"],
+      "vibeTags": ["dynasty", "championship", "historic"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=_rZbifl7Q7E",
+      "title": "Randy Moss Joins Tom Brady & Bill Belichick in New England | Patriots Dynasty Doc Recap",
+      "tags": ["patriots", "moss", "brady", "belichick", "2007", "dynasty", "documentary"],
+      "vibeTags": ["dynasty", "dominant", "nostalgic"],
+      "qualityScore": 83
+    }
+  ]
+}

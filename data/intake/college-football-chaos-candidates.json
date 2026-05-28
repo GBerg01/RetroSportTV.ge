@@ -1,0 +1,47 @@
+{
+  "channelSlug": "college-football-chaos",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=EuEcdCWKWi4",
+      "title": "The Play — 'The Band Is on the Field!' Cal vs Stanford 1982",
+      "tags": ["college-football", "cal", "stanford", "1982", "lateral", "the-play"],
+      "vibeTags": ["chaos", "iconic", "legendary"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SJjKOuuL9gk",
+      "title": "Kick Six — Auburn's Chris Davis Returns Bama's Missed FG for 109-Yard TD | 2013 Iron Bowl",
+      "tags": ["college-football", "auburn", "alabama", "2013", "iron-bowl", "kick-six", "davis"],
+      "vibeTags": ["chaos", "shocking", "iconic"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=a6xKiOEGIws",
+      "title": "Doug Flutie Highlights His Iconic Hail Mary 40 Years Later — BC vs Miami 1984",
+      "tags": ["college-football", "flutie", "bc", "miami", "1984", "hail-mary"],
+      "vibeTags": ["iconic", "legendary", "clutch"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=EL3OSBP6mbk",
+      "title": "Appalachian State vs Michigan 2007 — EPIC UPSET | FOX CFB Classics",
+      "tags": ["college-football", "appalachian-state", "michigan", "2007", "upset"],
+      "vibeTags": ["upset", "shocking", "underdog"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=8WQztbJo9Wg",
+      "title": "The Greatest Hail Mary TDs in CFB History | College Football Live",
+      "tags": ["college-football", "hail-mary", "espn", "history", "compilation"],
+      "vibeTags": ["chaos", "clutch", "iconic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=moT7N_DMyeM",
+      "title": "Greatest Hail Marys in Football History",
+      "tags": ["college-football", "hail-mary", "history", "compilation", "nfl"],
+      "vibeTags": ["clutch", "chaos", "iconic"],
+      "qualityScore": 85
+    }
+  ]
+}
