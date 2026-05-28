@@ -1,4 +1,12 @@
 import { CHANNELS, type Channel, type Video } from "@/data/channels";
+export type {
+  ChannelCategory,
+  PlaylistRule,
+  SportsChannel,
+  SportsVideo,
+  VideoSource,
+  VideoValidationStatus,
+} from "@/lib/types";
 
 export type { Channel, Video };
 

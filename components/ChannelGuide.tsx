@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ChannelRow from "@/components/ChannelRow";
-import type { Channel } from "@/lib/channels";
+import type { Channel, ChannelCategory } from "@/lib/channels";
 
 const TABS = [
   "ALL",
@@ -15,8 +15,10 @@ const TABS = [
   "GOLF",
 ] as const;
 
+type ChannelTab = "ALL" | ChannelCategory;
+
 export default function ChannelGuide({ channels }: { channels: Channel[] }) {
-  const [activeTab, setActiveTab] = useState<string>("ALL");
+  const [activeTab, setActiveTab] = useState<ChannelTab>("ALL");
 
   const filtered =
     activeTab === "ALL"

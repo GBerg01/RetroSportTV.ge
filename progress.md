@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 10 Complete — Muted Homepage Preview Monitor
+## Status: Phase 11 Complete — Stage 1 Content Pipeline Framework
 
 ---
 
@@ -104,6 +104,15 @@
   - [x] Thumbnail remains as a fallback/loading visual; no-video state renders a CRT-style signal background
   - [x] Existing dark overlay, scanlines, CRT frame masking, ChannelLogo, and tune-in route behavior preserved
 
+- [x] **Phase 11: Stage 1 content pipeline framework**
+  - [x] `lib/types.ts` added shared `SportsChannel`, `SportsVideo`, `ChannelCategory`, `PlaylistRule`, `VideoSource`, and `VideoValidationStatus` types
+  - [x] `data/channels.ts` refactored to use shared content types while preserving all existing channels and videos
+  - [x] `lib/content/playlist.ts` added pure helpers for approved video filtering, quality sorting, playlist building, preview selection, next video, and random video selection
+  - [x] `lib/content/validation.ts` added pure YouTube ID, watch URL, embed URL, normalization, and extraction helpers
+  - [x] `data/researchQueue.ts` added expansion targets and search guidance for deeper future channels
+  - [x] `CONTENT_PIPELINE.md` documents local content workflow, validation, quality scoring, playlist composition, YouTube embed boundary, and future API/database path
+  - [x] Existing homepage/player UI behavior preserved; category components updated only for stricter shared types
+
 ## In Progress
 - [ ] —
 
@@ -126,6 +135,7 @@
 | 2026-05-27 | key prop on iframe = `{slug}-{index}` | Forces React to fully remount iframe on video change; reliable autoplay |
 | 2026-05-27 | Python for [slug] dir creation | Bash mkdir rejects [slug] as a glob even when quoted; Python pathlib works cleanly |
 | 2026-05-27 | Homepage preview uses muted YouTube iframe | Makes hover preview feel like a live TV monitor while staying within official YouTube embeds |
+| 2026-05-27 | Stage 1 content pipeline remains local and pure | Enables deeper channel curation without adding database, auth, admin, or API dependencies yet |
 
 ## Blockers
 - None currently.

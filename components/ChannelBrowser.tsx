@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ChannelRow from "@/components/ChannelRow";
 import ChannelPreview from "@/components/ChannelPreview";
-import type { Channel } from "@/lib/channels";
+import type { Channel, ChannelCategory } from "@/lib/channels";
 
 const TABS = [
   "ALL",
@@ -16,11 +16,13 @@ const TABS = [
   "GOLF",
 ] as const;
 
+type ChannelTab = "ALL" | ChannelCategory;
+
 export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
-  const [activeTab, setActiveTab] = useState<string>("ALL");
+  const [activeTab, setActiveTab] = useState<ChannelTab>("ALL");
   const [activeChannel, setActiveChannel] = useState<Channel>(channels[0]);
 
-  function handleTabChange(tab: string) {
+  function handleTabChange(tab: ChannelTab) {
     setActiveTab(tab);
     const next =
       tab === "ALL"

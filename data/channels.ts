@@ -1,26 +1,7 @@
-export type Video = {
-  id: string;   // 11-char YouTube video ID — verify at youtube.com/watch?v=<id>
-  title: string;
-};
+import type { SportsChannel, SportsVideo } from "@/lib/types";
 
-export type Channel = {
-  id: string;
-  slug: string;
-  name: string;
-  description: string;
-  emoji: string;
-  // Optional: set logoUrl to swap emoji for an image/SVG/badge without touching UI components
-  logoUrl?: string;
-  channelNumber: string;
-  sport: string;
-  era: string;
-  vibe: string;
-  videos: Video[];
-  // Category tags for homepage filtering: PLAYERS | ERAS | TEAMS | CHAOS | CLASSICS | COLLEGE | GOLF
-  categories?: string[];
-  // Hex accent color for UI theming — drives CH badge, row highlight, and preview glow
-  accentColor?: string;
-};
+export type Video = SportsVideo;
+export type Channel = SportsChannel;
 
 export const CHANNELS: Channel[] = [
   {
@@ -34,6 +15,7 @@ export const CHANNELS: Channel[] = [
     sport: "Basketball",
     era: "1996–2016",
     vibe: "Cold-blooded",
+    category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#9333EA",
     videos: [
@@ -56,6 +38,7 @@ export const CHANNELS: Channel[] = [
     sport: "Basketball",
     era: "2000–2009",
     vibe: "Nostalgic",
+    category: "ERAS",
     categories: ["ERAS", "CLASSICS"],
     accentColor: "#F97316",
     videos: [
@@ -77,6 +60,7 @@ export const CHANNELS: Channel[] = [
     sport: "Football",
     era: "1990s–2010s",
     vibe: "Ferocious",
+    category: "CHAOS",
     categories: ["CHAOS"],
     accentColor: "#3B82F6",
     videos: [
@@ -98,6 +82,7 @@ export const CHANNELS: Channel[] = [
     sport: "Multi-sport",
     era: "1980s–2010s",
     vibe: "Blue-collar",
+    category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#22C55E",
     videos: [
@@ -120,6 +105,7 @@ export const CHANNELS: Channel[] = [
     sport: "College Football",
     era: "1990s–2010s",
     vibe: "Swamp heat",
+    category: "COLLEGE",
     categories: ["COLLEGE", "TEAMS"],
     accentColor: "#FB923C",
     videos: [
@@ -141,6 +127,7 @@ export const CHANNELS: Channel[] = [
     sport: "Golf",
     era: "1997–2019",
     vibe: "Dominant",
+    category: "GOLF",
     categories: ["GOLF", "PLAYERS"],
     accentColor: "#EF4444",
     videos: [
