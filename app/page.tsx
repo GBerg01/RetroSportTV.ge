@@ -1,13 +1,35 @@
-const PLACEHOLDER_CHANNELS = [
-  { number: "01", name: "NBA 2000s", emoji: "🏀", description: "Best plays 2000–2009" },
-  { number: "02", name: "Kobe TV", emoji: "🐍", description: "Mamba highlights" },
-  { number: "03", name: "NFL Big Hits", emoji: "🏈", description: "Biggest tackles & plays" },
-  { number: "04", name: "Boston Classics", emoji: "🍀", description: "Celtics, Patriots, Sox" },
-  { number: "05", name: "MJ Moments", emoji: "🐐", description: "Michael Jordan greatest" },
-  { number: "06", name: "Soccer Goals", emoji: "⚽", description: "Iconic international goals" },
-];
+import Link from "next/link";
+import { getAllChannels, type Channel } from "@/lib/channels";
+
+function ChannelCard({ channel }: { channel: Channel }) {
+  return (
+    <Link
+      href={`/channel/${channel.slug}`}
+      className="relative border border-[#333] bg-[#111] rounded p-5
+                 hover:border-[var(--phosphor-green)] hover:bg-[#0d1a0d]
+                 transition-colors duration-150 group block"
+    >
+      <div className="flex items-center justify-between mb-2">
+        <p className="text-[#555] text-lg group-hover:text-[var(--phosphor-green)] transition-colors">
+          CH {channel.channelNumber}
+        </p>
+        <div className="w-2 h-2 rounded-full bg-[#333] group-hover:bg-[var(--phosphor-green)] transition-colors" />
+      </div>
+      <p className="text-4xl">{channel.emoji}</p>
+      <p className="text-[#e8e8e8] text-2xl mt-2 tracking-wide">{channel.name}</p>
+      <p className="text-[#666] text-lg mt-1 leading-snug">{channel.description}</p>
+      <div className="mt-3 flex gap-3 text-sm">
+        <span className="text-[#444]">{channel.sport}</span>
+        <span className="text-[#333]">·</span>
+        <span className="text-[#444]">{channel.era}</span>
+      </div>
+    </Link>
+  );
+}
 
 export default function Home() {
+  const channels = getAllChannels();
+
   return (
     <main className="flex flex-col items-center min-h-screen px-6 py-12 font-retro">
       {/* Header */}
@@ -32,25 +54,13 @@ export default function Home() {
           ── SELECT A CHANNEL ──
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {PLACEHOLDER_CHANNELS.map((ch) => (
-            <div
-              key={ch.number}
-              className="relative border border-[#333] bg-[#111] rounded p-5 cursor-pointer
-                         hover:border-[var(--phosphor-green)] hover:bg-[#0d1a0d]
-                         transition-colors duration-150 group"
-            >
-              <p className="text-[#555] text-lg group-hover:text-[var(--phosphor-green)] transition-colors">
-                CH {ch.number}
-              </p>
-              <p className="text-4xl mt-1">{ch.emoji}</p>
-              <p className="text-[#e8e8e8] text-2xl mt-2 tracking-wide group-hover:phosphor-glow">
-                {ch.name}
-              </p>
-              <p className="text-[#666] text-lg mt-1">{ch.description}</p>
-              <div className="absolute top-3 right-3 w-2 h-2 rounded-full bg-[#333] group-hover:bg-[var(--phosphor-green)] transition-colors" />
-            </div>
+          {channels.map((channel) => (
+            <ChannelCard key={channel.id} channel={channel} />
           ))}
         </div>
+        <p className="text-[#333] text-lg text-center mt-6 tracking-widest">
+          {channels.length} CHANNELS AVAILABLE
+        </p>
       </section>
 
       {/* Footer */}
