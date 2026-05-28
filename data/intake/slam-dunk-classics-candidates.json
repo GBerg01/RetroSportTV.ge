@@ -1,0 +1,40 @@
+{
+  "channelSlug": "slam-dunk-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=mny1kAxF2zQ",
+      "title": "1988 NBA Slam Dunk Contest - Michael Jordan vs. Dominique Wilkins",
+      "tags": ["jordan", "dominique", "dunk-contest", "nba", "1988", "classic"],
+      "vibeTags": ["legendary", "iconic", "electric"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0KT4U0qy89I",
+      "title": "The Story of the GREATEST Slam Dunk Contest",
+      "tags": ["jordan", "dominique", "dunk-contest", "nba", "1988", "documentary"],
+      "vibeTags": ["legendary", "iconic", "must-see"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RLQYD2c3qG0",
+      "title": "1988 NBA Slam Dunk Contest | Full HD 1080 60fps",
+      "tags": ["jordan", "dominique", "dunk-contest", "nba", "1988", "full"],
+      "vibeTags": ["legendary", "iconic", "electric"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-OJMLCF5oK4",
+      "title": "Vince Carter Puts on a Show in Legendary 2000 Slam Dunk Contest | NBA Highlights",
+      "tags": ["vince-carter", "dunk-contest", "nba", "2000", "legendary"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FeCUMfraHcA",
+      "title": "Vince Carter @ Slam Dunk Contest 2000 - All Dunks",
+      "tags": ["vince-carter", "dunk-contest", "nba", "2000", "all-dunks"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}

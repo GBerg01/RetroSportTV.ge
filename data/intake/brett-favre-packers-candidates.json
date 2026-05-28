@@ -1,0 +1,40 @@
+{
+  "channelSlug": "brett-favre-packers",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=rGJOMkOUbTM",
+      "title": "Brett Favre Top 50 Most Incredible Plays of All-Time | NFL Highlights",
+      "tags": ["favre", "packers", "nfl", "top-50", "gunslinger", "highlights"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=KFbkprL05Y0",
+      "title": "Brett Favre: The Greatest Gunslinger of All-Time | NFL Legends Highlights",
+      "tags": ["favre", "packers", "nfl", "gunslinger", "legends"],
+      "vibeTags": ["legendary", "iconic", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=6k6NPt7gnGQ",
+      "title": "Brett Favre's First Super Bowl Win! | Packers vs. Patriots Super Bowl XXXI | NFL Full Game",
+      "tags": ["favre", "packers", "patriots", "nfl", "super-bowl-31", "1996"],
+      "vibeTags": ["legendary", "championship", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=bWlrjsJRiFI",
+      "title": "Brett Favre - The Gunslinger",
+      "tags": ["favre", "packers", "nfl", "gunslinger", "career", "highlights"],
+      "vibeTags": ["legendary", "nostalgic", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Z7-Rk4VmwF0",
+      "title": "Green Bay vs. New England (Super Bowl XXXI, 1996) Green Bay's Greatest Games",
+      "tags": ["packers", "patriots", "nfl", "super-bowl-31", "1996", "favre"],
+      "vibeTags": ["legendary", "championship", "classic"],
+      "qualityScore": 92
+    }
+  ]
+}

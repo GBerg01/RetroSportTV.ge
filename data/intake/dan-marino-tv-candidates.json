@@ -1,0 +1,40 @@
+{
+  "channelSlug": "dan-marino-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=wUoh29mk0Ws",
+      "title": "Dan Marino's \"Quick Release\" Career Highlights! | NFL Legends",
+      "tags": ["marino", "dolphins", "nfl", "quick-release", "highlights", "qb"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=v6el8wEficE",
+      "title": "Dan Marino Highlights 1984 All 48 TDs",
+      "tags": ["marino", "dolphins", "nfl", "1984", "48-tds", "record"],
+      "vibeTags": ["legendary", "historic", "dominant"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=qM6RvOcQPEw",
+      "title": "Dan Marino Top 50 Most Electrifying Plays",
+      "tags": ["marino", "dolphins", "nfl", "top-50", "highlights"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=gpmczVHz4r8",
+      "title": "Dan Marino || The Man || Dolphins Career Highlights",
+      "tags": ["marino", "dolphins", "nfl", "career", "highlights"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=D7SE6HWZVFo",
+      "title": "1984 Miami Dolphins AFC Championship | Steelers at Dolphins",
+      "tags": ["marino", "dolphins", "steelers", "nfl", "1984", "afc-championship"],
+      "vibeTags": ["legendary", "classic", "dramatic"],
+      "qualityScore": 92
+    }
+  ]
+}

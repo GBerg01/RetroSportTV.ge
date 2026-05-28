@@ -1,0 +1,40 @@
+{
+  "channelSlug": "randy-moss-channel",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=lfRAcckQz2s",
+      "title": "Randy Moss' Ultimate Career Highlight Reel | NFL Legends Highlights",
+      "tags": ["moss", "vikings", "patriots", "nfl", "career", "highlights"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=R2nImaSkXME",
+      "title": "Randy Moss' Top 50 Most Insane Plays of All-Time | NFL Highlights",
+      "tags": ["moss", "nfl", "top-50", "highlights", "receiver"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SnsjGVG6bz8",
+      "title": "Randy Moss Straight Cash Homie Career Highlight Film",
+      "tags": ["moss", "vikings", "nfl", "highlights", "straight-cash-homie"],
+      "vibeTags": ["legendary", "iconic", "electric"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0eVsA_JX4eM",
+      "title": "Deion Sanders vs Randy Moss & Cris Carter Highlights! (1999)",
+      "tags": ["moss", "deion-sanders", "vikings", "nfl", "1999", "carter"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RM5vrVhyMuE",
+      "title": "Randy Moss Highlights",
+      "tags": ["moss", "vikings", "nfl", "highlights", "wide-receiver"],
+      "vibeTags": ["legendary", "dominant", "electric"],
+      "qualityScore": 92
+    }
+  ]
+}

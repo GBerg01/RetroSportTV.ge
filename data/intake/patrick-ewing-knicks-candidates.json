@@ -1,0 +1,40 @@
+{
+  "channelSlug": "patrick-ewing-knicks",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=05hGEvo-5G0",
+      "title": "Patrick Ewing Career Mixtape",
+      "tags": ["ewing", "knicks", "nba", "career", "highlights", "center"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=znCaXBFPtS4",
+      "title": "KNICKS-BULLS 90s RIVALRY - Michael Jordan vs John Starks, Patrick Ewing",
+      "tags": ["ewing", "knicks", "bulls", "jordan", "nba", "1990s", "rivalry"],
+      "vibeTags": ["legendary", "dramatic", "classic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=H1zm0pynxvU",
+      "title": "Patrick Ewing: Tough Battle vs. Michael Jordan and the Bulls (1992 ECSF Game 1)",
+      "tags": ["ewing", "knicks", "bulls", "jordan", "nba", "1992", "playoffs"],
+      "vibeTags": ["legendary", "physical", "dramatic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=cHg2nxwV8xc",
+      "title": "Hakeem Olajuwon vs Patrick Ewing - 1994 NBA Finals Plays & Highlights",
+      "tags": ["ewing", "hakeem", "knicks", "rockets", "nba", "1994", "finals"],
+      "vibeTags": ["legendary", "dramatic", "classic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=aJ99Pv_YM8k",
+      "title": "The Day PRIME Michael Jordan DESTROYED Patrick Ewing & Xavier McDaniel",
+      "tags": ["ewing", "knicks", "jordan", "nba", "classic", "highlights"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}

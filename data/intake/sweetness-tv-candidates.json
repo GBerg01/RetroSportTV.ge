@@ -1,0 +1,40 @@
+{
+  "channelSlug": "sweetness-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=h2ai8Fr7BWw",
+      "title": "Walter Payton: \"Sweetness\" Career Highlights | NFL Legends",
+      "tags": ["walter-payton", "bears", "nfl", "sweetness", "highlights", "running-back"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Yzk053EZNpk",
+      "title": "Walter Payton Career Highlights | Greatest Chicago Bear of All Time",
+      "tags": ["walter-payton", "bears", "nfl", "sweetness", "career", "greatest"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=lLdsQd4P0rE",
+      "title": "Sweetness 1987: Walter Payton Career Documentary and Interviews",
+      "tags": ["walter-payton", "bears", "nfl", "sweetness", "documentary", "1987"],
+      "vibeTags": ["legendary", "nostalgic", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3MIpoRas87M",
+      "title": "BITTER SWEETNESS: The Story of NFL Legend Walter Payton, Super Bowl XX and the Emotional Aftermath",
+      "tags": ["walter-payton", "bears", "nfl", "super-bowl-20", "sweetness", "documentary"],
+      "vibeTags": ["legendary", "emotional", "bittersweet"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ShjAvp9FG8Q",
+      "title": "Walter \"Sweetness\" Payton - Highlights",
+      "tags": ["walter-payton", "bears", "nfl", "sweetness", "highlights"],
+      "vibeTags": ["legendary", "dominant", "old-school"],
+      "qualityScore": 92
+    }
+  ]
+}

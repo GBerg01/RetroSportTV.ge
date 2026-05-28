@@ -1,0 +1,40 @@
+{
+  "channelSlug": "gretzky-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FVuJKCNdqyg",
+      "title": "The Great One's Greatest Games: Wayne Gretzky's Career Highlights",
+      "tags": ["gretzky", "oilers", "kings", "nhl", "career", "greatest"],
+      "vibeTags": ["legendary", "iconic", "dominant"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=iRD5Fn8ecsg",
+      "title": "Wayne Gretzky Career NHL Highlights 1979-1999 (HD)",
+      "tags": ["gretzky", "nhl", "career", "highlights", "1979-99"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3HYYTxQvxe8",
+      "title": "Wayne Gretzky - Career Highlights - The G.O.A.T",
+      "tags": ["gretzky", "nhl", "goat", "career", "highlights"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZYYMaBaENJw",
+      "title": "Wayne Gretzky Highlights - The Great One",
+      "tags": ["gretzky", "nhl", "highlights", "great-one"],
+      "vibeTags": ["legendary", "iconic", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1GjEOPTX8gA",
+      "title": "Top 5 Wayne Gretzky NHL Career Moments",
+      "tags": ["gretzky", "nhl", "top-5", "career", "moments"],
+      "vibeTags": ["legendary", "iconic", "must-see"],
+      "qualityScore": 92
+    }
+  ]
+}

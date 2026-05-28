@@ -1,0 +1,40 @@
+{
+  "channelSlug": "bo-jackson-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=80CZ-xEVzw4",
+      "title": "Bo Jackson's \"Ultimate Athlete\" Career Highlights! | NFL Legends",
+      "tags": ["bo-jackson", "raiders", "nfl", "career", "highlights", "athlete"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=QyVsaY3p55E",
+      "title": "Bo Jackson Vs Steve Atwater - PHYSICAL Matchup! Raiders Vs Broncos 1990",
+      "tags": ["bo-jackson", "atwater", "raiders", "broncos", "nfl", "1990"],
+      "vibeTags": ["legendary", "physical", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=gOqqwUVQa1Q",
+      "title": "Bo Jackson Highlights",
+      "tags": ["bo-jackson", "raiders", "nfl", "highlights", "running-back"],
+      "vibeTags": ["legendary", "dominant", "electric"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RX82AEh7CrQ",
+      "title": "Bo Jackson Kansas City Royals Highlights",
+      "tags": ["bo-jackson", "royals", "mlb", "baseball", "highlights"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0pz7U_8eLaA",
+      "title": "Bo Jackson Highlights Are Incredible! Raiders NFL Football",
+      "tags": ["bo-jackson", "raiders", "nfl", "highlights", "incredible"],
+      "vibeTags": ["legendary", "electric", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}
