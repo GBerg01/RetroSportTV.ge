@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 9 Complete — Bold Broadcast Redesign + Per-Channel Accent Colors
+## Status: Phase 10 Complete — Muted Homepage Preview Monitor
 
 ---
 
@@ -97,6 +97,13 @@
   - [x] `HomeHero.tsx` — larger wordmark (`text-3xl sm:text-4xl`), more visible status fields
   - [x] `npm run build` passes clean; all 10 pages statically generated
 
+- [x] **Phase 10: Muted homepage preview monitor**
+  - [x] `ChannelPreview.tsx` now renders the active channel's first video as a muted autoplaying YouTube iframe
+  - [x] Preview iframe uses official embed params: autoplay, mute, hidden controls, rel=0, modest branding, playsinline, start=2
+  - [x] Iframe remounts per hovered channel via stable channel/video key
+  - [x] Thumbnail remains as a fallback/loading visual; no-video state renders a CRT-style signal background
+  - [x] Existing dark overlay, scanlines, CRT frame masking, ChannelLogo, and tune-in route behavior preserved
+
 ## In Progress
 - [ ] —
 
@@ -118,6 +125,7 @@
 | 2026-05-27 | Server page + client ChannelPlayer component | Page needs generateStaticParams (server); controls need useState (client) |
 | 2026-05-27 | key prop on iframe = `{slug}-{index}` | Forces React to fully remount iframe on video change; reliable autoplay |
 | 2026-05-27 | Python for [slug] dir creation | Bash mkdir rejects [slug] as a glob even when quoted; Python pathlib works cleanly |
+| 2026-05-27 | Homepage preview uses muted YouTube iframe | Makes hover preview feel like a live TV monitor while staying within official YouTube embeds |
 
 ## Blockers
 - None currently.

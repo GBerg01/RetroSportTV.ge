@@ -3,32 +3,57 @@ import ChannelLogo from "@/components/ChannelLogo";
 import type { Channel } from "@/lib/channels";
 
 export default function ChannelPreview({ channel }: { channel: Channel }) {
-  const thumbUrl = `https://img.youtube.com/vi/${channel.videos[0].id}/hqdefault.jpg`;
+  const previewVideo = channel.videos[0];
+  const thumbUrl = previewVideo
+    ? `https://img.youtube.com/vi/${previewVideo.id}/hqdefault.jpg`
+    : "";
   const channelType = channel.categories?.[0]
     ? `${channel.categories[0]} CHANNEL`
     : "SPORTS CHANNEL";
   const accent = channel.accentColor ?? "#39ff14";
+  const previewSrc = previewVideo
+    ? `https://www.youtube.com/embed/${previewVideo.id}?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1&start=2`
+    : "";
 
   return (
     <div className="relative w-full h-full min-h-[500px] bg-[#070707] overflow-hidden">
       {/* Accent color top bar */}
       <div className="absolute top-0 left-0 right-0 h-[3px] z-10" style={{ backgroundColor: accent }} />
 
-      {/* Thumbnail — more visible at 35% */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${thumbUrl})`,
-          opacity: 0.35,
-        }}
-      />
+      {previewVideo ? (
+        <>
+          {/* Thumbnail fallback sits behind the muted preview while the iframe starts. */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url(${thumbUrl})`,
+              opacity: 0.26,
+            }}
+          />
+          <iframe
+            key={`${channel.slug}-${previewVideo.id}`}
+            className="absolute inset-0 w-full h-full pointer-events-none opacity-45"
+            src={previewSrc}
+            title={`${channel.name} preview`}
+            allow="autoplay; encrypted-media; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        </>
+      ) : (
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `radial-gradient(circle at center, ${accent}26 0%, rgba(7,7,7,0.92) 55%, #070707 100%)`,
+          }}
+        />
+      )}
 
       {/* Layered dark gradient */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to top, rgba(7,7,7,0.98) 0%, rgba(7,7,7,0.7) 40%, rgba(7,7,7,0.4) 100%)",
+            "linear-gradient(to top, rgba(7,7,7,0.98) 0%, rgba(7,7,7,0.76) 42%, rgba(7,7,7,0.48) 100%)",
         }}
       />
 
@@ -95,7 +120,7 @@ export default function ChannelPreview({ channel }: { channel: Channel }) {
         <div>
           <p className="text-[#2a2a2a] text-xs tracking-[0.4em] mb-1">NOW AIRING</p>
           <p className="text-[#444] text-sm tracking-wide truncate mb-5">
-            {channel.videos[0].title}
+            {previewVideo?.title ?? "SIGNAL PENDING"}
           </p>
           <Link
             href={`/channel/${channel.slug}`}
