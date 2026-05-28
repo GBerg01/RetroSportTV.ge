@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 14 Complete — Video Research Candidate Workflow
+## Status: Phase 15 Complete — 100-Channel Expansion Plan
 
 ---
 
@@ -137,6 +137,12 @@
   - [x] `CONTENT_PIPELINE.md` updated with research queue → candidate file → import → local QA → commit/push workflow
   - [x] Research candidate workflow does not import candidates or modify live channel data
 
+- [x] **Phase 15: 100-channel expansion plan**
+  - [x] `CHANNEL_EXPANSION_PLAN.md` added as a planning-only channel/content strategy map
+  - [x] 100 future themed sports channels grouped across 10 categories
+  - [x] Each planned channel includes CH number, name, category, sport, era, vibe, example moments/search themes, why it belongs, ideal sources, and avoid notes
+  - [x] No channels added to `data/channels.ts`; no UI/player/database/auth/admin changes
+
 ## In Progress
 - [ ] —
 
@@ -163,6 +169,7 @@
 | 2026-05-28 | Add-video CLI writes to local channel data | Gives curation a safer path than hand-editing `data/channels.ts` while keeping the MVP database-free |
 | 2026-05-28 | Bulk intake uses local JSON files | Makes larger channel curation reviewable and repeatable before introducing API/database workflows |
 | 2026-05-28 | Candidate files are research staging only | Keeps future discovery work reviewable before any video is promoted into live channel data |
+| 2026-05-28 | 100-channel plan stays documentation-only | Gives future channel expansion a content map without changing MVP runtime data or UI |
 
 ## Blockers
 - None currently.
