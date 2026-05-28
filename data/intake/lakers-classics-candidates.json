@@ -1,0 +1,40 @@
+{
+  "channelSlug": "lakers-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=9z-C-Jz1stI",
+      "title": "HD Magic Johnson: Showtime Lakers Highlights",
+      "tags": ["magic-johnson", "lakers", "nba", "showtime", "1980s", "highlights"],
+      "vibeTags": ["legendary", "fast-break", "classic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=so8R3NTbnEw",
+      "title": "SHOWTIME Lakers Highlights",
+      "tags": ["magic-johnson", "lakers", "showtime", "nba", "1980s", "fast-break"],
+      "vibeTags": ["nostalgic", "legendary", "fast-break"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=d-GkwUKBgio",
+      "title": "Kobe and Shaq's INSANE Comeback that Saved the Lakers Dynasty",
+      "tags": ["kobe", "shaq", "lakers", "nba", "dynasty", "comeback"],
+      "vibeTags": ["legendary", "dynasty", "clutch"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=JkrNl3x87no",
+      "title": "Kobe Takes Over In 2000 NBA Finals Game 4 | #NBATogetherLive Classic Game",
+      "tags": ["kobe", "shaq", "lakers", "nba", "2000", "finals", "overtime"],
+      "vibeTags": ["clutch", "iconic", "legendary"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=c9lTg_UXXh0",
+      "title": "2002 NBA Finals Game 3 — Kobe & Shaq Highlights — New Jersey Nets at Los Angeles Lakers",
+      "tags": ["kobe", "shaq", "lakers", "nets", "nba", "2002", "finals"],
+      "vibeTags": ["dynasty", "dominant", "championship"],
+      "qualityScore": 90
+    }
+  ]
+}

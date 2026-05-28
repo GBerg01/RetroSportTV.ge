@@ -1,0 +1,40 @@
+{
+  "channelSlug": "iverson-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=aAIfwvhw2Mw",
+      "title": "Allen Iverson vs Los Angeles Lakers: 2001 NBA Finals Game 1 Full Highlights - 48 Points & 6 Assists",
+      "tags": ["iverson", "76ers", "lakers", "nba", "2001", "finals", "48-points"],
+      "vibeTags": ["iconic", "legendary", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SQHbCmX2yE4",
+      "title": "NBA Playoffs 2001. Bucks vs Sixers Game 7 — Iverson 44 pts",
+      "tags": ["iverson", "76ers", "bucks", "nba", "2001", "playoffs", "game-7"],
+      "vibeTags": ["clutch", "playoff", "legendary"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=knKXGqVyOKc",
+      "title": "NBA Playoffs 2001. Bucks vs Sixers Game 6 — Iverson 46 pts",
+      "tags": ["iverson", "76ers", "bucks", "nba", "2001", "playoffs", "46-points"],
+      "vibeTags": ["explosive", "playoff", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SN48rLcAzRI",
+      "title": "Top 20 Allen Iverson Plays of All Time",
+      "tags": ["iverson", "76ers", "nba", "top-20", "career", "crossover"],
+      "vibeTags": ["iconic", "legendary", "crossover"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=iNIN1364XAU",
+      "title": "Allen Iverson Ultimate Crossover Compilation",
+      "tags": ["iverson", "nba", "crossover", "compilation", "ankle-breakers"],
+      "vibeTags": ["electric", "crossover", "legendary"],
+      "qualityScore": 90
+    }
+  ]
+}

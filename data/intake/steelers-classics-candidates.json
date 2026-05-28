@@ -1,0 +1,40 @@
+{
+  "channelSlug": "steelers-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-DcTxNqNLaY",
+      "title": "The Greatest Play in NFL History: The Immaculate Reception | #CINvsPIT",
+      "tags": ["steelers", "raiders", "nfl", "1972", "immaculate-reception", "franco-harris"],
+      "vibeTags": ["legendary", "iconic", "greatest-ever"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dHIXFKrrUhA",
+      "title": "Immaculate Reception Original Broadcast — BEST QUALITY",
+      "tags": ["steelers", "raiders", "nfl", "1972", "immaculate-reception", "original"],
+      "vibeTags": ["legendary", "iconic", "historic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=PoMwWWiYth4",
+      "title": "NFL Throwback: Troy Polamalu's Top 50 Plays | Pittsburgh Steelers",
+      "tags": ["polamalu", "steelers", "nfl", "top-50", "defense", "safety"],
+      "vibeTags": ["legendary", "physical", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=6rf4wN5xJ4g",
+      "title": "Career Highlights: Troy Polamalu | Pittsburgh Steelers",
+      "tags": ["polamalu", "steelers", "nfl", "career", "safety", "defense"],
+      "vibeTags": ["legendary", "physical", "dominant"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0pJaErbyw-w",
+      "title": "The Pittsburgh Steelers: Behind The Steel Curtain — Dynasty Collection HD",
+      "tags": ["steelers", "steel-curtain", "nfl", "1970s", "dynasty", "documentary"],
+      "vibeTags": ["legendary", "dynasty", "old-school"],
+      "qualityScore": 91
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "warriors-dynasty",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=cHy7leb1LYM",
+      "title": "All of Stephen Curry's NBA-Record 402 Three-Pointers from the 2015-16 Season",
+      "tags": ["curry", "warriors", "nba", "2015-16", "three-pointers", "record"],
+      "vibeTags": ["legendary", "historic", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=G8IeiioovoQ",
+      "title": "Stephen Curry — Best Plays of 2015/2016 MVP Season",
+      "tags": ["curry", "warriors", "nba", "2015-16", "mvp", "highlights"],
+      "vibeTags": ["legendary", "explosive", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=DwWndPQLkEo",
+      "title": "2015 NBA Finals — Golden State Warriors vs. Cleveland Cavaliers Game 6 Highlights",
+      "tags": ["warriors", "cavaliers", "nba", "2015", "finals", "game-6", "champions"],
+      "vibeTags": ["championship", "historic", "legendary"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=li5dANBbhQM",
+      "title": "15 Times The Splash Brothers Shocked The World",
+      "tags": ["curry", "klay", "warriors", "nba", "splash-brothers", "three-pointers"],
+      "vibeTags": ["iconic", "legendary", "electric"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=rlBw7GhRDtA",
+      "title": "Timeline of How the Warriors Built a DYNASTY!",
+      "tags": ["warriors", "nba", "dynasty", "curry", "klay", "draymond", "documentary"],
+      "vibeTags": ["dynasty", "legendary", "nostalgic"],
+      "qualityScore": 90
+    }
+  ]
+}

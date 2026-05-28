@@ -1,0 +1,33 @@
+{
+  "channelSlug": "d-wade-county",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=uEyo2P5dgec",
+      "title": "Throwback: Dwyane Wade 2006 Finals MVP Full Highlights vs Mavericks",
+      "tags": ["wade", "heat", "mavericks", "nba", "2006", "finals", "mvp"],
+      "vibeTags": ["legendary", "dominant", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3RqtCuQpBAc",
+      "title": "Dwyane Wade FULL 2006 NBA Finals Highlights vs. Dallas Mavericks! (2006 NBA Finals MVP)",
+      "tags": ["wade", "heat", "mavericks", "nba", "2006", "finals", "championship"],
+      "vibeTags": ["dominant", "clutch", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BjTcXjL2moE",
+      "title": "Dwyane Wade's Top 35 Plays of His Career!",
+      "tags": ["wade", "heat", "nba", "top-35", "career", "highlights"],
+      "vibeTags": ["electric", "legendary", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ECPXGkqsZmQ",
+      "title": "The Top 10 Plays of Dwyane Wade's Entire Career | SportsCenter",
+      "tags": ["wade", "heat", "nba", "top-10", "sportscenter", "career"],
+      "vibeTags": ["iconic", "legendary", "explosive"],
+      "qualityScore": 91
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "channelSlug": "vince-carter-airwaves",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7fCWBCAUelw",
+      "title": "The Vince Carter Dunk That Shook the Sydney Olympics (2000)",
+      "tags": ["vince-carter", "olympics", "2000", "dunk", "sydney", "team-usa"],
+      "vibeTags": ["iconic", "legendary", "athletic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=k_uZeCymShQ",
+      "title": "Vince Carter's 'Dunk of Death': the GREATEST Dunk of All Time | NBC Sports",
+      "tags": ["vince-carter", "olympics", "2000", "dunk-of-death", "frederic-weis"],
+      "vibeTags": ["legendary", "iconic", "athletic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FeCUMfraHcA",
+      "title": "Vince Carter @ Slam Dunk Contest 2000 — All Dunks",
+      "tags": ["vince-carter", "raptors", "nba", "2000", "slam-dunk-contest", "toronto"],
+      "vibeTags": ["iconic", "legendary", "electric"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Nm0Ai9ZJNF0",
+      "title": "1 Hour of Vince Carter's Greatest Toronto Raptors Highlights",
+      "tags": ["vince-carter", "raptors", "nba", "toronto", "career", "highlights"],
+      "vibeTags": ["legendary", "nostalgic", "half-man-half-amazing"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=WgFJGAgBqTc",
+      "title": "VINSANITY: Vince Carter's Greatest Raptors Moments",
+      "tags": ["vince-carter", "raptors", "nba", "toronto", "vinsanity", "top-moments"],
+      "vibeTags": ["iconic", "nostalgic", "explosive"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1rLakXi8OkI",
+      "title": "Vince Carter Clutch Shots & Game Winners Highlights | Part 1 — Toronto Raptors",
+      "tags": ["vince-carter", "raptors", "nba", "clutch", "game-winners", "toronto"],
+      "vibeTags": ["clutch", "electric", "iconic"],
+      "qualityScore": 90
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "heat-culture-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=i6Zb1mCU7Jk",
+      "title": "The Iconic 2013 Ray Allen Shot that Shook the World",
+      "tags": ["ray-allen", "heat", "spurs", "nba", "2013", "finals", "game-6"],
+      "vibeTags": ["iconic", "legendary", "clutch"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FZoJI05kBBw",
+      "title": "Ray Allen's 3-pointer, LeBron's 32 Save Heat in Game 6 of 2013 NBA Finals vs. Spurs | ESPN Archives",
+      "tags": ["ray-allen", "lebron", "heat", "spurs", "nba", "2013", "finals"],
+      "vibeTags": ["clutch", "legendary", "must-see"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=H56iR3188P0",
+      "title": "Ray Allen Hits Series-Altering Three To Help Force A Game 7 | #NBATogetherLive Classic Game",
+      "tags": ["ray-allen", "heat", "spurs", "nba", "2013", "finals", "game-7"],
+      "vibeTags": ["legendary", "clutch", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3P1Q0hiZ6tM",
+      "title": "2013 NBA Finals: Spurs vs. Heat in 22 Minutes | NBA Highlights",
+      "tags": ["heat", "spurs", "nba", "2013", "finals", "lebron", "wade"],
+      "vibeTags": ["dramatic", "classic", "championship"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=VSoI1u2kdws",
+      "title": "Dwyane Wade Dominates, Miami Heat Take Control | 2006 NBA Finals Game 4 Rewatch",
+      "tags": ["wade", "heat", "mavericks", "nba", "2006", "finals", "game-4"],
+      "vibeTags": ["dominant", "clutch", "legendary"],
+      "qualityScore": 91
+    }
+  ]
+}

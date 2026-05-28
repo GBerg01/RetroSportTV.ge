@@ -1,0 +1,40 @@
+{
+  "channelSlug": "red-sox-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=xYxSZJ9GZ-w",
+      "title": "2004 ALCS Gm 4: David Ortiz's Walk-off Two Run Homer",
+      "tags": ["red-sox", "yankees", "mlb", "2004", "alcs", "ortiz", "walk-off"],
+      "vibeTags": ["clutch", "iconic", "legendary"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=gu-m2CYHW4Y",
+      "title": "2004 ALCS Gm 5: Ortiz's 14th Inning Walk-off Hit",
+      "tags": ["red-sox", "yankees", "mlb", "2004", "alcs", "ortiz", "walk-off"],
+      "vibeTags": ["clutch", "legendary", "dramatic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ownBa0hI2Mk",
+      "title": "2004 ALCS Game 7 Highlights | Boston Red Sox vs New York Yankees",
+      "tags": ["red-sox", "yankees", "mlb", "2004", "alcs", "game-7", "comeback"],
+      "vibeTags": ["historic", "dramatic", "legendary"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BXgqSrOTceo",
+      "title": "2004 Boston Red Sox vs New York Yankees ALCS Highlights (Games 6 and 7)",
+      "tags": ["red-sox", "yankees", "mlb", "2004", "alcs", "comeback", "reverse-curse"],
+      "vibeTags": ["historic", "legendary", "dramatic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RXaNBLASab4",
+      "title": "David Ortiz Walk-Off Hits | Red Sox Rewind",
+      "tags": ["ortiz", "red-sox", "mlb", "walk-off", "clutch", "big-papi"],
+      "vibeTags": ["clutch", "legendary", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}
