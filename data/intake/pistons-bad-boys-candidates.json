@@ -1,0 +1,33 @@
+{
+  "channelSlug": "pistons-bad-boys",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=e8HKaVaO7a8",
+      "title": "MJ's BEST Battles Against The Bad Boy Pistons!",
+      "tags": ["pistons", "jordan", "bulls", "nba", "rivalry", "1980s-1990s"],
+      "vibeTags": ["rivalry", "physical", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=2BMW3MKreM4",
+      "title": "Detroit Bad Boys Highlights",
+      "tags": ["pistons", "bad-boys", "nba", "1989", "1990", "championship"],
+      "vibeTags": ["old-school", "physical", "classic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=XSPIQiFAe6U",
+      "title": "DETROIT PISTONS BAD BOYS TRIBUTE HD",
+      "tags": ["pistons", "bad-boys", "nba", "isiah-thomas", "tribute", "championship"],
+      "vibeTags": ["legendary", "physical", "iconic"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=dyBsNqTKlh0",
+      "title": "The Pistons Reign: Detroit Pistons Bad Boys Documentary",
+      "tags": ["pistons", "bad-boys", "nba", "documentary", "dynasty", "1989-1990"],
+      "vibeTags": ["gritty", "legendary", "old-school"],
+      "qualityScore": 91
+    }
+  ]
+}

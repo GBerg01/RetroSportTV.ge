@@ -1,0 +1,26 @@
+{
+  "channelSlug": "world-series-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7zpl_c7WtO0",
+      "title": "Kirk Gibson's Pinch Hit Walk-off Home Run (1988 World Series) — Baseball's Best Moments",
+      "tags": ["dodgers", "athletics", "world-series", "1988", "kirk-gibson", "walk-off"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=N4nwMDZYXTI",
+      "title": "Kirk Gibson's Legendary 1988 World Series Walk-off Home Run",
+      "tags": ["dodgers", "athletics", "world-series", "1988", "kirk-gibson", "vin-scully"],
+      "vibeTags": ["legendary", "iconic", "historic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=kDJyEYygyiw",
+      "title": "2001 Arizona Diamondbacks vs New York Yankees | MLB World Series Highlights",
+      "tags": ["diamondbacks", "yankees", "world-series", "2001", "game-7", "highlights"],
+      "vibeTags": ["dramatic", "historic", "classic"],
+      "qualityScore": 92
+    }
+  ]
+}

@@ -2,11 +2,46 @@
   "channelSlug": "nfl-big-hits",
   "videos": [
     {
-      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
-      "title": "Example: NFL legal classic defensive hits highlight package",
-      "tags": ["nfl", "defense", "hits", "football"],
-      "vibeTags": ["hard-hitting", "classic", "intense"],
-      "qualityScore": 82
+      "urlOrId": "https://www.youtube.com/watch?v=d50iiKBvo2A",
+      "title": "NFL Biggest Hits of All Time",
+      "tags": ["nfl", "football", "hits", "compilation", "all-time", "defense"],
+      "vibeTags": ["intense", "physical", "legendary"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=9zn33d74pzg",
+      "title": "NFL Hardest Hits Compilation Of All Time Part 1",
+      "tags": ["nfl", "football", "hard-hits", "compilation", "defense", "tackles"],
+      "vibeTags": ["brutal", "intense", "classic"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=vAC2almlat4",
+      "title": "Most Vicious Hits in Football History",
+      "tags": ["nfl", "football", "hits", "ray-lewis", "sean-taylor", "defense"],
+      "vibeTags": ["intense", "physical", "old-school"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Wn9NdHpTWrg",
+      "title": "Biggest Hits In Football History HD",
+      "tags": ["nfl", "football", "hits", "compilation", "hd", "tackles"],
+      "vibeTags": ["physical", "intense", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=To9TYLDSZx4",
+      "title": "Biggest Hits in Football History",
+      "tags": ["nfl", "football", "hits", "compilation", "all-time", "defense"],
+      "vibeTags": ["brutal", "physical", "classic"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=E0J8E7qSvm8",
+      "title": "BIGGEST HITS IN NFL HISTORY — Here Comes the Boom",
+      "tags": ["nfl", "football", "hits", "compilation", "boom", "history"],
+      "vibeTags": ["intense", "electric", "iconic"],
+      "qualityScore": 87
     }
   ]
 }

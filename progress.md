@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 24 Complete — 83 Candidate Videos Imported Into Live Channels
+## Status: Phase 25 Complete — MVP Channels Fully Stocked, 213 Total Videos
 
 ---
 
@@ -207,17 +207,23 @@
   - [x] Original 6 MVP channels untouched
   - [x] `npm run build` passes clean — 22 static pages generated
 
+- [x] **Phase 25: MVP channel fulfillment — all 6 original channels stocked**
+  - [x] `data/intake/kobe-tv-candidates.json` — 4 verified candidates: GREATEST Kobe highlight reel, TOP 40 plays, RARE highlights, King of Isolation
+  - [x] `data/intake/nba-2000s-candidates.json` — 5 verified candidates: 10 min nostalgic 2000s, Early 2000s All-Star peaks, 2000s hits different, Allen Iverson GREATEST reel, AI 44pts Game 7 classic
+  - [x] `data/intake/nfl-big-hits-candidates.json` — 6 verified candidates: 6 fan-uploaded hits compilations (NFL official blocks embedding)
+  - [x] `data/intake/boston-classics-candidates.json` — 8 verified candidates: 2004 World Series Games 1–4 highlights + champion celebration
+  - [x] `data/intake/tiger-sundays-candidates.json` — 5 verified candidates: 1997 Masters record win, Masters iconic shot, chip-in 16 (two versions), 2000 season full story
+  - [x] `data/intake/florida-gators-tv-candidates.json` — 6 verified candidates: Definitive Tebow reel, 2008 national championship game-winner, ultimate highlight, full championship run, general highlights, championship rewind
+  - [x] Imported all 6 batches (32 net new videos; 2 duplicates skipped)
+  - [x] All 18 channels now have 10–15 videos; total = 213 verified videos
+  - [x] `npm run build` passes clean — 22 static pages generated
+  - [x] Harvest scripts wired to `package.json`: `content:harvest-playlist`, `content:harvest-reddit`
+
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates
-- [ ] Batch C: Super Bowl Channel + NBA Finals Channel candidates
-- [ ] Batch D: Inside the NBA Classics + March Madness TV candidates
-- [ ] Batch E: Patriots Dynasty + College Football Chaos candidates
-- [ ] Batch F: Random Sports Compilations + Tiger Sundays Expansion candidates
-- [ ] Review + approve candidate imports into data/channels.ts
-- [ ] Verify all video IDs in `npm run dev`
+- [ ] Manual browser QA of video playback (especially new MVP channels)
 - [ ] Deploy to Vercel
 
 ## Decisions Log

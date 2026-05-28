@@ -1,0 +1,40 @@
+{
+  "channelSlug": "nba-90s-hardwood",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZAh8ht81aL8",
+      "title": "The Ultimate 1990s NBA Video",
+      "tags": ["nba", "1990s", "highlights", "era", "compilation", "classic"],
+      "vibeTags": ["nostalgic", "iconic", "golden-era"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1vg3hmby23E",
+      "title": "Oldheads Were Right About 1994 Hakeem Olajuwon | POST SZN",
+      "tags": ["hakeem", "rockets", "nba", "1994", "finals", "mvp"],
+      "vibeTags": ["legendary", "dominant", "classic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=XcCxq0RJ-XU",
+      "title": "Reggie Miller Scores 8 Points in 9 Seconds to Beat Knicks (1995) | Indiana Pacers",
+      "tags": ["reggie-miller", "pacers", "knicks", "nba", "1995", "clutch"],
+      "vibeTags": ["iconic", "clutch", "legendary"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=MRLysMEHokI",
+      "title": "Reggie Miller 8 Points in 8.9 Seconds to Beat the Knicks — Complete Final Sequence",
+      "tags": ["reggie-miller", "pacers", "knicks", "nba", "1995", "clutch"],
+      "vibeTags": ["clutch", "iconic", "drama"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CXVafKxKvxk",
+      "title": "When Reggie Miller Shocked The World In 9 Seconds | 30th Anniversary",
+      "tags": ["reggie-miller", "pacers", "knicks", "nba", "1995", "anniversary"],
+      "vibeTags": ["iconic", "legendary", "dramatic"],
+      "qualityScore": 90
+    }
+  ]
+}

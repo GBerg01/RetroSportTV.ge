@@ -1,0 +1,33 @@
+{
+  "channelSlug": "cowboys-americas-team",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=lA1sOf7ukCE",
+      "title": "Dallas Cowboys — Tribute to the Triplets (Troy Aikman, Michael Irvin, Emmitt Smith)",
+      "tags": ["cowboys", "nfl", "aikman", "irvin", "emmitt", "triplets", "1990s"],
+      "vibeTags": ["dynasty", "legendary", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=nhDEYJTXN_w",
+      "title": "Every Troy Aikman to Michael Irvin Touchdown Pass",
+      "tags": ["cowboys", "nfl", "aikman", "irvin", "touchdowns", "1990s"],
+      "vibeTags": ["classic", "dynasty", "precision"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=2_rc4BaFyR8",
+      "title": "The Battle for Texas! Cowboys vs Oilers 1991 | NFL Vault Highlights",
+      "tags": ["cowboys", "oilers", "nfl", "1991", "texas", "vault"],
+      "vibeTags": ["classic", "rivalry", "old-school"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=D4O2oizzhJY",
+      "title": "Miami Dolphins vs Dallas Cowboys Highlights | Week 13 1993",
+      "tags": ["cowboys", "dolphins", "nfl", "1993", "triplets", "classic"],
+      "vibeTags": ["classic", "dynasty", "old-school"],
+      "qualityScore": 87
+    }
+  ]
+}

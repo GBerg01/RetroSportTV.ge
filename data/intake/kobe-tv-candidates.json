@@ -2,11 +2,32 @@
   "channelSlug": "kobe-tv",
   "videos": [
     {
-      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
-      "title": "Example: Kobe Bryant iconic scoring game highlights",
-      "tags": ["kobe", "lakers", "nba", "scoring"],
-      "vibeTags": ["iconic", "clutch", "2000s"],
+      "urlOrId": "https://www.youtube.com/watch?v=sJXWscXF3t4",
+      "title": "The World's GREATEST Kobe Bryant Highlight Reel",
+      "tags": ["kobe", "lakers", "nba", "highlights", "career-best", "compilation"],
+      "vibeTags": ["legendary", "iconic", "goat"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1fjhIWJSxfw",
+      "title": "Kobe Bryant's TOP 40 Plays of His NBA Career",
+      "tags": ["kobe", "lakers", "nba", "top-plays", "dunks", "game-winners"],
+      "vibeTags": ["iconic", "electric", "classic"],
       "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=54AvnIEPJ0A",
+      "title": "Kobe Bryant RARE Highlights",
+      "tags": ["kobe", "lakers", "nba", "rare", "underrated", "vintage"],
+      "vibeTags": ["nostalgic", "hidden-gem", "classic"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Pk8fkNaTNvQ",
+      "title": "Kobe Bryant The King of Isolation",
+      "tags": ["kobe", "lakers", "nba", "isolation", "scoring", "footwork"],
+      "vibeTags": ["smooth", "clinical", "legendary"],
+      "qualityScore": 88
     }
   ]
 }

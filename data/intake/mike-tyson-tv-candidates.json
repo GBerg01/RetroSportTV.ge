@@ -4,51 +4,128 @@
     {
       "urlOrId": "https://www.youtube.com/watch?v=oYjFU8drW_I",
       "title": "Mike Tyson vs Trevor Berbick — KNOCKOUT Boxing Fight Highlights HD (Youngest Heavyweight Champ)",
-      "tags": ["tyson", "berbick", "boxing", "1986", "heavyweight", "championship"],
-      "vibeTags": ["historic", "dominant", "iconic"],
+      "tags": [
+        "tyson",
+        "berbick",
+        "boxing",
+        "1986",
+        "heavyweight",
+        "championship"
+      ],
+      "vibeTags": [
+        "historic",
+        "dominant",
+        "iconic"
+      ],
       "qualityScore": 90
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=ptw-6bbR16k",
       "title": "Mike Tyson vs Michael Spinks — KNOCKOUT Boxing Fight Highlights HD (91 Seconds)",
-      "tags": ["tyson", "spinks", "boxing", "1988", "heavyweight", "knockout"],
-      "vibeTags": ["explosive", "iconic", "destruction"],
+      "tags": [
+        "tyson",
+        "spinks",
+        "boxing",
+        "1988",
+        "heavyweight",
+        "knockout"
+      ],
+      "vibeTags": [
+        "explosive",
+        "iconic",
+        "destruction"
+      ],
       "qualityScore": 88
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=_MFlSM7wg2g",
       "title": "Mike Tyson vs Buster Douglas — The Shocking Upset | Full Fight Highlights HD",
-      "tags": ["tyson", "douglas", "boxing", "1990", "upset", "heavyweight"],
-      "vibeTags": ["shocking", "historic", "chaos"],
+      "tags": [
+        "tyson",
+        "douglas",
+        "boxing",
+        "1990",
+        "upset",
+        "heavyweight"
+      ],
+      "vibeTags": [
+        "shocking",
+        "historic",
+        "chaos"
+      ],
       "qualityScore": 91
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=RFZUPU_YdoQ",
       "title": "Mike Tyson vs Evander Holyfield I — Night That Shocked Boxing | Fight Highlights HD",
-      "tags": ["tyson", "holyfield", "boxing", "1996", "heavyweight", "tko"],
-      "vibeTags": ["shocking", "rivalry", "classic"],
+      "tags": [
+        "tyson",
+        "holyfield",
+        "boxing",
+        "1996",
+        "heavyweight",
+        "tko"
+      ],
+      "vibeTags": [
+        "shocking",
+        "rivalry",
+        "classic"
+      ],
       "qualityScore": 88
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=5yv1x96jq9U",
       "title": "THE BITE FIGHT — Mike Tyson vs Evander Holyfield II | Boxing Highlights HD",
-      "tags": ["tyson", "holyfield", "boxing", "1997", "heavyweight", "infamous"],
-      "vibeTags": ["infamous", "chaotic", "iconic"],
+      "tags": [
+        "tyson",
+        "holyfield",
+        "boxing",
+        "1997",
+        "heavyweight",
+        "infamous"
+      ],
+      "vibeTags": [
+        "infamous",
+        "chaotic",
+        "iconic"
+      ],
       "qualityScore": 85
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=JaTIVlfKUGk",
       "title": "Mike Tyson vs Larry Holmes — KNOCKOUT Boxing Fight Highlights HD",
-      "tags": ["tyson", "holmes", "boxing", "1988", "heavyweight", "knockout"],
-      "vibeTags": ["dominant", "destruction", "classic"],
+      "tags": [
+        "tyson",
+        "holmes",
+        "boxing",
+        "1988",
+        "heavyweight",
+        "knockout"
+      ],
+      "vibeTags": [
+        "dominant",
+        "destruction",
+        "classic"
+      ],
       "qualityScore": 84
     },
     {
       "urlOrId": "https://www.youtube.com/watch?v=SIqBdrc7MzA",
       "title": "Mike Tyson vs Tyrell Biggs — KNOCKOUT Boxing Fight Highlights HD",
-      "tags": ["tyson", "biggs", "boxing", "1987", "heavyweight", "knockout"],
-      "vibeTags": ["dominant", "explosive", "classic"],
+      "tags": [
+        "tyson",
+        "biggs",
+        "boxing",
+        "1987",
+        "heavyweight",
+        "knockout"
+      ],
+      "vibeTags": [
+        "dominant",
+        "explosive",
+        "classic"
+      ],
       "qualityScore": 82
-    }
+    },
   ]
 }

@@ -1,0 +1,47 @@
+{
+  "channelSlug": "shaq-diesel-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=VH1xyOSKSIA",
+      "title": "The World's GREATEST Shaquille O'Neal Highlight Reel",
+      "tags": ["shaq", "lakers", "nba", "highlight-reel", "career", "dominant"],
+      "vibeTags": ["legendary", "dominant", "unstoppable"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Wj60RlGlkqc",
+      "title": "Shaquille O'Neal 99-00 Season Highlights — Most Dominant Ever!",
+      "tags": ["shaq", "lakers", "nba", "1999-2000", "mvp", "dominant"],
+      "vibeTags": ["dominant", "unstoppable", "peak"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=EH6aD02ElsY",
+      "title": "Shaquille O'Neal was literally UNSTOPPABLE in 2001 | Throwback Highlights",
+      "tags": ["shaq", "lakers", "nba", "2001", "playoffs", "dominant"],
+      "vibeTags": ["unstoppable", "dominant", "iconic"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ASGBDmZj6o0",
+      "title": "SHAQ BREAKING BACKBOARDS!",
+      "tags": ["shaq", "nba", "backboard", "dunk", "power", "iconic"],
+      "vibeTags": ["iconic", "powerful", "legendary"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=j-rCONCy9Wg",
+      "title": "Shaquille O'Neal & Kobe Bryant 2001 Playoffs Highlights",
+      "tags": ["shaq", "kobe", "lakers", "nba", "2001", "playoffs"],
+      "vibeTags": ["dynasty", "dominant", "unstoppable"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=jkxk4z_TfhE",
+      "title": "Los Angeles Lakers 1999/2000 Documentary: Start Of The Shaq x Kobe Dynasty",
+      "tags": ["shaq", "kobe", "lakers", "nba", "1999-2000", "dynasty", "documentary"],
+      "vibeTags": ["dynasty", "legendary", "classic"],
+      "qualityScore": 90
+    }
+  ]
+}

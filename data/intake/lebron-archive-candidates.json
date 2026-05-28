@@ -1,0 +1,61 @@
+{
+  "channelSlug": "lebron-archive",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=sZcRKCSmVio",
+      "title": "LeBron James BEST Classic Plays With The Cavaliers | Career Highlights Part 1",
+      "tags": ["lebron", "cavaliers", "nba", "classic", "career-highlights"],
+      "vibeTags": ["iconic", "legendary", "classic"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=y41bsXAF6hk",
+      "title": "The Title Run That Made LeBron THE GOAT! 2016 Playoff Highlights",
+      "tags": ["lebron", "cavaliers", "nba", "2016", "playoffs", "finals"],
+      "vibeTags": ["legendary", "goat", "championship"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=10ztN9pNaYo",
+      "title": "LeBron James Top 40 Career Moments Of All Time",
+      "tags": ["lebron", "nba", "career", "top-40", "highlights"],
+      "vibeTags": ["legendary", "iconic", "goat"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=b117a8_jALE",
+      "title": "LeBron James' Top 35 Plays | NBA Career Highlights",
+      "tags": ["lebron", "nba", "top-35", "plays", "career"],
+      "vibeTags": ["electric", "iconic", "legendary"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-9lP95Qo-I0",
+      "title": "LeBron James' Top 40 Career Plays",
+      "tags": ["lebron", "nba", "top-40", "career", "plays"],
+      "vibeTags": ["iconic", "legendary", "multi-era"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=LpAJYrY-lJ8",
+      "title": "LeBron James Scores 25 Straight Points in Double OT Win Over Pistons (2007 Playoffs)",
+      "tags": ["lebron", "cavaliers", "pistons", "2007", "playoffs", "scoring"],
+      "vibeTags": ["iconic", "unstoppable", "playoff"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=tBV_H3_dMyY",
+      "title": "LeBron James GREATEST Game EVER? Full Game 6 Highlights vs Celtics 2012 — 45 Pts, 15 Reb",
+      "tags": ["lebron", "heat", "celtics", "2012", "playoffs", "game-6"],
+      "vibeTags": ["legendary", "must-win", "playoff"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=rsxE7Y93I90",
+      "title": "LeBron James Full Series Highlights vs Celtics 2012 ECF — 33.6 PPG",
+      "tags": ["lebron", "heat", "celtics", "2012", "ecf", "series"],
+      "vibeTags": ["dominant", "iconic", "playoff"],
+      "qualityScore": 91
+    }
+  ]
+}

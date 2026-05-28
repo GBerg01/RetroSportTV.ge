@@ -1,0 +1,61 @@
+{
+  "channelSlug": "boston-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=hAULEWdXDDc",
+      "title": "2004 Boston Red Sox World Series Champions",
+      "tags": ["red-sox", "world-series", "baseball", "2004", "boston", "championship"],
+      "vibeTags": ["historic", "legendary", "championship"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=bbcw2W_KAzw",
+      "title": "World Series 2004 Boston Vs St Louis — End of the Curse of Babe Ruth",
+      "tags": ["red-sox", "world-series", "baseball", "2004", "curse", "boston"],
+      "vibeTags": ["historic", "iconic", "redemption"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=63yU-vXteQ8",
+      "title": "2004 World Series Game 1 Highlights | Cardinals vs Red Sox",
+      "tags": ["red-sox", "cardinals", "world-series", "baseball", "2004", "game-1"],
+      "vibeTags": ["classic", "playoff", "dramatic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=jXPqwkiHa70",
+      "title": "2004 World Series Games 1 and 2 Highlights | Cardinals vs Red Sox",
+      "tags": ["red-sox", "cardinals", "world-series", "baseball", "2004", "highlights"],
+      "vibeTags": ["classic", "playoff", "championship"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=sVzdNn5PvBo",
+      "title": "2004 Boston Red Sox World Series Highlights Games 3 and 4",
+      "tags": ["red-sox", "cardinals", "world-series", "baseball", "2004", "sweep"],
+      "vibeTags": ["historic", "championship", "sweep"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RAshX7IJfyc",
+      "title": "2004 World Series Game 4 — Red Sox vs Cardinals",
+      "tags": ["red-sox", "cardinals", "world-series", "baseball", "2004", "game-4"],
+      "vibeTags": ["historic", "clincher", "championship"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=HqrN5FlnVfI",
+      "title": "2004 World Series Game 4 Highlights | Boston Red Sox vs St. Louis Cardinals",
+      "tags": ["red-sox", "cardinals", "world-series", "baseball", "2004", "game-4"],
+      "vibeTags": ["historic", "championship", "clincher"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=4O-UdCxdHJI",
+      "title": "Red Sox Win the 2004 World Series",
+      "tags": ["red-sox", "world-series", "baseball", "2004", "boston", "celebration"],
+      "vibeTags": ["historic", "iconic", "celebration"],
+      "qualityScore": 89
+    }
+  ]
+}

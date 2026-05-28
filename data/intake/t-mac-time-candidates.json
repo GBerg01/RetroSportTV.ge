@@ -1,0 +1,47 @@
+{
+  "channelSlug": "t-mac-time",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=O36HRlMjLXQ",
+      "title": "The World's GREATEST Tracy McGrady Highlight Reel",
+      "tags": ["tmac", "mcgrady", "nba", "career", "highlight-reel", "magic"],
+      "vibeTags": ["legendary", "smooth", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=TGSYHsYbjLo",
+      "title": "Tracy McGrady Career High 62 Points Full Highlights & Interview (2004)",
+      "tags": ["tmac", "rockets", "nba", "62-points", "career-high", "2004"],
+      "vibeTags": ["explosive", "legendary", "scoring"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7kZBN70JMIQ",
+      "title": "Tracy McGrady's Top 25 Plays Of His Career",
+      "tags": ["tmac", "nba", "top-25", "career", "plays"],
+      "vibeTags": ["iconic", "smooth", "electric"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=9TukUrmGEHs",
+      "title": "50 Ridiculous Prime Tracy McGrady Plays Before He Got Injured",
+      "tags": ["tmac", "nba", "prime", "magic", "rockets", "highlights"],
+      "vibeTags": ["explosive", "legendary", "peak"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=h_YIYikcKcU",
+      "title": "Tracy McGrady Underrated Career Highlights | Forgotten Highlights!",
+      "tags": ["tmac", "nba", "underrated", "career", "magic", "rockets"],
+      "vibeTags": ["nostalgic", "hidden-gem", "smooth"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=s4QuUYG6kxI",
+      "title": "That time Tracy McGrady scored 13 points in 33 seconds | SportsCenter | ESPN Archives",
+      "tags": ["tmac", "rockets", "nba", "13-points", "spurs", "comeback"],
+      "vibeTags": ["iconic", "clutch", "legendary"],
+      "qualityScore": 94
+    }
+  ]
+}

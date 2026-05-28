@@ -2,11 +2,39 @@
   "channelSlug": "nba-2000s",
   "videos": [
     {
-      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
-      "title": "Example: NBA 2000s classic playoff or star highlight package",
-      "tags": ["nba", "2000s", "highlights", "classic"],
-      "vibeTags": ["sportscenter-era", "nostalgic", "playoff"],
-      "qualityScore": 85
+      "urlOrId": "https://www.youtube.com/watch?v=-s4sbr8WLYk",
+      "title": "10 Minutes Of Nostalgic 2000s NBA Highlights",
+      "tags": ["nba", "2000s", "highlights", "nostalgia", "compilation", "multi-star"],
+      "vibeTags": ["nostalgic", "classic", "throwback"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=KhjXbhIobUo",
+      "title": "The Early 2000s Had PEAK All-Star Game Highlights",
+      "tags": ["nba", "all-star", "2000s", "highlights", "peak", "entertainment"],
+      "vibeTags": ["iconic", "electric", "multi-star"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=YSEmIgV5O9c",
+      "title": "2000s NBA Basketball Simply Hits DIFFERENT",
+      "tags": ["nba", "2000s", "highlights", "era", "retro", "compilation"],
+      "vibeTags": ["nostalgic", "old-school", "classic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=GVX4sC6qKYk",
+      "title": "The World's GREATEST Allen Iverson Highlight Reel",
+      "tags": ["allen-iverson", "76ers", "nba", "scoring", "crossover", "mvp"],
+      "vibeTags": ["iconic", "explosive", "legendary"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=1zIiRDXi9IU",
+      "title": "Allen Iverson Scores 44 PTS In A Dominant Game 7 Outing | NBA Classic Game",
+      "tags": ["allen-iverson", "76ers", "nba", "game-7", "classic", "playoff"],
+      "vibeTags": ["clutch", "playoff", "legendary"],
+      "qualityScore": 91
     }
   ]
 }

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "tiger-sundays",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=t2ufOethOv8",
+      "title": "Tiger Woods Wins the 1997 Masters in RECORD-BREAKING Fashion",
+      "tags": ["tiger-woods", "masters", "golf", "1997", "record", "augusta"],
+      "vibeTags": ["legendary", "historic", "dominant"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-8ZdgZIPRzE",
+      "title": "Tiger Woods Delivers One of the Most Iconic Shots in Masters History",
+      "tags": ["tiger-woods", "masters", "golf", "iconic", "shot", "augusta"],
+      "vibeTags": ["iconic", "clutch", "legendary"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=B_tkJEAGMDE",
+      "title": "Tiger Woods' Chip on 16 | Iconic Masters Moments",
+      "tags": ["tiger-woods", "masters", "golf", "chip-in", "2005", "hole-16"],
+      "vibeTags": ["iconic", "clutch", "magic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7LcB4qWIsKo",
+      "title": "The Chip on Hole No. 16 | Tiger Woods' Quintessential Masters Moment",
+      "tags": ["tiger-woods", "masters", "golf", "chip-in", "2005", "hole-16"],
+      "vibeTags": ["iconic", "legendary", "clutch"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=n57KPiutUDA",
+      "title": "Tiger Woods' BEST Season in Golf: The Full Story | PGA TOUR Studios",
+      "tags": ["tiger-woods", "golf", "2000", "grand-slam", "pga", "season"],
+      "vibeTags": ["legendary", "dominant", "historic"],
+      "qualityScore": 90
+    }
+  ]
+}

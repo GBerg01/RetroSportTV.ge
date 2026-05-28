@@ -1,0 +1,40 @@
+{
+  "channelSlug": "yankees-dynasty-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=P5qW27Xj7EU",
+      "title": "Must C Classic: Jeter Nabs Giambi at the Plate — The Iconic Flip Play in ALDS",
+      "tags": ["jeter", "yankees", "mlb", "2001", "alds", "flip-play"],
+      "vibeTags": ["iconic", "legendary", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ApoJk9X7Vto",
+      "title": "Derek Jeter Makes The Flip to Nab Giambi at the Plate in the 2001 ALDS",
+      "tags": ["jeter", "yankees", "mlb", "2001", "alds", "flip"],
+      "vibeTags": ["iconic", "clutch", "legendary"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=2xHpevdVa1U",
+      "title": "Top 10 Moments of Derek Jeter's Career | Yankees Legend Inducted to Baseball HOF",
+      "tags": ["jeter", "yankees", "mlb", "career", "top-10", "hall-of-fame"],
+      "vibeTags": ["legendary", "classic", "iconic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=YcU_JV-o_pQ",
+      "title": "Derek Jeter: The Making of an Icon (Mini-Movie)",
+      "tags": ["jeter", "yankees", "mlb", "career", "documentary", "icon"],
+      "vibeTags": ["legendary", "nostalgic", "dynasty"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=V6jWXg6orGQ",
+      "title": "Derek Jeter Becomes Mr. November with a Walk-off Homer (2001 World Series)",
+      "tags": ["jeter", "yankees", "mlb", "2001", "world-series", "walk-off"],
+      "vibeTags": ["clutch", "iconic", "legendary"],
+      "qualityScore": 93
+    }
+  ]
+}

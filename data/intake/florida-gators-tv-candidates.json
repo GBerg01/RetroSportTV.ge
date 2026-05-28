@@ -1,0 +1,47 @@
+{
+  "channelSlug": "florida-gators-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Aq-5akEH3Mw",
+      "title": "The Definitive Tim Tebow Florida Highlight Reel",
+      "tags": ["tim-tebow", "florida-gators", "ncaa", "football", "highlights", "heisman"],
+      "vibeTags": ["legendary", "iconic", "college-football"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=QXLTve3s-hI",
+      "title": "Tim Tebow's Game Winning Jump Pass — 2008 National Championship Florida vs Oklahoma (4K)",
+      "tags": ["tim-tebow", "florida-gators", "ncaa", "2008", "national-championship", "oklahoma"],
+      "vibeTags": ["clutch", "championship", "legendary"],
+      "qualityScore": 91
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Z6KaHmBZMhM",
+      "title": "Florida Gators #15 Tim Tebow Ultimate Highlight",
+      "tags": ["tim-tebow", "florida-gators", "ncaa", "football", "highlights", "career"],
+      "vibeTags": ["legendary", "iconic", "college-football"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3zb972NaeS4",
+      "title": "Tim Tebow and Florida Gators 2008 National Championship Run",
+      "tags": ["tim-tebow", "florida-gators", "ncaa", "2008", "national-championship", "season"],
+      "vibeTags": ["championship", "legendary", "college-football"],
+      "qualityScore": 89
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=edG2SmfEc_M",
+      "title": "Tim Tebow Highlights — Florida Gators",
+      "tags": ["tim-tebow", "florida-gators", "ncaa", "football", "highlights", "heisman"],
+      "vibeTags": ["iconic", "nostalgic", "college-football"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=F0RIs4rhnMo",
+      "title": "Championship Rewind — 2008 National Championship | Florida Gators",
+      "tags": ["florida-gators", "ncaa", "2008", "national-championship", "oklahoma", "rewind"],
+      "vibeTags": ["championship", "historic", "throwback"],
+      "qualityScore": 87
+    }
+  ]
+}
