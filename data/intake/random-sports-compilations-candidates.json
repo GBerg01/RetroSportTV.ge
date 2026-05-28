@@ -1,0 +1,54 @@
+{
+  "channelSlug": "random-sports-compilations",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=_Ba-F_rwP3w",
+      "title": "Top 30 Most Iconic Sports Moments of All Time",
+      "tags": ["sports", "compilation", "iconic", "top-30", "history"],
+      "vibeTags": ["iconic", "nostalgic", "countdown"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=hrcJcSDO9yE",
+      "title": "The Most ICONIC Sporting Moments Ever — Basketball, Football, Tennis, Soccer",
+      "tags": ["sports", "compilation", "iconic", "multi-sport", "history"],
+      "vibeTags": ["iconic", "electric", "multi-sport"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3ucw-BLEvxw",
+      "title": "10 Sports Moments That Will NEVER Happen Again",
+      "tags": ["sports", "compilation", "rare", "once-in-a-lifetime", "history"],
+      "vibeTags": ["shocking", "iconic", "legendary"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=tUYhBhkaKKs",
+      "title": "Top 20 Most Iconic Sports Moments of All Time",
+      "tags": ["sports", "compilation", "top-20", "history", "iconic"],
+      "vibeTags": ["iconic", "nostalgic", "countdown"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=fuSM36CNb3Q",
+      "title": "Greatest Olympic Moments Ever",
+      "tags": ["sports", "olympics", "compilation", "history", "iconic"],
+      "vibeTags": ["iconic", "historic", "multi-sport"],
+      "qualityScore": 84
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=r6JwgDW_l4o",
+      "title": "30 Iconic Winter Olympic Moments",
+      "tags": ["sports", "winter-olympics", "compilation", "skiing", "hockey", "history"],
+      "vibeTags": ["iconic", "nostalgic", "multi-sport"],
+      "qualityScore": 84
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=GArxbJuRukA",
+      "title": "Greatest Sports Moments of All Time — Best Plays, Players, and Memories",
+      "tags": ["sports", "compilation", "all-time", "highlights", "multi-sport"],
+      "vibeTags": ["nostalgic", "iconic", "classic"],
+      "qualityScore": 83
+    }
+  ]
+}

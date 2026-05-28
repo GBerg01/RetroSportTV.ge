@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 18 In Progress — Candidate File Fulfillment (Batch A)
+## Status: Phase 23 Complete — All 12 Priority Channel Candidate Files Filled
 
 ---
 
@@ -193,8 +193,15 @@
     - The Play (Cal vs Stanford 1982), Kick Six (Auburn vs Alabama 2013), Doug Flutie Hail Mary (BC vs Miami 1984), App State vs Michigan 2007 (FOX CFB Classics), Greatest Hail Mary TDs CFB history, Greatest Hail Marys compilation
   - [x] JSON validated, no duplicates vs live channels.ts
 
+- [x] **Phase 23: Candidate file fulfillment — Batch F (Tiger Sundays Expansion + Random Sports Compilations)**
+  - [x] `data/intake/tiger-sundays-expansion-candidates.json` — 7 verified YouTube candidates (Q86–Q93)
+    - 2000 US Open Pebble Beach (USGA), 2000 British Open St Andrews (The Open official film), 2000 US Open full broadcast, 2019 Masters Sunday doc, 2019 Masters final round highlights, 2019 Masters final hole, 2000 St Andrews retrospective (Golf Channel)
+  - [x] `data/intake/random-sports-compilations-candidates.json` — 7 verified YouTube candidates (Q83–Q88)
+    - Top 30 Iconic Moments, Most ICONIC Sporting Moments Ever (multi-sport), 10 Moments That Will Never Happen Again, Top 20 Iconic Moments, Greatest Olympic Moments Ever, 30 Iconic Winter Olympic Moments, Greatest Sports Moments All Time
+  - [x] JSON validated, no duplicates vs live channels.ts or cross-channel
+
 ## In Progress
-- [ ] Batch F: Random Sports Compilations + Tiger Sundays Expansion candidates
+- [ ] —
 
 ## Up Next
 - [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates

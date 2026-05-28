@@ -1,0 +1,54 @@
+{
+  "channelSlug": "tiger-sundays-expansion",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Ug-HzOS5dc8",
+      "title": "Tiger Woods: Perfection at Pebble — 2000 US Open Epics | USGA",
+      "tags": ["tiger-woods", "golf", "us-open", "pebble-beach", "2000", "15-shots"],
+      "vibeTags": ["dominant", "legendary", "historic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=lcZ_OZvXaRg",
+      "title": "Tiger Woods Wins at St Andrews — The Open Official Film 2000",
+      "tags": ["tiger-woods", "golf", "british-open", "st-andrews", "2000", "tiger-slam"],
+      "vibeTags": ["legendary", "dominant", "historic"],
+      "qualityScore": 92
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=bado2QdgD3c",
+      "title": "2000 US Open Final Round Full Broadcast — Tiger Woods at Pebble Beach",
+      "tags": ["tiger-woods", "golf", "us-open", "pebble-beach", "2000", "full-broadcast"],
+      "vibeTags": ["dominant", "nostalgic", "classic"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=xTL7LL76SNs",
+      "title": "The 2019 Masters: A Sunday Unlike Any Other — Tiger's 5th Green Jacket",
+      "tags": ["tiger-woods", "golf", "masters", "2019", "comeback", "green-jacket"],
+      "vibeTags": ["comeback", "iconic", "emotional"],
+      "qualityScore": 90
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=al89FoZVckM",
+      "title": "Tiger Woods Final Round Winning Highlights — 2019 Masters",
+      "tags": ["tiger-woods", "golf", "masters", "2019", "final-round", "highlights"],
+      "vibeTags": ["clutch", "comeback", "iconic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ldsAXXuVSSc",
+      "title": "The Final Hole of Tiger's 2019 Victory | Masters Tournament",
+      "tags": ["tiger-woods", "golf", "masters", "2019", "18th-hole", "victory"],
+      "vibeTags": ["emotional", "iconic", "clutch"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-AbOSH79m4M",
+      "title": "Looking Back on Tiger's Dominant 2000 Win at St Andrews | Golf Channel",
+      "tags": ["tiger-woods", "golf", "british-open", "st-andrews", "2000", "retrospective"],
+      "vibeTags": ["nostalgic", "dominant", "legendary"],
+      "qualityScore": 86
+    }
+  ]
+}
