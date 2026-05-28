@@ -1,147 +1,253 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import type { Channel } from "@/lib/channels";
 import ChannelLogo from "@/components/ChannelLogo";
 
-type Props = {
-  channel: Channel;
-  prevChannel: Channel;
-  nextChannel: Channel;
-};
+// Minimal YT IFrame API surface we use
+interface YTPlayer {
+  loadVideoById(opts: { videoId: string; startSeconds?: number }): void;
+  destroy(): void;
+}
+declare global {
+  interface Window {
+    YT?: {
+      Player: new (
+        el: HTMLElement | string,
+        config: {
+          videoId?: string;
+          width?: string | number;
+          height?: string | number;
+          playerVars?: Record<string, number | string>;
+          events?: { onStateChange?: (e: { data: number }) => void };
+        }
+      ) => YTPlayer;
+    };
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
+type Props = { channel: Channel; prevChannel: Channel; nextChannel: Channel };
 
 export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const total = channel.videos.length;
-  const video = channel.videos[currentIndex];
+  const [showOverlay, setShowOverlay] = useState(true);
+  const [isFlashing, setIsFlashing] = useState(false);
 
-  function goNext() {
-    setCurrentIndex((i) => (i + 1) % total);
-  }
+  const playerRef = useRef<YTPlayer | null>(null);
+  const playerDivRef = useRef<HTMLDivElement>(null);
+  const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const isInitialRef = useRef(true);
 
-  function goShuffle() {
-    // Pick any index other than the current one to guarantee a visible change
-    const next = (currentIndex + 1 + Math.floor(Math.random() * (total - 1))) % total;
+  // Refs so event handlers always see latest values without re-creating
+  const totalRef = useRef(channel.videos.length);
+  totalRef.current = channel.videos.length;
+  const videosRef = useRef(channel.videos);
+  videosRef.current = channel.videos;
+  const currentIndexRef = useRef(currentIndex);
+  currentIndexRef.current = currentIndex;
+
+  const goNext = useCallback(
+    () => setCurrentIndex((i) => (i + 1) % totalRef.current),
+    []
+  );
+
+  const goShuffle = useCallback(() => {
+    const ci = currentIndexRef.current;
+    const t = totalRef.current;
+    const next = (ci + 1 + Math.floor(Math.random() * (t - 1))) % t;
     setCurrentIndex(next);
-  }
+  }, []);
+
+  // Show overlay on activity, auto-hide after 3 s
+  const resetHideTimer = useCallback(() => {
+    setShowOverlay(true);
+    if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+    hideTimerRef.current = setTimeout(() => setShowOverlay(false), 3000);
+  }, []);
+
+  // Lock body scroll + start hide timer
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    resetHideTimer();
+    return () => {
+      document.body.style.overflow = "";
+      if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
+    };
+  }, [resetHideTimer]);
+
+  // Initialize YouTube IFrame API
+  useEffect(() => {
+    let destroyed = false;
+
+    function initPlayer() {
+      if (destroyed || !playerDivRef.current) return;
+      playerRef.current = new window.YT!.Player(playerDivRef.current, {
+        videoId: videosRef.current[0].id,
+        width: "100%",
+        height: "100%",
+        playerVars: {
+          autoplay: 1,
+          rel: 0,
+          modestbranding: 1,
+          start: 2,
+          controls: 0,
+          iv_load_policy: 3,
+          disablekb: 1,
+          fs: 0,
+          playsinline: 1,
+        },
+        events: {
+          onStateChange: (e) => {
+            if (e.data === 0) goNext(); // 0 = ENDED
+          },
+        },
+      });
+    }
+
+    if (window.YT?.Player) {
+      initPlayer();
+    } else {
+      window.onYouTubeIframeAPIReady = initPlayer;
+      if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+        const tag = document.createElement("script");
+        tag.src = "https://www.youtube.com/iframe_api";
+        document.head.appendChild(tag);
+      }
+    }
+
+    return () => {
+      destroyed = true;
+      playerRef.current?.destroy();
+      playerRef.current = null;
+    };
+  }, [goNext]);
+
+  // On index change: flash then load new video
+  useEffect(() => {
+    if (isInitialRef.current) {
+      isInitialRef.current = false;
+      return;
+    }
+    setIsFlashing(true);
+    const t1 = setTimeout(() => {
+      playerRef.current?.loadVideoById({
+        videoId: videosRef.current[currentIndex].id,
+        startSeconds: 2,
+      });
+    }, 150);
+    const t2 = setTimeout(() => setIsFlashing(false), 500);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, [currentIndex]);
+
+  const video = channel.videos[currentIndex];
+  const total = channel.videos.length;
 
   return (
-    <main className="min-h-screen bg-[#0a0a0a] flex flex-col items-center px-4 py-8 font-retro">
-      {/* Back */}
-      <div className="w-full max-w-4xl mb-4">
-        <Link
-          href="/"
-          className="text-[#555] hover:text-[var(--phosphor-green)] text-xl tracking-widest transition-colors"
-        >
-          ◄ ALL CHANNELS
-        </Link>
+    <div
+      className="fixed inset-0 bg-black overflow-hidden"
+      style={{ cursor: showOverlay ? "default" : "none" }}
+      onMouseMove={resetHideTimer}
+    >
+      {/* YouTube player */}
+      <div className="absolute inset-0">
+        <div ref={playerDivRef} className="w-full h-full" />
       </div>
 
-      {/* Channel header */}
-      <header className="w-full max-w-4xl mb-5">
-        <div className="flex items-baseline gap-4 flex-wrap">
-          <span className="text-[#555] text-2xl tracking-widest">CH {channel.channelNumber}</span>
-          <h1 className="text-[var(--phosphor-green)] phosphor-glow text-5xl md:text-6xl tracking-wide">
-            <ChannelLogo channel={channel} className="mr-2" /> {channel.name}
+      {/* Transparent layer — keeps iframe from capturing clicks and pausing */}
+      <div className="absolute inset-0 z-10" onClick={resetHideTimer} />
+
+      {/* Scanlines */}
+      <div className="absolute inset-0 scanlines z-20 pointer-events-none" />
+
+      {/* CRT vignette */}
+      <div
+        className="absolute inset-0 z-20 pointer-events-none"
+        style={{
+          boxShadow:
+            "inset 0 0 80px rgba(0,0,0,0.55), inset 0 0 200px rgba(0,0,0,0.25)",
+        }}
+      />
+
+      {/* Channel-change flash */}
+      {isFlashing && (
+        <div className="absolute inset-0 z-30 pointer-events-none tv-cut" />
+      )}
+
+      {/* ── Top overlay: channel identity ── */}
+      <div
+        className={`absolute top-0 left-0 right-0 z-40 px-6 pt-5 pb-20
+          bg-gradient-to-b from-black/75 via-black/25 to-transparent
+          pointer-events-none transition-opacity duration-500
+          ${showOverlay ? "opacity-100" : "opacity-0"}`}
+      >
+        <div className="flex items-center gap-3 flex-wrap">
+          <span className="text-[#666] text-2xl tracking-widest font-retro">
+            CH {channel.channelNumber}
+          </span>
+          <h1 className="text-[var(--phosphor-green)] phosphor-glow text-4xl md:text-5xl tracking-wide font-retro">
+            <ChannelLogo channel={channel} className="mr-2" />
+            {channel.name}
           </h1>
-        </div>
-        <p className="text-[#777] text-xl mt-2 leading-snug">{channel.description}</p>
-        <div className="flex flex-wrap gap-3 mt-2 text-lg text-[#555]">
-          <span>{channel.sport}</span>
-          <span className="text-[#333]">·</span>
-          <span>{channel.era}</span>
-          <span className="text-[#333]">·</span>
-          <span className="text-[var(--phosphor-amber)] amber-glow">{channel.vibe}</span>
-        </div>
-      </header>
-
-      {/* CRT player */}
-      <div className="w-full max-w-4xl">
-        {/* Scanline + glow wrapper */}
-        <div
-          className="relative scanlines overflow-hidden rounded"
-          style={{
-            aspectRatio: "16 / 9",
-            boxShadow: "0 0 40px rgba(57, 255, 20, 0.12), 0 0 80px rgba(57, 255, 20, 0.05)",
-          }}
-        >
-          <iframe
-            key={`${channel.slug}-${currentIndex}`}
-            src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1`}
-            title={video.title}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="absolute inset-0 w-full h-full border-0"
-          />
-        </div>
-
-        {/* Status bar: counter + now playing */}
-        <div className="mt-3 px-1">
-          <div className="flex justify-between items-center">
-            <span className="text-[var(--phosphor-green)] text-xl tracking-widest">
-              VIDEO {currentIndex + 1} / {total}
-            </span>
-            <span className="text-[#444] text-lg tracking-widest">● REC</span>
-          </div>
-          <p className="text-[#555] text-lg mt-1 tracking-wide truncate">
-            <span className="text-[#333]">NOW PLAYING: </span>{video.title}
-          </p>
+          <span className="text-[var(--phosphor-amber)] amber-glow text-xl font-retro">
+            {channel.vibe}
+          </span>
         </div>
       </div>
 
-      {/* Controls */}
-      <nav className="w-full max-w-4xl mt-5 grid grid-cols-2 md:grid-cols-4 gap-3">
-        {/* Prev channel */}
-        <Link
-          href={`/channel/${prevChannel.slug}`}
-          className="flex flex-col items-center justify-center border border-[#2a2a2a] rounded p-4
-                     hover:border-[var(--phosphor-amber)] hover:text-[var(--phosphor-amber)]
-                     text-[#555] transition-colors text-center"
-        >
-          <span className="text-2xl">◄◄</span>
-          <span className="text-base mt-1 tracking-wide">CH {prevChannel.channelNumber}</span>
-          <span className="text-lg">{prevChannel.name}</span>
-        </Link>
+      {/* ── Bottom overlay: now playing + controls ── */}
+      <div
+        className={`absolute bottom-0 left-0 right-0 z-40 px-6 pb-5 pt-20
+          bg-gradient-to-t from-black/80 via-black/30 to-transparent
+          transition-opacity duration-500
+          ${showOverlay ? "opacity-100" : "opacity-0"}`}
+      >
+        <p className="text-[#777] text-lg font-retro tracking-wide mb-3 truncate pointer-events-none">
+          <span className="text-[#444]">NOW PLAYING  </span>
+          {video.title}
+          <span className="text-[#3a3a3a] ml-4">
+            {currentIndex + 1} / {total}
+          </span>
+        </p>
 
-        {/* Next video */}
-        <button
-          onClick={goNext}
-          className="flex flex-col items-center justify-center border border-[#2a2a2a] rounded p-4
-                     hover:border-[var(--phosphor-green)] hover:text-[var(--phosphor-green)]
-                     text-[#555] transition-colors cursor-pointer"
-        >
-          <span className="text-2xl">► NEXT</span>
-          <span className="text-base mt-1 tracking-wide">VIDEO</span>
-        </button>
-
-        {/* Shuffle */}
-        <button
-          onClick={goShuffle}
-          className="flex flex-col items-center justify-center border border-[#2a2a2a] rounded p-4
-                     hover:border-[var(--phosphor-green)] hover:text-[var(--phosphor-green)]
-                     text-[#555] transition-colors cursor-pointer"
-        >
-          <span className="text-2xl">⟳ SHUFFLE</span>
-          <span className="text-base mt-1 tracking-wide">RANDOM</span>
-        </button>
-
-        {/* Next channel */}
-        <Link
-          href={`/channel/${nextChannel.slug}`}
-          className="flex flex-col items-center justify-center border border-[#2a2a2a] rounded p-4
-                     hover:border-[var(--phosphor-amber)] hover:text-[var(--phosphor-amber)]
-                     text-[#555] transition-colors text-center"
-        >
-          <span className="text-2xl">►►</span>
-          <span className="text-base mt-1 tracking-wide">CH {nextChannel.channelNumber}</span>
-          <span className="text-lg">{nextChannel.name}</span>
-        </Link>
-      </nav>
-
-      <footer className="mt-16 text-[#2a2a2a] text-xl tracking-widest">
-        ▓▒░ RETROSPORTTV.GE ░▒▓
-      </footer>
-    </main>
+        <nav className="flex items-center gap-5 flex-wrap pointer-events-auto">
+          <Link
+            href="/"
+            className="text-[#3a3a3a] hover:text-[#666] font-retro text-xl tracking-widest transition-colors"
+          >
+            ◄ MENU
+          </Link>
+          <span className="text-[#222]">|</span>
+          <Link
+            href={`/channel/${prevChannel.slug}`}
+            className="text-[#555] hover:text-[var(--phosphor-amber)] font-retro text-xl tracking-widest transition-colors"
+          >
+            ◄◄ CH {prevChannel.channelNumber}
+          </Link>
+          <button
+            onClick={goNext}
+            className="text-[#555] hover:text-[var(--phosphor-green)] font-retro text-xl tracking-widest transition-colors cursor-pointer"
+          >
+            ► NEXT
+          </button>
+          <button
+            onClick={goShuffle}
+            className="text-[#555] hover:text-[var(--phosphor-green)] font-retro text-xl tracking-widest transition-colors cursor-pointer"
+          >
+            ⟳ SHUFFLE
+          </button>
+          <Link
+            href={`/channel/${nextChannel.slug}`}
+            className="text-[#555] hover:text-[var(--phosphor-amber)] font-retro text-xl tracking-widest transition-colors"
+          >
+            CH {nextChannel.channelNumber} ►►
+          </Link>
+        </nav>
+      </div>
+    </div>
   );
 }
