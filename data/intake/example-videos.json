@@ -1,0 +1,19 @@
+{
+  "channelSlug": "kobe-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0RvPKROSXEQ",
+      "title": "Kobe Bryant 81 Point Game — Full Highlights (Jan 22, 2006)",
+      "tags": ["kobe", "lakers", "nba"],
+      "vibeTags": ["iconic", "scoring", "classic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://youtu.be/1fjhIWJSxfw",
+      "title": "Kobe Bryant's Top 40 Plays of His NBA Career",
+      "tags": ["kobe", "lakers", "career-highlights"],
+      "vibeTags": ["explosive", "nostalgic"],
+      "qualityScore": 88
+    }
+  ]
+}

@@ -64,6 +64,33 @@ The script:
 
 After adding a video, run `npm run lint` and `npm run build` before committing.
 
+## Bulk Import From JSON
+
+Use the bulk importer when you have multiple candidate videos for one existing channel:
+
+```bash
+npm run content:import-videos -- data/intake/example-videos.json
+```
+
+Intake files live in `data/intake/` and use this shape:
+
+```json
+{
+  "channelSlug": "kobe-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0RvPKROSXEQ",
+      "title": "Kobe Bryant 81 Point Game",
+      "tags": ["kobe", "lakers", "nba"],
+      "vibeTags": ["iconic", "scoring"],
+      "qualityScore": 95
+    }
+  ]
+}
+```
+
+The importer validates each video independently. Invalid IDs are rejected, duplicates already present in the target channel are skipped, and valid new videos are appended to `data/channels.ts` as approved, embeddable `SportsVideo` records. It prints a summary with added, skipped duplicate, and rejected invalid counts.
+
 ## Validation
 
 Validation starts with `lib/content/validation.ts`.

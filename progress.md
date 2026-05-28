@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 12 Complete — Local Add-Video Content Script
+## Status: Phase 13 Complete — Bulk Video Intake Workflow
 
 ---
 
@@ -120,6 +120,15 @@
   - [x] Invalid IDs, missing channels, malformed channel data, and duplicate IDs in the same channel are rejected
   - [x] `CONTENT_PIPELINE.md` now documents add-video usage and follow-up verification
 
+- [x] **Phase 13: Bulk video intake workflow**
+  - [x] `data/intake/example-videos.json` added as a local JSON intake template
+  - [x] `scripts/import-videos.ts` added bulk import from a channelSlug + videos array
+  - [x] `content:import-videos` npm script compiles and runs the TypeScript importer without new dependencies
+  - [x] Importer validates each YouTube ID with the existing content validation helpers
+  - [x] Duplicate videos already in the target channel are skipped; invalid videos are rejected; valid videos are appended as approved and embeddable
+  - [x] Importer prints added, skipped duplicate, and rejected invalid counts
+  - [x] `CONTENT_PIPELINE.md` documents the bulk JSON intake workflow
+
 ## In Progress
 - [ ] —
 
@@ -144,6 +153,7 @@
 | 2026-05-27 | Homepage preview uses muted YouTube iframe | Makes hover preview feel like a live TV monitor while staying within official YouTube embeds |
 | 2026-05-27 | Stage 1 content pipeline remains local and pure | Enables deeper channel curation without adding database, auth, admin, or API dependencies yet |
 | 2026-05-28 | Add-video CLI writes to local channel data | Gives curation a safer path than hand-editing `data/channels.ts` while keeping the MVP database-free |
+| 2026-05-28 | Bulk intake uses local JSON files | Makes larger channel curation reviewable and repeatable before introducing API/database workflows |
 
 ## Blockers
 - None currently.

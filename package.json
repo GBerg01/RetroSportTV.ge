@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "content:add-video": "tsc scripts/add-video.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/add-video.js"
+    "content:add-video": "tsc scripts/add-video.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/add-video.js",
+    "content:import-videos": "tsc scripts/import-videos.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/import-videos.js"
   },
   "dependencies": {
     "next": "16.2.6",
