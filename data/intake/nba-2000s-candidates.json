@@ -1,0 +1,12 @@
+{
+  "channelSlug": "nba-2000s",
+  "videos": [
+    {
+      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
+      "title": "Example: NBA 2000s classic playoff or star highlight package",
+      "tags": ["nba", "2000s", "highlights", "classic"],
+      "vibeTags": ["sportscenter-era", "nostalgic", "playoff"],
+      "qualityScore": 85
+    }
+  ]
+}

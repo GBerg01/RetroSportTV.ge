@@ -1,0 +1,12 @@
+{
+  "channelSlug": "kobe-tv",
+  "videos": [
+    {
+      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
+      "title": "Example: Kobe Bryant iconic scoring game highlights",
+      "tags": ["kobe", "lakers", "nba", "scoring"],
+      "vibeTags": ["iconic", "clutch", "2000s"],
+      "qualityScore": 90
+    }
+  ]
+}

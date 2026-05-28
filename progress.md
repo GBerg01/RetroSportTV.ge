@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 13 Complete — Bulk Video Intake Workflow
+## Status: Phase 14 Complete — Video Research Candidate Workflow
 
 ---
 
@@ -129,6 +129,14 @@
   - [x] Importer prints added, skipped duplicate, and rejected invalid counts
   - [x] `CONTENT_PIPELINE.md` documents the bulk JSON intake workflow
 
+- [x] **Phase 14: Video research candidate workflow**
+  - [x] Candidate intake templates added for Kobe TV, NBA 2000s, and NFL Big Hits
+  - [x] `CONTENT_RESEARCH_GUIDE.md` added with research workflow, source guidance, candidate rules, quality scoring, channel briefs, and browser QA steps
+  - [x] `scripts/create-intake-template.ts` added to generate empty `<channel-slug>-candidates.json` files safely
+  - [x] `content:create-intake` npm script added for candidate template generation
+  - [x] `CONTENT_PIPELINE.md` updated with research queue → candidate file → import → local QA → commit/push workflow
+  - [x] Research candidate workflow does not import candidates or modify live channel data
+
 ## In Progress
 - [ ] —
 
@@ -154,6 +162,7 @@
 | 2026-05-27 | Stage 1 content pipeline remains local and pure | Enables deeper channel curation without adding database, auth, admin, or API dependencies yet |
 | 2026-05-28 | Add-video CLI writes to local channel data | Gives curation a safer path than hand-editing `data/channels.ts` while keeping the MVP database-free |
 | 2026-05-28 | Bulk intake uses local JSON files | Makes larger channel curation reviewable and repeatable before introducing API/database workflows |
+| 2026-05-28 | Candidate files are research staging only | Keeps future discovery work reviewable before any video is promoted into live channel data |
 
 ## Blockers
 - None currently.

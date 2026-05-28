@@ -39,6 +39,28 @@ The future retrieval order should be:
 
 Avoid reaction videos, podcasts, betting content, video game footage, and clips whose title does not match the target channel.
 
+## Research Candidate Workflow
+
+The safe path for deeper channels is:
+
+```txt
+research queue -> candidate intake file -> import script -> local QA -> commit/push
+```
+
+Use `CONTENT_RESEARCH_GUIDE.md` for the editorial research rules and channel-specific briefs. Candidate files live in `data/intake/` and should be named like:
+
+- `data/intake/kobe-tv-candidates.json`
+- `data/intake/nba-2000s-candidates.json`
+- `data/intake/nfl-big-hits-candidates.json`
+
+Candidate files are not live channel data. They are research staging files that can contain placeholders or unimported candidates. Only `npm run content:import-videos -- <file>` promotes valid non-duplicate entries into `data/channels.ts`.
+
+Create an empty candidate file with:
+
+```bash
+npm run content:create-intake -- <channel-slug>
+```
+
 ## Adding One Video Locally
 
 Use the local add-video script when you already have a YouTube URL or video ID and want to append it to an existing channel:

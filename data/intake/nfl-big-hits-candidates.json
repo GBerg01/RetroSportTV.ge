@@ -1,0 +1,12 @@
+{
+  "channelSlug": "nfl-big-hits",
+  "videos": [
+    {
+      "urlOrId": "REPLACE_WITH_YOUTUBE_URL",
+      "title": "Example: NFL legal classic defensive hits highlight package",
+      "tags": ["nfl", "defense", "hits", "football"],
+      "vibeTags": ["hard-hitting", "classic", "intense"],
+      "qualityScore": 82
+    }
+  ]
+}
