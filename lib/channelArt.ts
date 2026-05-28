@@ -7,7 +7,9 @@ type ChannelArt = {
   displayStyle: ChannelDisplayStyle;
   rowTexture: ChannelRowTexture;
   rowBackgroundUrl?: string;
+  profileBackgroundUrl?: string;
   heroImageUrl?: string;
+  textureUrl?: string;
   graphicLabel: string;
   background: string;
   texture: string;
@@ -107,6 +109,9 @@ export function getChannelArt(channel: Channel): ChannelArt {
   const displayStyle = channel.displayStyle ?? preset.displayStyle ?? fallbackDisplayStyle(channel);
   const graphicLabel = preset.graphicLabel ?? fallbackGraphicLabel(channel);
   const rowBackgroundUrl = channel.rowBackgroundUrl;
+  const texture = channel.textureUrl
+    ? `linear-gradient(rgba(255,255,255,0.025), rgba(255,255,255,0.025)), url(${channel.textureUrl}), ${TEXTURE_LAYERS[rowTexture]}`
+    : TEXTURE_LAYERS[rowTexture];
 
   return {
     accent,
@@ -114,14 +119,16 @@ export function getChannelArt(channel: Channel): ChannelArt {
     displayStyle,
     rowTexture,
     rowBackgroundUrl,
+    profileBackgroundUrl: channel.profileBackgroundUrl,
     heroImageUrl: channel.heroImageUrl,
+    textureUrl: channel.textureUrl,
     graphicLabel,
-    texture: TEXTURE_LAYERS[rowTexture],
+    texture,
     background: [
       rowBackgroundUrl ? `linear-gradient(90deg, rgba(7,7,7,0.76), rgba(7,7,7,0.48)), url(${rowBackgroundUrl})` : null,
       `radial-gradient(circle at 92% 50%, ${secondaryAccent}26 0%, transparent 30%)`,
       `linear-gradient(100deg, ${accent}20 0%, rgba(10,10,10,0.9) 38%, rgba(10,10,10,0.72) 100%)`,
-      TEXTURE_LAYERS[rowTexture],
+      texture,
       "#080808",
     ]
       .filter(Boolean)

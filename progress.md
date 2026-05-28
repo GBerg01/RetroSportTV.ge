@@ -219,6 +219,11 @@
   - [x] `npm run build` passes clean — 22 static pages generated
   - [x] Harvest scripts wired to `package.json`: `content:harvest-playlist`, `content:harvest-reddit`
 
+- [x] **Phase 26: Channel art architecture documented**
+  - [x] Verified `lib/types.ts`, `lib/channelArt.ts`, homepage guide rows, preview monitor, profile card, logo swap point, and channel data flow
+  - [x] Added `CHANNEL_ART_SYSTEM.md` with supported fields, fallback behavior, asset package conventions, row/card formats, customization rules, art dimensions, and future-agent checklist
+  - [x] Added typed pass-through support for future `profileBackgroundUrl` and `textureUrl` channel art fields
+
 ## In Progress
 - [ ] —
 
@@ -248,6 +253,7 @@
 | 2026-05-28 | 100-channel plan stays documentation-only | Gives future channel expansion a content map without changing MVP runtime data or UI |
 | 2026-05-28 | Channel roadmap is typed but not live data | Future agents can plan and research from `data/channelRoadmap.ts` without changing the homepage channel list |
 | 2026-05-28 | First live expansion batch starts at CH 07 | Preserves the original 6-channel MVP while proving roadmap channels can be promoted gradually |
+| 2026-05-28 | Channel art resolves through `lib/channelArt.ts` | Keeps custom guide rectangles and profile cards data-driven without one-off component designs |
 
 ## Blockers
 - None currently.
@@ -262,4 +268,4 @@
 | 2026-05-27 | SportsTicker full-width, outside centered column | Real TV tickers span the screen; constraining it to max-w-4xl kills the broadcast feel |
 | 2026-05-27 | ChannelGuide is client component, ChannelRow is server-compatible | Tab state lives in ChannelGuide; rows have no interactivity so they stay server-renderable |
 
-*Last updated: 2026-05-27*
+*Last updated: 2026-05-28*

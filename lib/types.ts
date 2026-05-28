@@ -87,6 +87,8 @@ export type SportsChannel = {
   displayStyle?: ChannelDisplayStyle;
   heroImageUrl?: string;
   rowBackgroundUrl?: string;
+  profileBackgroundUrl?: string;
+  textureUrl?: string;
   rowTexture?: ChannelRowTexture;
   logoUrl?: string;
   emoji: string;

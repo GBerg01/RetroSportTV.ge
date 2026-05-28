@@ -72,11 +72,16 @@ export default function ChannelProfileCard({ channel, featuredClipTitle }: Props
       style={{
         borderColor: `${art.accent}32`,
         background: [
+          art.profileBackgroundUrl
+            ? `linear-gradient(135deg, rgba(8,8,8,0.86), rgba(8,8,8,0.62)), url(${art.profileBackgroundUrl})`
+            : null,
           `radial-gradient(circle at 84% 8%, ${art.secondaryAccent}24, transparent 32%)`,
           `linear-gradient(135deg, ${art.accent}18 0%, rgba(8,8,8,0.95) 38%, rgba(8,8,8,0.86) 100%)`,
           art.texture,
           "#080808",
-        ].join(", "),
+        ]
+          .filter(Boolean)
+          .join(", "),
         boxShadow: `inset 0 0 30px rgba(0,0,0,0.72), 0 0 24px ${art.accent}0d`,
       }}
     >
