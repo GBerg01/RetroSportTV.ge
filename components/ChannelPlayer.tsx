@@ -40,13 +40,12 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
   const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isInitialRef = useRef(true);
 
-  // Refs so event handlers always see latest values without re-creating
+  // Refs so event handlers always see latest values without re-creating.
+  // channel is static SSG data — totalRef/videosRef only need initialization.
+  // currentIndexRef syncs via effect below to stay current without reading during render.
   const totalRef = useRef(channel.videos.length);
-  totalRef.current = channel.videos.length;
   const videosRef = useRef(channel.videos);
-  videosRef.current = channel.videos;
   const currentIndexRef = useRef(currentIndex);
-  currentIndexRef.current = currentIndex;
 
   const goNext = useCallback(
     () => setCurrentIndex((i) => (i + 1) % totalRef.current),
@@ -60,6 +59,11 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
     setCurrentIndex(next);
   }, []);
 
+  // Keep currentIndexRef in sync for use inside stable callbacks
+  useEffect(() => {
+    currentIndexRef.current = currentIndex;
+  }, [currentIndex]);
+
   // Show overlay on activity, auto-hide after 3 s
   const resetHideTimer = useCallback(() => {
     setShowOverlay(true);
@@ -67,15 +71,15 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
     hideTimerRef.current = setTimeout(() => setShowOverlay(false), 3000);
   }, []);
 
-  // Lock body scroll + start hide timer
+  // Lock body scroll + start initial auto-hide timer (showOverlay starts true)
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    resetHideTimer();
+    hideTimerRef.current = setTimeout(() => setShowOverlay(false), 3000);
     return () => {
       document.body.style.overflow = "";
       if (hideTimerRef.current) clearTimeout(hideTimerRef.current);
     };
-  }, [resetHideTimer]);
+  }, []);
 
   // Initialize YouTube IFrame API
   useEffect(() => {
