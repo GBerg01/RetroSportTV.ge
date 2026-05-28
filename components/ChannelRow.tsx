@@ -13,6 +13,7 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
   const art = getChannelArt(channel);
   const accent = art.accent;
   const categoryLabel = channel.categories?.[0] ?? "SPORTS";
+  const hasCustomRowArt = Boolean(art.rowBackgroundUrl);
 
   return (
     <Link
@@ -24,13 +25,30 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
       style={{
         borderLeftColor: isActive ? accent : "transparent",
         background: art.background,
-        filter: isActive ? "brightness(1.2) saturate(1.12)" : "brightness(0.82) saturate(0.92)",
+        backgroundSize: hasCustomRowArt ? "cover, auto, auto, auto, auto" : undefined,
+        backgroundPosition: hasCustomRowArt ? "center" : undefined,
+        filter: isActive
+          ? "brightness(1.22) saturate(1.16)"
+          : hasCustomRowArt
+            ? "brightness(1.02) saturate(1.08)"
+            : "brightness(0.82) saturate(0.92)",
       }}
     >
       <div
-        className="absolute inset-0 -z-10 opacity-70 transition-opacity group-hover:opacity-95"
+        className="absolute inset-0 -z-10 transition-opacity group-hover:opacity-95"
         style={{
-          background: `linear-gradient(90deg, rgba(0,0,0,0.25), transparent 48%, ${accent}12)`,
+          opacity: hasCustomRowArt ? 0.34 : 0.7,
+          background: hasCustomRowArt
+            ? `linear-gradient(90deg, rgba(0,0,0,0.44) 0%, rgba(0,0,0,0.18) 44%, transparent 72%, ${accent}18 100%)`
+            : `linear-gradient(90deg, rgba(0,0,0,0.25), transparent 48%, ${accent}12)`,
+        }}
+      />
+      <div
+        className="absolute inset-x-0 top-0 -z-10 h-px opacity-80"
+        style={{
+          background: hasCustomRowArt
+            ? `linear-gradient(90deg, transparent, ${art.secondaryAccent}80, transparent)`
+            : "transparent",
         }}
       />
       <div
@@ -94,6 +112,17 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
           >
             {categoryLabel}
           </span>
+          {hasCustomRowArt ? (
+            <span
+              className="hidden border bg-black/25 px-2 py-1 text-[10px] tracking-[0.22em] sm:inline-block"
+              style={{
+                borderColor: `${art.secondaryAccent}55`,
+                color: art.secondaryAccent,
+              }}
+            >
+              ART LOCKED
+            </span>
+          ) : null}
         </div>
 
         {/* Meta */}

@@ -65,6 +65,7 @@ export default function ChannelProfileCard({ channel, featuredClipTitle }: Props
   const feedBadge = getFeedBadge(channel);
   const signalLabel = channel.videos.length > 0 ? "SIGNAL STRONG" : "SIGNAL PENDING";
   const badges = Array.from(new Set([feedBadge, signalLabel, channelType]));
+  const hasProfileArt = Boolean(art.profileBackgroundUrl);
 
   return (
     <section
@@ -73,7 +74,7 @@ export default function ChannelProfileCard({ channel, featuredClipTitle }: Props
         borderColor: `${art.accent}32`,
         background: [
           art.profileBackgroundUrl
-            ? `linear-gradient(135deg, rgba(8,8,8,0.86), rgba(8,8,8,0.62)), url(${art.profileBackgroundUrl})`
+            ? `linear-gradient(135deg, rgba(8,8,8,0.72) 0%, rgba(8,8,8,0.42) 48%, rgba(8,8,8,0.20) 100%), url(${art.profileBackgroundUrl})`
             : null,
           `radial-gradient(circle at 84% 8%, ${art.secondaryAccent}24, transparent 32%)`,
           `linear-gradient(135deg, ${art.accent}18 0%, rgba(8,8,8,0.95) 38%, rgba(8,8,8,0.86) 100%)`,
@@ -82,6 +83,8 @@ export default function ChannelProfileCard({ channel, featuredClipTitle }: Props
         ]
           .filter(Boolean)
           .join(", "),
+        backgroundSize: hasProfileArt ? "cover, auto, auto, auto, auto" : undefined,
+        backgroundPosition: hasProfileArt ? "center" : undefined,
         boxShadow: `inset 0 0 30px rgba(0,0,0,0.72), 0 0 24px ${art.accent}0d`,
       }}
     >

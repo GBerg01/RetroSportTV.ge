@@ -125,7 +125,9 @@ export function getChannelArt(channel: Channel): ChannelArt {
     graphicLabel,
     texture,
     background: [
-      rowBackgroundUrl ? `linear-gradient(90deg, rgba(7,7,7,0.76), rgba(7,7,7,0.48)), url(${rowBackgroundUrl})` : null,
+      rowBackgroundUrl
+        ? `linear-gradient(90deg, rgba(5,5,5,0.74) 0%, rgba(5,5,5,0.42) 38%, rgba(5,5,5,0.10) 70%, rgba(5,5,5,0.24) 100%), url(${rowBackgroundUrl})`
+        : null,
       `radial-gradient(circle at 92% 50%, ${secondaryAccent}26 0%, transparent 30%)`,
       `linear-gradient(100deg, ${accent}20 0%, rgba(10,10,10,0.9) 38%, rgba(10,10,10,0.72) 100%)`,
       texture,
