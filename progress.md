@@ -224,6 +224,12 @@
   - [x] Added `CHANNEL_ART_SYSTEM.md` with supported fields, fallback behavior, asset package conventions, row/card formats, customization rules, art dimensions, and future-agent checklist
   - [x] Added typed pass-through support for future `profileBackgroundUrl` and `textureUrl` channel art fields
 
+- [x] **Phase 27: Channel art production workflow**
+  - [x] Added `CHANNEL_ART_PRODUCTION_WORKFLOW.md` for prompt, generation, import, wiring, test, and iteration workflow
+  - [x] Expanded structured prompt data so every live channel gets `row-bg`, `profile-bg`, and `logo-spin` prompts
+  - [x] Added quick import/list scripts for Desktop/Downloads channel art assets
+  - [x] Documented rotating collectible logo strategy and added future `logoSpinUrl` support
+
 ## In Progress
 - [ ] —
 
@@ -254,6 +260,7 @@
 | 2026-05-28 | Channel roadmap is typed but not live data | Future agents can plan and research from `data/channelRoadmap.ts` without changing the homepage channel list |
 | 2026-05-28 | First live expansion batch starts at CH 07 | Preserves the original 6-channel MVP while proving roadmap channels can be promoted gradually |
 | 2026-05-28 | Channel art resolves through `lib/channelArt.ts` | Keeps custom guide rectangles and profile cards data-driven without one-off component designs |
+| 2026-05-28 | OpenAI image generation is primary for production art | Better for repeatable custom assets, controlled edits, exact crops, and fast iteration; Midjourney remains useful for concepts |
 
 ## Blockers
 - None currently.

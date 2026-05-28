@@ -91,6 +91,7 @@ export type SportsChannel = {
   textureUrl?: string;
   rowTexture?: ChannelRowTexture;
   logoUrl?: string;
+  logoSpinUrl?: string;
   emoji: string;
   playlistRules?: PlaylistRule[];
   videos: SportsVideo[];

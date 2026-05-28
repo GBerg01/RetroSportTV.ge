@@ -10,6 +10,7 @@ type ChannelArt = {
   profileBackgroundUrl?: string;
   heroImageUrl?: string;
   textureUrl?: string;
+  logoSpinUrl?: string;
   graphicLabel: string;
   background: string;
   texture: string;
@@ -122,6 +123,7 @@ export function getChannelArt(channel: Channel): ChannelArt {
     profileBackgroundUrl: channel.profileBackgroundUrl,
     heroImageUrl: channel.heroImageUrl,
     textureUrl: channel.textureUrl,
+    logoSpinUrl: channel.logoSpinUrl,
     graphicLabel,
     texture,
     background: [

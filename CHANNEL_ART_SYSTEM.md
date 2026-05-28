@@ -14,7 +14,7 @@ The current system supports this by keeping channel metadata in data, resolving 
 - `components/ChannelRow.tsx` renders each homepage guide rectangle. It consumes `getChannelArt(channel)` for accent color, secondary accent, texture/background, and right-side graphic label.
 - `components/ChannelPreview.tsx` owns the right-side mini TV/Jumbotron video preview. It uses the same resolved accent color as the selected row and passes the selected channel to the profile card.
 - `components/ChannelProfileCard.tsx` renders the selected-channel profile card under the preview video. It consumes `getChannelArt(channel)` for borders, glow, texture, background, and accent treatment.
-- `components/ChannelLogo.tsx` is the logo/icon swap point. If `channel.logoUrl` exists, it renders the image; otherwise it falls back to `channel.emoji`.
+- `components/ChannelLogo.tsx` is the current logo/icon swap point. If `channel.logoUrl` exists, it renders the image; otherwise it falls back to `channel.emoji`.
 - `app/page.tsx` loads all channels and renders `ChannelBrowser`.
 - `components/ChannelBrowser.tsx` owns filtering and hover state. Hovering a row updates `activeChannel`, which updates both `ChannelPreview` and `ChannelProfileCard`.
 
@@ -25,6 +25,7 @@ Verification: the preview monitor and profile card use the same visual source of
 Current supported fields on `SportsChannel`:
 
 - `logoUrl`: optional image/SVG logo path. Rendered by `ChannelLogo`.
+- `logoSpinUrl`: optional future rotating collectible logo/item path. Resolved by `lib/channelArt.ts`, documented for production, and not currently rendered by the UI.
 - `rowBackgroundUrl`: optional guide-row background image.
 - `profileBackgroundUrl`: optional profile-card background image.
 - `heroImageUrl`: optional broader hero/preview image field for future layouts.
@@ -55,6 +56,7 @@ Ideal future folder structure:
 
 ```text
 public/channel-art/{slug}/logo.png
+public/channel-art/{slug}/logo-spin.webp
 public/channel-art/{slug}/row-bg.png
 public/channel-art/{slug}/profile-bg.png
 public/channel-art/{slug}/texture.png
@@ -66,6 +68,7 @@ Example channel data wiring:
 {
   slug: "kobe-tv",
   logoUrl: "/channel-art/kobe-tv/logo.png",
+  logoSpinUrl: "/channel-art/kobe-tv/logo-spin.webp",
   rowBackgroundUrl: "/channel-art/kobe-tv/row-bg.png",
   profileBackgroundUrl: "/channel-art/kobe-tv/profile-bg.png",
   textureUrl: "/channel-art/kobe-tv/texture.png",
@@ -125,7 +128,8 @@ Current gap to watch: status badge wording lives in `ChannelProfileCard`. That i
 ## H. Suggested Art Dimensions
 
 - Row background art: `2400 x 420` PNG/JPG/WebP. Keep important imagery in the right third or far background; left and center need text-safe contrast.
-- Logo/icon: `512 x 512` transparent PNG or SVG. It must read at `40-64px`.
+- Static logo/icon: `512 x 512` transparent PNG or SVG. It must read at `40-64px`.
+- Rotating logo item: `512 x 512` or `1024 x 1024` transparent WebP preferred. Use `logo-spin.webp` for animated future assets, with `logo-spin.png` or `logo-spin.gif` acceptable during iteration.
 - Profile background: `1200 x 1600` or `900 x 1200`. Keep the top-left identity area readable and avoid high-detail text behind the description and metadata rows.
 - Texture: `512 x 512` seamless PNG/WebP, low contrast. It should support the generated texture layer rather than dominate it.
 - Preview-safe art: `1280 x 720` if future non-video monitor placeholder art is added.
@@ -161,6 +165,7 @@ The current architecture is ready for custom channel guide rectangles and profil
 - Rows are themeable through `getChannelArt`.
 - Each channel can have unique accent colors without component changes.
 - Each channel can later have custom logo art through `logoUrl`.
+- Each channel can later have rotating collectible logo art through `logoSpinUrl`.
 - Each channel can later have row background art through `rowBackgroundUrl`.
 - Each channel can later have profile card art through `profileBackgroundUrl`.
 - Each channel can later use custom texture art through `textureUrl`.

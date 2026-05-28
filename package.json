@@ -11,7 +11,9 @@
     "content:import-videos": "tsc scripts/import-videos.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/import-videos.js",
     "content:create-intake": "tsc scripts/create-intake-template.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/create-intake-template.js",
     "content:harvest-playlist": "tsc scripts/harvest-playlist.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/harvest-playlist.js",
-    "content:harvest-reddit": "tsc scripts/harvest-reddit.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/harvest-reddit.js"
+    "content:harvest-reddit": "tsc scripts/harvest-reddit.ts lib/content/validation.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-content-cli && node /private/tmp/retrosport-content-cli/scripts/harvest-reddit.js",
+    "art:import": "tsc scripts/import-channel-art.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-art-cli && node /private/tmp/retrosport-art-cli/import-channel-art.js",
+    "art:list-recent": "tsc scripts/list-recent-images.ts --module commonjs --target es2020 --moduleResolution node --esModuleInterop --skipLibCheck --outDir /private/tmp/retrosport-art-cli && node /private/tmp/retrosport-art-cli/list-recent-images.js"
   },
   "dependencies": {
     "next": "16.2.6",
