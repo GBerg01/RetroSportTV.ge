@@ -52,6 +52,25 @@ export type SportsVideo = {
   lastCheckedAt?: string;
 };
 
+export type ChannelDisplayStyle =
+  | "arena"
+  | "broadcast"
+  | "classic"
+  | "impact"
+  | "premium"
+  | "local";
+
+export type ChannelRowTexture =
+  | "hardwood"
+  | "gridiron"
+  | "scoreboard"
+  | "swamp"
+  | "fairway"
+  | "court"
+  | "ice"
+  | "canvas"
+  | "broadcast";
+
 export type SportsChannel = {
   id: string;
   slug: string;
@@ -64,9 +83,13 @@ export type SportsChannel = {
   era: string;
   vibe: string;
   accentColor?: string;
+  secondaryAccentColor?: string;
+  displayStyle?: ChannelDisplayStyle;
+  heroImageUrl?: string;
+  rowBackgroundUrl?: string;
+  rowTexture?: ChannelRowTexture;
   logoUrl?: string;
   emoji: string;
   playlistRules?: PlaylistRule[];
   videos: SportsVideo[];
 };
-

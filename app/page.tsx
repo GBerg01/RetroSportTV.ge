@@ -12,7 +12,7 @@ export default function Home() {
       <HomeHero channelCount={channels.length} />
 
       {/* Main content: two-column cable guide */}
-      <div className="flex justify-center px-4 sm:px-6 py-6 flex-1">
+      <div className="flex justify-center px-2 sm:px-4 xl:px-6 py-4 flex-1">
         <ChannelBrowser channels={channels} />
       </div>
 

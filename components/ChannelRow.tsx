@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ChannelLogo from "@/components/ChannelLogo";
+import { getChannelArt } from "@/lib/channelArt";
 import type { Channel } from "@/lib/channels";
 
 type Props = {
@@ -9,36 +10,53 @@ type Props = {
 };
 
 export default function ChannelRow({ channel, isActive = false, onMouseEnter }: Props) {
-  const accent = channel.accentColor ?? "#39ff14";
+  const art = getChannelArt(channel);
+  const accent = art.accent;
   const categoryLabel = channel.categories?.[0] ?? "SPORTS";
 
   return (
     <Link
       href={`/channel/${channel.slug}`}
       onMouseEnter={onMouseEnter}
-      className="group flex items-center gap-4 border-b border-[#0d0d0d] last:border-b-0
-                 px-4 py-4 border-l-[3px] transition-colors duration-100"
+      className="group relative isolate flex min-h-[106px] items-stretch gap-4 overflow-hidden border-b border-[#111] last:border-b-0
+                 px-3 py-3 sm:px-5 sm:py-4 border-l-[5px] transition-[filter,transform,border-color] duration-150
+                 hover:brightness-125"
       style={{
         borderLeftColor: isActive ? accent : "transparent",
-        backgroundColor: isActive ? `${accent}0e` : "transparent",
+        background: art.background,
+        filter: isActive ? "brightness(1.2) saturate(1.12)" : "brightness(0.82) saturate(0.92)",
       }}
     >
+      <div
+        className="absolute inset-0 -z-10 opacity-70 transition-opacity group-hover:opacity-95"
+        style={{
+          background: `linear-gradient(90deg, rgba(0,0,0,0.25), transparent 48%, ${accent}12)`,
+        }}
+      />
+      <div
+        className="absolute -right-6 top-1/2 -z-10 hidden -translate-y-1/2 select-none text-[92px] leading-none opacity-[0.08] blur-[0.2px] sm:block xl:text-[118px]"
+        style={{ color: art.secondaryAccent }}
+      >
+        {art.graphicLabel}
+      </div>
+
       {/* CH number badge */}
       <div
-        className="flex flex-col items-center justify-center w-[54px] h-[54px] flex-shrink-0 border"
+        className="flex w-[76px] flex-shrink-0 flex-col items-center justify-center border sm:w-[88px]"
         style={{
-          backgroundColor: `${accent}${isActive ? "22" : "0d"}`,
+          backgroundColor: `${accent}${isActive ? "26" : "16"}`,
           borderColor: `${accent}${isActive ? "55" : "28"}`,
+          boxShadow: isActive ? `inset 0 0 22px ${accent}24, 0 0 18px ${accent}14` : "none",
         }}
       >
         <span
-          className="text-[9px] tracking-[0.25em] leading-none"
+          className="text-[10px] tracking-[0.3em] leading-none"
           style={{ color: `${accent}99` }}
         >
           CH
         </span>
         <span
-          className="text-[22px] leading-tight tracking-tight"
+          className="text-[26px] sm:text-[30px] leading-tight tracking-tight"
           style={{ color: accent }}
         >
           {channel.channelNumber}
@@ -46,26 +64,32 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
       </div>
 
       {/* Logo */}
-      <div className="flex-shrink-0 text-3xl leading-none">
-        <ChannelLogo channel={channel} className="text-3xl leading-none" />
+      <div
+        className="hidden w-[84px] flex-shrink-0 items-center justify-center border bg-black/20 text-4xl leading-none sm:flex"
+        style={{
+          borderColor: `${art.secondaryAccent}33`,
+          color: art.secondaryAccent,
+        }}
+      >
+        <ChannelLogo channel={channel} className="max-h-12 max-w-12 text-4xl leading-none" />
       </div>
 
       {/* Main content */}
-      <div className="flex-1 min-w-0">
+      <div className="flex min-w-0 flex-1 flex-col justify-center py-0.5">
         {/* Name + category badge */}
         <div className="flex items-center gap-2 flex-wrap">
           <span
-            className="text-[22px] sm:text-2xl tracking-wide leading-tight transition-colors"
+            className="text-[27px] sm:text-[34px] xl:text-[38px] tracking-wide leading-none transition-colors"
             style={{ color: isActive ? "#ffffff" : "#cccccc" }}
           >
             {channel.name}
           </span>
           <span
-            className="text-[9px] tracking-[0.2em] px-1.5 py-px border hidden sm:inline-block"
+            className="text-[10px] tracking-[0.24em] px-2 py-1 border hidden sm:inline-block"
             style={{
-              borderColor: `${accent}35`,
-              color: `${accent}88`,
-              backgroundColor: `${accent}0a`,
+              borderColor: `${accent}50`,
+              color: isActive ? accent : `${accent}99`,
+              backgroundColor: `${accent}12`,
             }}
           >
             {categoryLabel}
@@ -73,28 +97,35 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
         </div>
 
         {/* Meta */}
-        <div className="flex items-center gap-2 mt-1 flex-wrap">
-          <span className="text-[11px] tracking-widest text-[#333]">{channel.sport}</span>
-          <span className="text-[#1e1e1e]">·</span>
-          <span className="text-[11px] tracking-widest text-[#333]">{channel.era}</span>
-          <span className="text-[#1e1e1e]">·</span>
+        <div className="flex items-center gap-2 mt-2 flex-wrap">
+          <span className="text-[12px] tracking-widest text-[#777] uppercase">{channel.sport}</span>
+          <span className="text-[#333]">/</span>
+          <span className="text-[12px] tracking-widest text-[#666] uppercase">{channel.era}</span>
+          <span className="text-[#333]">/</span>
           <span
-            className="text-[11px] tracking-widest transition-opacity"
+            className="text-[12px] tracking-widest uppercase transition-opacity"
             style={{
-              color: "var(--phosphor-amber)",
-              opacity: isActive ? 1 : 0.35,
+              color: art.secondaryAccent,
+              opacity: isActive ? 1 : 0.72,
             }}
           >
             {channel.vibe}
           </span>
         </div>
+        <p className="mt-2 hidden max-w-[760px] truncate text-[13px] tracking-wide text-[#585858] md:block">
+          {channel.description}
+        </p>
       </div>
 
       {/* TUNE IN */}
-      <div className="flex-shrink-0 self-center hidden sm:block">
+      <div className="hidden flex-shrink-0 self-center md:block">
         <span
-          className="text-sm tracking-[0.3em] whitespace-nowrap transition-colors"
-          style={{ color: isActive ? accent : "#262626" }}
+          className="border px-3 py-2 text-sm tracking-[0.3em] whitespace-nowrap transition-colors"
+          style={{
+            borderColor: isActive ? `${accent}70` : "rgba(255,255,255,0.08)",
+            color: isActive ? accent : "#4b4b4b",
+            backgroundColor: isActive ? `${accent}12` : "rgba(0,0,0,0.18)",
+          }}
         >
           ▶&nbsp;TUNE&nbsp;IN
         </span>

@@ -37,14 +37,14 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
       : channels.filter((ch) => ch.categories?.includes(activeTab));
 
   return (
-    <div className="w-full max-w-6xl border border-[#151515]">
+    <div className="w-full max-w-[1680px] border border-[#151515] bg-[#050505] shadow-[0_0_60px_rgba(0,0,0,0.45)]">
       <div className="flex flex-col lg:flex-row">
         {/* ── Left: channel guide ── */}
-        <div className="lg:w-[480px] xl:w-[520px] flex-shrink-0">
+        <div className="lg:basis-[74%] lg:max-w-[74%] flex-shrink-0">
           {/* Guide header */}
-          <div className="flex items-center justify-between px-4 py-2 bg-[#090909] border-b border-[#141414]">
-            <span className="text-[var(--phosphor-green)] phosphor-glow text-sm tracking-[0.3em]">
-              ── CHANNEL GUIDE
+          <div className="flex items-center justify-between px-4 sm:px-6 py-3 bg-[#090909] border-b border-[#141414]">
+            <span className="text-[var(--phosphor-green)] phosphor-glow text-base tracking-[0.3em]">
+              CHANNEL GUIDE
             </span>
             <span className="text-[#1c1c1c] text-xs tracking-widest">
               {filtered.length}&nbsp;CH&nbsp;AVAILABLE
@@ -52,7 +52,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
           </div>
 
           {/* Category tabs */}
-          <div className="flex gap-1 overflow-x-auto no-scrollbar px-3 py-2 bg-[#080808] border-b border-[#111]">
+          <div className="flex gap-1 overflow-x-auto no-scrollbar px-3 sm:px-5 py-2 bg-[#080808] border-b border-[#111]">
             {TABS.map((tab) => (
               <button
                 key={tab}
@@ -69,7 +69,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
           </div>
 
           {/* Channel rows */}
-          <div>
+          <div className="bg-[#050505]">
             {filtered.length === 0 ? (
               <p className="px-6 py-8 text-[#222] text-sm tracking-[0.3em] text-center">
                 NO CHANNELS IN THIS CATEGORY
@@ -87,7 +87,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
           </div>
 
           {/* Guide footer */}
-          <div className="px-4 py-2 border-t border-[#0d0d0d] bg-[#080808]">
+          <div className="px-4 sm:px-6 py-2 border-t border-[#0d0d0d] bg-[#080808]">
             <p className="text-[#181818] text-xs tracking-[0.3em]">
               ▓▒░&nbsp;RETROSPORTTV.GE&nbsp;·&nbsp;SPORTS&nbsp;PACKAGE&nbsp;v1.0&nbsp;░▒▓
             </p>
@@ -95,7 +95,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
         </div>
 
         {/* ── Right: channel preview ── */}
-        <div className="hidden lg:flex flex-1 flex-col border-l border-[#141414]">
+        <div className="hidden lg:flex lg:basis-[26%] lg:max-w-[26%] flex-col border-l border-[#141414] bg-[#050505]">
           <ChannelPreview channel={activeChannel} />
         </div>
       </div>
