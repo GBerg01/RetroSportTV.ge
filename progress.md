@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 5 Complete — Video Data Upgraded
+## Status: Phase 6 Complete — Immersive Player + Design North Star
 
 ---
 
@@ -50,14 +50,29 @@
   - [x] `lib/channels.ts` exports `Video` type
   - [x] `ChannelPlayer` uses `video.id` for iframe, `video.title` for NOW PLAYING display
   - [x] `npm run build` passes clean
-  - [ ] IDs to test in dev server — any that show "Video unavailable" need a swap:
-    - Search YouTube for the exact title → copy ID from `?v=<ID>` in URL → paste into `data/channels.ts`
+  - [x] All 30 video IDs replaced with confirmed real YouTube IDs (Phase 5.1)
+
+- [x] **Phase 6: Immersive full-screen channel player**
+  - [x] YouTube IFrame API replaces plain iframe — videos auto-advance on end
+  - [x] Player fills entire viewport (`fixed inset-0`), no stacked page below video
+  - [x] Top/bottom gradient overlays (channel identity + NOW PLAYING + controls)
+  - [x] Overlays auto-hide after 3 s, reappear on mouse movement
+  - [x] Transparent z-layer prevents iframe click-to-pause
+  - [x] Videos start 2 s in, YouTube native controls hidden
+  - [x] `.tv-cut` CSS animation (white→black→transparent, 500 ms) on every video change
+  - [x] `body overflow: hidden` while on channel page
+  - [x] `npm run build` passes clean
+
+- [x] **Design North Star**
+  - [x] `DESIGN.md` created — product philosophy, visual language, 3 homepage concepts
+  - [x] Cable Guide Mode recommended as next homepage direction
 
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Verify all video IDs work in `npm run dev`
+- [ ] Homepage redesign: Cable Guide Mode (rows, not cards; TUNE IN; channel ticker)
+- [ ] Verify all video IDs in `npm run dev`
 - [ ] Deploy to Vercel
 
 ## Decisions Log
@@ -76,8 +91,13 @@
 | 2026-05-27 | Python for [slug] dir creation | Bash mkdir rejects [slug] as a glob even when quoted; Python pathlib works cleanly |
 
 ## Blockers
-- Placeholder video IDs not yet verified — player will load but videos may 404 on YouTube until IDs are swapped
+- None currently.
 
 ---
+
+| 2026-05-27 | YT IFrame API for player | Enables auto-advance on video end and programmatic loadVideoById; plain iframe couldn't do this |
+| 2026-05-27 | Overlay UI for channel player | Full-screen TV feel; stacked page layout broke immersion |
+| 2026-05-27 | DESIGN.md created | Prevent future UI drift; establish cable TV / ESPN Classic as the design north star |
+| 2026-05-27 | Cable Guide Mode as next homepage | Rows > cards; truest expression of "choosing a channel"; works well with current data model |
 
 *Last updated: 2026-05-27*
