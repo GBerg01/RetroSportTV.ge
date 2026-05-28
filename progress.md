@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 2 Complete — Seed Data + Homepage Wired
+## Status: Phase 3 Complete — Player Page Live
 
 ---
 
@@ -13,27 +13,36 @@
 - [x] **Phase 1: Next.js scaffold**
   - [x] Next.js 16 + React 19 + TypeScript + Tailwind v4 + ESLint
   - [x] App Router, no src/ directory, `@/*` import alias
-  - [x] VT323 retro font (Google Fonts via next/font)
-  - [x] Dark retro theme in globals.css (phosphor green + amber, scanline CSS)
-  - [x] Retro landing page with 6 placeholder channel cards
+  - [x] VT323 retro font, dark theme, scanline + glow CSS utilities
   - [x] Folders: app/, components/, data/, lib/, styles/
   - [x] `npm run build` passes clean
 - [x] **Phase 2: Seed data + homepage wiring**
-  - [x] `Channel` type defined (id, slug, name, description, emoji, channelNumber, sport, era, vibe, videoIds)
-  - [x] `data/channels.ts` — 6 real channels with placeholder video IDs
-  - [x] `lib/channels.ts` — helpers: getAllChannels, getChannelBySlug, getFeaturedChannels, getNextChannel, getPreviousChannel
-  - [x] `app/page.tsx` — ChannelCard component, imports from lib/channels, no hardcoded data
+  - [x] `Channel` type (9 fields) in `data/channels.ts`
+  - [x] 6 seeded channels with placeholder YouTube IDs (marked TODO)
+  - [x] `lib/channels.ts` — 5 helpers incl. getNextChannel / getPreviousChannel
+  - [x] `app/page.tsx` — real channel data, no hardcoded placeholder array
+  - [x] `npm run build` passes clean
+- [x] **Phase 3: Channel player page**
+  - [x] `app/channel/[slug]/page.tsx` — server component, generateStaticParams, generateMetadata, notFound() on bad slug
+  - [x] `components/ChannelPlayer.tsx` — client component with useState for currentIndex
+  - [x] YouTube iframe embed: `youtube.com/embed/{id}?autoplay=1&rel=0&modestbranding=1`
+  - [x] `key` prop on iframe forces remount on video change (reliable src swap)
+  - [x] Next video button (wraps around), Shuffle button (always changes)
+  - [x] Prev channel / Next channel links via getNextChannel / getPreviousChannel
+  - [x] CRT scanline overlay + phosphor glow on player
+  - [x] Channel metadata: name, number, sport, era, vibe, video counter
+  - [x] All 6 channel pages statically generated (SSG)
   - [x] `npm run build` passes clean
 
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Phase 3: Home page polish — real channel cards with links (slugs exist, routes don't yet)
-- [ ] Phase 4: Player page `app/channel/[slug]/page.tsx` — YouTube IFrame embed
-  - [ ] Swap placeholder video IDs for verified ones once player exists
-- [ ] Phase 5: CRT overlay component
-- [ ] Phase 6: Next / Shuffle / Channel dial controls
+- [ ] Swap placeholder YouTube IDs for verified ones (test in running dev server)
+- [ ] Phase 5 (optional polish): dedicated CRTOverlay component, screen curvature CSS
+- [ ] Phase 6 (optional): keyboard shortcuts (→ next, s = shuffle)
+- [ ] Phase 7: OG meta, responsive polish, 404 page styling
+- [ ] Phase 8: Deploy to Vercel
 
 ## Decisions Log
 | Date | Decision | Reason |
@@ -43,12 +52,15 @@
 | 2026-05-27 | Next.js App Router | Modern, good for SSG channel pages, easy Vercel deploy |
 | 2026-05-27 | CSS-only retro effects | Performance; no canvas needed for scanlines/glow |
 | 2026-05-27 | Scaffolded to /tmp then copied | Repo dir name "RetroSportTV.ge" has capitals; npm rejects it as package name |
-| 2026-05-27 | VT323 font (Google Fonts) | Readable retro monospace; loads via next/font, no external request at runtime |
-| 2026-05-27 | Next.js 16 + Tailwind v4 | Latest stable; Tailwind v4 uses CSS @import config (no tailwind.config.ts) |
-| 2026-05-27 | Placeholder YouTube IDs | Cannot safely verify IDs without a running player; marked with TODO comments for Phase 4 swap |
+| 2026-05-27 | VT323 font (Google Fonts) | Readable retro monospace; loads via next/font |
+| 2026-05-27 | Next.js 16 + Tailwind v4 | Latest stable; Tailwind v4 uses CSS @import config |
+| 2026-05-27 | Placeholder YouTube IDs | Cannot safely verify without a live player; marked TODO |
+| 2026-05-27 | Server page + client ChannelPlayer component | Page needs generateStaticParams (server); controls need useState (client) |
+| 2026-05-27 | key prop on iframe = `{slug}-{index}` | Forces React to fully remount iframe on video change; reliable autoplay |
+| 2026-05-27 | Python for [slug] dir creation | Bash mkdir rejects [slug] as a glob even when quoted; Python pathlib works cleanly |
 
 ## Blockers
-- None
+- Placeholder video IDs not yet verified — player will load but videos may 404 on YouTube until IDs are swapped
 
 ---
 
