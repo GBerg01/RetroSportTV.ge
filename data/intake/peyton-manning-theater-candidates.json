@@ -1,0 +1,40 @@
+{
+  "channelSlug": "peyton-manning-theater",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=MJe2vGVEyfo",
+      "title": "Peyton Manning Record Breaking 49th Touchdown Pass (2004)",
+      "tags": ["manning", "colts", "nfl", "2004", "record", "49-td", "qb"],
+      "vibeTags": ["legendary", "historic", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=jnr0XXitvgc",
+      "title": "Best Moments From Peyton Manning's MVP 2004 Season",
+      "tags": ["manning", "colts", "nfl", "2004", "mvp", "highlights"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=zL0qXebmncU",
+      "title": "Brady vs Manning: GREATEST Rivalry In NFL History",
+      "tags": ["manning", "brady", "nfl", "rivalry", "colts", "patriots"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=pAsarBgakuc",
+      "title": "Colts vs. Bears Super Bowl XLI | NFL Full Game",
+      "tags": ["manning", "colts", "bears", "nfl", "super-bowl-41", "2007"],
+      "vibeTags": ["legendary", "championship", "classic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=VGPA1amXEzw",
+      "title": "Peyton Manning's FIRST Game! (Dolphins vs. Colts, 1998) | NFL Classic Game Highlights",
+      "tags": ["manning", "colts", "dolphins", "nfl", "1998", "rookie"],
+      "vibeTags": ["nostalgic", "legendary", "historic"],
+      "qualityScore": 92
+    }
+  ]
+}

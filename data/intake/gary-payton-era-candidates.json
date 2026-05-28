@@ -1,0 +1,40 @@
+{
+  "channelSlug": "gary-payton-era",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=N4OnkUIxfFw",
+      "title": "\"The Glove\" Gary Payton 1995-96 Seattle Supersonics Highlights (Defensive Player of the Year)",
+      "tags": ["gary-payton", "supersonics", "nba", "1996", "dpoy", "defense"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=78dpCLxqV0k",
+      "title": "Gary Payton Defensive Highlights Compilation",
+      "tags": ["gary-payton", "supersonics", "nba", "defense", "highlights"],
+      "vibeTags": ["legendary", "physical", "dominant"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5rP6BqLehP4",
+      "title": "Gary Payton Defensive Highlights | 1996 NBA Finals",
+      "tags": ["gary-payton", "supersonics", "bulls", "nba", "1996", "finals", "defense"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=GsU5uv4Psdg",
+      "title": "NBA Finals 1996 Game 1 Seattle Supersonics vs Chicago Bulls Gary Payton vs Michael Jordan",
+      "tags": ["gary-payton", "jordan", "supersonics", "bulls", "nba", "1996", "finals"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=wNt_tegojrk",
+      "title": "NBA Finals 1996 Game 2 Seattle Supersonics vs Chicago Bulls Gary Payton vs Michael Jordan",
+      "tags": ["gary-payton", "jordan", "supersonics", "bulls", "nba", "1996", "finals"],
+      "vibeTags": ["legendary", "dramatic", "classic"],
+      "qualityScore": 92
+    }
+  ]
+}

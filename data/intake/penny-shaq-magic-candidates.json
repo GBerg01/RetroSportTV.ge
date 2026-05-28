@@ -1,0 +1,40 @@
+{
+  "channelSlug": "penny-shaq-magic",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=pS3teccDTK0",
+      "title": "This Magic Moment [Full Episode] | 30 for 30",
+      "tags": ["magic", "shaq", "penny", "nba", "30-for-30", "orlando", "documentary"],
+      "vibeTags": ["legendary", "nostalgic", "must-see"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=xZog_yjNTZA",
+      "title": "Shaquille O'Neal FULL Orlando Magic Highlights! (1992-1996!)",
+      "tags": ["shaq", "magic", "nba", "orlando", "1992-96", "highlights"],
+      "vibeTags": ["dominant", "legendary", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=PNUto6iLaMM",
+      "title": "Penny Hardaway Top 40 BEST Plays On The Magic",
+      "tags": ["penny", "hardaway", "magic", "nba", "orlando", "top-40"],
+      "vibeTags": ["legendary", "iconic", "electric"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=b9LVp1jjAKc",
+      "title": "1995 NBA Finals Full Game 1 | Houston Rockets vs Orlando Magic",
+      "tags": ["magic", "rockets", "nba", "1995", "finals", "shaq", "penny"],
+      "vibeTags": ["legendary", "dramatic", "classic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=gwRk-V91Kew",
+      "title": "Throwback NBA Finals 1995. Orlando Magic vs Houston Rockets Game 4 Full Highlights HD",
+      "tags": ["magic", "rockets", "nba", "1995", "finals", "game-4"],
+      "vibeTags": ["legendary", "classic", "dramatic"],
+      "qualityScore": 92
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "nfl-classics-vault",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=pcflzu8bKc0",
+      "title": "\"The Catch\" Cowboys vs. 49ers 1981 NFC Championship | NFL Full Game",
+      "tags": ["the-catch", "49ers", "cowboys", "nfl", "1981", "nfc-championship", "montana"],
+      "vibeTags": ["legendary", "iconic", "historic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=6G-X5zd2nvE",
+      "title": "\"The Catch\" (Cowboys vs. 49ers 1981, NFC Championship)",
+      "tags": ["the-catch", "49ers", "cowboys", "nfl", "1981", "nfc-championship"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BMqe4jnZ0fo",
+      "title": "An NFL Classic.........The Ice Bowl, December 31, 1967",
+      "tags": ["ice-bowl", "packers", "cowboys", "nfl", "1967", "championship"],
+      "vibeTags": ["legendary", "historic", "old-school"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=vGjg7j-qTvw",
+      "title": "1967 Ice Bowl",
+      "tags": ["ice-bowl", "packers", "cowboys", "nfl", "1967", "lombardi"],
+      "vibeTags": ["legendary", "historic", "old-school"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=vQ427FBCHfg",
+      "title": "Greatest NFL Games of the 1990s",
+      "tags": ["nfl", "1990s", "greatest-games", "classic", "compilation"],
+      "vibeTags": ["nostalgic", "legendary", "classic"],
+      "qualityScore": 92
+    }
+  ]
+}

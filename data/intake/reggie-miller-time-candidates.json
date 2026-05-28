@@ -1,0 +1,40 @@
+{
+  "channelSlug": "reggie-miller-time",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=0K3YlzvjFbQ",
+      "title": "Reggie Miller Scores 8 Points in 9 Seconds vs. Knicks in 1995 Playoff Game | ESPN Archives",
+      "tags": ["reggie-miller", "knicks", "pacers", "nba", "1995", "playoffs", "clutch"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=XcCxq0RJ-XU",
+      "title": "Reggie Miller Scores 8 Points in 9 Seconds to Beat Knicks (May 7, 1995) | Indiana Pacers",
+      "tags": ["reggie-miller", "knicks", "pacers", "nba", "1995", "clutch"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=MRLysMEHokI",
+      "title": "Reggie Miller's 8 Points in 8.9 Seconds to Beat the Knicks - Complete Video | Indiana Pacers",
+      "tags": ["reggie-miller", "knicks", "pacers", "nba", "1995", "clutch"],
+      "vibeTags": ["legendary", "iconic", "dramatic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=p7P2YtzkOSI",
+      "title": "How Trash Talk Became Reggie Miller's Deadliest Weapon",
+      "tags": ["reggie-miller", "pacers", "nba", "trash-talk", "knicks", "documentary"],
+      "vibeTags": ["legendary", "iconic", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=J-YsJra9TJM",
+      "title": "Reggie Miller's Legendary Clutch Moments",
+      "tags": ["reggie-miller", "pacers", "nba", "clutch", "highlights"],
+      "vibeTags": ["legendary", "clutch", "iconic"],
+      "qualityScore": 92
+    }
+  ]
+}

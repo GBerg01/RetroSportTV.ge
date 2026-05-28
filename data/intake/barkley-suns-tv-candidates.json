@@ -1,0 +1,40 @@
+{
+  "channelSlug": "barkley-suns-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=jdLs_1gM8_g",
+      "title": "NBA Finals 1993 Game 3 Phoenix Suns vs Chicago Bulls Sir Charles Barkley vs Michael Air Jordan",
+      "tags": ["barkley", "jordan", "suns", "bulls", "nba", "1993", "finals"],
+      "vibeTags": ["legendary", "iconic", "dramatic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=8cqgSoYna-Q",
+      "title": "Charles Barkley Was A BEAST In His Prime! 1992-93 MVP Season Highlights",
+      "tags": ["barkley", "suns", "nba", "1993", "mvp", "highlights"],
+      "vibeTags": ["dominant", "legendary", "iconic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=MzIRRvQJJBo",
+      "title": "Michael Jordan vs Charles Barkley 1993 NBA Finals Game 2",
+      "tags": ["barkley", "jordan", "suns", "bulls", "nba", "1993", "finals"],
+      "vibeTags": ["legendary", "dramatic", "clutch"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=jJJDQe7jD3E",
+      "title": "Charles Barkley Career Highlights Mixtape | NBA on ESPN",
+      "tags": ["barkley", "nba", "career", "highlights", "espn"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=J5-WC2D_P9E",
+      "title": "Charles Barkley Top 10 Plays of Career",
+      "tags": ["barkley", "nba", "top-10", "career", "highlights"],
+      "vibeTags": ["legendary", "iconic", "must-see"],
+      "qualityScore": 92
+    }
+  ]
+}

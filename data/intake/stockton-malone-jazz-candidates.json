@@ -1,0 +1,40 @@
+{
+  "channelSlug": "stockton-malone-jazz",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=F4efuX_KpzU",
+      "title": "Stockton to Malone: The Greatest Pick & Roll Duo of All-Time",
+      "tags": ["stockton", "malone", "jazz", "nba", "pick-and-roll", "documentary"],
+      "vibeTags": ["legendary", "iconic", "nostalgic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=uh8fO5QbOiM",
+      "title": "John Stockton and Karl Malone Utah Jazz NBA Documentary",
+      "tags": ["stockton", "malone", "jazz", "nba", "utah", "documentary"],
+      "vibeTags": ["legendary", "nostalgic", "dynasty"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5XLvqH9qoik",
+      "title": "Stockton & Malone - The Art Of The Pick & Roll",
+      "tags": ["stockton", "malone", "jazz", "nba", "pick-and-roll", "art"],
+      "vibeTags": ["legendary", "beautiful", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=QJOYt5pkN4I",
+      "title": "John Stockton Career Highlights | THE VAULT",
+      "tags": ["stockton", "jazz", "nba", "career", "highlights", "point-guard"],
+      "vibeTags": ["legendary", "iconic", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=n3_L43PZCyU",
+      "title": "Learning Pick & Roll With John Stockton and Karl Malone Raw Film",
+      "tags": ["stockton", "malone", "jazz", "nba", "pick-and-roll", "raw-film"],
+      "vibeTags": ["legendary", "old-school", "nostalgic"],
+      "qualityScore": 92
+    }
+  ]
+}
