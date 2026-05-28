@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 15 Complete — 100-Channel Expansion Plan
+## Status: Phase 16 Complete — Long-Term 100-Channel Expansion Roadmap
 
 ---
 
@@ -143,6 +143,13 @@
   - [x] Each planned channel includes CH number, name, category, sport, era, vibe, example moments/search themes, why it belongs, ideal sources, and avoid notes
   - [x] No channels added to `data/channels.ts`; no UI/player/database/auth/admin changes
 
+- [x] **Phase 16: Long-term 100-channel expansion roadmap**
+  - [x] `CHANNEL_EXPANSION_PLAN.md` rebuilt as the long-term roadmap for turning the 6-channel MVP into a 100-channel retro sports cable-box product
+  - [x] `data/channelRoadmap.ts` added with typed `ChannelRoadmapItem`, `ChannelRoadmapCategory`, `LaunchPriority`, and all 100 roadmap channels
+  - [x] First 12 expansion targets marked `launchPriority: "next"`
+  - [x] `CONTENT_PIPELINE.md` updated to connect roadmap planning to research candidate files and import workflow
+  - [x] No live channel data, UI, player, database, auth, or admin changes
+
 ## In Progress
 - [ ] —
 
@@ -170,6 +177,7 @@
 | 2026-05-28 | Bulk intake uses local JSON files | Makes larger channel curation reviewable and repeatable before introducing API/database workflows |
 | 2026-05-28 | Candidate files are research staging only | Keeps future discovery work reviewable before any video is promoted into live channel data |
 | 2026-05-28 | 100-channel plan stays documentation-only | Gives future channel expansion a content map without changing MVP runtime data or UI |
+| 2026-05-28 | Channel roadmap is typed but not live data | Future agents can plan and research from `data/channelRoadmap.ts` without changing the homepage channel list |
 
 ## Blockers
 - None currently.

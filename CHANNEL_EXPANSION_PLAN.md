@@ -2,1034 +2,253 @@
 
 Planning document only. Do not add these channels to `data/channels.ts` yet.
 
-RetroSportTV.ge channels should feel like old cable stations, ESPN Classic programming blocks, sports-bar feeds, VHS highlight tapes, and curated nostalgia loops. Each channel below is a future programming target with channel identity, editorial scope, research direction, and avoid notes.
+RetroSportTV.ge should grow from a 6-channel MVP into a retro sports cable-box product: a guide full of ESPN Classic programming blocks, sports-bar feeds, VHS highlight tapes, studio desk clips, championship reruns, and curated nostalgia stations.
 
-## Expansion Principles
+This document is the editorial roadmap. The typed implementation roadmap lives in `data/channelRoadmap.ts`.
 
-- Use official YouTube embeds only when channels are eventually built.
-- Prefer highlight/game/broadcast footage over debate or reaction content.
-- Keep channels narrow enough to feel programmed, not searched.
-- Use channel names that feel native to a retro cable guide.
-- Avoid fake YouTube IDs, unverified URLs, and padding with weak clips.
-- Treat this as a content map, not live app data.
+## Product Rationale
+
+The current MVP proves the core loop: open the app, choose a channel, and watch curated sports highlights through a retro TV interface. The next product leap is not search, social, or a database. It is programming depth.
+
+100 themed channels makes sense long-term because:
+
+- Channel surfing feels better when the guide has enough density to explore.
+- Sports nostalgia naturally clusters by player, team, era, event, rivalry, chaos, studio desk, and ambient compilation.
+- A large guide makes the product feel like a cable package instead of a small playlist page.
+- Channels can launch gradually without changing the fullscreen player.
+- Research candidates can be staged through `data/intake/` before promotion into live data.
+
+## Why Not Launch All 100 At Once
+
+Do not ship all 100 channels into the live homepage immediately.
+
+- Empty or shallow channels would hurt the cable-box illusion.
+- Video quality and embeddability need review.
+- Duplicates and weak uploads need human curation.
+- The current homepage needs to stay fast and legible.
+- The right rollout is depth-first: launch fewer channels with strong playlists.
+
+## Recommended Phased Rollout
+
+### Phase A: Next 12 Channels
+
+Build these first as candidate files, then import only after review:
+
+1. Jordan TV
+2. Bulls MJ Era
+3. Super Bowl Channel
+4. NBA Finals Channel
+5. Inside the NBA Classics
+6. Random Sports Compilations
+7. Mike Tyson TV
+8. March Madness TV
+9. SportsCenter Classics
+10. College Football Chaos
+11. Patriots Dynasty
+12. Tiger Sundays Expansion
+
+### Phase B: Soon Channels
+
+Prioritize channels with broad appeal, strong source availability, and obvious highlight footage: major teams, NBA/NFL eras, combat-sports anchors, event channels, and sports-bar ambient mixes.
+
+### Phase C: Later Channels
+
+Launch narrower or more experimental channels after the content pipeline proves reliable: studio/talk variants, niche individual sports, specialized chaos channels, GOAT debate, commercials, and atmosphere feeds.
+
+## Launch Priority Tiers
+
+- `next`: first 12 expansion builds.
+- `soon`: strong second-wave candidates with likely content depth.
+- `later`: valuable long-tail channels that need more careful sourcing or product timing.
+
+## Research Rules
+
+Use `data/researchQueue.ts`, `CONTENT_PIPELINE.md`, and `CONTENT_RESEARCH_GUIDE.md` before creating candidate files.
+
+Good candidate research:
+
+- Prefer official league, team, broadcast, tournament, or trusted highlight uploads.
+- Prefer highlight/game footage over talking-head commentary.
+- Use real YouTube URLs or IDs only after verification.
+- Save candidates into `data/intake/<channel-slug>-candidates.json`.
+- Import later with `npm run content:import-videos -- <file>`.
+- Verify imported videos in the browser before committing live data.
+
+Avoid:
+
+- fake YouTube IDs;
+- unverified URLs;
+- reaction videos unless the channel specifically calls for commentary;
+- low-quality reposts;
+- Shorts unless intentionally building a Shorts-style channel;
+- podcasts unless the channel specifically calls for studio/talk content;
+- adding anything directly to live data before review.
+
+## Full 100-Channel Roadmap
+
+Each channel below includes its proposed channel number, category, sport, era, vibe, launch priority, example moments/search themes, ideal source phrases, and avoid notes. The same roadmap is exported in typed form from `data/channelRoadmap.ts`.
 
 ## 1. Player Channels
 
-### CH 01 — Kobe TV
-- Category: Player Channels
-- Sport: Basketball
-- Era: 1996-2016
-- Vibe: Cold-blooded
-- Sample moments/search themes: 81-point game; final 60-point game; Lakers playoff daggers; 2000-2002 title run; duel vs Iverson; duel vs T-Mac; clutch shots; Olympic Kobe.
-- Why it belongs: Already core to the product; pure ESPN Classic late-night star programming.
-- Ideal sources/search phrases: NBA Kobe Bryant full highlights; Lakers Kobe playoff highlights; Kobe clutch moments official.
-- Avoid: Debate shows, reaction clips, low-context ranking videos, motivational edits with little game footage.
-
-### CH 02 — MJ Airwaves
-- Category: Player Channels
-- Sport: Basketball
-- Era: 1984-1998
-- Vibe: Mythic
-- Sample moments/search themes: Flu Game; 1998 Finals Game 6; 63 at Boston Garden; shrug game; dunk contest; Bad Boys battles; first three-peat; second three-peat.
-- Why it belongs: Michael Jordan is the center of sports nostalgia programming.
-- Ideal sources/search phrases: Michael Jordan Bulls full highlights; NBA Jordan Finals highlights; Jordan classic games.
-- Avoid: GOAT debate panels, documentary trailers, audio-only interviews.
-
-### CH 03 — LeBron Archive
-- Category: Player Channels
-- Sport: Basketball
-- Era: 2003-present
-- Vibe: Inevitable
-- Sample moments/search themes: rookie Cavs; 2007 Pistons Game 5; Miami Heat peak; 2012 Boston Game 6; 2016 Finals comeback; chase-down block; Lakers title run.
-- Why it belongs: Bridges 2000s nostalgia and modern classic moments.
-- Ideal sources/search phrases: LeBron classic highlights; NBA LeBron playoff highlights; Cavaliers Heat Lakers LeBron games.
-- Avoid: Legacy debate clips, hot-take monologues, current news chatter.
-
-### CH 04 — Iverson Frequency
-- Category: Player Channels
-- Sport: Basketball
-- Era: 1996-2010
-- Vibe: Rebellious
-- Sample moments/search themes: 2001 Finals Game 1; step-over; crossover on Jordan; Sixers playoff run; scoring title seasons; Georgetown flashbacks; streetball influence.
-- Why it belongs: Perfect late-90s/early-2000s cultural sports channel.
-- Ideal sources/search phrases: Allen Iverson 2001 highlights; NBA Iverson crossover; Sixers Iverson playoff highlights.
-- Avoid: Practice meme-only clips, debate-show rehashes, low-quality mixtapes.
-
-### CH 05 — Shaq Diesel Network
-- Category: Player Channels
-- Sport: Basketball
-- Era: 1992-2011
-- Vibe: Unstoppable
-- Sample moments/search themes: Magic Shaq; Lakers three-peat; Finals dominance; backboard-breaking clips; Shaq vs Hakeem; Shaq/Kobe era; Heat championship.
-- Why it belongs: Broadcast-friendly dominance and huge personality.
-- Ideal sources/search phrases: Shaquille O'Neal Finals highlights; Shaq Lakers dominance; NBA Shaq top plays.
-- Avoid: Studio-only Shaq content unless used for a studio channel, prank clips, podcast cuts.
-
-### CH 06 — T-Mac Signal
-- Category: Player Channels
-- Sport: Basketball
-- Era: 1997-2013
-- Vibe: Smooth heat
-- Sample moments/search themes: 13 points in 35 seconds; Magic scoring years; Rockets duels; playoff scoring explosions; all-star highlights; cousin Vince-era clips.
-- Why it belongs: A cult-favorite 2000s star with perfect VHS mixtape energy.
-- Ideal sources/search phrases: Tracy McGrady 13 points; T-Mac Magic highlights; Rockets T-Mac highlights.
-- Avoid: Injury retrospectives without highlights, debate-only clips.
-
-### CH 07 — Tiger Sundays
-- Category: Player Channels
-- Sport: Golf
-- Era: 1997-2019
-- Vibe: Dominant
-- Sample moments/search themes: 1997 Masters; 2000 US Open; 2005 Masters chip; 2008 US Open; 2019 Masters; Sunday red final rounds; clutch putts.
-- Why it belongs: Already core and gives the package a non-team sports pillar.
-- Ideal sources/search phrases: Tiger Woods Masters final round; PGA Tiger Woods best shots; Tiger Sunday red highlights.
-- Avoid: Swing tutorials, golf instruction, generic motivational edits.
-
-### CH 08 — Brady Comeback Channel
-- Category: Player Channels
-- Sport: Football
-- Era: 2001-2022
-- Vibe: Relentless
-- Sample moments/search themes: Super Bowl XXXVI; Super Bowl LI comeback; snow game; Patriots dynasty; Bucs Super Bowl run; playoff drives; two-minute drills.
-- Why it belongs: Football dynasty programming with constant late-game drama.
-- Ideal sources/search phrases: Tom Brady playoff comeback highlights; NFL Brady Super Bowl highlights; Patriots dynasty highlights.
-- Avoid: Current debate panels, off-field gossip, talking-head ranking segments.
-
-### CH 09 — Serena Center Court
-- Category: Player Channels
-- Sport: Tennis
-- Era: 1999-2022
-- Vibe: Power
-- Sample moments/search themes: US Open runs; Wimbledon finals; Australian Open dominance; Venus rivalries; comeback wins; Olympic doubles; match-point saves.
-- Why it belongs: Essential individual-sport greatness with iconic broadcast moments.
-- Ideal sources/search phrases: Serena Williams Grand Slam highlights; Serena Wimbledon final highlights; US Open Serena classic.
-- Avoid: Controversy-only clips, press conferences without match footage.
-
-### CH 10 — Tyson Tape Deck
-- Category: Player Channels
-- Sport: Boxing
-- Era: 1985-2005
-- Vibe: Menacing
-- Sample moments/search themes: early knockouts; title run; Spinks fight; training footage; heavyweight classic intros; comeback fights; Tyson aura clips.
-- Why it belongs: Pure VHS fight-night energy and a required combat-sports pillar.
-- Ideal sources/search phrases: Mike Tyson classic knockouts; Tyson heavyweight highlights; boxing Tyson title fights.
-- Avoid: Exploitative crime retrospectives, low-quality knockout reposts, non-fight gossip.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 01 | Kobe TV | Basketball | 1996-2016 | Cold-blooded | soon | 81-point game; final 60; Lakers playoff daggers; 2000-2002 titles; Kobe vs Iverson; Kobe vs T-Mac | Kobe Bryant 81 points highlights; Kobe clutch moments; Lakers Kobe playoff highlights | debate shows; reaction clips; motivational edits without game footage |
+| 02 | Jordan TV | Basketball | 1984-1998 | Mythic | next | Flu Game; Bulls Finals; Shrug Game; 63 at Boston Garden; Last Shot; dunk contests | Michael Jordan flu game highlights; Jordan last shot; Jordan dunk contest highlights | GOAT debate panels; documentary trailers only |
+| 03 | LeBron Archive | Basketball | 2003-present | Inevitable | soon | 2007 Pistons; 2012 Celtics Game 6; 2016 Finals; chase-down block; Heat titles; Lakers bubble run | LeBron playoff highlights; LeBron 2016 Finals; LeBron 2012 Game 6 | current news chatter; podcast arguments |
+| 04 | Shaq Diesel TV | Basketball | 1992-2011 | Unstoppable | soon | Magic Shaq; Lakers three-peat; 2000 Finals; backboard breaks; Shaq vs Hakeem; Heat title | Shaq Lakers dominance; Shaquille O'Neal Finals highlights; Shaq top plays NBA | prank clips; studio-only clips unless for studio channel |
+| 05 | Iverson TV | Basketball | 1996-2010 | Rebellious | soon | 2001 Finals; step-over; crossover on Jordan; Sixers playoff run; scoring titles; Georgetown | Allen Iverson 2001 Finals; Iverson crossover Jordan; Sixers Iverson highlights | practice meme-only clips; low-quality mixtapes |
+| 06 | Vince Carter Airwaves | Basketball | 1998-2020 | Half-man half-amazing | soon | 2000 dunk contest; Olympic dunk; Raptors; Nets; game winners; late-career moments | Vince Carter 2000 dunk contest; Vince Carter Olympic dunk; Raptors highlights | short vertical reposts; reaction compilations |
+| 07 | Steph Range TV | Basketball | 2009-present | Logo range | soon | 2016 OKC winner; 402 threes; Warriors Finals; deep threes; ankle breakers; records | Steph Curry deep threes; Curry OKC game winner; Curry Finals highlights | hot takes; shooting tutorials |
+| 08 | Magic Showtime | Basketball | 1979-1991 | Fast break | later | 1980 Finals Game 6; Showtime breaks; Lakers/Celtics; Kareem connection; no-look passes; Dream Team | Magic Johnson Finals; Showtime Lakers highlights; Magic no-look passes | modern Lakers commentary |
+| 09 | Larry Legend TV | Basketball | 1979-1992 | Cold Garden | later | 1986 Celtics; Bird vs Dominique; three-point contests; Lakers rivalry; clutch shots; passing | Larry Bird classic highlights; Bird Dominique duel; Larry Bird clutch shots | debate panels; poor transfers |
+| 10 | D-Wade County | Basketball | 2003-2019 | Flash | soon | 2006 Finals; Big Three Heat; Wade blocks; Wade dunks; game winners; retirement tour | Dwyane Wade 2006 Finals; D-Wade Heat highlights; Wade blocks dunks | Heat debate shows; podcast clips |
+| 11 | Big Ticket TV | Basketball | 1995-2016 | Intensity | soon | Timberwolves MVP; 2008 Celtics; defense; KG vs Duncan; playoff fire; interviews | Kevin Garnett Timberwolves; KG Celtics 2008; KG defensive highlights | talk-only clips; modern debate |
+| 12 | Dirk Forever | Basketball | 1998-2019 | One-legged fade | later | 2011 Finals; 2011 playoffs; fadeaway; Mavs vs Spurs; Mavs vs Heat; farewell game | Dirk 2011 Finals; Dirk playoff highlights; Dirk fadeaway highlights | debate-only legacy clips |
+| 13 | T-Mac Time | Basketball | 1997-2013 | Smooth heat | soon | 13 in 35; Magic scoring; Rockets; playoff scoring; All-Star moments; Kobe duels | Tracy McGrady 13 points; T-Mac Magic highlights; T-Mac Rockets highlights | injury retrospectives without highlights |
+| 14 | Nash & Seven Seconds | Basketball | 2004-2010 | Fast tempo | later | MVP seasons; Suns breaks; Nash assists; Spurs series; Amare pick-and-roll; 2000s pace | Steve Nash Suns highlights; seven seconds or less Suns; Nash assists | analytics lectures without footage |
+| 15 | Derrick Rose Channel | Basketball | 2008-2012 | Explosive | later | 2011 MVP; Bulls playoffs; dunks; acrobatic layups; game winners; rookie year | Derrick Rose MVP highlights; Derrick Rose Bulls highlights; Rose game winner | injury tragedy compilations |
 
 ## 2. Team Channels
 
-### CH 11 — Bulls MJ Era
-- Category: Team Channels
-- Sport: Basketball
-- Era: 1984-1998
-- Vibe: Dynasty
-- Sample moments/search themes: 1991 Finals; 1992 shrug game; 1993 three-peat; 72-win season; 1996 Finals; Rodman games; Pippen highlights; 1998 last dance.
-- Why it belongs: The cleanest team-era channel in sports nostalgia.
-- Ideal sources/search phrases: Chicago Bulls 1990s highlights; Bulls dynasty games; Jordan Pippen Rodman highlights.
-- Avoid: Modern Bulls news, Jordan debate shows, documentary-only clips.
-
-### CH 12 — Showtime Lakers
-- Category: Team Channels
-- Sport: Basketball
-- Era: 1979-1991
-- Vibe: Fast break
-- Sample moments/search themes: Magic/Kareem Finals; Lakers-Celtics rivalry; Worthy Finals; no-look passes; Forum classics; Pat Riley era.
-- Why it belongs: Cable-guide classic basketball programming before the 2000s.
-- Ideal sources/search phrases: Showtime Lakers highlights; Magic Johnson Finals; Lakers Celtics 1980s.
-- Avoid: Modern Lakers clips, low-quality narrated lists.
-
-### CH 13 — Lakers Three-Peat
-- Category: Team Channels
-- Sport: Basketball
-- Era: 1999-2004
-- Vibe: Hollywood power
-- Sample moments/search themes: 2000 Finals; 2001 playoff sweep; 2002 Kings series; Shaq/Kobe dominance; Derek Fisher 0.4; parade clips.
-- Why it belongs: Strong bridge between Kobe TV and NBA 2000s.
-- Ideal sources/search phrases: Lakers three peat highlights; Shaq Kobe playoff highlights; 2001 Lakers dominance.
-- Avoid: Lakers gossip, modern debate panels, fan-made music videos with little gameplay.
-
-### CH 14 — Celtics Pride
-- Category: Team Channels
-- Sport: Basketball
-- Era: 1980s-2010s
-- Vibe: Garden ghosts
-- Sample moments/search themes: Bird era; 1986 Celtics; Pierce/KG/Allen 2008; Celtics-Lakers Finals; clutch Bird; Garden playoff crowds.
-- Why it belongs: East Coast legacy channel with strong rivalry energy.
-- Ideal sources/search phrases: Boston Celtics classic highlights; Larry Bird Celtics; 2008 Celtics Finals.
-- Avoid: Current trade talk, podcast/radio arguments.
-
-### CH 15 — Yankees October
-- Category: Team Channels
-- Sport: Baseball
-- Era: 1977-2009
-- Vibe: Pinstripe pressure
-- Sample moments/search themes: Reggie three homers; Jeter flip; 1996-2000 dynasty; Rivera saves; Boone walk-off; 2009 title; Red Sox rivalry.
-- Why it belongs: Baseball needs a flagship October channel.
-- Ideal sources/search phrases: Yankees postseason highlights; Derek Jeter playoff moments; Yankees World Series classics.
-- Avoid: Current roster talk, tabloid drama, non-game debate.
-
-### CH 16 — Red Sox Miracle Feed
-- Category: Team Channels
-- Sport: Baseball
-- Era: 1975-2018
-- Vibe: Cursed no more
-- Sample moments/search themes: 1975 Fisk homer; 2004 ALCS comeback; Bloody Sock game; Ortiz walk-offs; 2007 title; 2013 title; Fenway nostalgia.
-- Why it belongs: Boston Classics can branch into a full baseball station.
-- Ideal sources/search phrases: Red Sox 2004 ALCS highlights; David Ortiz walk off; Fenway classic moments.
-- Avoid: Local talk radio, current standings, rivalry arguments without highlights.
-
-### CH 17 — Patriots Dynasty
-- Category: Team Channels
-- Sport: Football
-- Era: 2001-2019
-- Vibe: Methodical
-- Sample moments/search themes: tuck rule; first Super Bowl; 2004 defense; 2007 perfect regular season; Super Bowl XLIX; Super Bowl LI; Brady-Belichick era.
-- Why it belongs: A natural extension of Boston Classics and Brady.
-- Ideal sources/search phrases: Patriots dynasty highlights; NFL Patriots Super Bowl highlights; Tom Brady Bill Belichick classics.
-- Avoid: Spygate/Deflategate-only clips, current debate shows.
-
-### CH 18 — Cowboys Star Channel
-- Category: Team Channels
-- Sport: Football
-- Era: 1970s-1990s
-- Vibe: America's team
-- Sample moments/search themes: Landry era; Staubach highlights; 1990s triplets; Emmitt Smith; Aikman/Irvin; NFC Championship games; Super Bowl wins.
-- Why it belongs: Big national brand with old cable sports energy.
-- Ideal sources/search phrases: Dallas Cowboys 1990s highlights; Cowboys Super Bowl classics; Emmitt Smith highlights.
-- Avoid: modern hot takes, owner drama, low-effort debate clips.
-
-### CH 19 — Steelers Steel Curtain
-- Category: Team Channels
-- Sport: Football
-- Era: 1970s-2010s
-- Vibe: Black and gold
-- Sample moments/search themes: Steel Curtain defense; Franco Harris; Terry Bradshaw; 2005 title run; 2008 defense; Polamalu highlights; Ravens rivalry.
-- Why it belongs: Fits the retro defensive-football package.
-- Ideal sources/search phrases: Steelers classic highlights; Steel Curtain NFL Films; Troy Polamalu Steelers.
-- Avoid: injury-focused hits, modern radio arguments.
-
-### CH 20 — Barcelona Golden Era
-- Category: Team Channels
-- Sport: Soccer
-- Era: 2008-2015
-- Vibe: Tiki-taka
-- Sample moments/search themes: Messi/Xavi/Iniesta; 2009 Champions League; 2011 final; Guardiola era; El Clasico wins; Neymar/Suarez/Messi.
-- Why it belongs: Adds international team nostalgia with beautiful-game identity.
-- Ideal sources/search phrases: Barcelona 2011 Champions League highlights; Messi Xavi Iniesta highlights; Guardiola Barcelona.
-- Avoid: transfer rumors, tactical explainers without match footage.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 16 | Bulls MJ Era | Basketball | 1991-1998 | Dynasty | next | 1991-1998 Bulls; Rodman; Pippen; Phil Jackson; Jazz Finals; Knicks rivalry; 72 wins | Chicago Bulls 1990s highlights; Bulls Jazz Finals; Bulls Knicks rivalry | modern Bulls news; Jordan-only debate |
+| 17 | Lakers Classics | Basketball | 1980s-2010s | Forum lights | soon | Showtime; Shaq/Kobe; Kobe/Pau; Lakers/Celtics; Magic Finals; Fisher 0.4 | Lakers classic highlights; Lakers Celtics Finals; Shaq Kobe Lakers | modern rumors; current debate |
+| 18 | Celtics Vault | Basketball | 1980s-2010s | Garden ghosts | soon | 1986 Celtics; Bird; 2008 Celtics; Pierce/KG/Allen; Celtics/Lakers; Garden crowds | Boston Celtics classic highlights; 2008 Celtics Finals; Larry Bird Celtics | trade talk; radio arguments |
+| 19 | Heat Culture TV | Basketball | 2003-present | South Beach grind | soon | 2006 Finals; Big Three; Ray Allen shot; LeBron/Wade; Jimmy Butler; White Hot crowds | Miami Heat classic highlights; Heat 2006 Finals; Ray Allen Game 6 | culture debate without footage |
+| 20 | Warriors Dynasty | Basketball | 2014-2022 | Splash | soon | 2015 title; 73 wins; KD Warriors; Splash Brothers; 2017 Finals; 2022 title | Warriors dynasty highlights; Splash Brothers; Warriors 73 win season | current debate; trade speculation |
+| 21 | Knicks Garden Classics | Basketball | 1970s-1990s | Garden grit | later | Ewing; Knicks/Heat; Reggie Miller; 1994 Finals; Oakley/Mason/Starks; MSG crowds | Knicks 1990s highlights; Knicks Heat rivalry; Ewing playoff highlights | talk radio; current debates |
+| 22 | Pistons Bad Boys | Basketball | 1986-1991 | Bruising | soon | Isiah; Dumars; Rodman; Laimbeer; Jordan Rules; 1989/1990 titles | Detroit Pistons Bad Boys; Jordan Rules Pistons; Isiah Pistons | fight-only clips |
+| 23 | Spurs System TV | Basketball | 1999-2014 | Clockwork | later | 1999 title; 2003 title; 2005 Finals; 2014 beautiful game; Duncan; Manu/Parker | Spurs dynasty highlights; 2014 Spurs Finals; Tim Duncan playoffs | boring-team debate clips |
+| 24 | Patriots Dynasty | Football | 2001-2019 | Methodical | next | Tuck Rule; Super Bowl XXXVI; 2004 defense; 18-1; Super Bowl XLIX; Super Bowl LI | Patriots dynasty highlights; Tom Brady Super Bowl; Patriots comeback | scandal-only clips; debate panels |
+| 25 | Cowboys America's Team | Football | 1970s-1990s | Star power | soon | Staubach; 1970s Super Bowls; Aikman/Irvin/Emmitt; 1990s dynasty; NFC titles; Thanksgiving | Dallas Cowboys 1990s; Cowboys Super Bowl classics; Emmitt Smith highlights | owner drama; modern talk |
+| 26 | Steelers Classics | Football | 1970s-2010s | Black and gold | soon | Steel Curtain; Immaculate Reception; 1970s titles; Polamalu; 2005 title; 2008 title | Steelers classic highlights; Steel Curtain NFL Films; Polamalu Steelers | injury-focused hits |
+| 27 | 49ers Gold Rush | Football | 1980s-1990s | West Coast | later | The Catch; Montana/Rice; Steve Young; 1994 title; Cowboys rivalry; Bill Walsh | 49ers classic highlights; Joe Montana 49ers; Jerry Rice highlights | trade talk; list videos |
+| 28 | Red Sox Classics | Baseball | 1975-2018 | Fenway miracle | soon | Fisk 1975; 2004 ALCS; Bloody Sock; Ortiz walk-offs; 2007 title; 2013 title | Red Sox 2004 ALCS; David Ortiz walk off; Fenway classics | local talk radio |
+| 29 | Yankees Dynasty TV | Baseball | 1977-2009 | Pinstripe pressure | soon | Reggie three homers; Jeter flip; 1996 title; 1998 Yankees; Rivera saves; 2009 title | Yankees postseason highlights; Derek Jeter playoffs; Yankees World Series | tabloid drama |
+| 30 | Florida Gators TV | College Football | 1990s-2010s | Swamp heat | soon | Tebow; Spurrier; 1996 title; 2006 title; 2008 title; Florida/Georgia | Florida Gators Tebow; Gators national championship; Spurrier Florida | recruiting rumors; betting |
 
 ## 3. Era Channels
 
-### CH 21 — NBA 2000s
-- Category: Era Channels
-- Sport: Basketball
-- Era: 2000-2009
-- Vibe: SportsCenter era
-- Sample moments/search themes: Iverson; Vince Carter; Shaq/Kobe; T-Mac; early LeBron; D-Wade; Pistons; Spurs; Suns; dunk contests.
-- Why it belongs: Already central to product identity.
-- Ideal sources/search phrases: NBA 2000s best plays; 2000s NBA playoffs; SportsCenter top plays NBA 2000s.
-- Avoid: modern reaction compilations, clips outside the era.
-
-### CH 22 — NBA 90s
-- Category: Era Channels
-- Sport: Basketball
-- Era: 1990-1999
-- Vibe: Hand-check haze
-- Sample moments/search themes: Bulls dynasty; Knicks/Heat; Reggie Miller; Hakeem Rockets; Barkley Suns; Sonics; Jazz Finals; Dream Team.
-- Why it belongs: Deep ESPN Classic lane with iconic stars.
-- Ideal sources/search phrases: NBA 1990s highlights; 90s NBA playoffs; Bulls Knicks Pacers classics.
-- Avoid: era-debate videos without highlights.
-
-### CH 23 — NBA 80s
-- Category: Era Channels
-- Sport: Basketball
-- Era: 1980-1989
-- Vibe: Magic and Bird
-- Sample moments/search themes: Lakers-Celtics; Dr. J; Bad Boys rise; Dominique dunk battles; Jordan rookie years; Finals classics.
-- Why it belongs: Gives older nostalgia a clean home.
-- Ideal sources/search phrases: NBA 1980s highlights; Magic Bird rivalry; 1980s NBA Finals.
-- Avoid: documentary-only content, poor transfers when better footage exists.
-
-### CH 24 — NFL 90s
-- Category: Era Channels
-- Sport: Football
-- Era: 1990-1999
-- Vibe: Shoulder pads
-- Sample moments/search themes: Cowboys dynasty; 49ers; Bills Super Bowl runs; Brett Favre; Barry Sanders; Deion Sanders; Monday Night Football clips.
-- Why it belongs: Strong retro football channel with visual identity.
-- Ideal sources/search phrases: NFL 1990s highlights; Barry Sanders 90s; Cowboys 49ers classics.
-- Avoid: injury compilations, modern list videos.
-
-### CH 25 — MLB 90s
-- Category: Era Channels
-- Sport: Baseball
-- Era: 1990-1999
-- Vibe: Summer cable
-- Sample moments/search themes: Griffey; McGwire/Sosa chase; Braves pitching; Yankees rise; Cal Ripken streak; 1997 Marlins; Camden Yards era.
-- Why it belongs: Baseball nostalgia works as ambient long-form viewing.
-- Ideal sources/search phrases: MLB 1990s highlights; Ken Griffey Jr highlights; 1990s World Series.
-- Avoid: steroid debate-only clips, current analysis.
-
-### CH 26 — Soccer 2000s
-- Category: Era Channels
-- Sport: Soccer
-- Era: 2000-2009
-- Vibe: Global goals
-- Sample moments/search themes: Zidane; Ronaldinho; early Messi; Ronaldo Brazil; Beckham; Champions League finals; World Cup 2002/2006.
-- Why it belongs: International nostalgia channel with broad appeal.
-- Ideal sources/search phrases: 2000s football highlights; Ronaldinho Barcelona highlights; Champions League 2000s.
-- Avoid: transfer talk, tactical lectures without match footage.
-
-### CH 27 — NHL 90s
-- Category: Era Channels
-- Sport: Hockey
-- Era: 1990-1999
-- Vibe: Ice wars
-- Sample moments/search themes: Gretzky/Kings; Lemieux; Red Wings/Avalanche; Rangers 1994; Dominik Hasek; big saves; playoff overtime.
-- Why it belongs: Hockey adds motion, chaos, and broadcast grit.
-- Ideal sources/search phrases: NHL 1990s highlights; Red Wings Avalanche rivalry; Gretzky Lemieux highlights.
-- Avoid: fight-only compilations when not balanced with hockey.
-
-### CH 28 — College Football 2000s
-- Category: Era Channels
-- Sport: College Football
-- Era: 2000-2009
-- Vibe: BCS voltage
-- Sample moments/search themes: USC dynasty; Texas 2005; Florida Tebow era; Miami Hurricanes; Boise State Fiesta Bowl; rivalry games; BCS chaos.
-- Why it belongs: Perfect college nostalgia programming block.
-- Ideal sources/search phrases: college football 2000s highlights; BCS classic games; 2005 Texas USC.
-- Avoid: recruiting content, betting shows.
-
-### CH 29 — SportsCenter Top 10 Archive
-- Category: Era Channels
-- Sport: Multi-sport
-- Era: 1990s-2010s
-- Vibe: Highlight desk
-- Sample moments/search themes: Top 10 plays; anchors; classic catches; buzzer beaters; web gems; bloopers; nightly recap energy.
-- Why it belongs: Explicitly captures ESPN Classic/SportsCenter programming.
-- Ideal sources/search phrases: SportsCenter classic top 10; ESPN top plays archive; classic SportsCenter highlights.
-- Avoid: modern debate clips, fake SportsCenter edits.
-
-### CH 30 — VHS Sports Mixtape
-- Category: Era Channels
-- Sport: Multi-sport
-- Era: 1980s-2000s
-- Vibe: Tape hiss
-- Sample moments/search themes: old commercials; broadcast intros; highlight tapes; local TV clips; classic player packages; arena music; grainy archived games.
-- Why it belongs: The product's ambient nostalgia in one channel.
-- Ideal sources/search phrases: classic sports VHS highlights; ESPN Classic intros; vintage sports broadcast clips.
-- Avoid: non-sports nostalgia, poor audio-only uploads.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 31 | NBA 2000s | Basketball | 2000-2009 | SportsCenter era | soon | Iverson; Vince; Shaq/Kobe; T-Mac; early LeBron; Wade; Pistons; Spurs; Suns | NBA 2000s best plays; 2000s NBA playoffs; SportsCenter Top 10 NBA 2000s | modern reaction compilations |
+| 32 | NBA 90s Hardwood | Basketball | 1990-1999 | Hand-check haze | soon | Bulls; Knicks/Heat; Reggie; Hakeem; Barkley; Sonics; Jazz Finals | NBA 1990s highlights; 90s NBA playoffs; Bulls Knicks Pacers | era debate without highlights |
+| 33 | NBA 2010s Heat Check | Basketball | 2010-2019 | Modern classic | later | Heatles; Warriors; 2016 Cavs; Spurs 2014; OKC; Kawhi Raptors; Lob City | NBA 2010s highlights; 2016 Cavs Finals; Warriors dynasty | current debate |
+| 34 | NFL 2000s Primetime | Football | 2000-2009 | Sunday recap | soon | Brady/Manning; Ray Lewis; LT; Vick; Favre; Steelers titles | NFL 2000s highlights; NFL Primetime 2000s; Brady Manning rivalry | fantasy football content |
+| 35 | NFL 90s Smashmouth | Football | 1990-1999 | Shoulder pads | soon | Cowboys; 49ers; Bills; Barry Sanders; Deion; Favre | NFL 1990s highlights; Barry Sanders; Cowboys 49ers classics | injury compilations |
+| 36 | MLB Steroid Era | Baseball | 1994-2004 | Long ball summer | later | McGwire/Sosa; Bonds; Griffey; home-run chase; Yankees; Braves pitching | MLB home run chase; McGwire Sosa 1998; Barry Bonds highlights | steroid debate-only clips |
+| 37 | MLB 2000s October | Baseball | 2000-2009 | Fall pressure | later | 2001 World Series; 2004 Red Sox; 2006 Cardinals; 2008 Phillies; Ortiz; Jeter | MLB 2000s postseason; 2001 World Series Game 7; 2004 ALCS | regular-season filler |
+| 38 | College Football BCS Era | College Football | 1998-2013 | BCS voltage | soon | Miami 2001; USC; Texas 2005; Florida Tebow; Boise State; Cam Newton | BCS classic games; college football 2000s; Texas USC Rose Bowl | recruiting content |
+| 39 | SportsCenter Top 10 Era | Multi-sport | 1990s-2010s | Highlight desk | soon | Top 10; web gems; buzzer beaters; catches; anchors; nightly recaps | SportsCenter classic top 10; ESPN top plays archive; classic SportsCenter | fake edits |
+| 40 | VHS Highlight Vault | Multi-sport | 1980s-2000s | Tape hiss | later | VHS tapes; old intros; player packages; arena music; scoreboards; late-night recaps | classic sports VHS highlights; ESPN Classic intros; vintage sports broadcasts | non-sports nostalgia |
 
 ## 4. Event Channels
 
-### CH 31 — Super Bowl Channel
-- Category: Event Channels
-- Sport: Football
-- Era: 1967-present
-- Vibe: Big game
-- Sample moments/search themes: Super Bowl game highlights; halftime-era intros; Montana drives; Giants upsets; Patriots comebacks; Steelers/Cowboys classics; iconic commercials only if sports-adjacent.
-- Why it belongs: Required appointment-TV channel for football fans.
-- Ideal sources/search phrases: NFL Super Bowl highlights; Super Bowl classic games; greatest Super Bowl moments.
-- Avoid: commercial-only compilations, betting previews, current prediction shows.
-
-### CH 32 — NBA Finals Channel
-- Category: Event Channels
-- Sport: Basketball
-- Era: 1980-present
-- Vibe: Trophy room
-- Sample moments/search themes: Magic/Bird Finals; Jordan Finals; Lakers three-peat; Spurs dynasty; 2008 Celtics; 2016 Cavs; Warriors era.
-- Why it belongs: One clean home for basketball championship moments.
-- Ideal sources/search phrases: NBA Finals classic highlights; greatest NBA Finals games; Finals Game 7 highlights.
-- Avoid: debate shows, Finals predictions, regular-season clips.
-
-### CH 33 — March Madness
-- Category: Event Channels
-- Sport: College Basketball
-- Era: 1980-present
-- Vibe: Buzzer fever
-- Sample moments/search themes: buzzer beaters; Cinderella runs; Duke/Kentucky 1992; NC State; Villanova; UConn runs; One Shining Moment; bracket chaos.
-- Why it belongs: High replay value and emotional broadcast nostalgia.
-- Ideal sources/search phrases: NCAA March Madness buzzer beaters; college basketball tournament classics; One Shining Moment.
-- Avoid: bracket advice, gambling content, talk-show predictions.
-
-### CH 34 — World Cup Classics
-- Category: Event Channels
-- Sport: Soccer
-- Era: 1970-present
-- Vibe: Global drama
-- Sample moments/search themes: Maradona 1986; Brazil 1970/2002; Zidane 1998/2006; Germany 2014; penalty shootouts; iconic goals; final highlights.
-- Why it belongs: International sports bar energy.
-- Ideal sources/search phrases: FIFA World Cup classic highlights; greatest World Cup goals; World Cup finals highlights.
-- Avoid: politics-only clips, current qualifying chatter.
-
-### CH 35 — World Series October
-- Category: Event Channels
-- Sport: Baseball
-- Era: 1975-present
-- Vibe: Fall classic
-- Sample moments/search themes: Fisk 1975; Kirk Gibson 1988; Yankees dynasty; 2001 Diamondbacks; 2004 Red Sox; Cubs 2016; Game 7s.
-- Why it belongs: Baseball's strongest championship nostalgia loop.
-- Ideal sources/search phrases: MLB World Series classic highlights; greatest World Series moments; World Series Game 7 highlights.
-- Avoid: offseason analysis, current predictions.
-
-### CH 36 — Stanley Cup Nights
-- Category: Event Channels
-- Sport: Hockey
-- Era: 1980-present
-- Vibe: Overtime cold
-- Sample moments/search themes: Cup-winning goals; Game 7 overtime; Gretzky Oilers; Lemieux Penguins; Red Wings; Blackhawks; goalie saves; handshake lines.
-- Why it belongs: Hockey playoff clips are intense and cinematic.
-- Ideal sources/search phrases: NHL Stanley Cup classic highlights; Game 7 overtime NHL; Stanley Cup winning goals.
-- Avoid: fight-only clips, current betting previews.
-
-### CH 37 — Olympics Gold Feed
-- Category: Event Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: National anthem
-- Sample moments/search themes: Dream Team; Miracle on Ice retrospectives; Usain Bolt; Michael Phelps; gymnastics gold; track finals; winter sports classics.
-- Why it belongs: Multi-sport greatness with global emotional range.
-- Ideal sources/search phrases: Olympic classic highlights; Team USA gold medal moments; Olympic finals highlights.
-- Avoid: political debate, ceremony-only clips unless iconic.
-
-### CH 38 — WrestleMania Vault
-- Category: Event Channels
-- Sport: Pro Wrestling
-- Era: 1985-2015
-- Vibe: Pyro spectacle
-- Sample moments/search themes: Hogan/Andre; Stone Cold era; The Rock; Undertaker streak; Shawn Michaels; John Cena; iconic entrances; title matches.
-- Why it belongs: Sports-entertainment cable nostalgia fits the TV guide.
-- Ideal sources/search phrases: WWE WrestleMania classic highlights; Undertaker WrestleMania streak; Stone Cold WrestleMania.
-- Avoid: rumor channels, podcast arguments, unofficial low-quality reposts.
-
-### CH 39 — Derby Day
-- Category: Event Channels
-- Sport: Horse Racing
-- Era: 1970-present
-- Vibe: Two-minute thunder
-- Sample moments/search themes: Kentucky Derby finishes; Secretariat; Triple Crown runs; photo finishes; Belmont stakes; underdog winners.
-- Why it belongs: Short, dramatic event clips broaden the package.
-- Ideal sources/search phrases: Kentucky Derby classic finishes; Secretariat Belmont; Triple Crown highlights.
-- Avoid: gambling tips, handicapping shows.
-
-### CH 40 — All-Star Weekend
-- Category: Event Channels
-- Sport: Basketball
-- Era: 1980-present
-- Vibe: Neon showcase
-- Sample moments/search themes: dunk contests; three-point contests; Magic 1992; Kobe/Shaq reunions; Vince 2000; Jordan dunk contests; celebrity intros.
-- Why it belongs: Bright, casual sports-bar programming.
-- Ideal sources/search phrases: NBA All-Star Weekend highlights; dunk contest classics; NBA three point contest classic.
-- Avoid: fashion-only clips, current debate panels.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 41 | Super Bowl Channel | Football | 1967-present | Big game | next | greatest Super Bowls; halftime moments; comebacks; game-winning drives; Montana; Brady; Giants upsets | Super Bowl greatest moments NFL Films; NFL Super Bowl highlights; greatest Super Bowl comebacks | prediction shows; betting previews |
+| 42 | NBA Finals Channel | Basketball | 1980-present | Trophy room | next | Magic/Bird; Jordan; Lakers three-peat; 2008 Celtics; 2016 Cavs; Warriors | NBA Finals classics; greatest NBA Finals games; NBA Finals Game 7 | regular-season clips |
+| 43 | March Madness TV | College Basketball | 1980-present | Bracket shock | next | buzzer beaters; Cinderellas; Duke/Kentucky 1992; Villanova; UConn; court storms | March Madness buzzer beaters; NCAA tournament classics; college basketball endings | bracket advice; gambling |
+| 44 | World Series Classics | Baseball | 1975-present | Fall classic | soon | Fisk 1975; Gibson 1988; Yankees dynasty; 2001 Diamondbacks; 2004 Red Sox; Cubs 2016 | World Series classic highlights; greatest World Series moments; World Series Game 7 | offseason analysis |
+| 45 | Stanley Cup Nights | Hockey | 1980-present | Overtime cold | soon | Cup-winning goals; Game 7 OT; Gretzky; Lemieux; Red Wings; goalie saves | Stanley Cup classics; NHL Game 7 overtime; Stanley Cup winning goals | fight-only clips |
+| 46 | Olympic Legends | Multi-sport | 1980-present | Gold medal | later | Dream Team; Bolt; Phelps; Biles; gymnastics gold; track finals | Olympic classic highlights; Olympic legends; Team USA gold medal highlights | politics-only clips |
+| 47 | World Cup Classics | Soccer | 1970-present | Global drama | soon | Maradona; Brazil 2002; Zidane; Germany 2014; shootouts; finals | World Cup classic highlights; greatest World Cup goals; World Cup final highlights | politics-only clips |
+| 48 | Rivalry Week | Multi-sport | 1980-present | Bad blood | soon | Lakers/Celtics; Yankees/Red Sox; Michigan/Ohio State; Duke/UNC; Steelers/Ravens; El Clasico | greatest sports rivalries; rivalry game classics; rivalry week moments | debate-only rankings |
+| 49 | Game 7 Network | Multi-sport | 1980-present | No tomorrow | later | NBA Game 7s; World Series Game 7; Stanley Cup Game 7; Cavs/Warriors; 2001 WS; playoff OT | greatest Game 7 highlights; NBA Game 7 classics; World Series Game 7 | predictions |
+| 50 | Championship Sunday | Multi-sport | 1980-present | Trophy lift | later | conference championships; final rounds; title clinchers; trophy lifts; parades; last plays | championship Sunday highlights; title-clinching moments; championship moments | prediction shows |
 
 ## 5. Chaos Channels
 
-### CH 41 — NFL Big Hits
-- Category: Chaos Channels
-- Sport: Football
-- Era: 1990s-2010s
-- Vibe: Ferocious
-- Sample moments/search themes: legal classic hits; Ray Lewis; Troy Polamalu; safeties; goal-line stands; rivalry games; defensive highlight packages.
-- Why it belongs: Already core to the app and channel-surf energy.
-- Ideal sources/search phrases: NFL biggest legal hits; defensive highlights NFL; Ray Lewis classic tackles.
-- Avoid: injury-focused exploitative clips, low-quality reposts.
-
-### CH 42 — Buzzer Beaters
-- Category: Chaos Channels
-- Sport: Basketball
-- Era: 1980-present
-- Vibe: Last-second
-- Sample moments/search themes: NBA game winners; NCAA buzzer beaters; playoff daggers; half-court shots; March Madness endings; crowd explosions.
-- Why it belongs: Pure adrenaline, ideal for passive random viewing.
-- Ideal sources/search phrases: NBA greatest buzzer beaters; NCAA buzzer beaters; basketball game winners.
-- Avoid: fake crowd audio, Shorts-only unless intentional.
-
-### CH 43 — Walk-Off Baseball
-- Category: Chaos Channels
-- Sport: Baseball
-- Era: 1975-present
-- Vibe: Dugout eruption
-- Sample moments/search themes: walk-off homers; playoff walk-offs; Ortiz; Kirk Gibson; Joe Carter; Game 7 endings; crowd celebrations.
-- Why it belongs: Baseball chaos in digestible clips.
-- Ideal sources/search phrases: MLB greatest walk offs; playoff walk off home runs; World Series walk off.
-- Avoid: regular recap clips without the walk-off moment.
-
-### CH 44 — Overtime Hockey
-- Category: Chaos Channels
-- Sport: Hockey
-- Era: 1980-present
-- Vibe: Sudden death
-- Sample moments/search themes: playoff overtime goals; Game 7 winners; goalie stands; double OT; Cup clinchers; arena explosions.
-- Why it belongs: Hockey's best lean-forward channel.
-- Ideal sources/search phrases: NHL playoff overtime goals; Game 7 overtime NHL; Stanley Cup overtime winners.
-- Avoid: full games with poor indexing, fight-only clips.
-
-### CH 45 — College Football Chaos
-- Category: Chaos Channels
-- Sport: College Football
-- Era: 1980-present
-- Vibe: Upset alert
-- Sample moments/search themes: laterals; blocked kicks; Hail Marys; rivalry endings; Boise State trick plays; Appalachian State; Kick Six; field storms.
-- Why it belongs: College football is the richest chaos feed.
-- Ideal sources/search phrases: college football greatest endings; college football upsets; Kick Six highlights.
-- Avoid: betting recaps, conference realignment talk.
-
-### CH 46 — Goal Rush
-- Category: Chaos Channels
-- Sport: Soccer
-- Era: 1980-present
-- Vibe: Net burst
-- Sample moments/search themes: stoppage-time goals; Champions League comebacks; World Cup goals; free kicks; derby winners; penalty shootouts.
-- Why it belongs: International quick-hit drama.
-- Ideal sources/search phrases: greatest soccer goals; stoppage time goals; Champions League comeback highlights.
-- Avoid: transfer rumor edits, low-quality fan camera clips.
-
-### CH 47 — Fight Night Finishes
-- Category: Chaos Channels
-- Sport: Combat Sports
-- Era: 1980-present
-- Vibe: Lights out
-- Sample moments/search themes: boxing knockouts; UFC finishes; title-fight stoppages; classic heavyweight KOs; submission finishes; comeback stoppages.
-- Why it belongs: Combat sports deliver immediate channel-surf drama.
-- Ideal sources/search phrases: boxing classic knockouts; UFC classic finishes; heavyweight knockout highlights.
-- Avoid: gore-focused compilations, unofficial reposts with bad quality.
-
-### CH 48 — Sports Bloopers
-- Category: Chaos Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Tape spill
-- Sample moments/search themes: bloopers; mascot fails; bad snaps; missed dunks; baseball errors; funny broadcast moments; weather chaos.
-- Why it belongs: Classic cable filler that still belongs in a sports bar.
-- Ideal sources/search phrases: classic sports bloopers; ESPN bloopers; funniest sports moments.
-- Avoid: staged/prank content, non-sports clips.
-
-### CH 49 — Rivalry Week
-- Category: Chaos Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Bad blood
-- Sample moments/search themes: Lakers/Celtics; Yankees/Red Sox; Michigan/Ohio State; Duke/UNC; Steelers/Ravens; El Clasico; derby fights.
-- Why it belongs: A natural cross-sport programming block.
-- Ideal sources/search phrases: greatest sports rivalries highlights; rivalry game classic highlights; rivalry week moments.
-- Avoid: debate-only rivalry rankings.
-
-### CH 50 — Comeback Channel
-- Category: Chaos Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Never over
-- Sample moments/search themes: 28-3; Cavs 3-1; Red Sox 0-3 ALCS; Liverpool Istanbul; Chiefs comebacks; Reggie Miller 8 points 9 seconds.
-- Why it belongs: One of the strongest evergreen sports emotions.
-- Ideal sources/search phrases: greatest sports comebacks; impossible comeback highlights; playoff comeback classics.
-- Avoid: list videos with minimal footage, exaggerated clickbait.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 51 | NFL Big Hits | Football | 1990s-2010s | Ferocious | soon | Ray Lewis; Polamalu; goal-line stands; safeties; rivalry games; defensive packages | NFL biggest legal hits; NFL defensive highlights; Ray Lewis tackles | injury-focused compilations |
+| 52 | College Football Chaos | College Football | 1980-present | Upset alert | next | Kick Six; Boise State; App State/Michigan; Hail Marys; blocked kicks; field storms | college football greatest endings; college football upsets; college football chaos | betting recaps |
+| 53 | Buzzer Beater TV | Basketball | 1980-present | Last-second | soon | NBA winners; NCAA buzzer beaters; playoff daggers; half-court shots; March endings; crowd eruptions | NBA greatest buzzer beaters; NCAA buzzer beaters; basketball game winners | fake crowd audio |
+| 54 | Walk-Off Channel | Baseball | 1975-present | Dugout eruption | soon | walk-off homers; playoff walk-offs; Kirk Gibson; Joe Carter; Ortiz; Game 7 endings | MLB greatest walk offs; playoff walk-off homers; World Series walk off | regular recaps |
+| 55 | Miracle Finishes | Multi-sport | 1980-present | Impossible | soon | Music City Miracle; Meadowlands; Reggie Miller; Hail Marys; laterals; comebacks | greatest sports miracle finishes; impossible sports endings; last-second miracles | fake/staged clips |
+| 56 | Sports Fights & Scrums | Multi-sport | 1980-present | Bad blood | later | bench-clearing; hockey scrums; NBA scuffles; rivalries; post-whistle chaos; altercations | sports fights classics; bench-clearing brawls; hockey scrums | non-sports violence |
+| 57 | Posterized TV | Basketball | 1980-present | Above the rim | soon | Vince dunks; Shaq posters; LeBron dunks; Blake Griffin; college dunks; blocks | NBA poster dunks; greatest basketball dunks; college poster dunks | vertical reposts |
+| 58 | Ankle Breaker Channel | Basketball | 1990-present | Shifty | later | Iverson; Kyrie; Curry; streetball; NBA ankle breakers; And1 | NBA ankle breakers; Iverson crossover; basketball handles | fake edited clips |
+| 59 | Trick Play TV | Football | 1980-present | Gadget play | later | Boise State; Philly Special; fake punts; flea flickers; laterals; onside kicks | football trick plays; Philly Special; college football trick plays | video game clips |
+| 60 | Ref Meltdown Network | Multi-sport | 1980-present | Whistle storm | later | coach ejections; umpire arguments; NBA techs; disputed calls; VAR drama; rants | classic sports ejections; coach meltdown highlights; referee calls sports | toxic outrage |
 
 ## 6. Talk Show / Studio Channels
 
-### CH 51 — NBA Tonight
-- Category: Talk Show / Studio Channels
-- Sport: Basketball
-- Era: 1990s-2010s
-- Vibe: Studio desk
-- Sample moments/search themes: NBA Tonight recaps; ESPN studio highlights; playoff desk segments; top plays; old anchor packages; Finals studio opens.
-- Why it belongs: Adds authentic cable programming between highlight channels.
-- Ideal sources/search phrases: NBA Tonight classic ESPN; ESPN NBA studio highlights; NBA playoff studio recap.
-- Avoid: modern hot takes without archival value.
-
-### CH 52 — Inside Studio Classics
-- Category: Talk Show / Studio Channels
-- Sport: Basketball
-- Era: 2000s-present
-- Vibe: Late-night desk
-- Sample moments/search themes: Shaq, Kenny, Charles, Ernie; Inside the NBA laughs; playoff board segments; guarantee moments; Gone Fishin; studio races.
-- Why it belongs: Explicitly requested; this is the sports-bar studio channel.
-- Ideal sources/search phrases: Inside the NBA classic moments; Charles Barkley Shaq Kenny Ernie highlights; Inside NBA playoff moments.
-- Avoid: out-of-context drama, clips without the core crew.
-
-### CH 53 — SportsCenter Classics
-- Category: Talk Show / Studio Channels
-- Sport: Multi-sport
-- Era: 1990s-2010s
-- Vibe: Top ten glow
-- Sample moments/search themes: SportsCenter Top 10; anchors; catchphrases; web gems; classic intros; This Is SportsCenter ads; highlight rundowns.
-- Why it belongs: Central ESPN Classic/SportsCenter identity.
-- Ideal sources/search phrases: classic SportsCenter top 10; ESPN SportsCenter classic moments; This Is SportsCenter commercials.
-- Avoid: current debate shows, non-highlight commentary.
-
-### CH 54 — NFL Primetime
-- Category: Talk Show / Studio Channels
-- Sport: Football
-- Era: 1987-2005
-- Vibe: Sunday recap
-- Sample moments/search themes: Chris Berman; Tom Jackson; NFL Primetime recaps; Sunday night highlights; music packages; playoff recaps.
-- Why it belongs: One of the most cable-TV sports formats ever.
-- Ideal sources/search phrases: NFL Primetime classic highlights; Chris Berman Tom Jackson; ESPN NFL Primetime recaps.
-- Avoid: modern prediction segments, fantasy football content.
-
-### CH 55 — Baseball Tonight
-- Category: Talk Show / Studio Channels
-- Sport: Baseball
-- Era: 1990s-2010s
-- Vibe: Diamond desk
-- Sample moments/search themes: web gems; home run recaps; Karl Ravech era; Sunday Night Baseball tie-ins; playoff desk clips; trade deadline nostalgia.
-- Why it belongs: Baseball's cable recap language is distinct and nostalgic.
-- Ideal sources/search phrases: Baseball Tonight classic web gems; ESPN Baseball Tonight highlights; MLB web gems archive.
-- Avoid: transaction-only clips, current speculation.
-
-### CH 56 — College GameDay Signs
-- Category: Talk Show / Studio Channels
-- Sport: College Football
-- Era: 1990s-present
-- Vibe: Campus morning
-- Sample moments/search themes: GameDay openings; Lee Corso headgear picks; campus crowds; rivalry week; classic signs; big Saturday previews.
-- Why it belongs: College football atmosphere channel.
-- Ideal sources/search phrases: College GameDay classic moments; Lee Corso headgear picks; ESPN GameDay signs.
-- Avoid: current gambling picks, long debate-only segments.
-
-### CH 57 — TNT Overtime Desk
-- Category: Talk Show / Studio Channels
-- Sport: Basketball
-- Era: 2000s-present
-- Vibe: Postgame neon
-- Sample moments/search themes: postgame interviews; Shaq/Chuck jokes; Kenny board; Ernie monologues; playoff desk reactions; championship postgame.
-- Why it belongs: Companion to Inside Studio Classics with more postgame flavor.
-- Ideal sources/search phrases: TNT NBA postgame classic; Inside the NBA postgame; TNT playoff desk highlights.
-- Avoid: duplicate clips from CH 52 unless context differs.
-
-### CH 58 — PTI / Around The Horn Era
-- Category: Talk Show / Studio Channels
-- Sport: Multi-sport
-- Era: 2001-2015
-- Vibe: Pardon the noise
-- Sample moments/search themes: classic PTI intros; Around the Horn arguments; sports debate as nostalgia; Tony/Kornheiser/Wilbon clips; early-2000s ESPN blocks.
-- Why it belongs: Captures a specific after-school ESPN rhythm.
-- Ideal sources/search phrases: classic PTI moments; Around the Horn classic ESPN; early 2000s ESPN debate.
-- Avoid: modern rage-bait, politics-heavy segments.
-
-### CH 59 — Local SportsCenter
-- Category: Talk Show / Studio Channels
-- Sport: Multi-sport
-- Era: 1980s-2000s
-- Vibe: Regional cable
-- Sample moments/search themes: local broadcast recaps; regional sports network intros; local championship desk clips; hometown anchors; old scoreboards.
-- Why it belongs: Feels like flipping through cable in a hotel or bar.
-- Ideal sources/search phrases: local sports broadcast classic; regional sports network highlights; old local sports news.
-- Avoid: non-sports local news, low-audio uploads.
-
-### CH 60 — Press Conference Vault
-- Category: Talk Show / Studio Channels
-- Sport: Multi-sport
-- Era: 1980s-present
-- Vibe: Mic table
-- Sample moments/search themes: Iverson practice; Jim Mora playoffs; Dennis Green; Allen Iverson; championship podiums; retirement speeches; iconic coach rants.
-- Why it belongs: Studio-adjacent personality channel for iconic sports quotes.
-- Ideal sources/search phrases: classic sports press conferences; iconic coach press conference; famous athlete press conference.
-- Avoid: current controversy farming, clips with no historic value.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 61 | NBA Tonight | Basketball | 1990s-2010s | Studio desk | soon | old NBA studio; playoff recaps; top plays; Finals desk; Shaq/Kenny/Charles/Ernie; funny desk clips | old NBA studio segments; NBA Tonight ESPN classic; NBA playoff studio recap | hot-take debate clips |
+| 62 | Inside the NBA Classics | Basketball | 2000s-present | Late-night desk | next | Shaq/Kenny/Charles/Ernie; funny desk clips; Gone Fishin; guarantees; Kenny board; postgame laughs | Inside the NBA funniest moments Shaq Charles; Inside the NBA classic moments; Gone Fishin | out-of-context drama |
+| 63 | SportsCenter Classics | Multi-sport | 1990s-2010s | Top ten glow | next | Top 10; web gems; anchors; This Is SportsCenter; rundowns; old intros | SportsCenter classic moments; classic SportsCenter Top 10; ESPN highlights | fake edits |
+| 64 | PTI / Around the Horn Era | Multi-sport | 2001-2015 | Pardon the noise | later | PTI intros; Around the Horn; Kornheiser; Wilbon; panel scoring; ESPN afternoons | classic PTI moments; Around the Horn classic; early 2000s ESPN debate | rage bait |
+| 65 | NFL Primetime Desk | Football | 1987-2005 | Sunday recap | soon | Berman; Tom Jackson; Sunday recaps; music packages; playoff recaps; ESPN NFL | NFL Primetime classics; Chris Berman Tom Jackson; ESPN NFL Primetime | fantasy shows |
+| 66 | NBA Draft Night | Basketball | 1984-present | Green room | later | 1984 draft; 1996 draft; 2003 draft; steals; green room; David Stern era | classic NBA Draft moments; 1996 NBA Draft; 2003 NBA Draft LeBron | mock draft speculation |
+| 67 | Trade Deadline TV | Multi-sport | 1990-present | Ticker panic | later | NBA trades; MLB deadline; NFL deadline; blockbuster reactions; ticker graphics; ESPN coverage | classic trade deadline coverage; biggest sports trades; ESPN trade deadline classic | rumor mills |
+| 68 | Postgame Pressers | Multi-sport | 1980-present | Mic table | later | Iverson practice; Jim Mora; Dennis Green; championship podiums; retirements; coach rants | classic sports press conferences; famous athlete presser; coach rant sports | controversy farming |
+| 69 | Mic'd Up Channel | Multi-sport | 1990-present | On-field audio | soon | NFL mic'd up; NBA audio; dugout audio; coach huddles; sidelines; trash talk | NFL mic'd up classic; NBA mic'd up; best mic'd up sports | audio without video context |
+| 70 | Commercial Break Classics | Multi-sport | 1980s-2000s | Ad break | later | This Is SportsCenter; Nike ads; Gatorade ads; Jordan ads; Madden ads; local cable ads | classic sports commercials; This Is SportsCenter commercials; 90s Nike basketball ads | modern product ads |
 
 ## 7. Combat Sports Channels
 
-### CH 61 — Mike Tyson TV
-- Category: Combat Sports Channels
-- Sport: Boxing
-- Era: 1985-2005
-- Vibe: Knockout storm
-- Sample moments/search themes: early Tyson knockouts; Spinks; heavyweight title run; training clips; classic ring walks; comeback fights.
-- Why it belongs: Required combat-sports star channel.
-- Ideal sources/search phrases: Mike Tyson classic knockouts; Tyson title fight highlights; Tyson training vintage.
-- Avoid: crime documentaries, gossip, poor-quality reposts.
-
-### CH 62 — Ali Classics
-- Category: Combat Sports Channels
-- Sport: Boxing
-- Era: 1960-1981
-- Vibe: Float and sting
-- Sample moments/search themes: Liston; Frazier trilogy; Foreman Rumble; rope-a-dope; interviews; footwork clips; Olympic roots.
-- Why it belongs: Combat sports history anchor.
-- Ideal sources/search phrases: Muhammad Ali classic fights; Ali Frazier highlights; Ali Foreman Rumble in the Jungle.
-- Avoid: politics-only clips without boxing context.
-
-### CH 63 — UFC Octagon Vault
-- Category: Combat Sports Channels
-- Sport: MMA
-- Era: 1993-2015
-- Vibe: Cage lights
-- Sample moments/search themes: early UFC; Chuck Liddell; Anderson Silva; GSP; Ronda Rousey; PRIDE crossover; title finishes.
-- Why it belongs: Modern combat nostalgia with fast channel energy.
-- Ideal sources/search phrases: UFC classic fights; UFC greatest finishes; Anderson Silva highlights.
-- Avoid: gore compilations, unofficial reposts with poor quality.
-
-### CH 64 — Pride FC Midnight
-- Category: Combat Sports Channels
-- Sport: MMA
-- Era: 1997-2007
-- Vibe: Japanese arena
-- Sample moments/search themes: Fedor; Cro Cop; Wanderlei Silva; Sakuraba; grand prix fights; entrances; soccer kicks era.
-- Why it belongs: Cult combat channel with distinct aesthetic.
-- Ideal sources/search phrases: PRIDE FC classic highlights; Fedor Pride highlights; Cro Cop Pride knockouts.
-- Avoid: poor fan rips, graphic injury emphasis.
-
-### CH 65 — Heavyweight Classics
-- Category: Combat Sports Channels
-- Sport: Boxing
-- Era: 1970-present
-- Vibe: Big men under lights
-- Sample moments/search themes: Ali/Frazier/Foreman; Tyson; Holyfield; Lewis; Klitschko; Wilder/Fury; title knockouts.
-- Why it belongs: Broader boxing channel for iconic division history.
-- Ideal sources/search phrases: heavyweight boxing classic highlights; greatest heavyweight fights; heavyweight knockouts classic.
-- Avoid: non-heavyweight clips, list videos with minimal action.
-
-### CH 66 — Fight Night Walkouts
-- Category: Combat Sports Channels
-- Sport: Combat Sports
-- Era: 1980-present
-- Vibe: Entrance smoke
-- Sample moments/search themes: boxing ring walks; UFC walkouts; WrestleMania overlap; national anthem tension; title-fight entrances; crowd reactions.
-- Why it belongs: Ambient combat-sports vibe channel.
-- Ideal sources/search phrases: best boxing ring walks; UFC walkout classic; iconic fight entrances.
-- Avoid: music-only edits without fight context.
-
-### CH 67 — Golden Gloves Archive
-- Category: Combat Sports Channels
-- Sport: Boxing
-- Era: 1980-present
-- Vibe: Amateur grit
-- Sample moments/search themes: Olympic boxing; amateur Tyson; young Mayweather; young De La Hoya; USA boxing; prospect footage.
-- Why it belongs: Developmental VHS sports tape lane.
-- Ideal sources/search phrases: Olympic boxing classic highlights; amateur boxing legends; young boxer highlights.
-- Avoid: random gym sparring with no relevance.
-
-### CH 68 — Mayweather Money Channel
-- Category: Combat Sports Channels
-- Sport: Boxing
-- Era: 1996-2017
-- Vibe: Precision
-- Sample moments/search themes: Pretty Boy Floyd; defensive masterclasses; De La Hoya; Hatton; Canelo; Pacquiao; Vegas entrances.
-- Why it belongs: Modern boxing star channel with clear identity.
-- Ideal sources/search phrases: Floyd Mayweather classic highlights; Mayweather defensive highlights; Mayweather title fights.
-- Avoid: finance/lifestyle clips without boxing.
-
-### CH 69 — Knockout Countdown
-- Category: Combat Sports Channels
-- Sport: Combat Sports
-- Era: 1980-present
-- Vibe: Ten count
-- Sample moments/search themes: boxing KOs; MMA knockouts; title-fight finishes; comeback knockouts; referee stoppages; crowd silence.
-- Why it belongs: Fast ambient chaos channel.
-- Ideal sources/search phrases: classic knockouts boxing MMA; greatest fight knockouts; title fight knockout highlights.
-- Avoid: graphic injury framing, low-quality reposts.
-
-### CH 70 — Grappling Clinic
-- Category: Combat Sports Channels
-- Sport: MMA / Wrestling / Judo
-- Era: 1990-present
-- Vibe: Mat control
-- Sample moments/search themes: submissions; wrestling takedowns; Khabib control; GSP wrestling; Olympic wrestling; judo throws; BJJ finishes.
-- Why it belongs: Technical contrast to knockout-heavy channels.
-- Ideal sources/search phrases: best MMA submissions; wrestling takedown highlights; judo throw highlights.
-- Avoid: instructional-only videos unless visually highlight-driven.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 71 | Mike Tyson TV | Boxing | 1985-2005 | Knockout storm | next | knockouts; entrances; interviews; 80s heavyweight era; Spinks fight; training footage | Mike Tyson knockouts highlights; Mike Tyson classic fights; Tyson heavyweight highlights | crime retrospectives |
+| 72 | Ali Classics | Boxing | 1960-1981 | Float and sting | soon | Liston; Frazier trilogy; Foreman; Rumble; rope-a-dope; interviews | Muhammad Ali classic fights; Ali Frazier highlights; Ali Foreman | politics-only clips |
+| 73 | Mayweather Money Channel | Boxing | 1996-2017 | Precision | later | Pretty Boy Floyd; defense; De La Hoya; Hatton; Canelo; Pacquiao; Vegas | Floyd Mayweather highlights; Mayweather defense; Mayweather title fights | lifestyle clips |
+| 74 | Pacquiao TV | Boxing | 1995-2021 | Relentless | later | Morales; Marquez; De La Hoya; Hatton KO; Cotto; Mayweather buildup | Manny Pacquiao highlights; Pacquiao knockouts; Pacquiao classic fights | politics content |
+| 75 | UFC Knockout Channel | MMA | 1993-present | Cage lights | soon | Liddell; Silva; McGregor; Rousey; title KOs; comeback stoppages | UFC greatest knockouts; UFC classic finishes; UFC title fight KOs | graphic injury framing |
+| 76 | UFC Rivalries | MMA | 2000-present | Bad blood | later | GSP/Penn; Silva/Sonnen; McGregor/Diaz; Jones/Cormier; Rousey; rematches | UFC greatest rivalries; UFC rematch highlights; UFC rivalry fights | weigh-in-only drama |
+| 77 | Pride FC Vault | MMA | 1997-2007 | Japanese arena | later | Fedor; Cro Cop; Wanderlei; Sakuraba; Grand Prix; entrances | PRIDE FC classics; Fedor Pride; Cro Cop Pride knockouts | poor fan rips |
+| 78 | WWE Attitude Era | Pro Wrestling | 1997-2002 | Pyro chaos | soon | Stone Cold; The Rock; DX; Undertaker; Monday Night Wars; title moments | WWE Attitude Era highlights; Stone Cold classic moments; The Rock Attitude Era | rumor channels |
+| 79 | WrestleMania Channel | Pro Wrestling | 1985-present | Grand stage | later | Hogan/Andre; Undertaker streak; Shawn Michaels; Stone Cold; Cena; entrances | WrestleMania classic highlights; Undertaker streak; WWE WrestleMania moments | podcast commentary |
+| 80 | Boxing Heavyweight Nights | Boxing | 1970-present | Big men under lights | soon | Ali/Frazier/Foreman; Tyson; Holyfield; Lennox; Klitschko; Wilder/Fury | heavyweight boxing classics; greatest heavyweight fights; heavyweight knockouts | non-heavyweight clips |
 
 ## 8. Golf / Tennis / Individual Sports Channels
 
-### CH 71 — Masters Sunday
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Golf
-- Era: 1975-present
-- Vibe: Amen corner
-- Sample moments/search themes: Tiger 1997/2005/2019; Nicklaus 1986; Phil Mickelson; playoff finishes; Amen Corner; green jacket ceremonies.
-- Why it belongs: Quiet, premium nostalgia channel.
-- Ideal sources/search phrases: Masters final round highlights; Amen Corner classic; Masters iconic moments.
-- Avoid: golf tips, swing instruction.
-
-### CH 72 — Wimbledon Centre Court
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Tennis
-- Era: 1980-present
-- Vibe: Grass court
-- Sample moments/search themes: Federer/Nadal 2008; Serena/Venus; Sampras; Borg/McEnroe; Murray; classic finals; tiebreaks.
-- Why it belongs: Elegant individual-sport channel with legendary matches.
-- Ideal sources/search phrases: Wimbledon classic final highlights; Federer Nadal Wimbledon; Serena Wimbledon highlights.
-- Avoid: press-only clips, tennis lesson videos.
-
-### CH 73 — Grand Slam Tennis
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Tennis
-- Era: 1980-present
-- Vibe: Baseline war
-- Sample moments/search themes: US Open; Australian Open; French Open; Federer/Nadal/Djokovic; Serena; Agassi; Sampras; clay-court rallies.
-- Why it belongs: Broader tennis station beyond Wimbledon.
-- Ideal sources/search phrases: Grand Slam tennis classic highlights; US Open tennis classic; French Open classic rallies.
-- Avoid: equipment reviews, instructional clips.
-
-### CH 74 — Olympic Track
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Track and Field
-- Era: 1980-present
-- Vibe: Finish-line flash
-- Sample moments/search themes: Usain Bolt; Carl Lewis; Florence Griffith Joyner; 100m finals; 400m finals; relays; world records.
-- Why it belongs: Short, iconic, high-replay individual-sport clips.
-- Ideal sources/search phrases: Olympic 100m final highlights; Usain Bolt Olympic highlights; track world record highlights.
-- Avoid: training advice, non-race commentary.
-
-### CH 75 — Phelps Lane
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Swimming
-- Era: 2000-2016
-- Vibe: Gold rush
-- Sample moments/search themes: 2008 Beijing; 4x100 relay; 8 golds; butterfly finals; Lochte rivalry; Olympic medal races.
-- Why it belongs: Olympic dominance channel with concise clips.
-- Ideal sources/search phrases: Michael Phelps Olympic highlights; 2008 swimming relay; Phelps gold medal races.
-- Avoid: interview-only clips without race footage.
-
-### CH 76 — Gymnastics Gold
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Gymnastics
-- Era: 1980-present
-- Vibe: Perfect landing
-- Sample moments/search themes: Nadia Comaneci; Mary Lou Retton; Magnificent Seven; Simone Biles; Olympic finals; floor routines; vault moments.
-- Why it belongs: Olympic nostalgia and precise broadcast drama.
-- Ideal sources/search phrases: Olympic gymnastics classic highlights; Simone Biles Olympic highlights; Magnificent Seven gymnastics.
-- Avoid: commentary-only controversy clips.
-
-### CH 77 — X Games After Dark
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Action Sports
-- Era: 1995-2015
-- Vibe: Skate ramp
-- Sample moments/search themes: Tony Hawk 900; Shaun White; skate vert; BMX tricks; snowboarding runs; Moto X; ESPN X Games intros.
-- Why it belongs: Late-90s ESPN culture channel.
-- Ideal sources/search phrases: X Games classic highlights; Tony Hawk 900; Shaun White X Games.
-- Avoid: influencer skate vlogs, non-competition clips.
-
-### CH 78 — Marathon Finish Line
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Running
-- Era: 1980-present
-- Vibe: Endurance
-- Sample moments/search themes: Boston Marathon finishes; NYC Marathon; Olympic marathon; dramatic finishes; world records; comeback stories.
-- Why it belongs: Ambient endurance storytelling with major-event gravity.
-- Ideal sources/search phrases: marathon classic finishes; Boston Marathon highlights; Olympic marathon finish.
-- Avoid: running advice channels, shoe reviews.
-
-### CH 79 — Cycling Mountain Stage
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Cycling
-- Era: 1980-present
-- Vibe: Alpine grind
-- Sample moments/search themes: Tour de France climbs; sprint finishes; time trials; breakaways; mountain stages; yellow jersey moments.
-- Why it belongs: Distinct ambient sports-bar feed with scenic tension.
-- Ideal sources/search phrases: Tour de France classic stages; cycling sprint finish; Tour mountain climb highlights.
-- Avoid: doping debate-only clips, bike reviews.
-
-### CH 80 — Bowling Night
-- Category: Golf / Tennis / Individual Sports Channels
-- Sport: Bowling
-- Era: 1980-2010
-- Vibe: Cable lane
-- Sample moments/search themes: PBA finals; perfect games; TV bowling intros; trick shots; classic announcers; tournament finishes.
-- Why it belongs: Deep cable nostalgia; oddball but authentic.
-- Ideal sources/search phrases: PBA classic bowling; televised perfect game bowling; classic bowling finals.
-- Avoid: casual alley vlogs, instructional-only clips.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 81 | Tiger Sundays Expansion | Golf | 1997-2019 | Sunday red | next | 1997 Masters; 2005 chip; 2008 US Open; 2019 Masters; Sunday red; clutch putts | Tiger Woods final round; Tiger Masters moments; Tiger clutch putts | swing tutorials |
+| 82 | Masters Channel | Golf | 1975-present | Amen Corner | soon | Nicklaus 1986; Tiger 1997; Tiger 2019; Phil; Amen Corner; green jacket | Masters final round; Amen Corner classic; Masters iconic moments | golf instruction |
+| 83 | Golf Meltdown TV | Golf | 1980-present | Club toss | later | major collapses; missed putts; playoff losses; water balls; Ryder Cup; final-hole drama | golf meltdowns; major golf collapse; Ryder Cup pressure | mockery-only compilations |
+| 84 | Serena TV | Tennis | 1999-2022 | Power | soon | US Open; Wimbledon; Australian Open; Venus; match-point saves; Olympic doubles | Serena Grand Slam highlights; Serena Wimbledon final; US Open Serena | controversy-only clips |
+| 85 | Federer Elegance | Tennis | 1998-2022 | Smooth | later | Wimbledon; Federer/Nadal 2008; US Open; backhands; Slam finals; Djokovic rivalry | Federer Wimbledon highlights; Federer Nadal 2008; Federer best shots | equipment reviews |
+| 86 | Nadal Clay Court | Tennis | 2005-present | Red clay | later | French Open; Federer rivalry; Djokovic rivalry; clay rallies; Olympics; match points | Nadal French Open highlights; Nadal clay; Nadal Federer classic | training clips |
+| 87 | Bolt Speed Channel | Track and Field | 2008-2016 | Lightning | soon | 2008 100m; 2009 record; 2012 Olympics; 2016 Olympics; relays; celebrations | Usain Bolt Olympic highlights; Bolt 100m record; Olympic sprint final | training advice |
+| 88 | Phelps Pool TV | Swimming | 2000-2016 | Gold rush | later | 2008 Beijing; 4x100 relay; 8 golds; butterfly finals; Lochte; medal races | Michael Phelps Olympics; 2008 swimming relay; Phelps gold medal races | interview-only clips |
+| 89 | X Games Classics | Action Sports | 1995-2015 | Ramp lights | soon | Tony Hawk 900; Shaun White; skate vert; BMX; Moto X; snowboarding | X Games classic highlights; Tony Hawk 900; Shaun White X Games | influencer vlogs |
+| 90 | Surf / Snow / Extreme TV | Action Sports | 1990-present | Adrenaline | later | big waves; snowboard runs; ski jumps; Red Bull events; winter X Games; wipeouts | extreme sports classics; big wave surfing; snowboarding competition | travel vlogs |
 
 ## 9. College Sports Channels
 
-### CH 81 — Florida Gators TV
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 1990s-2010s
-- Vibe: Swamp heat
-- Sample moments/search themes: Tim Tebow; Steve Spurrier; 1996 title; 2006/2008 titles; SEC rivalry games; Florida/Georgia; national championship highlights.
-- Why it belongs: Already core and gives the product a college identity.
-- Ideal sources/search phrases: Florida Gators Tebow highlights; Gators national championship; Steve Spurrier Florida highlights.
-- Avoid: recruiting rumors, betting, current debate clips.
-
-### CH 82 — Miami Hurricanes 2001
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 1980s-2000s
-- Vibe: Swagger
-- Sample moments/search themes: 2001 roster; Ed Reed; Clinton Portis; Willis McGahee; championship run; wide right games; Orange Bowl energy.
-- Why it belongs: Perhaps the most TV-ready college football team era.
-- Ideal sources/search phrases: 2001 Miami Hurricanes highlights; Ed Reed Miami; Miami Hurricanes dynasty.
-- Avoid: recruiting gossip, off-field-only retrospectives.
-
-### CH 83 — USC Dynasty
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 2002-2008
-- Vibe: Hollywood campus
-- Sample moments/search themes: Reggie Bush; Matt Leinart; Pete Carroll; 2004 title; Rose Bowl; Texas 2005; rivalry games.
-- Why it belongs: Peak 2000s college football nostalgia.
-- Ideal sources/search phrases: USC Reggie Bush highlights; USC 2004 highlights; Texas USC Rose Bowl.
-- Avoid: NCAA sanctions debate-only clips.
-
-### CH 84 — Texas Longhorn Classics
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 1960s-2010s
-- Vibe: Burnt orange
-- Sample moments/search themes: Vince Young Rose Bowl; Ricky Williams; Texas/OU; national titles; Colt McCoy era; rivalry wins.
-- Why it belongs: Big-brand college football channel with iconic single game.
-- Ideal sources/search phrases: Texas Longhorns classic highlights; Vince Young Rose Bowl; Texas OU classic.
-- Avoid: current recruiting talk.
-
-### CH 85 — Duke / UNC Hardwood
-- Category: College Sports Channels
-- Sport: College Basketball
-- Era: 1980-present
-- Vibe: Tobacco Road
-- Sample moments/search themes: Duke/UNC rivalry; Coach K; Dean Smith; Tyler Hansbrough; Zion Duke; Final Four runs; Cameron Indoor.
-- Why it belongs: College hoops needs rivalry programming.
-- Ideal sources/search phrases: Duke UNC classic highlights; Tobacco Road basketball; Duke UNC buzzer beater.
-- Avoid: current bracketology-only clips.
-
-### CH 86 — UConn Women's Dynasty
-- Category: College Sports Channels
-- Sport: College Basketball
-- Era: 1995-present
-- Vibe: Machine
-- Sample moments/search themes: Geno Auriemma; Diana Taurasi; Maya Moore; Breanna Stewart; undefeated seasons; title games; Final Four runs.
-- Why it belongs: Essential dynasty programming and broadens coverage.
-- Ideal sources/search phrases: UConn women's basketball dynasty highlights; Diana Taurasi UConn; Maya Moore UConn.
-- Avoid: debate-only content without game footage.
-
-### CH 87 — SEC Rivalry Saturday
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 1980-present
-- Vibe: Tailgate thunder
-- Sample moments/search themes: Iron Bowl; Florida/Georgia; LSU/Alabama; Tennessee/Florida; Egg Bowl; SEC title games; night games.
-- Why it belongs: Regional sports-bar energy at maximum volume.
-- Ideal sources/search phrases: SEC rivalry classic highlights; Iron Bowl greatest moments; LSU Alabama classic.
-- Avoid: conference realignment talk, gambling picks.
-
-### CH 88 — Notre Dame Classics
-- Category: College Sports Channels
-- Sport: College Football
-- Era: 1970-present
-- Vibe: Golden dome
-- Sample moments/search themes: Rudy-era nostalgia; Catholics vs Convicts; Rocket Ismail; upset wins; NBC intros; bowl games.
-- Why it belongs: National college brand with broadcast tradition.
-- Ideal sources/search phrases: Notre Dame football classic highlights; Catholics vs Convicts highlights; Notre Dame NBC classic.
-- Avoid: current coach speculation.
-
-### CH 89 — College Hoops Buzzer Beaters
-- Category: College Sports Channels
-- Sport: College Basketball
-- Era: 1980-present
-- Vibe: Bracket shock
-- Sample moments/search themes: March Madness game winners; Laettner; Valpo; Villanova; Butler runs; Cinderella finishes; court storms.
-- Why it belongs: College version of the chaos formula.
-- Ideal sources/search phrases: NCAA buzzer beaters; March Madness greatest endings; college basketball game winners.
-- Avoid: bracket advice, low-quality phone recordings.
-
-### CH 90 — HBCU Classic
-- Category: College Sports Channels
-- Sport: College Sports
-- Era: 1980-present
-- Vibe: Band and ball
-- Sample moments/search themes: Bayou Classic; Celebration Bowl; marching bands; football highlights; basketball classics; homecoming energy.
-- Why it belongs: Distinct culture and broadcast rhythm missing from most sports apps.
-- Ideal sources/search phrases: HBCU football classic highlights; Bayou Classic highlights; Celebration Bowl highlights.
-- Avoid: non-sports campus videos unless part of the broadcast atmosphere.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 91 | College Hoops Classics | College Basketball | 1980-present | Campus hardwood | soon | Duke/Kentucky 1992; UConn; Kansas; UNC/Duke; Final Four; Cinderellas | college basketball classics; NCAA basketball games; Final Four classics | bracket advice |
+| 92 | College Football Tailgate TV | College Football | 1980-present | Saturday morning | later | tailgates; campus intros; rivalries; bands; GameDay; stadium entrances | college football tailgate; stadium entrances; GameDay classic moments | betting shows |
+| 93 | Miami Hurricanes Swagger | College Football | 1980s-2000s | Swagger | soon | 2001 Miami; Ed Reed; Portis; McGahee; wide right; Orange Bowl | 2001 Miami Hurricanes; Ed Reed Miami; Miami Hurricanes dynasty | recruiting gossip |
+| 94 | USC Reggie Bush Era | College Football | 2003-2006 | Hollywood campus | soon | Reggie Bush; Leinart; Pete Carroll; 2004 title; Texas USC; Bush Push | USC Reggie Bush highlights; USC 2004; Texas USC Rose Bowl | sanctions debate-only clips |
+| 95 | Texas Longhorn Classics | College Football | 1960s-2010s | Burnt orange | soon | Vince Young; Ricky Williams; Texas/OU; Colt McCoy; titles; rivalry wins | Texas Longhorns classics; Vince Young Rose Bowl; Texas OU classic | recruiting talk |
 
 ## 10. Compilation / Ambient Channels
 
-### CH 91 — Random Sports Compilations
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Remote shuffle
-- Sample moments/search themes: random great plays; multi-sport highlights; weird endings; top plays; sports-bar loops; late-night cable reels.
-- Why it belongs: Explicitly requested; this is the pure channel-surf wildcard.
-- Ideal sources/search phrases: greatest sports moments compilation; random sports highlights; unbelievable sports plays.
-- Avoid: fake/staged clips, non-sports viral videos, clickbait with little footage.
+| CH | Channel | Sport | Era | Vibe | Priority | Example moments / search themes | Ideal source phrases | Avoid |
+|---|---|---|---|---|---|---|---|---|
+| 96 | Random Sports Compilations | Multi-sport | 1980-present | Remote shuffle | next | catches; dunks; goals; hits; trick plays; Top 100s; weird endings | greatest sports moments compilation; random sports highlights; unbelievable sports plays | fake clips |
+| 97 | Late Night Hoops | Basketball | 1980-present | After midnight | later | NBA late-night; streetball; ESPN recaps; classic dunks; smooth jumpers; reruns | late night basketball highlights; classic NBA mixtape; old NBA broadcast | music-only edits |
+| 98 | Sports Bar Mix | Multi-sport | 1980-present | Eight TVs on | soon | multi-sport highlights; crowd reactions; walk-offs; buzzer beaters; hits; goals | sports bar highlights mix; best sports moments; multi sport classics | fake viral clips |
+| 99 | Underdog Stories | Multi-sport | 1980-present | Against odds | later | Cinderellas; upsets; Miracle on Ice; Boise State; Leicester City; small-market titles | greatest sports underdog stories; biggest sports upsets; Cinderella highlights | documentary trailers only |
+| 100 | GOAT Debate Channel | Multi-sport | 1990-present | Bar argument | later | Jordan/LeBron; Brady/Montana; Messi/Ronaldo; Serena; Tiger/Nicklaus; rankings | GOAT debate highlights sports; Jordan LeBron comparison; Brady Montana debate | hot takes without highlights |
 
-### CH 92 — ESPN Classic Moments
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1970s-2010s
-- Vibe: Classic block
-- Sample moments/search themes: classic games; legendary calls; old intros; top plays; championship recaps; SportsCenter-era packages.
-- Why it belongs: The product's programming thesis in one channel.
-- Ideal sources/search phrases: ESPN Classic sports moments; classic sports highlights; legendary sports calls.
-- Avoid: modern debate, documentary trailers only.
+## Connection To The Content Pipeline
 
-### CH 93 — Legendary Calls
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1970-present
-- Vibe: Goosebumps
-- Sample moments/search themes: Al Michaels; Marv Albert; Vin Scully; Jim Nantz; Mike Breen; iconic goal calls; walk-off calls; buzzer calls.
-- Why it belongs: Audio nostalgia is a huge part of sports memory.
-- Ideal sources/search phrases: legendary sports calls; iconic announcer calls; greatest broadcast calls sports.
-- Avoid: fan commentary, muted clips, bad audio.
+This roadmap should feed the existing content workflow:
 
-### CH 94 — Crowd Goes Wild
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Arena roar
-- Sample moments/search themes: court storms; walk-offs; buzzer beaters; stadium eruptions; comeback wins; upset reactions; chants.
-- Why it belongs: Ambient sports-bar energy with immediate emotion.
-- Ideal sources/search phrases: crowd goes wild sports; loudest crowd reactions; court storm highlights.
-- Avoid: crowd-only clips without the play context.
+1. Choose a roadmap item from `data/channelRoadmap.ts`.
+2. Use `CONTENT_RESEARCH_GUIDE.md` and `data/researchQueue.ts` to research candidate videos.
+3. Save candidates into `data/intake/<channel-slug>-candidates.json`.
+4. Review IDs, titles, quality scores, duplicate moments, and source quality.
+5. Promote reviewed candidates with `npm run content:import-videos -- <file>`.
+6. Verify playback in the browser.
+7. Only then consider adding the channel to live `data/channels.ts`.
 
-### CH 95 — Sports Commercial Break
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1980s-2000s
-- Vibe: Ad break
-- Sample moments/search themes: Nike ads; Gatorade ads; This Is SportsCenter; Jordan commercials; sports video game commercials; local cable sports ads.
-- Why it belongs: Makes the app feel like actual cable TV between channels.
-- Ideal sources/search phrases: classic sports commercials; This Is SportsCenter ads; 90s Nike basketball commercials.
-- Avoid: modern product ads, non-sports commercials.
-
-### CH 96 — Uniform Watch
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1970-present
-- Vibe: Jersey rack
-- Sample moments/search themes: throwback uniforms; classic helmets; NBA jerseys; MLB alternates; college uniforms; starter jackets; old broadcast graphics.
-- Why it belongs: Visual nostalgia channel for sports design.
-- Ideal sources/search phrases: classic sports uniforms highlights; throwback uniforms games; best retro jerseys sports.
-- Avoid: shopping hauls, fashion-only influencer content.
-
-### CH 97 — Video Game Sports
-- Category: Compilation / Ambient Channels
-- Sport: Sports Gaming
-- Era: 1990s-2010s
-- Vibe: Console pause
-- Sample moments/search themes: NBA Street; NFL Blitz; Madden intros; NBA Live; NCAA Football; Tony Hawk games; classic sports game commercials.
-- Why it belongs: Adjacent nostalgia that fits the dorm-room TV feeling.
-- Ideal sources/search phrases: NBA Street gameplay highlights; NFL Blitz classic; Madden 2000 intro; NCAA Football classic.
-- Avoid: modern esports streams, long Let's Plays without highlight value.
-
-### CH 98 — Stadium Sounds
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Background roar
-- Sample moments/search themes: organ music; arena intros; crowd chants; PA announcers; stadium ambience; walk-up songs; old scoreboard clips.
-- Why it belongs: Ambient channel for leaving the app on in the background.
-- Ideal sources/search phrases: stadium sounds sports; classic arena intros; crowd chant sports.
-- Avoid: non-game ambience with no sports identity.
-
-### CH 99 — Mascot Mayhem
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1980-present
-- Vibe: Sideline chaos
-- Sample moments/search themes: mascot races; mascot dunks; Philly Phanatic; Benny the Bull; college mascots; halftime bits; sideline stunts.
-- Why it belongs: Cable filler with humor and sports-bar appeal.
-- Ideal sources/search phrases: best mascot moments sports; mascot dunks; funny sports mascot highlights.
-- Avoid: prank channels, non-official staged bits.
-
-### CH 100 — Sign-Off Static
-- Category: Compilation / Ambient Channels
-- Sport: Multi-sport
-- Era: 1970s-2000s
-- Vibe: After midnight
-- Sample moments/search themes: broadcast sign-offs; old score tickers; empty arenas; slow highlight montages; classic theme music; late-night sports recaps.
-- Why it belongs: The app's ambient closing channel, like cable after midnight.
-- Ideal sources/search phrases: classic sports broadcast sign off; old sports ticker; late night sports recap classic.
-- Avoid: non-sports TV sign-offs, unrelated vaporwave loops.
+Until a channel is manually promoted, this plan is not live runtime data.
 

@@ -61,6 +61,18 @@ Create an empty candidate file with:
 npm run content:create-intake -- <channel-slug>
 ```
 
+## Channel Expansion Roadmap
+
+`CHANNEL_EXPANSION_PLAN.md` and `data/channelRoadmap.ts` define the long-term 100-channel strategy. They are planning and prioritization tools only; they do not add channels to the live homepage.
+
+Use them before research work:
+
+1. Pick a roadmap item and check its `launchPriority`.
+2. Use its example moments, search themes, and avoid notes to create or update a candidate intake file.
+3. Research candidates using `CONTENT_RESEARCH_GUIDE.md`.
+4. Import reviewed candidates later with `npm run content:import-videos -- <file>`.
+5. Add the channel to `data/channels.ts` only after explicit approval.
+
 ## Adding One Video Locally
 
 Use the local add-video script when you already have a YouTube URL or video ID and want to append it to an existing channel:
