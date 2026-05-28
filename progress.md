@@ -165,8 +165,15 @@
   - [x] JSON validated, no duplicates vs live channels.ts
   - [x] No live channel data modified
 
+- [x] **Phase 19: Candidate file fulfillment — Batch B (Mike Tyson TV + SportsCenter Classics)**
+  - [x] `data/intake/mike-tyson-tv-candidates.json` — 7 verified YouTube candidates (Q82–Q91)
+    - Tyson vs Berbick (youngest champ), Tyson vs Spinks (91 sec), Tyson vs Douglas (upset), Tyson vs Holyfield I, Tyson vs Holyfield II (ear bite), Tyson vs Holmes, Tyson vs Biggs
+  - [x] `data/intake/sportscenter-classics-candidates.json` — 7 verified YouTube candidates (Q83–Q88)
+    - Early 90s NBA rare footage, NBA Finals Top 10, ESPN Throwback Top 10, Jan 1990 Plays of Week, This Is SportsCenter 90s NBA commercials, April 22 1990 broadcast, Best 90s commercials
+  - [x] JSON validated, no duplicates vs live channels.ts
+
 ## In Progress
-- [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidate files
+- [ ] Batch C: Super Bowl Channel + NBA Finals Channel candidates
 
 ## Up Next
 - [ ] Batch B: Mike Tyson TV + SportsCenter Classics candidates

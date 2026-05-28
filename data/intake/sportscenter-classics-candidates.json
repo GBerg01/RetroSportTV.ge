@@ -1,0 +1,54 @@
+{
+  "channelSlug": "sportscenter-classics",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ouACaaLuIOo",
+      "title": "Early 90s NBA SportsCenter Highlights — Rare Footage",
+      "tags": ["sportscenter", "espn", "nba", "1990s", "vintage", "broadcast"],
+      "vibeTags": ["nostalgic", "retro", "classic"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=IvSa_q2trjY",
+      "title": "Top 10 Plays in NBA Finals History | SportsCenter | ESPN",
+      "tags": ["sportscenter", "espn", "nba", "top-10", "finals", "plays"],
+      "vibeTags": ["iconic", "classic", "countdown"],
+      "qualityScore": 88
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=SGJtx-bBzH0",
+      "title": "Top 10 NBA Finals Moments Since 2000 | ESPN Throwback",
+      "tags": ["sportscenter", "espn", "nba", "top-10", "finals", "2000s"],
+      "vibeTags": ["nostalgic", "iconic", "countdown"],
+      "qualityScore": 87
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=FmA2yhWezEU",
+      "title": "Jan 1990 — ESPN SportsCenter Plays of the Week",
+      "tags": ["sportscenter", "espn", "1990", "vintage", "plays-of-the-week"],
+      "vibeTags": ["retro", "nostalgic", "broadcast"],
+      "qualityScore": 86
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BSHy4AvSTa8",
+      "title": "This Is SportsCenter — Kobe Bryant, Jason Kidd & Best 1990s NBA Commercials | ESPN Archive",
+      "tags": ["sportscenter", "espn", "commercials", "1990s", "kobe", "nba"],
+      "vibeTags": ["nostalgic", "funny", "retro"],
+      "qualityScore": 85
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=BpKKrPii58A",
+      "title": "ESPN SportsCenter — April 22, 1990 (Partial Broadcast)",
+      "tags": ["sportscenter", "espn", "1990", "vintage", "broadcast"],
+      "vibeTags": ["retro", "nostalgic", "time-capsule"],
+      "qualityScore": 84
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=7l16EPmvOz0",
+      "title": "The Best ESPN 'This Is SportsCenter' Commercials from the 90s",
+      "tags": ["sportscenter", "espn", "commercials", "1990s", "classic"],
+      "vibeTags": ["funny", "nostalgic", "retro"],
+      "qualityScore": 83
+    }
+  ]
+}
