@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 11 Complete — Stage 1 Content Pipeline Framework
+## Status: Phase 12 Complete — Local Add-Video Content Script
 
 ---
 
@@ -113,6 +113,13 @@
   - [x] `CONTENT_PIPELINE.md` documents local content workflow, validation, quality scoring, playlist composition, YouTube embed boundary, and future API/database path
   - [x] Existing homepage/player UI behavior preserved; category components updated only for stricter shared types
 
+- [x] **Phase 12: Local add-video content script**
+  - [x] `scripts/add-video.ts` added a safe CLI for appending one approved YouTube video to an existing channel
+  - [x] `content:add-video` npm script compiles and runs the TypeScript CLI without adding new dependencies
+  - [x] Script uses `extractYouTubeId()` and `isValidYouTubeId()` from the Stage 1 validation helpers
+  - [x] Invalid IDs, missing channels, malformed channel data, and duplicate IDs in the same channel are rejected
+  - [x] `CONTENT_PIPELINE.md` now documents add-video usage and follow-up verification
+
 ## In Progress
 - [ ] —
 
@@ -136,6 +143,7 @@
 | 2026-05-27 | Python for [slug] dir creation | Bash mkdir rejects [slug] as a glob even when quoted; Python pathlib works cleanly |
 | 2026-05-27 | Homepage preview uses muted YouTube iframe | Makes hover preview feel like a live TV monitor while staying within official YouTube embeds |
 | 2026-05-27 | Stage 1 content pipeline remains local and pure | Enables deeper channel curation without adding database, auth, admin, or API dependencies yet |
+| 2026-05-28 | Add-video CLI writes to local channel data | Gives curation a safer path than hand-editing `data/channels.ts` while keeping the MVP database-free |
 
 ## Blockers
 - None currently.

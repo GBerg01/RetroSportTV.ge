@@ -39,6 +39,31 @@ The future retrieval order should be:
 
 Avoid reaction videos, podcasts, betting content, video game footage, and clips whose title does not match the target channel.
 
+## Adding One Video Locally
+
+Use the local add-video script when you already have a YouTube URL or video ID and want to append it to an existing channel:
+
+```bash
+npm run content:add-video -- <channel-slug> <youtube-url-or-id> "<title>" [--tags tag1,tag2] [--qualityScore 80]
+```
+
+Example:
+
+```bash
+npm run content:add-video -- kobe-tv https://youtu.be/0RvPKROSXEQ "Kobe Bryant 81 Point Game" --tags kobe,lakers,nba --qualityScore 95
+```
+
+The script:
+
+- extracts and validates the YouTube ID using `lib/content/validation.ts`;
+- rejects invalid IDs;
+- rejects duplicate IDs within the same channel;
+- appends an approved, embeddable `SportsVideo` object to `data/channels.ts`;
+- stores the canonical YouTube watch URL and thumbnail URL;
+- does not call external APIs.
+
+After adding a video, run `npm run lint` and `npm run build` before committing.
+
 ## Validation
 
 Validation starts with `lib/content/validation.ts`.
@@ -106,4 +131,3 @@ The next practical stages are:
 5. Add admin tooling after the data model and curation rules stabilize.
 
 Until then, keep the local-data MVP working and keep UI components insulated from discovery and validation logic.
-
