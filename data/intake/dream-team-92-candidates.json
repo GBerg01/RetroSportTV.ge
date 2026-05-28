@@ -1,0 +1,40 @@
+{
+  "channelSlug": "dream-team-92",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=E7SaPj-wJBo",
+      "title": "The Dream Team's First Olympic Match - Men's Basketball - Full Game | Barcelona 1992 Replays",
+      "tags": ["dream-team", "1992", "olympics", "basketball", "usa", "barcelona"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=JTNIWbGmzGU",
+      "title": "The Best of the Dream Team at the Barcelona 92 Olympics | Throwback Thursday",
+      "tags": ["dream-team", "1992", "olympics", "basketball", "usa", "barcelona"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=CJ5GylhwTXU",
+      "title": "1992 Dream Team Highlights",
+      "tags": ["dream-team", "1992", "olympics", "basketball", "usa"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=vfiRV34iW8I",
+      "title": "Team USA \"Dream Team\" 1992 Olympics Highlights",
+      "tags": ["dream-team", "1992", "olympics", "basketball", "usa"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=RPVYENv7FFs",
+      "title": "USA Dream Team 1st Game Together in 1992 Olympic Qualifiers vs Cuba - NASTY Highlights!",
+      "tags": ["dream-team", "1992", "olympics", "usa", "cuba", "qualifiers"],
+      "vibeTags": ["legendary", "dominant", "electric"],
+      "qualityScore": 92
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "channelSlug": "miracle-on-ice-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=qlfUdKgHwR8",
+      "title": "USA vs Russia (USSR - Soviet Union) 1980 Olympics Hockey - Full Game Miracle on Ice",
+      "tags": ["miracle-on-ice", "usa", "ussr", "hockey", "1980", "olympics"],
+      "vibeTags": ["legendary", "historic", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=qYscemhnf88",
+      "title": "Final Minute of the \"Miracle on Ice\"",
+      "tags": ["miracle-on-ice", "usa", "ussr", "hockey", "1980", "final-minute"],
+      "vibeTags": ["legendary", "iconic", "clutch"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=YjDFmUnhjG0",
+      "title": "\"Do You Believe In Miracles!\" Final Seconds USA Hockey Beating Soviet Union! 1980",
+      "tags": ["miracle-on-ice", "usa", "ussr", "hockey", "1980", "al-michaels"],
+      "vibeTags": ["legendary", "iconic", "emotional"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=aJ6itnbs7Yg",
+      "title": "FINAL MINUTE of the Miracle on Ice | Iconic Moments",
+      "tags": ["miracle-on-ice", "usa", "hockey", "1980", "iconic"],
+      "vibeTags": ["legendary", "iconic", "emotional"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=LCR5im3Ie9k",
+      "title": "When a Bunch of College Hockey Kids Created a 'Miracle'",
+      "tags": ["miracle-on-ice", "usa", "hockey", "1980", "college", "documentary"],
+      "vibeTags": ["legendary", "nostalgic", "emotional"],
+      "qualityScore": 92
+    }
+  ]
+}

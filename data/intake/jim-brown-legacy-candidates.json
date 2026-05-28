@@ -1,0 +1,33 @@
+{
+  "channelSlug": "jim-brown-legacy",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=pbRoQ1cZDXo",
+      "title": "Jim Brown Highlights (Final Version)",
+      "tags": ["jim-brown", "browns", "nfl", "highlights", "running-back"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-Ak4FI7fLE8",
+      "title": "Remembering Football's Greatest Player: Jim Brown 1934-2023 | Pro Football Hall of Fame",
+      "tags": ["jim-brown", "browns", "nfl", "hall-of-fame", "tribute"],
+      "vibeTags": ["legendary", "iconic", "emotional"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=NztIdvtY0K4",
+      "title": "Jim Brown Highlights",
+      "tags": ["jim-brown", "browns", "nfl", "highlights", "legend"],
+      "vibeTags": ["legendary", "dominant", "old-school"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=yeayv2QhFgs",
+      "title": "Remembering Jim Brown",
+      "tags": ["jim-brown", "browns", "nfl", "tribute", "legacy"],
+      "vibeTags": ["legendary", "nostalgic", "emotional"],
+      "qualityScore": 93
+    }
+  ]
+}

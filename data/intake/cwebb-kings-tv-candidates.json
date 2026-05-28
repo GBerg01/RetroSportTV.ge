@@ -1,0 +1,33 @@
+{
+  "channelSlug": "cwebb-kings-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=obp1j3ZFBvk",
+      "title": "This Was Chris Webber At His BEST! 2000-01 Highlights | GOAT SZN",
+      "tags": ["webber", "kings", "nba", "2001", "highlights", "sacramento"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=ZOh0wnQ1VZU",
+      "title": "The Best of Chris Webber's Basketball Career | NBA Highlights",
+      "tags": ["webber", "kings", "nba", "career", "highlights", "best"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5WQSwUGIhz8",
+      "title": "The European Duo Put the Kings on the Brink of a Championship | Vlade Divac & Peja Stojakovic",
+      "tags": ["kings", "divac", "peja", "nba", "sacramento", "2002", "dynasty"],
+      "vibeTags": ["legendary", "nostalgic", "dramatic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=5Dc39m4GnYI",
+      "title": "Chris Webber Talks to Shaq About 2002 Lakers/Kings WCF",
+      "tags": ["webber", "kings", "lakers", "nba", "2002", "wcf", "controversy"],
+      "vibeTags": ["legendary", "dramatic", "nostalgic"],
+      "qualityScore": 93
+    }
+  ]
+}

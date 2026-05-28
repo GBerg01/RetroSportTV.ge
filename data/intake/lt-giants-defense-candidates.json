@@ -1,0 +1,26 @@
+{
+  "channelSlug": "lt-giants-defense",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=3hTM_HA0EAw",
+      "title": "Lawrence Taylor's GREATEST Defensive Player Ever Career Highlights | NFL Legends",
+      "tags": ["lt", "taylor", "giants", "nfl", "defense", "career"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=_ggXb-JeGVE",
+      "title": "Lawrence Taylor Highlights",
+      "tags": ["lt", "taylor", "giants", "nfl", "highlights", "defense"],
+      "vibeTags": ["legendary", "dominant", "physical"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=Zm1C1jtXOIs",
+      "title": "Lawrence Taylor (LB, New York Giants) Career Highlights | NFL",
+      "tags": ["lt", "taylor", "giants", "nfl", "career", "linebacker"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 94
+    }
+  ]
+}

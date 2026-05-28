@@ -1,0 +1,40 @@
+{
+  "channelSlug": "clyde-drexler-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=eYG7CIAlHsQ",
+      "title": "The Best of Clyde Drexler's NBA Legacy",
+      "tags": ["drexler", "blazers", "nba", "career", "highlights", "legacy"],
+      "vibeTags": ["legendary", "iconic", "dominant"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=V88F9c7kLFE",
+      "title": "Clyde Drexler's Best Trail Blazers Highlights",
+      "tags": ["drexler", "blazers", "nba", "portland", "highlights"],
+      "vibeTags": ["legendary", "dominant", "nostalgic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=KnaPF5NYsBM",
+      "title": "Clyde Drexler's Championship Journey: Contender To Champion",
+      "tags": ["drexler", "blazers", "rockets", "nba", "championship", "journey"],
+      "vibeTags": ["legendary", "nostalgic", "emotional"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=uHhmMjN5UNY",
+      "title": "When Clyde Drexler Actually Rivaled MJ! Best 1991-92 Highlights",
+      "tags": ["drexler", "blazers", "jordan", "nba", "1992", "rivalry"],
+      "vibeTags": ["legendary", "dramatic", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=nkyw1Ptu3Z4",
+      "title": "Clyde Drexler - Best Finishes of His Career - Highlights",
+      "tags": ["drexler", "blazers", "nba", "finishes", "highlights"],
+      "vibeTags": ["legendary", "iconic", "electric"],
+      "qualityScore": 92
+    }
+  ]
+}

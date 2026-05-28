@@ -1,0 +1,40 @@
+{
+  "channelSlug": "ali-tv",
+  "videos": [
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=-KKB27_wBc0",
+      "title": "Muhammad Ali vs George Foreman | \"The Rumble in the Jungle\" - Full Fight Highlights & Breakdown",
+      "tags": ["ali", "foreman", "boxing", "rumble-in-the-jungle", "1974"],
+      "vibeTags": ["legendary", "iconic", "dramatic"],
+      "qualityScore": 96
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=xbH_a4b6Axg",
+      "title": "Muhammad Ali vs Joe Frazier III (Highlights) The Thrilla in Manila",
+      "tags": ["ali", "frazier", "boxing", "thrilla-in-manila", "1975"],
+      "vibeTags": ["legendary", "iconic", "dramatic"],
+      "qualityScore": 95
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=55HEVGH0-_M",
+      "title": "Ali vs Frazier | \"Thrilla in Manila\" | HD [50fps] | HIGHLIGHTS",
+      "tags": ["ali", "frazier", "boxing", "thrilla-in-manila", "hd"],
+      "vibeTags": ["legendary", "physical", "classic"],
+      "qualityScore": 94
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=YAt0tyF3HAQ",
+      "title": "The Greatest of All Time! Muhammad Ali Highlights & Knockouts | Power, Speed & Skills",
+      "tags": ["ali", "boxing", "highlights", "knockouts", "greatest"],
+      "vibeTags": ["legendary", "dominant", "iconic"],
+      "qualityScore": 93
+    },
+    {
+      "urlOrId": "https://www.youtube.com/watch?v=6kEmuFoEy54",
+      "title": "Muhammad Ali - All Knockouts of The Greatest",
+      "tags": ["ali", "boxing", "knockouts", "career", "greatest"],
+      "vibeTags": ["legendary", "dominant", "must-see"],
+      "qualityScore": 92
+    }
+  ]
+}
