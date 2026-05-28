@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllChannels, type Channel } from "@/lib/channels";
+import ChannelLogo from "@/components/ChannelLogo";
 
 function ChannelCard({ channel }: { channel: Channel }) {
   return (
@@ -15,7 +16,7 @@ function ChannelCard({ channel }: { channel: Channel }) {
         </p>
         <div className="w-2 h-2 rounded-full bg-[#333] group-hover:bg-[var(--phosphor-green)] transition-colors" />
       </div>
-      <p className="text-4xl">{channel.emoji}</p>
+      <ChannelLogo channel={channel} className="text-4xl" />
       <p className="text-[#e8e8e8] text-2xl mt-2 tracking-wide">{channel.name}</p>
       <p className="text-[#666] text-lg mt-1 leading-snug">{channel.description}</p>
       <div className="mt-3 flex gap-3 text-sm">

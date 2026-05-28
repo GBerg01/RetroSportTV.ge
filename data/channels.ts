@@ -4,6 +4,8 @@ export type Channel = {
   name: string;
   description: string;
   emoji: string;
+  // Optional: set logoUrl to swap emoji for an image/SVG/badge without touching UI components
+  logoUrl?: string;
   channelNumber: string;
   sport: string;
   era: string;

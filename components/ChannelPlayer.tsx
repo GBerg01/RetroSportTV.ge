@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { Channel } from "@/lib/channels";
+import ChannelLogo from "@/components/ChannelLogo";
 
 type Props = {
   channel: Channel;
@@ -42,7 +43,7 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
         <div className="flex items-baseline gap-4 flex-wrap">
           <span className="text-[#555] text-2xl tracking-widest">CH {channel.channelNumber}</span>
           <h1 className="text-[var(--phosphor-green)] phosphor-glow text-5xl md:text-6xl tracking-wide">
-            {channel.emoji} {channel.name}
+            <ChannelLogo channel={channel} className="mr-2" /> {channel.name}
           </h1>
         </div>
         <p className="text-[#777] text-xl mt-2 leading-snug">{channel.description}</p>
