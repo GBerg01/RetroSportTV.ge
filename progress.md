@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 3 Complete — Player Page Live
+## Status: Phase 4 Complete — Homepage UI Rebuilt
 
 ---
 
@@ -34,15 +34,21 @@
   - [x] All 6 channel pages statically generated (SSG)
   - [x] `npm run build` passes clean
 
+- [x] **Phase 4: Homepage UI rebuilt**
+  - [x] `components/HomeHero.tsx` — status bar, wordmark, boot status line with blinking cursor
+  - [x] `components/ChannelCard.tsx` — cable-guide style card: CH strip, logo, metadata, ▶ TUNE IN footer
+  - [x] `components/ChannelGrid.tsx` — CHANNEL GUIDE divider header + responsive grid
+  - [x] `app/page.tsx` — simplified to compose the three new components
+  - [x] `globals.css` — added `.cursor` blink and `.power-on` CRT boot animation
+  - [x] `ChannelLogo` still the only icon swap point; player pages unchanged
+  - [x] `npm run build` passes clean
+
 ## In Progress
 - [ ] —
 
 ## Up Next
-- [ ] Swap placeholder YouTube IDs for verified ones (test in running dev server)
-- [ ] Phase 5 (optional polish): dedicated CRTOverlay component, screen curvature CSS
-- [ ] Phase 6 (optional): keyboard shortcuts (→ next, s = shuffle)
-- [ ] Phase 7: OG meta, responsive polish, 404 page styling
-- [ ] Phase 8: Deploy to Vercel
+- [ ] Swap placeholder YouTube IDs for verified ones
+- [ ] Deploy to Vercel
 
 ## Decisions Log
 | Date | Decision | Reason |
