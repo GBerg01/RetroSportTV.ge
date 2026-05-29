@@ -156,12 +156,25 @@ export default function ChannelRow({ channel, isActive = false, isFavorited = fa
           e.stopPropagation();
           onFavoriteToggle?.();
         }}
-        className="flex-shrink-0 self-center cursor-pointer px-2 transition-opacity"
+        className="group/fav flex-shrink-0 self-center cursor-pointer px-1 sm:px-2"
         aria-label={isFavorited ? "Remove from favorites" : "Add to favorites"}
       >
         <span
-          className="text-[18px] leading-none transition-colors"
-          style={{ color: isFavorited ? "#f5c842" : "#252525" }}
+          className="flex items-center justify-center border text-[16px] leading-none w-9 h-9 transition-all duration-150"
+          style={
+            isFavorited
+              ? {
+                  borderColor: "#f5c84270",
+                  color: "#f5c842",
+                  backgroundColor: "#f5c84218",
+                  textShadow: "0 0 10px #f5c84299",
+                }
+              : {
+                  borderColor: "rgba(255,255,255,0.10)",
+                  color: "#555",
+                  backgroundColor: "rgba(0,0,0,0.18)",
+                }
+          }
         >
           ★
         </span>
