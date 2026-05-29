@@ -1,0 +1,59 @@
+{
+  "channelSlug": "stone-cold-tv",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: 37XnnInsRoA, UzAVcRHxdiw, l8L08usJueE, zhuY2yBqPNM, Vaa4C9DE_hk.",
+  "searchThemes": [
+    "Stone Cold Steve Austin greatest moments",
+    "Stone Cold best Stunners compilation",
+    "Stone Cold vs Vince McMahon best moments",
+    "Steve Austin career highlights",
+    "Austin 3:16 greatest moments",
+    "Stone Cold beer bash moments",
+    "Steve Austin WrestleMania highlights",
+    "Stone Cold Steve Austin promos",
+    "Steve Austin vs The Rock rivalry",
+    "WWF Stone Cold championship moments"
+  ],
+  "videos": [
+    {
+      "id": "37XnnInsRoA",
+      "title": "Stone Cold Steve Austin Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=37XnnInsRoA",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Best single-video Stone Cold compilation — glass shatters, Stunners, beer bashes."
+    },
+    {
+      "id": "UzAVcRHxdiw",
+      "title": "Stone Cold Best Stunners Compilation",
+      "url": "https://www.youtube.com/watch?v=UzAVcRHxdiw",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure Stunner compilation — the finishing move that defined an era."
+    },
+    {
+      "id": "l8L08usJueE",
+      "title": "Stone Cold vs Vince McMahon Best Moments",
+      "url": "https://www.youtube.com/watch?v=l8L08usJueE",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The Austin-McMahon feud — the best boss vs employee storyline in entertainment history."
+    },
+    {
+      "id": "zhuY2yBqPNM",
+      "title": "Stone Cold Steve Austin Career Highlights",
+      "url": "https://www.youtube.com/watch?v=zhuY2yBqPNM",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning highlight reel — from Ringmaster to The Rattlesnake."
+    },
+    {
+      "id": "Vaa4C9DE_hk",
+      "title": "Stone Cold Austin 3:16 Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=Vaa4C9DE_hk",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Austin 3:16 theme moments — the catchphrase moments that made history."
+    }
+  ]
+}

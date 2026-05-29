@@ -1,0 +1,59 @@
+{
+  "channelSlug": "the-rock-channel",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: xeRHtJZqgwA, 3uSJu2tmCFo, m2FL3JuJ8g8, BwjACCd3k6k, tITC-HpJjxY.",
+  "searchThemes": [
+    "The Rock WWE greatest moments",
+    "The Rock best promos compilation",
+    "The Rock career highlights WWF",
+    "The Rock vs Stone Cold best matches",
+    "The Rock People's Elbow moments",
+    "Dwayne Johnson The Rock highlights",
+    "The Rock People's Champion moments",
+    "The Rock raised eyebrow moments",
+    "The Rock vs Mankind best matches",
+    "The Rock championship moments WWE"
+  ],
+  "videos": [
+    {
+      "id": "xeRHtJZqgwA",
+      "title": "The Rock Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=xeRHtJZqgwA",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning compilation — the most electrifying man in sports entertainment."
+    },
+    {
+      "id": "3uSJu2tmCFo",
+      "title": "The Rock Best Promos Compilation",
+      "url": "https://www.youtube.com/watch?v=3uSJu2tmCFo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure promo reel — The Rock's mic work is unmatched in wrestling history."
+    },
+    {
+      "id": "m2FL3JuJ8g8",
+      "title": "The Rock Career Highlights",
+      "url": "https://www.youtube.com/watch?v=m2FL3JuJ8g8",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Full career highlight reel — Rocky Maivia to The Great One."
+    },
+    {
+      "id": "BwjACCd3k6k",
+      "title": "The Rock vs Stone Cold Best Matches",
+      "url": "https://www.youtube.com/watch?v=BwjACCd3k6k",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The greatest rivalry in WWE history — WrestleMania dream matches."
+    },
+    {
+      "id": "tITC-HpJjxY",
+      "title": "The Rock People's Elbow Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=tITC-HpJjxY",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The People's Elbow compilation — the most theatrical move in wrestling."
+    }
+  ]
+}

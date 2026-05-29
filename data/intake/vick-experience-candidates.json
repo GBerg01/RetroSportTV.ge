@@ -1,0 +1,59 @@
+{
+  "channelSlug": "vick-experience",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: 36muKd4zt7s, u0Ea-XjY47Y, 7wl0L7tu098, CJq2xcBOWRU, eh0s2NGqhoM.",
+  "searchThemes": [
+    "Michael Vick highlights electric QB",
+    "Michael Vick Falcons best plays",
+    "Michael Vick scrambles compilation",
+    "Michael Vick 2002 playoffs Green Bay",
+    "Michael Vick rushing touchdown highlights",
+    "Michael Vick deep ball highlights",
+    "Michael Vick Madden 04 real life",
+    "Michael Vick greatest moments NFL",
+    "Vick juke compilation",
+    "Michael Vick career highlights reel"
+  ],
+  "videos": [
+    {
+      "id": "36muKd4zt7s",
+      "title": "Michael Vick Highlights — Most Electric QB Ever",
+      "url": "https://www.youtube.com/watch?v=36muKd4zt7s",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Best single-video Vick highlight reel — peak electric energy."
+    },
+    {
+      "id": "u0Ea-XjY47Y",
+      "title": "Michael Vick Best Plays Compilation",
+      "url": "https://www.youtube.com/watch?v=u0Ea-XjY47Y",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Comprehensive best-of compilation — passing and running."
+    },
+    {
+      "id": "7wl0L7tu098",
+      "title": "Michael Vick Falcons Highlights",
+      "url": "https://www.youtube.com/watch?v=7wl0L7tu098",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Falcons era focus — the teal uniform years."
+    },
+    {
+      "id": "CJq2xcBOWRU",
+      "title": "Michael Vick Greatest Runs",
+      "url": "https://www.youtube.com/watch?v=CJq2xcBOWRU",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure rushing highlights — the scrambles that defined a generation."
+    },
+    {
+      "id": "eh0s2NGqhoM",
+      "title": "Michael Vick vs Green Bay 2002 Playoffs",
+      "url": "https://www.youtube.com/watch?v=eh0s2NGqhoM",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The NFC Divisional masterpiece — Vick's defining postseason game."
+    }
+  ]
+}

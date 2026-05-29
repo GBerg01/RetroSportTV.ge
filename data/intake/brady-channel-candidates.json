@@ -1,0 +1,59 @@
+{
+  "channelSlug": "brady-channel",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: cxs0N4wyG9I, 3zMx6PIpoPI, fNLGXw409VU, dy0XYPu3vbI, rABceVjSDlk.",
+  "searchThemes": [
+    "Tom Brady Patriots career highlights",
+    "Tom Brady Super Bowl highlights",
+    "Tom Brady greatest moments Patriots",
+    "Tom Brady comeback drives",
+    "Tom Brady 6 rings highlights",
+    "Tom Brady vs defense highlights",
+    "Tom Brady 2001 season highlights",
+    "Tom Brady 2007 undefeated season",
+    "Tom Brady playoffs highlights",
+    "Tom Brady GOAT best plays"
+  ],
+  "videos": [
+    {
+      "id": "cxs0N4wyG9I",
+      "title": "Tom Brady's Career Highlights by the Numbers | Patriots",
+      "url": "https://www.youtube.com/watch?v=cxs0N4wyG9I",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning Brady numbers reel. High embeddability."
+    },
+    {
+      "id": "3zMx6PIpoPI",
+      "title": "All of Tom Brady's Super Bowl Highlights || 2001-2020",
+      "url": "https://www.youtube.com/watch?v=3zMx6PIpoPI",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Every Super Bowl appearance — the definitive Brady compilation."
+    },
+    {
+      "id": "fNLGXw409VU",
+      "title": "Top 12 Tom Brady Patriots Moments",
+      "url": "https://www.youtube.com/watch?v=fNLGXw409VU",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Top 12 moments format — great variety across the dynasty."
+    },
+    {
+      "id": "dy0XYPu3vbI",
+      "title": "Tom Brady Leads Pats to Victory | Super Bowl LIII Player Highlights",
+      "url": "https://www.youtube.com/watch?v=dy0XYPu3vbI",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official Super Bowl LIII player highlights — high embeddability."
+    },
+    {
+      "id": "rABceVjSDlk",
+      "title": "Tom Brady's Top 12 Greatest Moments with the New England Patriots",
+      "url": "https://www.youtube.com/watch?v=rABceVjSDlk",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Top 12 format, Patriots-focused dynasty coverage."
+    }
+  ]
+}

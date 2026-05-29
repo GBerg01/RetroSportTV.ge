@@ -1,0 +1,59 @@
+{
+  "channelSlug": "wwe-attitude-era",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: CCqjsrCFXVA, FY4RB2XrRjA, mStc4_NGh8I, C6H8fogshlo, _RVpHxIf5IY.",
+  "searchThemes": [
+    "WWE Attitude Era greatest moments",
+    "WWE Attitude Era highlights compilation",
+    "Monday Night Raw Attitude Era best moments",
+    "WWE Attitude Era top 10 moments",
+    "WWE 1997 1998 1999 highlights",
+    "D-Generation X best moments",
+    "WWF Attitude Era matches",
+    "WWE Attitude Era promos",
+    "WWE Monday Night Wars highlights",
+    "WWE Attitude Era best matches ever"
+  ],
+  "videos": [
+    {
+      "id": "CCqjsrCFXVA",
+      "title": "WWE Attitude Era Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=CCqjsrCFXVA",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Best single overview of the Attitude Era — all the iconic moments."
+    },
+    {
+      "id": "FY4RB2XrRjA",
+      "title": "WWE Attitude Era Highlights Compilation",
+      "url": "https://www.youtube.com/watch?v=FY4RB2XrRjA",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Extended highlight compilation — chaos and spectacle."
+    },
+    {
+      "id": "mStc4_NGh8I",
+      "title": "WWE Monday Night Raw Attitude Era Best Moments",
+      "url": "https://www.youtube.com/watch?v=mStc4_NGh8I",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Raw-specific focus — the weekly show that defined the era."
+    },
+    {
+      "id": "C6H8fogshlo",
+      "title": "WWE Attitude Era Top 10 Moments",
+      "url": "https://www.youtube.com/watch?v=C6H8fogshlo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Top 10 format — concise era snapshot."
+    },
+    {
+      "id": "_RVpHxIf5IY",
+      "title": "WWE Attitude Era Matches Compilation",
+      "url": "https://www.youtube.com/watch?v=_RVpHxIf5IY",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Match footage compilation — the in-ring action of the era."
+    }
+  ]
+}

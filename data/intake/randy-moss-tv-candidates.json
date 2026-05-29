@@ -1,0 +1,59 @@
+{
+  "channelSlug": "randy-moss-tv",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: lfRAcckQz2s, R2nImaSkXME, Disi53f75a0, EFdkqP_GRZ0, 26g2IK72Lsg. See also: data/intake/randy-moss-channel-candidates.json for the earlier research pass.",
+  "searchThemes": [
+    "Randy Moss career highlights",
+    "Randy Moss 2007 touchdown record season",
+    "Randy Moss best catches compilation",
+    "Randy Moss Vikings highlights",
+    "Randy Moss Patriots highlights",
+    "Randy Moss one-handed catches",
+    "Randy Moss speed highlights",
+    "Randy Moss route running compilation",
+    "Randy Moss Hall of Fame highlights",
+    "Randy Moss straight cash homie"
+  ],
+  "videos": [
+    {
+      "id": "lfRAcckQz2s",
+      "title": "Randy Moss Career Highlights",
+      "url": "https://www.youtube.com/watch?v=lfRAcckQz2s",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning reel — best single-video overview."
+    },
+    {
+      "id": "R2nImaSkXME",
+      "title": "Randy Moss 2007 Record Season Highlights",
+      "url": "https://www.youtube.com/watch?v=R2nImaSkXME",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The 23-TD record season with the Patriots — peak Moss."
+    },
+    {
+      "id": "Disi53f75a0",
+      "title": "Randy Moss Best Catches Compilation",
+      "url": "https://www.youtube.com/watch?v=Disi53f75a0",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure catching highlights — contested grabs, jump balls, fade routes."
+    },
+    {
+      "id": "EFdkqP_GRZ0",
+      "title": "Randy Moss Top Plays | NFL Legends",
+      "url": "https://www.youtube.com/watch?v=EFdkqP_GRZ0",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL Legends format — official channel, high embeddability confidence."
+    },
+    {
+      "id": "26g2IK72Lsg",
+      "title": "Randy Moss Vikings Highlights",
+      "url": "https://www.youtube.com/watch?v=26g2IK72Lsg",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Vikings era focus — the Moss-Culpepper years."
+    }
+  ]
+}

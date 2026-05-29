@@ -1,0 +1,59 @@
+{
+  "channelSlug": "undertaker-streak-tv",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: eoK3GrPCp0c, RBk-KdHaCpE, ljb34LNhGQw, exPZS_ic_ZU, TK_7GUKY3ic.",
+  "searchThemes": [
+    "Undertaker WrestleMania streak all matches",
+    "Undertaker greatest WrestleMania moments",
+    "Undertaker best matches career",
+    "Undertaker career highlights Dead Man",
+    "Undertaker streak 21-0 highlights",
+    "Undertaker vs Shawn Michaels WrestleMania",
+    "Undertaker entrance WrestleMania",
+    "Undertaker chokeslam compilation",
+    "Undertaker Tombstone piledriver compilation",
+    "Undertaker best moments WWE history"
+  ],
+  "videos": [
+    {
+      "id": "eoK3GrPCp0c",
+      "title": "Undertaker WrestleMania Streak All 21 Matches",
+      "url": "https://www.youtube.com/watch?v=eoK3GrPCp0c",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The complete 21-0 streak — all wins documented from 1991 to 2013."
+    },
+    {
+      "id": "RBk-KdHaCpE",
+      "title": "Undertaker Greatest Moments Compilation",
+      "url": "https://www.youtube.com/watch?v=RBk-KdHaCpE",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning greatest moments — the mythology of the Dead Man."
+    },
+    {
+      "id": "ljb34LNhGQw",
+      "title": "Undertaker Best WrestleMania Matches",
+      "url": "https://www.youtube.com/watch?v=ljb34LNhGQw",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "WrestleMania match highlights — the Showcase of the Immortals context."
+    },
+    {
+      "id": "exPZS_ic_ZU",
+      "title": "Undertaker Career Highlights",
+      "url": "https://www.youtube.com/watch?v=exPZS_ic_ZU",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Full career highlight reel — three decades of the Dead Man."
+    },
+    {
+      "id": "TK_7GUKY3ic",
+      "title": "Undertaker Streak Greatest Moments",
+      "url": "https://www.youtube.com/watch?v=TK_7GUKY3ic",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Streak-specific focus — the wins that built the legend."
+    }
+  ]
+}

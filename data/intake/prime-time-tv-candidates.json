@@ -1,0 +1,59 @@
+{
+  "channelSlug": "prime-time-tv",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: fED8XqCT6Eo, 03bZJd9Ijl8, VThNEGnVQTo, DKEiOSkm-_I, EoEi1QOujhM.",
+  "searchThemes": [
+    "Deion Sanders career highlights Prime Time",
+    "Deion Sanders best interceptions compilation",
+    "Deion Sanders 49ers highlights 1994",
+    "Deion Sanders Cowboys highlights 1995",
+    "Deion Sanders speed highlights",
+    "Deion Sanders return highlights",
+    "Deion Sanders Super Bowl",
+    "Prime Time Deion Sanders greatest plays",
+    "Deion Sanders cornerback highlights",
+    "Deion Sanders NFL Legends"
+  ],
+  "videos": [
+    {
+      "id": "fED8XqCT6Eo",
+      "title": "Deion Sanders Career Highlights",
+      "url": "https://www.youtube.com/watch?v=fED8XqCT6Eo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career-spanning reel — the best single overview of Prime Time."
+    },
+    {
+      "id": "03bZJd9Ijl8",
+      "title": "Deion Sanders Best Interceptions Compilation",
+      "url": "https://www.youtube.com/watch?v=03bZJd9Ijl8",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure pick compilation — the shutdown corner at his best."
+    },
+    {
+      "id": "VThNEGnVQTo",
+      "title": "Deion Sanders 49ers Highlights",
+      "url": "https://www.youtube.com/watch?v=VThNEGnVQTo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "1994 Super Bowl champion 49ers year — Prime Time in gold and red."
+    },
+    {
+      "id": "DKEiOSkm-_I",
+      "title": "Deion Sanders Cowboys Highlights",
+      "url": "https://www.youtube.com/watch?v=DKEiOSkm-_I",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "1995 Super Bowl champion Cowboys year — America's Team era."
+    },
+    {
+      "id": "EoEi1QOujhM",
+      "title": "Deion Sanders Prime Time Greatest Plays",
+      "url": "https://www.youtube.com/watch?v=EoEi1QOujhM",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Cross-career greatest plays — the full Prime Time mythology."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "channelSlug": "beast-mode-tv",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: 2_RgX8DTIB0, xpg0iKMgaxo, eP8KXfB_zHg, vmelivYV5cc, ZUqLv8rqC14.",
+  "searchThemes": [
+    "Marshawn Lynch Beast Mode highlights",
+    "Marshawn Lynch best runs compilation",
+    "Marshawn Lynch Seahawks highlights",
+    "Beast Quake run vs Saints 2011",
+    "Marshawn Lynch stiff arm compilation",
+    "Marshawn Lynch Super Bowl XLVIII",
+    "Marshawn Lynch Raiders highlights",
+    "Marshawn Lynch broken tackles",
+    "Marshawn Lynch power running",
+    "Marshawn Lynch career highlights reel"
+  ],
+  "videos": [
+    {
+      "id": "2_RgX8DTIB0",
+      "title": "Marshawn Lynch Beast Mode Highlights",
+      "url": "https://www.youtube.com/watch?v=2_RgX8DTIB0",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Career highlight reel — the definitive Beast Mode compilation."
+    },
+    {
+      "id": "xpg0iKMgaxo",
+      "title": "Marshawn Lynch Best Runs Compilation",
+      "url": "https://www.youtube.com/watch?v=xpg0iKMgaxo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Pure running highlights — broken tackles, power carries."
+    },
+    {
+      "id": "eP8KXfB_zHg",
+      "title": "Marshawn Lynch Seahawks Highlights",
+      "url": "https://www.youtube.com/watch?v=eP8KXfB_zHg",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Seahawks era — Legion of Boom era context."
+    },
+    {
+      "id": "vmelivYV5cc",
+      "title": "Marshawn Lynch Beast Quake Run",
+      "url": "https://www.youtube.com/watch?v=vmelivYV5cc",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The iconic 67-yard playoff run vs Saints that measured on the Richter scale."
+    },
+    {
+      "id": "ZUqLv8rqC14",
+      "title": "Marshawn Lynch Stiff Arm Compilation",
+      "url": "https://www.youtube.com/watch?v=ZUqLv8rqC14",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "The stiff arm as an art form — Lynch's most brutal moments."
+    }
+  ]
+}

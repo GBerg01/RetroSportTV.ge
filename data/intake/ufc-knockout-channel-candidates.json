@@ -1,0 +1,59 @@
+{
+  "channelSlug": "ufc-knockout-channel",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 starters returned 200. Active starters: ZoddiQyy3BE, VOwWcFp008E, AYeWly9r3UE, Dtc_GdMIT-c, pFqMa58x48Q.",
+  "searchThemes": [
+    "UFC best knockouts compilation",
+    "UFC walk-off knockouts greatest",
+    "1 hour UFC knockouts",
+    "UFC knockouts every division",
+    "UFC 2024 greatest knockouts",
+    "UFC fight night best KOs",
+    "UFC spinning heel kick knockouts",
+    "UFC brutal knockout compilation",
+    "UFC best moments all time",
+    "MMA greatest knockouts history"
+  ],
+  "videos": [
+    {
+      "id": "ZoddiQyy3BE",
+      "title": "BEST UFC KNOCK OUTS",
+      "url": "https://www.youtube.com/watch?v=ZoddiQyy3BE",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Best-of UFC knockout compilation — high view count, high energy."
+    },
+    {
+      "id": "VOwWcFp008E",
+      "title": "The Greatest UFC WALK OFF KNOCKOUTS! 😡",
+      "url": "https://www.youtube.com/watch?v=VOwWcFp008E",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Walk-off KOs specifically — the most spectacular finishes."
+    },
+    {
+      "id": "AYeWly9r3UE",
+      "title": "1 HOUR OF THE GREATEST KNOCKOUTS 🟢",
+      "url": "https://www.youtube.com/watch?v=AYeWly9r3UE",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "1-hour format — channel-surf friendly, long viewing session."
+    },
+    {
+      "id": "Dtc_GdMIT-c",
+      "title": "GREATEST KNOCKOUTS in Every UFC Division! 👊",
+      "url": "https://www.youtube.com/watch?v=Dtc_GdMIT-c",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Division-by-division format — great variety across weight classes."
+    },
+    {
+      "id": "pFqMa58x48Q",
+      "title": "GREATEST KNOCKOUTS From 2024! 🧨",
+      "url": "https://www.youtube.com/watch?v=pFqMa58x48Q",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "2024-specific — fresh content with modern production quality."
+    }
+  ]
+}
