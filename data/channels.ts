@@ -273,6 +273,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#22C55E",
+    rowBackgroundUrl: "/channel-art/boston-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/boston-classics/row-bg.png",
     videos: [
       { id: "VTUG-wrriaM", title: "Four Days in October — 2004 ALCS Red Sox vs Yankees Full Highlights" },
       { id: "GjrXL14dMKU", title: "The Bloody Sock Game — 2004 ALCS Game 6 | Red Sox vs Yankees" },
@@ -2674,6 +2676,8 @@ export const CHANNELS: Channel[] = [
     category: "ERAS",
     categories: ["ERAS", "CLASSICS"],
     accentColor: "#6B7280",
+    rowBackgroundUrl: "/channel-art/nba-90s-hardwood/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nba-90s-hardwood/row-bg.png",
     playlistRules: [
       { id: "90s-era", description: "Prioritize iconic 90s NBA moments — rivalries, Finals, and star highlights from the decade.", minQualityScore: 83 },
     ],
@@ -2759,6 +2763,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "ERAS"],
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/pistons-bad-boys/row-bg.png",
+    profileBackgroundUrl: "/channel-art/pistons-bad-boys/row-bg.png",
     playlistRules: [
       { id: "bad-boys-era", description: "Prioritize championship-era Detroit — Jordan battles, title runs, and Bad Boys defense.", minQualityScore: 83 },
     ],
@@ -2831,6 +2837,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "ERAS"],
     accentColor: "#0EA5E9",
+    rowBackgroundUrl: "/channel-art/cowboys-americas-team/row-bg.png",
+    profileBackgroundUrl: "/channel-art/cowboys-americas-team/row-bg.png",
     playlistRules: [
       { id: "cowboys-dynasty", description: "Focus on the 90s Triplets era — Super Bowl runs, game footage, and dynasty moments.", minQualityScore: 82 },
     ],
@@ -2903,6 +2911,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "ERAS"],
     accentColor: "#16A34A",
+    rowBackgroundUrl: "/channel-art/world-series-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/world-series-classics/row-bg.png",
     playlistRules: [
       { id: "world-series-drama", description: "Prioritize iconic World Series moments — walk-offs, Game 7s, and championship clinchers.", minQualityScore: 85 },
     ],
@@ -3049,6 +3059,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/iverson-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/iverson-tv/row-bg.png",
     playlistRules: [
       { id: "iverson-2001", description: "Prioritize 2001 Sixers run, Finals moments, crossovers, and scoring explosions.", minQualityScore: 85 },
     ],
@@ -3563,6 +3575,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#CA8A04",
+    rowBackgroundUrl: "/channel-art/steelers-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/steelers-classics/row-bg.png",
     playlistRules: [
       { id: "steelers-dynasty", description: "Focus on Steel Curtain era, Immaculate Reception, Polamalu highlights, and title runs.", minQualityScore: 85 },
     ],
@@ -3733,6 +3747,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/steph-range-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/steph-range-tv/row-bg.png",
     playlistRules: [
       { id: "curry-range", description: "Prioritize deep threes, game winners, 2016 MVP season, and three-point records.", minQualityScore: 85 },
     ],
@@ -4125,6 +4141,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "ERAS"],
     accentColor: "#64748B",
+    rowBackgroundUrl: "/channel-art/stanley-cup-nights/row-bg.png",
+    profileBackgroundUrl: "/channel-art/stanley-cup-nights/row-bg.png",
     playlistRules: [
       { id: "stanley-cup-ot", description: "Prioritize overtime goals, Game 7 moments, Gretzky era, and championship clinchers.", minQualityScore: 85 },
     ],
@@ -6080,6 +6098,8 @@ export const CHANNELS: Channel[] = [
     vibe: "legendary",
     emoji: "🏒",
     accentColor: "#FF4C00",
+    rowBackgroundUrl: "/channel-art/gretzky-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/gretzky-tv/row-bg.png",
     videos: [
       {
         id: "FVuJKCNdqyg",
