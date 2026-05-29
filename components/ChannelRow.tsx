@@ -156,28 +156,20 @@ export default function ChannelRow({ channel, isActive = false, isFavorited = fa
           e.stopPropagation();
           onFavoriteToggle?.();
         }}
-        className="group/fav flex-shrink-0 self-center cursor-pointer px-1 sm:px-2"
+        title={isFavorited ? "Remove from favorites" : "Add to favorites"}
         aria-label={isFavorited ? "Remove from favorites" : "Add to favorites"}
+        className={`flex-shrink-0 self-center cursor-pointer flex items-center justify-center
+                    w-10 h-10 border text-[18px] leading-none transition-all duration-150
+                    ${isFavorited
+                      ? "border-[#f5c84266] bg-[#f5c84222] text-[#f5c842] hover:border-[#f5c842] hover:bg-[#f5c84230]"
+                      : "border-white/25 bg-black/60 text-[#888] hover:border-[#f5c84255] hover:text-[#d4a820] hover:bg-black/70"
+                    }`}
+        style={isFavorited ? {
+          textShadow: "0 0 12px #f5c84288",
+          boxShadow: "0 0 10px rgba(245,200,66,0.15), inset 0 0 8px rgba(245,200,66,0.08)",
+        } : undefined}
       >
-        <span
-          className="flex items-center justify-center border text-[16px] leading-none w-9 h-9 transition-all duration-150"
-          style={
-            isFavorited
-              ? {
-                  borderColor: "#f5c84270",
-                  color: "#f5c842",
-                  backgroundColor: "#f5c84218",
-                  textShadow: "0 0 10px #f5c84299",
-                }
-              : {
-                  borderColor: "rgba(255,255,255,0.10)",
-                  color: "#555",
-                  backgroundColor: "rgba(0,0,0,0.18)",
-                }
-          }
-        >
-          ★
-        </span>
+        ★
       </button>
 
       {/* TUNE IN */}
