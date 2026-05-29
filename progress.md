@@ -236,6 +236,16 @@
   - [x] Expanded `data/channelArtPrompts.ts` to structured prompt data for `row-bg`, `profile-bg`, `logo`, `badge`, and `logo-spin`
   - [x] Updated asset folder docs to include `badge.png` and the rotating collectible logo strategy
 
+- [x] **Phase 29: OpenAI channel art generation script**
+  - [x] `scripts/generate-channel-art.ts` added — reads prompts from `data/channelArtPrompts.ts`, calls `gpt-image-1`, writes asset directly to `public/channel-art/{slug}/`
+  - [x] `art:generate` npm script added with `NODE_PATH` fix for module resolution from `/tmp` output dir
+  - [x] Supports `--dry-run` (no API call), `--force` (overwrite), `--provider` (default openai)
+  - [x] Auto-loads `OPENAI_API_KEY` from `.env.local` if present; fails with clear error if missing
+  - [x] Uses `gpt-image-1` with nearest supported size per asset type (documented aspect ratio delta)
+  - [x] `logo-spin` assets use `output_format: "webp"` automatically
+  - [x] Updated `CHANNEL_ART_MASTER_PRODUCTION_DOC.md`, `CHANNEL_ART_PRODUCTION_WORKFLOW.md`, `public/channel-art/_README.md` with script documentation
+  - [x] `npm run lint` and `npm run build` pass clean
+
 ## In Progress
 - [ ] —
 

@@ -56,13 +56,30 @@ Runtime strategy:
 - Fallback order should be `logoSpinUrl` -> `logoUrl` -> `emoji`.
 - `badge.png` is an asset format for future surfaces or design iterations, not current UI.
 
-Usage:
+Generation — script path (fastest):
+
+```bash
+# Set your API key once
+export OPENAI_API_KEY=sk-...
+# or add OPENAI_API_KEY=sk-... to .env.local
+
+# Dry-run — no API call, shows prompt and target path
+npm run art:generate -- --channel kobe-tv --asset row-bg --dry-run
+
+# Generate directly into the correct folder
+npm run art:generate -- --channel kobe-tv --asset row-bg
+npm run art:generate -- --channel tiger-sundays --asset logo
+npm run art:generate -- --channel mike-tyson-tv --asset badge --force
+```
+
+The script reads prompts from `data/channelArtPrompts.ts`, calls OpenAI `gpt-image-1`, and writes the asset directly to `public/channel-art/{slug}/`. No manual download or import step needed.
+
+Generation — manual path (copy-paste):
 
 1. Copy a prompt from `CHANNEL_ASSET_PROMPT_BIBLE.md`.
-2. Generate or refine the asset with OpenAI image generation for production consistency.
-3. Use Midjourney only as optional concept exploration if you want extra vibe references.
-4. Download the selected production result.
-5. Import it with one command:
+2. Paste into OpenAI image generation or Midjourney.
+3. Download the selected result.
+4. Import it:
 
 ```bash
 npm run art:import -- --channel kobe-tv --asset row-bg --source latest-desktop
@@ -70,13 +87,15 @@ npm run art:import -- --channel kobe-tv --asset profile-bg --source latest-downl
 npm run art:import -- --channel kobe-tv --asset logo-spin --source /full/path/to/logo-spin.webp
 ```
 
-6. Add the matching paths to `data/channels.ts` through the reviewed channel data workflow:
+Wiring:
+
+After generating or importing, add to `data/channels.ts`:
 
 ```ts
-logoUrl: "/channel-art/{slug}/logo.png",
-logoSpinUrl: "/channel-art/{slug}/logo-spin.webp",
 rowBackgroundUrl: "/channel-art/{slug}/row-bg.png",
 profileBackgroundUrl: "/channel-art/{slug}/profile-bg.png",
+logoUrl: "/channel-art/{slug}/logo.png",
+logoSpinUrl: "/channel-art/{slug}/logo-spin.webp",
 ```
 
-7. Run `npm run build`.
+Then run `npm run build`.

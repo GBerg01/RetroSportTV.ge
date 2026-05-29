@@ -6,15 +6,29 @@ Open this file when producing channel art. Everything you need is here.
 
 ## 1. Full Process Overview
 
+### Script path (fastest — no manual download needed)
+
 ```
-Prompt → Generate image → Download → Import → Wire into channel → Build
+npm run art:generate → asset saved automatically → Wire into channel → Build
 ```
 
-1. Copy the prompt for the target channel and asset type from Section 6.
-2. Paste it into OpenAI image generation (primary path). Use Midjourney for extra concept exploration only.
+1. Run the generate script for the target channel and asset type (see Section 3).
+2. The script reads the prompt from `data/channelArtPrompts.ts`, calls OpenAI, and writes the file directly to `public/channel-art/{slug}/`.
+3. Wire the file path into `data/channels.ts` using the field names in Section 6.
+4. Run `npm run build`. Refresh the browser to confirm.
+5. If the result is bad, re-run the script with `--force`.
+
+### Manual path (copy-paste into OpenAI or Midjourney)
+
+```
+Copy prompt → Generate image → Download → Import → Wire into channel → Build
+```
+
+1. Copy the prompt from Section 7.
+2. Paste into OpenAI image generation. Use Midjourney only for concept exploration.
 3. Download the output to Desktop or Downloads.
 4. Run the import command from Section 4.
-5. Wire the file path into `data/channels.ts` using the field names in Section 5.
+5. Wire into `data/channels.ts` using the field names in Section 6.
 6. Run `npm run build`. Refresh the browser to confirm.
 7. If the result is bad, regenerate and re-import with `--force`.
 
@@ -93,7 +107,71 @@ Fallback priority when `logo-spin` UI is built: `logoSpinUrl` → `logoUrl` → 
 
 ---
 
-## 3. File Naming System
+## 3. Generate Script (OpenAI — Fastest Path)
+
+### Setup
+
+Add your OpenAI API key once. Either:
+
+```bash
+# Option A — shell environment (recommended for daily use)
+export OPENAI_API_KEY=sk-...
+
+# Option B — .env.local in repo root (auto-loaded by the script)
+echo 'OPENAI_API_KEY=sk-...' >> .env.local
+```
+
+Do not commit `.env.local`. It is already in `.gitignore`.
+
+### Dry-run (no API call — shows prompt and target path)
+
+```bash
+npm run art:generate -- --channel tiger-sundays --asset row-bg --dry-run
+npm run art:generate -- --channel kobe-tv --asset logo --dry-run
+npm run art:generate -- --channel mike-tyson-tv --asset badge --dry-run
+```
+
+### Generate one asset
+
+```bash
+npm run art:generate -- --channel tiger-sundays --asset row-bg
+npm run art:generate -- --channel kobe-tv --asset logo
+npm run art:generate -- --channel mike-tyson-tv --asset badge
+npm run art:generate -- --channel nba-2000s --asset profile-bg
+npm run art:generate -- --channel jordan-tv --asset logo-spin
+```
+
+The script:
+
+1. Loads the matching prompt from `data/channelArtPrompts.ts`.
+2. Calls the OpenAI `gpt-image-1` model.
+3. Decodes the base64 response and writes the file to `public/channel-art/{slug}/`.
+4. Creates the target folder if it does not exist.
+5. Prints the exact `data/channels.ts` field to wire.
+
+### Regenerate (overwrite existing file)
+
+```bash
+npm run art:generate -- --channel tiger-sundays --asset row-bg --force
+```
+
+### Aspect ratio note
+
+OpenAI `gpt-image-1` does not support arbitrary aspect ratios. The script uses the nearest supported size per asset type:
+
+| Asset | Target ratio | Generated size | Notes |
+|---|---|---|---|
+| `row-bg` | 5:1 | 1536×1024 (~3:2) | Wider crop or padding may be needed |
+| `profile-bg` | 3:4 | 1024×1536 (~2:3) | Slightly taller than target |
+| `logo` | 1:1 | 1024×1024 | Exact match |
+| `badge` | 1:1 | 1024×1024 | Exact match |
+| `logo-spin` | 1:1 | 1024×1024, WebP | Exact match |
+
+Midjourney remains the option for exact aspect ratios (`--ar 5:1 --style raw`). Use the manual workflow in Section 4 for that path.
+
+---
+
+## 4. File Naming System
 
 One folder per channel slug. All names are fixed.
 

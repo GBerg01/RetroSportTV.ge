@@ -34,16 +34,68 @@ Temporary `logo-spin` fallbacks:
 
 ## Creative Loop
 
+### Script path — fastest, no manual download
+
+1. Decode the channel with `CHANNEL_ASSET_IDEATION_FRAMEWORK.md`.
+2. Pick one of the three concept routes.
+3. Set `OPENAI_API_KEY` in your shell or in `.env.local`.
+4. Run the generate script:
+   ```bash
+   npm run art:generate -- --channel {slug} --asset {type}
+   ```
+5. The script writes the asset directly to `public/channel-art/{slug}/`.
+6. Wire the printed field into `data/channels.ts`.
+7. Run `npm run build`.
+8. If the result is bad, re-run with `--force`.
+
+### Manual path — full control over output
+
 1. Decode the channel with `CHANNEL_ASSET_IDEATION_FRAMEWORK.md`.
 2. Pick one of the three concept routes.
 3. Use the prompt bible or `data/channelArtPrompts.ts` to get the production prompt set.
-4. Generate the asset in OpenAI image generation.
-5. Use Midjourney only if you want extra concept exploration.
-6. Export or crop to the recommended aspect ratio.
-7. Save the result to Desktop or Downloads.
-8. Import it with the helper script.
-9. Wire the file path into `data/channels.ts` if the channel should use it now.
-10. Run `npm run build`.
+4. Paste the prompt into OpenAI image generation. Midjourney is optional for concept exploration only.
+5. Export or crop to the recommended aspect ratio.
+6. Save the result to Desktop or Downloads.
+7. Import it with the helper script.
+8. Wire the file path into `data/channels.ts` if the channel should use it now.
+9. Run `npm run build`.
+
+## OpenAI Generate Script
+
+### Setup
+
+```bash
+# Option A — export in shell
+export OPENAI_API_KEY=sk-...
+
+# Option B — .env.local (auto-loaded by the script, not committed)
+echo 'OPENAI_API_KEY=sk-...' >> .env.local
+```
+
+### Commands
+
+```bash
+# Dry-run — shows prompt and target path, no API call
+npm run art:generate -- --channel tiger-sundays --asset row-bg --dry-run
+
+# Generate
+npm run art:generate -- --channel tiger-sundays --asset row-bg
+npm run art:generate -- --channel kobe-tv --asset logo
+npm run art:generate -- --channel mike-tyson-tv --asset badge --force
+```
+
+### Supported asset types
+
+`row-bg` | `profile-bg` | `logo` | `badge` | `logo-spin`
+
+### What the script does
+
+1. Loads the matching prompt from `data/channelArtPrompts.ts` — prompts are not hardcoded in the script.
+2. Calls `gpt-image-1` via the OpenAI Node SDK.
+3. Decodes the base64 response and writes the PNG (or WebP for `logo-spin`) to `public/channel-art/{slug}/`.
+4. Creates the target folder if it does not exist.
+5. Refuses to overwrite an existing file unless `--force` is passed.
+6. Prints the exact field to wire into `data/channels.ts`.
 
 ## Midjourney Flow
 
