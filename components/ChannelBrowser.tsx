@@ -95,7 +95,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
         </div>
 
         {/* ── Right: channel preview ── */}
-        <div className="hidden lg:flex lg:basis-[26%] lg:max-w-[26%] flex-col border-l border-[#141414] bg-[#050505]">
+        <div className="hidden lg:block lg:basis-[26%] lg:max-w-[26%] border-l border-[#141414] bg-[#050505] sticky top-4 self-start max-h-[calc(100vh-2rem)] overflow-y-auto">
           <ChannelPreview channel={activeChannel} />
         </div>
       </div>
