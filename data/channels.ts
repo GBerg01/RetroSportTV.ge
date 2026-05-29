@@ -82,6 +82,8 @@ export const CHANNELS: Channel[] = [
     category: "ERAS",
     categories: ["ERAS", "CLASSICS"],
     accentColor: "#F97316",
+    rowBackgroundUrl: "/channel-art/nba-2000s/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nba-2000s/row-bg.png",
     videos: [
       { id: "-OJMLCF5oK4", title: "Vince Carter Puts on a Show in Legendary 2000 Slam Dunk Contest" },
       { id: "3wUOU4T7I6g", title: "Allen Iverson 48 Pts + Legendary Step Over Tyronn Lue — 2001 Finals G1" },
@@ -169,6 +171,8 @@ export const CHANNELS: Channel[] = [
     category: "CHAOS",
     categories: ["CHAOS"],
     accentColor: "#3B82F6",
+    rowBackgroundUrl: "/channel-art/nfl-big-hits/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nfl-big-hits/row-bg.png",
     videos: [
       { id: "1T4RqdvU2ew", title: "Ray Lewis' Most Brutal Tackles | NFL Highlights" },
       { id: "ekF2BjPaHJ4", title: "Ray Lewis Biggest Hits Ever" },
@@ -396,6 +400,8 @@ export const CHANNELS: Channel[] = [
     category: "COLLEGE",
     categories: ["COLLEGE", "TEAMS"],
     accentColor: "#FB923C",
+    rowBackgroundUrl: "/channel-art/florida-gators-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/florida-gators-tv/row-bg.png",
     videos: [
       { id: "kI44yk9TSdI", title: "The Story of Tim Tebow's Promise Speech Inspiring the 2008 Gators | College GameDay" },
       { id: "BlIQFf7A5wY", title: "Tim Tebow's Original Promise Speech — Post-Game Press Conference (2008)" },
@@ -573,6 +579,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/jordan-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/jordan-tv/row-bg.png",
     playlistRules: [
       { id: "iconic-jordan", description: "Prioritize iconic Jordan games, Finals moments, and official-quality highlight packages.", minQualityScore: 80 },
     ],
@@ -1751,6 +1759,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "ERAS"],
     accentColor: "#F43F5E",
+    rowBackgroundUrl: "/channel-art/sportscenter-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/sportscenter-classics/row-bg.png",
     playlistRules: [
       { id: "sportscenter-style", description: "Prioritize SportsCenter-style highlight packages, ESPN classic moments, and multi-sport broadcast nostalgia.", minQualityScore: 70 },
     ],
