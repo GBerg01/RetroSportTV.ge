@@ -5407,6 +5407,8 @@ export const CHANNELS: Channel[] = [
     vibe: "legendary",
     emoji: "🚂",
     accentColor: "#FB4F14",
+    rowBackgroundUrl: "/channel-art/elway-broncos-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/elway-broncos-tv/row-bg.png",
     videos: [
       {
         id: "IME_wgGSX-E",
@@ -5488,6 +5490,8 @@ export const CHANNELS: Channel[] = [
     vibe: "cerebral",
     emoji: "🎭",
     accentColor: "#002C5F",
+    rowBackgroundUrl: "/channel-art/peyton-manning-theater/row-bg.png",
+    profileBackgroundUrl: "/channel-art/peyton-manning-theater/row-bg.png",
     videos: [
       {
         id: "MJe2vGVEyfo",
@@ -5569,6 +5573,8 @@ export const CHANNELS: Channel[] = [
     vibe: "physical",
     emoji: "🧤",
     accentColor: "#00653A",
+    rowBackgroundUrl: "/channel-art/gary-payton-era/row-bg.png",
+    profileBackgroundUrl: "/channel-art/gary-payton-era/row-bg.png",
     videos: [
       {
         id: "N4OnkUIxfFw",
@@ -5731,6 +5737,8 @@ export const CHANNELS: Channel[] = [
     vibe: "reckless",
     emoji: "🏹",
     accentColor: "#203731",
+    rowBackgroundUrl: "/channel-art/brett-favre-packers/row-bg.png",
+    profileBackgroundUrl: "/channel-art/brett-favre-packers/row-bg.png",
     videos: [
       {
         id: "rGJOMkOUbTM",
@@ -5812,6 +5820,8 @@ export const CHANNELS: Channel[] = [
     vibe: "legendary",
     emoji: "🍬",
     accentColor: "#0B162A",
+    rowBackgroundUrl: "/channel-art/sweetness-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/sweetness-tv/row-bg.png",
     videos: [
       {
         id: "h2ai8Fr7BWw",
@@ -5893,6 +5903,8 @@ export const CHANNELS: Channel[] = [
     vibe: "electric",
     emoji: "✈️",
     accentColor: "#005778",
+    rowBackgroundUrl: "/channel-art/dan-marino-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/dan-marino-tv/row-bg.png",
     videos: [
       {
         id: "wUoh29mk0Ws",
@@ -5974,6 +5986,8 @@ export const CHANNELS: Channel[] = [
     vibe: "electric",
     emoji: "⚡",
     accentColor: "#4F2683",
+    rowBackgroundUrl: "/channel-art/randy-moss-channel/row-bg.png",
+    profileBackgroundUrl: "/channel-art/randy-moss-channel/row-bg.png",
     videos: [
       {
         id: "lfRAcckQz2s",
@@ -6055,6 +6069,8 @@ export const CHANNELS: Channel[] = [
     vibe: "physical",
     emoji: "🏙️",
     accentColor: "#006BB6",
+    rowBackgroundUrl: "/channel-art/patrick-ewing-knicks/row-bg.png",
+    profileBackgroundUrl: "/channel-art/patrick-ewing-knicks/row-bg.png",
     videos: [
       {
         id: "05hGEvo-5G0",
@@ -6219,6 +6235,8 @@ export const CHANNELS: Channel[] = [
     vibe: "dominant",
     emoji: "💥",
     accentColor: "#A5002F",
+    rowBackgroundUrl: "/channel-art/bo-jackson-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/bo-jackson-tv/row-bg.png",
     videos: [
       {
         id: "80CZ-xEVzw4",
@@ -6383,6 +6401,8 @@ export const CHANNELS: Channel[] = [
     vibe: "electric",
     emoji: "🏀",
     accentColor: "#E03A3E",
+    rowBackgroundUrl: "/channel-art/dominique-wilkins-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/dominique-wilkins-tv/row-bg.png",
     playlistRules: [
       {
         id: "dominique-wilkins-highlights",
