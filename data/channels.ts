@@ -1922,6 +1922,8 @@ export const CHANNELS: Channel[] = [
     category: "COLLEGE",
     categories: ["COLLEGE", "CHAOS"],
     accentColor: "#F59E0B",
+    rowBackgroundUrl: "/channel-art/college-football-chaos/row-bg.png",
+    profileBackgroundUrl: "/channel-art/college-football-chaos/row-bg.png",
     playlistRules: [
       { id: "college-chaos", description: "Prioritize college football endings, upsets, trick plays, and rivalry-game chaos.", minQualityScore: 74 },
     ],
@@ -2578,6 +2580,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/t-mac-time/row-bg.png",
+    profileBackgroundUrl: "/channel-art/t-mac-time/row-bg.png",
     playlistRules: [
       { id: "tmac-scoring", description: "Focus on T-Mac's peak scoring seasons with Magic and Rockets.", minQualityScore: 83 },
     ],
@@ -3146,6 +3150,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "ERAS"],
     accentColor: "#7C3AED",
+    rowBackgroundUrl: "/channel-art/vince-carter-airwaves/row-bg.png",
+    profileBackgroundUrl: "/channel-art/vince-carter-airwaves/row-bg.png",
     playlistRules: [
       { id: "vince-airtime", description: "Prioritize dunk contest, Olympics, Raptors highlights, and game winners.", minQualityScore: 84 },
     ],
@@ -3244,6 +3250,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#BE123C",
+    rowBackgroundUrl: "/channel-art/d-wade-county/row-bg.png",
+    profileBackgroundUrl: "/channel-art/d-wade-county/row-bg.png",
     playlistRules: [
       { id: "wade-heat-peak", description: "Focus on Wade's 2006 Finals, Big Three era highlights, and career-best plays.", minQualityScore: 85 },
     ],
@@ -3403,6 +3411,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/heat-culture-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/heat-culture-tv/row-bg.png",
     playlistRules: [
       { id: "heat-moments", description: "Focus on 2006 and 2012/2013 championship runs, Ray Allen shot, and Big Three highlights.", minQualityScore: 85 },
     ],
@@ -4326,6 +4336,8 @@ export const CHANNELS: Channel[] = [
     category: "ERAS",
     categories: ["ERAS", "CLASSICS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/nfl-2000s-primetime/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nfl-2000s-primetime/row-bg.png",
     playlistRules: [
       { id: "nfl-2000s-stars", description: "Prioritize Brady/Manning rivalry, LT highlights, Vick highlights, and classic 2000s NFL moments.", minQualityScore: 83 },
     ],
@@ -4397,6 +4409,8 @@ export const CHANNELS: Channel[] = [
     vibe: "clutch",
     emoji: "🎯",
     accentColor: "#0053BC",
+    rowBackgroundUrl: "/channel-art/dirk-forever/row-bg.png",
+    profileBackgroundUrl: "/channel-art/dirk-forever/row-bg.png",
     videos: [
       {
         id: "nTsXOGuTVbk",
@@ -4559,6 +4573,8 @@ export const CHANNELS: Channel[] = [
     vibe: "physical",
     emoji: "🏈",
     accentColor: "#0076B6",
+    rowBackgroundUrl: "/channel-art/nfl-90s-smashmouth/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nfl-90s-smashmouth/row-bg.png",
     videos: [
       {
         id: "N-y_nLpiUT0",
@@ -4964,6 +4980,8 @@ export const CHANNELS: Channel[] = [
     vibe: "dominant",
     emoji: "🌙",
     accentColor: "#CE1141",
+    rowBackgroundUrl: "/channel-art/hakeem-dreams/row-bg.png",
+    profileBackgroundUrl: "/channel-art/hakeem-dreams/row-bg.png",
     videos: [
       {
         id: "9J-WJ5739Tg",
@@ -6262,6 +6280,8 @@ export const CHANNELS: Channel[] = [
     vibe: "electric",
     emoji: "🎤",
     accentColor: "#006BB6",
+    rowBackgroundUrl: "/channel-art/slam-dunk-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/slam-dunk-classics/row-bg.png",
     videos: [
       {
         id: "mny1kAxF2zQ",
