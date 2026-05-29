@@ -1,7 +1,7 @@
 {
   "channelSlug": "lamar-jackson-tv",
-  "status": "research-complete",
-  "notes": "15 candidates sourced via YouTube search. IMPORTANT: Lamar is an active player. Active-era NFL content has a higher rate of embedding restrictions than archive content — verify embeddability before adding any ID. Prefer NFL official, Baltimore Ravens official, and NFL Films uploads. The 2019 MVP season and Ravens vs Chiefs rivalry are the highest-priority themes. All IDs sourced from web search — validate embeddability manually.",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: all 5 original videos returned 200 but dSJwDWvc590 (Ravens official 2023 TDs) and l6qlvZhbv6s (NFL official AFC Championship recap) are high-risk embed-block types despite passing oEmbed — replaced with fan compilations 6b45hx2d7iA and QtJrAbi1z7s (both confirmed 200). Active starters: _eiT-9yB8uw, gEJ2FGKLPFs, lTyrevPx3XM, 6b45hx2d7iA, QtJrAbi1z7s.",
   "searchThemes": [
     "Lamar Jackson 2019 MVP highlights",
     "Lamar Jackson best runs scrambles",

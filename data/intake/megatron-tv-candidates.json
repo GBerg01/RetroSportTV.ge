@@ -1,7 +1,7 @@
 {
   "channelSlug": "megatron-tv",
-  "status": "research-complete",
-  "notes": "15 candidates sourced via YouTube search. Prefer NFL official, NFL Throwback, NFL Films, and Detroit Lions official uploads — highest embeddability. Focus on contested catches, end-zone jump balls, and the 2012 record season. IDs verified via web search — validate embeddability before marking approved.",
+  "status": "embed-verified",
+  "notes": "oEmbed check 2026-05-29: S_UNYHqSTWk, CTYhvhthtBI, xNdpxWNAe1Q returned 401 (embed-blocked) — replaced with JTVyfA1dtv4, WyfaHtUv3ms, jeYUvhwzOH8 (all 200). Eq51oSJP_SA and FghPjMxpjjg confirmed 200. Active starters: Eq51oSJP_SA, FghPjMxpjjg, JTVyfA1dtv4, WyfaHtUv3ms, jeYUvhwzOH8.",
   "searchThemes": [
     "Calvin Johnson 2012 record season highlights",
     "Calvin Johnson best catches NFL",
