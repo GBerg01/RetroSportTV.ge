@@ -3672,6 +3672,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/red-sox-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/red-sox-classics/row-bg.png",
     playlistRules: [
       { id: "red-sox-curse", description: "Prioritize 2004 ALCS comeback, Ortiz walk-offs, and Fenway playoff moments.", minQualityScore: 85 },
     ],
@@ -4005,6 +4007,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#15803D",
+    rowBackgroundUrl: "/channel-art/big-ticket-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/big-ticket-tv/row-bg.png",
     playlistRules: [
       { id: "kg-intensity", description: "Focus on KG's Timberwolves prime, 2008 Celtics championship, defensive highlights, and emotional moments.", minQualityScore: 83 },
     ],
@@ -4238,6 +4242,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "ERAS"],
     accentColor: "#16A34A",
+    rowBackgroundUrl: "/channel-art/world-cup-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/world-cup-classics/row-bg.png",
     playlistRules: [
       { id: "world-cup-goals", description: "Prioritize iconic World Cup goals, finals, and legendary individual moments.", minQualityScore: 85 },
     ],
@@ -4492,6 +4498,8 @@ export const CHANNELS: Channel[] = [
     vibe: "explosive",
     emoji: "🏃",
     accentColor: "#E56020",
+    rowBackgroundUrl: "/channel-art/nash-suns-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nash-suns-tv/row-bg.png",
     videos: [
       {
         id: "850QYpX3ZJQ",
@@ -4818,6 +4826,8 @@ export const CHANNELS: Channel[] = [
     vibe: "beautiful-game",
     emoji: "⚙️",
     accentColor: "#C4CED4",
+    rowBackgroundUrl: "/channel-art/spurs-system-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/spurs-system-tv/row-bg.png",
     videos: [
       {
         id: "CjadmjleQT8",
@@ -4899,6 +4909,8 @@ export const CHANNELS: Channel[] = [
     vibe: "dynasty",
     emoji: "🏆",
     accentColor: "#AA0000",
+    rowBackgroundUrl: "/channel-art/niners-gold-rush/row-bg.png",
+    profileBackgroundUrl: "/channel-art/niners-gold-rush/row-bg.png",
     videos: [
       {
         id: "iNf_q2nNnNs",
@@ -5063,6 +5075,8 @@ export const CHANNELS: Channel[] = [
     vibe: "dominant",
     emoji: "🔥",
     accentColor: "#1D1160",
+    rowBackgroundUrl: "/channel-art/barkley-suns-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/barkley-suns-tv/row-bg.png",
     videos: [
       {
         id: "jdLs_1gM8_g",
@@ -5144,6 +5158,8 @@ export const CHANNELS: Channel[] = [
     vibe: "clutch",
     emoji: "⏰",
     accentColor: "#002D62",
+    rowBackgroundUrl: "/channel-art/reggie-miller-time/row-bg.png",
+    profileBackgroundUrl: "/channel-art/reggie-miller-time/row-bg.png",
     videos: [
       {
         id: "0K3YlzvjFbQ",
@@ -5225,6 +5241,8 @@ export const CHANNELS: Channel[] = [
     vibe: "bittersweet",
     emoji: "🎷",
     accentColor: "#002B5C",
+    rowBackgroundUrl: "/channel-art/stockton-malone-jazz/row-bg.png",
+    profileBackgroundUrl: "/channel-art/stockton-malone-jazz/row-bg.png",
     videos: [
       {
         id: "F4efuX_KpzU",
@@ -5306,6 +5324,8 @@ export const CHANNELS: Channel[] = [
     vibe: "electric",
     emoji: "✨",
     accentColor: "#0077C0",
+    rowBackgroundUrl: "/channel-art/penny-shaq-magic/row-bg.png",
+    profileBackgroundUrl: "/channel-art/penny-shaq-magic/row-bg.png",
     videos: [
       {
         id: "pS3teccDTK0",
