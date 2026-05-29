@@ -2207,6 +2207,8 @@ export const CHANNELS: Channel[] = [
     category: "GOLF",
     categories: ["GOLF", "PLAYERS"],
     accentColor: "#DC2626",
+    rowBackgroundUrl: "/channel-art/tiger-sundays-expansion/row-bg.png",
+    profileBackgroundUrl: "/channel-art/tiger-sundays-expansion/row-bg.png",
     playlistRules: [
       { id: "tiger-majors", description: "Prioritize Tiger final rounds, Masters moments, major championship highlights, and clutch putts.", minQualityScore: 80 },
     ],
@@ -4664,6 +4666,8 @@ export const CHANNELS: Channel[] = [
     vibe: "chaos",
     emoji: "🎓",
     accentColor: "#BF5700",
+    rowBackgroundUrl: "/channel-art/college-football-bcs-era/row-bg.png",
+    profileBackgroundUrl: "/channel-art/college-football-bcs-era/row-bg.png",
     videos: [
       {
         id: "qY-2kPVfQVs",
@@ -4745,6 +4749,8 @@ export const CHANNELS: Channel[] = [
     vibe: "nostalgic",
     emoji: "📺",
     accentColor: "#CC0000",
+    rowBackgroundUrl: "/channel-art/espn-anchor-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/espn-anchor-classics/row-bg.png",
     videos: [
       {
         id: "SDegIDWkrnw",
@@ -5656,6 +5662,8 @@ export const CHANNELS: Channel[] = [
     vibe: "historic",
     emoji: "📼",
     accentColor: "#203731",
+    rowBackgroundUrl: "/channel-art/nfl-classics-vault/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nfl-classics-vault/row-bg.png",
     videos: [
       {
         id: "pcflzu8bKc0",
@@ -6493,6 +6501,8 @@ export const CHANNELS: Channel[] = [
     vibe: "dominant",
     emoji: "🏈",
     accentColor: "#FF3C00",
+    rowBackgroundUrl: "/channel-art/jim-brown-legacy/row-bg.png",
+    profileBackgroundUrl: "/channel-art/jim-brown-legacy/row-bg.png",
     playlistRules: [
       {
         id: "jim-brown-legacy",
@@ -6570,6 +6580,8 @@ export const CHANNELS: Channel[] = [
     vibe: "ferocious",
     emoji: "🏈",
     accentColor: "#0B2265",
+    rowBackgroundUrl: "/channel-art/lt-giants-defense/row-bg.png",
+    profileBackgroundUrl: "/channel-art/lt-giants-defense/row-bg.png",
     playlistRules: [
       {
         id: "lt-giants-defense",
@@ -6726,6 +6738,8 @@ export const CHANNELS: Channel[] = [
     vibe: "smooth",
     emoji: "🏀",
     accentColor: "#E03A3E",
+    rowBackgroundUrl: "/channel-art/clyde-drexler-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/clyde-drexler-tv/row-bg.png",
     playlistRules: [
       {
         id: "clyde-drexler-highlights",
@@ -6908,6 +6922,8 @@ export const CHANNELS: Channel[] = [
     vibe: "historic",
     emoji: "🏒",
     accentColor: "#2563EB",
+    rowBackgroundUrl: "/channel-art/miracle-on-ice-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/miracle-on-ice-tv/row-bg.png",
     playlistRules: [
       {
         id: "miracle-on-ice",
@@ -6998,6 +7014,8 @@ export const CHANNELS: Channel[] = [
     vibe: "nostalgic",
     emoji: "👑",
     accentColor: "#5A2D81",
+    rowBackgroundUrl: "/channel-art/cwebb-kings-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/cwebb-kings-tv/row-bg.png",
     playlistRules: [
       {
         id: "cwebb-kings-era",
