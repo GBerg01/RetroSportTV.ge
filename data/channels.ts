@@ -728,6 +728,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#EF4444",
+    rowBackgroundUrl: "/channel-art/bulls-mj-era/row-bg.png",
+    profileBackgroundUrl: "/channel-art/bulls-mj-era/row-bg.png",
     playlistRules: [
       { id: "bulls-dynasty", description: "Prioritize Bulls dynasty playoff games, Finals moments, and 1990s rivalry highlights.", minQualityScore: 78 },
     ],
@@ -875,6 +877,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "CHAOS"],
     accentColor: "#2563EB",
+    rowBackgroundUrl: "/channel-art/super-bowl-channel/row-bg.png",
+    profileBackgroundUrl: "/channel-art/super-bowl-channel/row-bg.png",
     playlistRules: [
       { id: "super-bowl-moments", description: "Prioritize Super Bowl highlight packages, comebacks, game-winning drives, and NFL Films-style moments.", minQualityScore: 78 },
     ],
@@ -1022,6 +1026,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS", "ERAS"],
     accentColor: "#FACC15",
+    rowBackgroundUrl: "/channel-art/nba-finals-channel/row-bg.png",
+    profileBackgroundUrl: "/channel-art/nba-finals-channel/row-bg.png",
     playlistRules: [
       { id: "finals-moments", description: "Prioritize NBA Finals highlights, Game 7 endings, and memorable championship plays.", minQualityScore: 80 },
     ],
@@ -1169,6 +1175,8 @@ export const CHANNELS: Channel[] = [
     category: "CLASSICS",
     categories: ["CLASSICS"],
     accentColor: "#06B6D4",
+    rowBackgroundUrl: "/channel-art/inside-the-nba-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/inside-the-nba-classics/row-bg.png",
     playlistRules: [
       { id: "studio-classics", description: "Prioritize classic Inside the NBA desk segments with the core studio crew.", minQualityScore: 70 },
     ],
@@ -1612,6 +1620,8 @@ export const CHANNELS: Channel[] = [
     category: "COLLEGE",
     categories: ["COLLEGE", "CHAOS", "CLASSICS"],
     accentColor: "#7C3AED",
+    rowBackgroundUrl: "/channel-art/march-madness-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/march-madness-tv/row-bg.png",
     playlistRules: [
       { id: "march-madness", description: "Prioritize NCAA tournament highlights, buzzer beaters, and classic March Madness endings.", minQualityScore: 74 },
     ],
