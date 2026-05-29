@@ -41,6 +41,14 @@ Generation rules:
 - Keep profile backgrounds low-detail behind text areas.
 - Logo-spin assets should be centered collectible objects that read clearly at small size.
 
+Midjourney workflow:
+
+- Append `--ar 5:1 --style raw` for row-bg. Use `--ar 4:1` only as a fallback if 5:1 feels too stretched.
+- Append `--ar 3:4 --style raw` for profile-bg.
+- Append `--ar 1:1 --style raw` for logo, badge, and logo-spin.
+- Midjourney's first output is a 4-option preview grid. Do not download the grid. Upscale the best single option first, then download and import that image.
+- Full workflow: see `CHANNEL_ART_MASTER_PRODUCTION_DOC.md` Section 5.
+
 Runtime strategy:
 
 - Current UI uses `logoUrl` through `ChannelLogo`.

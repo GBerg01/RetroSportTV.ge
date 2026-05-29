@@ -47,12 +47,41 @@ Temporary `logo-spin` fallbacks:
 
 ## Midjourney Flow
 
-1. Copy the same prompt direction from the prompt bible or data file.
-2. Add the correct aspect suffix.
-3. Generate in Discord.
-4. Download the selected result.
-5. Save it to Desktop or Downloads.
-6. Import it with the helper script.
+### Aspect Ratio Reference
+
+Always append the aspect ratio and style flags at the very end of every Midjourney prompt.
+
+| Asset | Midjourney suffix |
+|---|---|
+| `row-bg` | `--ar 5:1 --style raw` |
+| `profile-bg` | `--ar 3:4 --style raw` |
+| `logo` | `--ar 1:1 --style raw` |
+| `badge` | `--ar 1:1 --style raw` |
+| `logo-spin` | `--ar 1:1 --style raw` |
+
+For row-bg: `--ar 5:1` is the preferred ratio. Use `--ar 4:1` only if the composition feels too stretched at 5:1.
+
+### The 4-Option Grid Warning
+
+Midjourney's first output is a 2×2 preview grid of four variations in a single image. Do not download or import the grid. It is a low-resolution preview only. Always upscale a single option before downloading.
+
+### Midjourney Steps
+
+1. Copy the prompt from `CHANNEL_ART_MASTER_PRODUCTION_DOC.md` Section 7 or `CHANNEL_ASSET_PROMPT_BIBLE.md`.
+2. Paste into Discord as `/imagine prompt: {full prompt} --ar 5:1 --style raw` (or the correct suffix for the asset type).
+3. Midjourney generates a 4-option preview grid.
+4. Pick the best option.
+5. Upscale that specific option by clicking U1, U2, U3, or U4.
+6. Wait for the upscale to complete.
+7. Download the upscaled single image — not the preview grid.
+8. Save to Desktop or Downloads.
+9. Import with the helper script.
+
+### Common Mistakes
+
+- Result looks square: confirm `--ar 5:1` is at the end of the prompt and the syntax is correct.
+- Image looks low-res or shows four options side-by-side: you downloaded the preview grid instead of upscaling a single option first.
+- Wrong ratio: confirm the asset type matches the correct suffix in the table above.
 
 ## Quick Import Commands
 
