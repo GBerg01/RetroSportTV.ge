@@ -1455,6 +1455,8 @@ export const CHANNELS: Channel[] = [
     category: "CHAOS",
     categories: ["CHAOS", "CLASSICS"],
     accentColor: "#991B1B",
+    rowBackgroundUrl: "/channel-art/mike-tyson-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/mike-tyson-tv/row-bg.png",
     playlistRules: [
       { id: "tyson-knockouts", description: "Prioritize Tyson fight footage, knockouts, ring walks, and heavyweight-era highlights.", minQualityScore: 72 },
     ],
