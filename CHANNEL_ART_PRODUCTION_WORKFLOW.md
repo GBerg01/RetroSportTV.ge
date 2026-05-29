@@ -1,60 +1,58 @@
 # Channel Art Production Workflow
 
-This is the repeatable production process for generating, organizing, importing, and iterating custom channel art for RetroSportTV.ge.
+This is the repeatable process for creating, organizing, importing, and iterating channel art for RetroSportTV.ge.
 
-The current app supports custom row backgrounds and profile-card backgrounds. Rotating logo assets are documented and typed for future UI use without changing current player behavior.
+Use these files together:
 
-## Asset Types
+- [CHANNEL_ASSET_IDEATION_FRAMEWORK.md](/Users/grayson/Desktop/RetroSportTV.ge/CHANNEL_ASSET_IDEATION_FRAMEWORK.md)
+- [CHANNEL_ASSET_PROMPT_BIBLE.md](/Users/grayson/Desktop/RetroSportTV.ge/CHANNEL_ASSET_PROMPT_BIBLE.md)
+- [data/channelArtPrompts.ts](/Users/grayson/Desktop/RetroSportTV.ge/data/channelArtPrompts.ts)
+- [public/channel-art/_README.md](/Users/grayson/Desktop/RetroSportTV.ge/public/channel-art/_README.md)
 
-Each channel can have these assets:
+## Asset Set
+
+Each channel can have these asset types:
 
 ```text
 public/channel-art/{slug}/row-bg.png
 public/channel-art/{slug}/profile-bg.png
 public/channel-art/{slug}/logo.png
+public/channel-art/{slug}/badge.png
 public/channel-art/{slug}/logo-spin.webp
 ```
 
-- `row-bg.png`: wide channel guide rectangle background, 5:1 preferred, 4:1 acceptable.
-- `profile-bg.png`: vertical TV/profile card background, 3:4.
-- `logo.png`: static transparent fallback logo/icon, 1:1.
-- `logo-spin.webp`: preferred future rotating collectible logo/item, 1:1 animated WebP.
+- `row-bg.png`: wide guide-row background, `5:1` preferred, `4:1` acceptable.
+- `profile-bg.png`: vertical profile-card background, `3:4`.
+- `logo.png`: static icon or emblem, `1:1`.
+- `badge.png`: collectible badge/emblem, `1:1`.
+- `logo-spin.webp`: future rotating collectible object, `1:1`.
 
-Temporary logo-spin fallbacks:
+Temporary `logo-spin` fallbacks:
 
 - `logo-spin.png`: static frame if animation is not ready.
 - `logo-spin.gif`: acceptable animated fallback if WebP is not available.
 
-## Prompt Sources
+## Creative Loop
 
-- `CHANNEL_ART_PROMPTS.md`: human-readable prompt library and creative guidance.
-- `data/channelArtPrompts.ts`: structured prompt catalog generated from every live channel in `data/channels.ts`.
+1. Decode the channel with `CHANNEL_ASSET_IDEATION_FRAMEWORK.md`.
+2. Pick one of the three concept routes.
+3. Use the prompt bible or `data/channelArtPrompts.ts` to get the production prompt set.
+4. Generate the asset in OpenAI image generation.
+5. Use Midjourney only if you want extra concept exploration.
+6. Export or crop to the recommended aspect ratio.
+7. Save the result to Desktop or Downloads.
+8. Import it with the helper script.
+9. Wire the file path into `data/channels.ts` if the channel should use it now.
+10. Run `npm run build`.
 
-Every current live channel gets prompt sets for:
+## Midjourney Flow
 
-- `row-bg`
-- `profile-bg`
-- `logo-spin`
-
-OpenAI image generation is the recommended production provider. Midjourney is supported for concept exploration and high-vibe style exploration.
-
-## Generation Workflow
-
-1. Pick a channel slug, such as `kobe-tv`.
-2. Pick an asset type: `row-bg`, `profile-bg`, or `logo-spin`.
-3. Copy the OpenAI prompt from `CHANNEL_ART_PROMPTS.md` or `data/channelArtPrompts.ts`.
-4. Generate the asset.
-5. Export/crop to the target aspect ratio.
-6. Save or download the file to Desktop or Downloads.
-7. Import it with the helper script.
-
-Midjourney/Discord flow:
-
-1. Copy the Midjourney prompt from `data/channelArtPrompts.ts` or append the documented `--ar` value.
-2. Generate in Discord.
-3. Open/download the selected image.
-4. Save to Desktop or Downloads.
-5. Run the import command below.
+1. Copy the same prompt direction from the prompt bible or data file.
+2. Add the correct aspect suffix.
+3. Generate in Discord.
+4. Download the selected result.
+5. Save it to Desktop or Downloads.
+6. Import it with the helper script.
 
 ## Quick Import Commands
 
@@ -95,7 +93,7 @@ Rules:
 - The script creates `public/channel-art/{slug}/` if needed.
 - The script copies, never moves.
 - The script refuses to overwrite unless `--force` is present.
-- Static row/profile/logo assets must be PNG files because their target names are `.png`.
+- `row-bg`, `profile-bg`, `logo`, and `badge` target PNG files.
 - `logo-spin` accepts `.webp`, `.gif`, or `.png` and names the output accordingly.
 
 ## Wiring Assets Into Channels
@@ -114,21 +112,22 @@ Current UI behavior:
 - `ChannelRow` uses `rowBackgroundUrl` through `lib/channelArt.ts`.
 - `ChannelProfileCard` uses `profileBackgroundUrl` through `lib/channelArt.ts`.
 - `ChannelLogo` uses `logoUrl`.
-- `logoSpinUrl` is typed/resolved for future rotating-logo UI, but it is not currently rendered.
+- `logoSpinUrl` is typed and resolved for future rotating-logo UI, but it is not currently rendered.
+- `badge.png` is a production asset for future surfaces or design iterations, not current UI.
 
-## Rotating Logo / 3D Item Strategy
+## Rotating Collectible Strategy
 
 The `logo-spin` asset should feel like a collectible video-game object, not a normal logo.
 
 Creative rules:
 
-- Centered object.
-- Transparent or easily removable background.
-- No readable text.
-- No real logos.
-- No real athlete faces.
-- Reads clearly at 40-64px.
-- Looks good as a static frame even before animation is wired into UI.
+- centered object
+- transparent or easily removable background
+- no readable text
+- no real logos
+- no real athlete faces
+- reads clearly at 40-64px
+- looks good as a static frame even before animation is wired into UI
 
 Examples:
 
@@ -148,32 +147,28 @@ Future UI should prefer:
 ## Quick Iteration Loop
 
 1. Generate art.
-2. Save/download it to Desktop or Downloads.
+2. Save or download it to Desktop or Downloads.
 3. Import it:
 
 ```bash
 npm run art:import -- --channel kobe-tv --asset row-bg --source latest-desktop --force
 ```
 
-4. Run or keep dev server running:
-
-```bash
-npm run dev
-```
-
+4. Run or keep the dev server running.
 5. Refresh the browser.
 6. If the result is bad, regenerate and re-import with `--force`.
 7. Run `npm run build` before committing.
 
-## Architecture Verification
+## Architecture Check
 
 Current system readiness:
 
-- Custom row backgrounds: ready.
-- Custom profile card backgrounds: ready.
-- Static logos through `logoUrl`: ready.
-- Rotating logo assets through `logoSpinUrl`: typed and resolved, not rendered yet.
-- Full-screen player behavior: separate and unchanged.
-- Routes/database/auth/admin: unchanged.
+- custom row backgrounds: ready
+- custom profile-card backgrounds: ready
+- static logos through `logoUrl`: ready
+- collectible badges through `badge.png`: ready as a production asset format
+- rotating logo assets through `logoSpinUrl`: typed and resolved, not rendered yet
+- full-screen player behavior: separate and unchanged
+- routes/database/auth/admin: unchanged
 
 The visual source of truth remains `lib/channelArt.ts`, with rendering split across `ChannelRow`, `ChannelPreview`, `ChannelProfileCard`, and `ChannelLogo`.

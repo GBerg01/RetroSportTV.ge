@@ -230,6 +230,12 @@
   - [x] Added quick import/list scripts for Desktop/Downloads channel art assets
   - [x] Documented rotating collectible logo strategy and added future `logoSpinUrl` support
 
+- [x] **Phase 28: Channel asset ideation and prompt bible**
+  - [x] Added `CHANNEL_ASSET_IDEATION_FRAMEWORK.md` to decode channel identity into repeatable concept routes
+  - [x] Added `CHANNEL_ASSET_PROMPT_BIBLE.md` for the first 15 priority channels and all five asset types
+  - [x] Expanded `data/channelArtPrompts.ts` to structured prompt data for `row-bg`, `profile-bg`, `logo`, `badge`, and `logo-spin`
+  - [x] Updated asset folder docs to include `badge.png` and the rotating collectible logo strategy
+
 ## In Progress
 - [ ] —
 
@@ -261,6 +267,7 @@
 | 2026-05-28 | First live expansion batch starts at CH 07 | Preserves the original 6-channel MVP while proving roadmap channels can be promoted gradually |
 | 2026-05-28 | Channel art resolves through `lib/channelArt.ts` | Keeps custom guide rectangles and profile cards data-driven without one-off component designs |
 | 2026-05-28 | OpenAI image generation is primary for production art | Better for repeatable custom assets, controlled edits, exact crops, and fast iteration; Midjourney remains useful for concepts |
+| 2026-05-28 | Asset ideation is split from prompt output | The framework doc teaches route generation, while the prompt bible and structured data hold the production prompts |
 
 ## Blockers
 - None currently.
