@@ -190,11 +190,11 @@ Always append the aspect ratio flag at the end of every Midjourney prompt. The r
 Paste into Discord as `/imagine prompt:`. All flags go at the very end, after all descriptive content.
 
 ```
-/imagine prompt: Wide horizontal background asset for Tiger Sundays, bird's-eye view of a pristine golf hole, rolling green fairway, sand trap, Sunday morning light, premium retro sports broadcast look, CRT/VHS texture, dark safe zones for UI text, atmospheric golf channel package, no readable text --ar 5:1 --style raw
+/imagine prompt: Wide horizontal background asset for Tiger Sundays, bold Sunday red and deep green bird's-eye golf hole arcade panel, 90s arcade golf game menu energy, chunky fairway stripe graphics, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, dark safe zones for UI text, no readable text --ar 5:1 --style raw
 ```
 
 ```
-/imagine prompt: Wide horizontal background asset for Kobe TV, purple and gold basketball broadcast package, arena lights, hardwood reflections, premium legend-channel feel, CRT/VHS texture, dark safe zones for UI text, no readable text --ar 5:1 --style raw
+/imagine prompt: Wide horizontal background asset for Kobe TV, bold purple and gold NBA Jam-style hardwood legend panel, arena spotlight cones, jersey mesh overlay, championship ring glow, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, dark safe zones for UI text, no readable text --ar 5:1 --style raw
 ```
 
 ### The 4-Option Grid Warning
@@ -283,14 +283,16 @@ Then refresh the browser and confirm the row and profile card look correct for t
 2. Paste directly into OpenAI image generation.
 3. For Midjourney, append the aspect ratio and `--style raw` flag shown under each prompt. Follow the full generation workflow in Section 5.
 
-**Prompt formula used:** `{asset opener} for {channel name}, {layer note}, {visual direction}, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, {safe-zone note}, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots`
+**Prompt formula used:** `{asset opener} for {channel name}, {layer note}, {visual direction}, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, {safe-zone note}, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots`
+
+**Core style:** Every prompt uses the same arcade sports world — NBA Jam / NFL Blitz energy, bold saturated colors, chunky graphics, CRT cabinet glow. Channels differ by color palette, object, and era — not by art style.
 
 ---
 
 ### Kobe TV — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Kobe TV, background art layer only, purple-gold hardwood legend banner with arena tunnel lights, jersey mesh, and championship aura, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Kobe TV, background art layer only, bold purple and gold NBA Jam-style hardwood legend panel, arena spotlight cones, jersey mesh overlay, championship ring glow, arcade sports menu composition, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -300,7 +302,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Kobe TV — profile-bg
 
 ```text
-vertical channel profile card background for Kobe TV, background art layer only, vertical purple-gold legend card with spotlight haze, hardwood sheen, and trophy glow, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Kobe TV, background art layer only, bold purple and gold arcade player-select card, spotlight cone from above, hardwood floor reflection, trophy glow, NBA Jam character-select energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -310,7 +312,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Kobe TV — logo
 
 ```text
-square static channel logo icon for Kobe TV, collectible art only, static collectible icon based on a #24 jersey silhouette, metallic purple and gold, premium basketball emblem, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Kobe TV, collectible art only, chunky basketball jersey silhouette, bold purple and gold, arcade sports emblem, character icon energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -320,7 +322,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Kobe TV — badge
 
 ```text
-square collectible badge emblem for Kobe TV, collectible art only, collectible championship badge with black-mamba energy, ring-seal shape, and sports-card unlock feel, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Kobe TV, collectible art only, bold championship seal badge, purple and gold metallic relief, ring-seal shape, arcade unlock collectible feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -330,7 +332,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Kobe TV — logo-spin
 
 ```text
-rotating 3D collectible item for Kobe TV, collectible art only, rotating #24 jersey collectible with premium game-item energy, folded fabric, and chrome hanger loop, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Kobe TV, collectible art only, rotating basketball jersey collectible, bold purple body gold trim, fabric folds, chrome hanger loop, arcade game-pickup item, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -340,7 +342,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA 2000s — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for NBA 2000s, background art layer only, chrome basketball graphics with red-white-blue broadcast bars, baggy-shorts era motion, and old highlight-show texture, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for NBA 2000s, background art layer only, bold red-white-blue chrome basketball arcade panel, 90s broadcast bar graphics, baggy-shorts era arcade energy, chunky NBA era motion graphics, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -350,7 +352,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### NBA 2000s — profile-bg
 
 ```text
-vertical channel profile card background for NBA 2000s, background art layer only, retro basketball profile panel with chrome edges, CRT glow, and early-2000s arena nostalgia, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for NBA 2000s, background art layer only, bold red-blue 90s arcade basketball card, chrome edge graphics, early-2000s arcade highlight show energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -360,7 +362,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### NBA 2000s — logo
 
 ```text
-square static channel logo icon for NBA 2000s, collectible art only, static icon built from a chrome basketball badge, red and blue energy arcs, and a throwback broadcast feel, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for NBA 2000s, collectible art only, chunky chrome basketball badge, bold red and blue arcade energy arcs, throwback 90s sports icon, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -370,7 +372,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA 2000s — badge
 
 ```text
-square collectible badge emblem for NBA 2000s, collectible art only, collectible badge shaped like a chrome highlight emblem, old-school TV gloss, and early-2000s attitude, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for NBA 2000s, collectible art only, bold chrome highlight badge, arcade seal shape, 90s TV gloss, chunky 2000s sports emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -380,7 +382,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA 2000s — logo-spin
 
 ```text
-rotating 3D collectible item for NBA 2000s, collectible art only, rotating throwback basketball collectible with chrome shine, red and blue streaks, and era-authentic swagger, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for NBA 2000s, collectible art only, rotating throwback basketball collectible, bold chrome shine, red and blue arcade streaks, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -390,7 +392,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NFL Big Hits — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for NFL Big Hits, background art layer only, dark turf broadcast banner with chalk marks, steel collision bursts, and violent highlight energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for NFL Big Hits, background art layer only, bold dark turf NFL Blitz-style arcade impact panel, white chalk marks, steel collision burst graphics, chunky stadium light beams, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -400,7 +402,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### NFL Big Hits — profile-bg
 
 ```text
-vertical channel profile card background for NFL Big Hits, background art layer only, football profile panel with scuffed turf, impact shockwaves, and hard-edged stadium lighting, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for NFL Big Hits, background art layer only, bold dark football arcade card, scuffed turf texture, steel shockwave graphics, NFL Blitz-style stadium energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -410,7 +412,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### NFL Big Hits — logo
 
 ```text
-square static channel logo icon for NFL Big Hits, collectible art only, static icon built from a collision-ready football shield, rugged steel edges, and defensive energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for NFL Big Hits, collectible art only, chunky football shield icon, bold steel and dark green, defensive collision energy, arcade impact emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -420,7 +422,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NFL Big Hits — badge
 
 ```text
-square collectible badge emblem for NFL Big Hits, collectible art only, collectible badge with hard-hit energy, gritty turf texture, and a steel-medal shape, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for NFL Big Hits, collectible art only, bold collision badge, hard-hit shield shape, gritty turf texture, steel-medal chunky arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -430,7 +432,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NFL Big Hits — logo-spin
 
 ```text
-rotating 3D collectible item for NFL Big Hits, collectible art only, rotating scuffed football collectible with impact scars, arena-light glint, and collision swagger, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for NFL Big Hits, collectible art only, rotating scuffed football collectible, bold impact scars, arena-light glint, arcade game-item feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -440,7 +442,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Florida Gators TV — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Florida Gators TV, background art layer only, orange and royal blue swamp banner with wet grass, stadium lights, and humid SEC night-game energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Florida Gators TV, background art layer only, bold orange and royal blue arcade college football panel, swamp heat glow, humid SEC night energy, chunky campus broadcast graphics, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -450,7 +452,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Florida Gators TV — profile-bg
 
 ```text
-vertical channel profile card background for Florida Gators TV, background art layer only, college football profile panel with swamp mist, orange-blue glow, and campus broadcast polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Florida Gators TV, background art layer only, bold orange-blue arcade college football card, swamp mist glow, campus arcade broadcast energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -460,7 +462,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Florida Gators TV — logo
 
 ```text
-square static channel logo icon for Florida Gators TV, collectible art only, static icon inspired by a Gators helmet silhouette and swamp-football energy, bold and readable, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Florida Gators TV, collectible art only, chunky Gators helmet silhouette, bold orange and blue, arcade college football icon, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -470,7 +472,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Florida Gators TV — badge
 
 ```text
-square collectible badge emblem for Florida Gators TV, collectible art only, collectible badge with swamp heat, college-football swagger, and a helmet-shaped emblem feel, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Florida Gators TV, collectible art only, bold swamp football badge, helmet-shaped arcade emblem, orange-blue chunky sticker, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -480,7 +482,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Florida Gators TV — logo-spin
 
 ```text
-rotating 3D collectible item for Florida Gators TV, collectible art only, rotating football collectible with orange-blue armor, swamp-energy accents, and college-title-game presence, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Florida Gators TV, collectible art only, rotating football collectible, bold orange-blue armor, swamp-energy arcade accents, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -490,7 +492,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Tiger Sundays — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Tiger Sundays, background art layer only, bird's-eye view of a pristine golf hole with Sunday red accents, green fairway stripes, and calm championship sunlight, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Tiger Sundays, background art layer only, bold Sunday red and deep green bird's-eye golf hole arcade panel, 90s arcade golf game menu energy, chunky fairway stripe graphics, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -500,7 +502,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Tiger Sundays — profile-bg
 
 ```text
-vertical channel profile card background for Tiger Sundays, background art layer only, premium golf profile panel with fairway texture, soft red glow, and major-championship atmosphere, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Tiger Sundays, background art layer only, bold red and green golf arcade card, fairway texture, red glow accent, 90s arcade golf energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -510,7 +512,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Tiger Sundays — logo
 
 ```text
-square static channel logo icon for Tiger Sundays, collectible art only, static icon built from a tiger-striped golf ball, golden tee, and red-polo golf energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Tiger Sundays, collectible art only, chunky tiger-striped golf ball icon, bold red and green, golden tee, arcade sports collectible, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -520,7 +522,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Tiger Sundays — badge
 
 ```text
-square collectible badge emblem for Tiger Sundays, collectible art only, collectible badge inspired by a green-jacket emblem, golf flag silhouette, and tiger-energy detail, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Tiger Sundays, collectible art only, bold golf championship badge, green-jacket-style seal, golf flag silhouette, chunky arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -530,7 +532,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Tiger Sundays — logo-spin
 
 ```text
-rotating 3D collectible item for Tiger Sundays, collectible art only, rotating tiger-striped golf ball collectible with a golden tee, red accent ribbon, and calm premium finish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Tiger Sundays, collectible art only, rotating tiger-striped golf ball collectible, bold golden tee, red accent, arcade game-pickup feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -540,7 +542,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Jordan TV — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Jordan TV, background art layer only, red-black-white basketball legend banner with championship spotlight, hardwood sheen, and flight-path motion, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Jordan TV, background art layer only, bold red-black-white NBA Jam-style basketball legend panel, championship spotlight, Bulls-era hardwood floor, flight-path motion graphics, arcade character energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -550,7 +552,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Jordan TV — profile-bg
 
 ```text
-vertical channel profile card background for Jordan TV, background art layer only, mythic basketball profile panel with deep red glow, hardwood reflection, and trophy-room drama, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Jordan TV, background art layer only, bold red-black arcade player-select card, deep red glow, hardwood reflection, NBA Jam legend energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -560,7 +562,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Jordan TV — logo
 
 ```text
-square static channel logo icon for Jordan TV, collectible art only, static icon inspired by a red-and-black #23 jersey relic, premium basketball emblem, and championship aura, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Jordan TV, collectible art only, chunky basketball jersey silhouette, bold red and black, arcade character icon, championship emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -570,7 +572,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Jordan TV — badge
 
 ```text
-square collectible badge emblem for Jordan TV, collectible art only, collectible badge with mythic Finals energy, crown-like shape, and classic dynasty polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Jordan TV, collectible art only, bold championship badge, red and black arcade seal, crown-like shape, collectible sports unlock, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -580,7 +582,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Jordan TV — logo-spin
 
 ```text
-rotating 3D collectible item for Jordan TV, collectible art only, rotating red-and-black #23 jersey collectible with airborne motion, premium fabric, and game-winning swagger, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Jordan TV, collectible art only, rotating basketball jersey collectible, bold red and black, airborne arcade energy, game-item feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -590,7 +592,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Bulls MJ Era — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Bulls MJ Era, background art layer only, 1990s championship banner room with red-black-white hardwood, old-arena rafters, and dynasty tension, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Bulls MJ Era, background art layer only, bold red-black-white dynasty arcade panel, 90s championship banner silhouettes, old arena rafters, NBA Jam-style dynasty energy, chunky banner graphics, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -600,7 +602,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Bulls MJ Era — profile-bg
 
 ```text
-vertical channel profile card background for Bulls MJ Era, background art layer only, Bulls dynasty profile panel with hanging banners, spotlight haze, and old championship polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Bulls MJ Era, background art layer only, bold red-black arcade dynasty card, hanging banner silhouettes, spotlight haze, old arena championship arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -610,7 +612,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Bulls MJ Era — logo
 
 ```text
-square static channel logo icon for Bulls MJ Era, collectible art only, static icon inspired by a Bulls-dynasty crest, red and black authority, and six-ring legacy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Bulls MJ Era, collectible art only, chunky Bulls dynasty crest icon, bold red and black, six-ring arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -620,7 +622,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Bulls MJ Era — badge
 
 ```text
-square collectible badge emblem for Bulls MJ Era, collectible art only, collectible badge with dynasty-banner geometry, old-arena polish, and championship seal energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Bulls MJ Era, collectible art only, bold dynasty badge, banner geometry, old arena arcade polish, championship seal chunky emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -630,7 +632,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Bulls MJ Era — logo-spin
 
 ```text
-rotating 3D collectible item for Bulls MJ Era, collectible art only, rotating dynasty-ring collectible with Bulls red, black trim, and a trophy-room finish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Bulls MJ Era, collectible art only, rotating championship ring collectible, bold Bulls red, black trim, trophy arcade energy, game-item feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -640,7 +642,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Mike Tyson TV — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Mike Tyson TV, background art layer only, black-gold-red fight-poster banner with ring ropes, smoky canvas, and heavyweight menace, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Mike Tyson TV, background art layer only, bold black-gold-red Punch-Out-style arcade fight panel, ring ropes, smoky canvas texture, heavyweight arcade energy, boxing cabinet feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -650,7 +652,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Mike Tyson TV — profile-bg
 
 ```text
-vertical channel profile card background for Mike Tyson TV, background art layer only, boxing profile panel with red-corner glow, canvas texture, and title-fight intensity, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Mike Tyson TV, background art layer only, bold black-gold arcade boxing card, red corner glow, canvas texture, title-fight arcade intensity, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -660,7 +662,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Mike Tyson TV — logo
 
 ```text
-square static channel logo icon for Mike Tyson TV, collectible art only, static icon built from a boxing glove silhouette, gold trim, and heavyweight fight-poster energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Mike Tyson TV, collectible art only, chunky boxing glove silhouette, bold black and gold, arcade combat icon, heavyweight emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -670,7 +672,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Mike Tyson TV — badge
 
 ```text
-square collectible badge emblem for Mike Tyson TV, collectible art only, collectible badge inspired by a championship belt plate, black-gold menace, and fight-night shine, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Mike Tyson TV, collectible art only, bold championship belt badge, belt-plate shape, black-gold arcade relief, fight-night collectible emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -680,7 +682,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Mike Tyson TV — logo-spin
 
 ```text
-rotating 3D collectible item for Mike Tyson TV, collectible art only, rotating boxing glove collectible with belt-metal accents, smoky highlights, and knockout authority, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Mike Tyson TV, collectible art only, rotating boxing glove collectible, bold belt-metal accents, smoky highlights, knockout arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -690,7 +692,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Inside the NBA Classics — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Inside the NBA Classics, background art layer only, studio desk banner with monitor wall, blue-orange broadcast lights, stat sheets, and late-night desk energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Inside the NBA Classics, background art layer only, bold blue-orange arcade studio desk panel, CRT monitor wall glow, stat sheet graphics, late-night desk arcade energy, 90s cable sports TV menu feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -700,7 +702,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Inside the NBA Classics — profile-bg
 
 ```text
-vertical channel profile card background for Inside the NBA Classics, background art layer only, studio profile panel with CRT monitor wall, desk reflections, and comfortable late-night glow, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Inside the NBA Classics, background art layer only, bold blue-orange arcade studio card, CRT monitor wall glow, desk reflections, late-night TV arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -710,7 +712,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Inside the NBA Classics — logo
 
 ```text
-square static channel logo icon for Inside the NBA Classics, collectible art only, static icon inspired by a studio monitor badge, blue-orange broadcast lights, and desk-show charm, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Inside the NBA Classics, collectible art only, chunky studio monitor badge icon, bold blue and orange, desk-show arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -720,7 +722,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Inside the NBA Classics — badge
 
 ```text
-square collectible badge emblem for Inside the NBA Classics, collectible art only, collectible badge shaped like a studio replay emblem, monitor-wall texture, and TNT-era comfort, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Inside the NBA Classics, collectible art only, bold studio replay badge, monitor-wall shape, blue and orange chunky arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -730,7 +732,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Inside the NBA Classics — logo-spin
 
 ```text
-rotating 3D collectible item for Inside the NBA Classics, collectible art only, rotating microphone-and-monitor collectible with desk-show polish, studio chrome, and late-night energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Inside the NBA Classics, collectible art only, rotating microphone-and-monitor collectible, bold studio chrome, blue-orange arcade desk energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -740,7 +742,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### SportsCenter Classics — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for SportsCenter Classics, background art layer only, newsroom desk banner with CRT monitors, highlight wall, red-blue broadcast package, and classic countdown energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for SportsCenter Classics, background art layer only, bold red-blue arcade newsroom panel, CRT monitor wall, highlight wall graphics, 90s ESPN countdown arcade energy, classic broadcast menu feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -750,7 +752,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### SportsCenter Classics — profile-bg
 
 ```text
-vertical channel profile card background for SportsCenter Classics, background art layer only, SportsCenter profile panel with newsroom gloss, monitor glow, and archive-highlight nostalgia, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for SportsCenter Classics, background art layer only, bold red-blue arcade newsroom card, CRT monitor glow, archive-highlight arcade broadcast energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -760,7 +762,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### SportsCenter Classics — logo
 
 ```text
-square static channel logo icon for SportsCenter Classics, collectible art only, static icon built from a red-blue highlight badge, newsroom energy, and classic ESPN rhythm, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for SportsCenter Classics, collectible art only, chunky red-blue highlight badge icon, bold newsroom arcade emblem, classic sports broadcast icon, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -770,7 +772,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### SportsCenter Classics — badge
 
 ```text
-square collectible badge emblem for SportsCenter Classics, collectible art only, collectible badge shaped like a top-ten replay seal, CRT glow, and SportsCenter nostalgia, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for SportsCenter Classics, collectible art only, bold top-ten replay badge, CRT glow seal, red and blue chunky arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -780,7 +782,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### SportsCenter Classics — logo-spin
 
 ```text
-rotating 3D collectible item for SportsCenter Classics, collectible art only, rotating highlight-reel collectible with newsroom chrome, red-blue energy, and archive broadcast swagger, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for SportsCenter Classics, collectible art only, rotating highlight-reel collectible, bold newsroom chrome, red-blue arcade streaks, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -790,7 +792,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Super Bowl Channel — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Super Bowl Channel, background art layer only, stadium-light banner with confetti burst, aerial field geometry, and trophy-gold big-game atmosphere, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Super Bowl Channel, background art layer only, bold gold championship arcade panel, stadium light beams, confetti burst, aerial field geometry, big-game arcade broadcast energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -800,7 +802,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Super Bowl Channel — profile-bg
 
 ```text
-vertical channel profile card background for Super Bowl Channel, background art layer only, Super Bowl profile panel with gold glow, field-diagram geometry, and championship scale, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Super Bowl Channel, background art layer only, bold gold arcade championship card, field-diagram geometry, trophy glow, big-game arcade broadcast energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -810,7 +812,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Super Bowl Channel — logo
 
 ```text
-square static channel logo icon for Super Bowl Channel, collectible art only, static icon inspired by a trophy-gold stage emblem, championship energy, and big-game polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Super Bowl Channel, collectible art only, chunky trophy-gold stage emblem, bold championship arcade icon, big-game energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -820,7 +822,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Super Bowl Channel — badge
 
 ```text
-square collectible badge emblem for Super Bowl Channel, collectible art only, collectible badge with confetti edges, trophy-room shine, and championship-stage authority, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Super Bowl Channel, collectible art only, bold championship badge, confetti-edge seal, gold arcade relief, trophy chunky emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -830,7 +832,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Super Bowl Channel — logo-spin
 
 ```text
-rotating 3D collectible item for Super Bowl Channel, collectible art only, rotating football collectible with gold trophy treatment, stadium-light gleam, and title-game presence, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Super Bowl Channel, collectible art only, rotating football collectible, bold gold trophy treatment, stadium-light gleam, arcade game-item energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -840,7 +842,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA Finals Channel — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for NBA Finals Channel, background art layer only, trophy-room banner with gold banners, game-seven court lines, and championship broadcast polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for NBA Finals Channel, background art layer only, bold gold championship trophy-room arcade panel, banner silhouettes, game-seven court line graphics, bold gold broadcast energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -850,7 +852,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### NBA Finals Channel — profile-bg
 
 ```text
-vertical channel profile card background for NBA Finals Channel, background art layer only, Finals profile panel with gold glow, trophy-room depth, and legacy-board atmosphere, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for NBA Finals Channel, background art layer only, bold gold arcade Finals card, trophy-room glow, legacy-board arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -860,7 +862,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### NBA Finals Channel — logo
 
 ```text
-square static channel logo icon for NBA Finals Channel, collectible art only, static icon inspired by a championship seal, gold trim, and Finals-history prestige, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for NBA Finals Channel, collectible art only, chunky championship seal icon, bold gold arcade relief, Finals-history prestige emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -870,7 +872,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA Finals Channel — badge
 
 ```text
-square collectible badge emblem for NBA Finals Channel, collectible art only, collectible badge with trophy-room geometry, championship shine, and legacy energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for NBA Finals Channel, collectible art only, bold championship badge, trophy-room geometry, gold arcade shine, legacy seal chunky emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -880,7 +882,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### NBA Finals Channel — logo-spin
 
 ```text
-rotating 3D collectible item for NBA Finals Channel, collectible art only, rotating championship trophy collectible with gold trim, court-line detailing, and legacy authority, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for NBA Finals Channel, collectible art only, rotating championship trophy collectible, bold gold trim, court-line arcade detailing, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -890,7 +892,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### March Madness TV — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for March Madness TV, background art layer only, bracket-chaos banner with hardwood motion, tournament boards, and buzzer-beater energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for March Madness TV, background art layer only, bold bracket-chaos arcade panel, hardwood motion graphics, tournament board line art, buzzer-beater arcade energy, 90s NCAA game menu feel, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -900,7 +902,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### March Madness TV — profile-bg
 
 ```text
-vertical channel profile card background for March Madness TV, background art layer only, March profile panel with bracket fragments, arena tension, and postseason pressure, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for March Madness TV, background art layer only, bold bracket arcade card, bracket fragment graphics, arena tension, postseason arcade pressure, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -910,7 +912,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### March Madness TV — logo
 
 ```text
-square static channel logo icon for March Madness TV, collectible art only, static icon inspired by a tournament-bracket emblem, collegiate urgency, and hardwood energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for March Madness TV, collectible art only, chunky tournament-bracket emblem icon, bold collegiate arcade colors, hardwood energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -920,7 +922,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### March Madness TV — badge
 
 ```text
-square collectible badge emblem for March Madness TV, collectible art only, collectible badge shaped like a bracket seal, Cinderella drama, and tournament countdown energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for March Madness TV, collectible art only, bold bracket seal badge, Cinderella drama, chunky arcade tournament emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -930,7 +932,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### March Madness TV — logo-spin
 
 ```text
-rotating 3D collectible item for March Madness TV, collectible art only, rotating college-basketball collectible with bracket geometry, buzzer-light streaks, and upset swagger, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for March Madness TV, collectible art only, rotating college basketball collectible, bold bracket geometry, buzzer-light arcade streaks, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -940,7 +942,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Patriots Dynasty — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Patriots Dynasty, background art layer only, cold blue-gray banner with playbook grids, comeback drive lines, and Foxboro discipline, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Patriots Dynasty, background art layer only, bold cold blue-gray Foxboro arcade panel, playbook grid line art, comeback drive graphics, dynasty arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -950,7 +952,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Patriots Dynasty — profile-bg
 
 ```text
-vertical channel profile card background for Patriots Dynasty, background art layer only, Patriots profile panel with stadium-cold atmosphere, ring-room glow, and methodical polish, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Patriots Dynasty, background art layer only, bold blue-gray arcade dynasty card, stadium-cold atmosphere, ring-room glow, methodical arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -960,7 +962,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Patriots Dynasty — logo
 
 ```text
-square static channel logo icon for Patriots Dynasty, collectible art only, static icon inspired by a New England dynasty crest, cold blue authority, and disciplined football design, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Patriots Dynasty, collectible art only, chunky New England dynasty crest icon, bold cold blue, disciplined football arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -970,7 +972,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Patriots Dynasty — badge
 
 ```text
-square collectible badge emblem for Patriots Dynasty, collectible art only, collectible badge with ring-room precision, playbook geometry, and dynasty-blue shine, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Patriots Dynasty, collectible art only, bold dynasty badge, ring-room geometry, blue and silver arcade shine, playbook grid emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -980,7 +982,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Patriots Dynasty — logo-spin
 
 ```text
-rotating 3D collectible item for Patriots Dynasty, collectible art only, rotating football collectible with cold-weather steel, ring-metal accents, and comeback discipline, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Patriots Dynasty, collectible art only, rotating football collectible, bold cold-weather steel, ring-metal accents, comeback arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -990,7 +992,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Random Sports Compilations — row-bg
 
 ```text
-wide horizontal channel guide rectangle background for Random Sports Compilations, background art layer only, mixed-sport collage banner with CRT scanlines, remote-shuffle tape labels, and sports-bar-night energy, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+wide horizontal channel guide rectangle background for Random Sports Compilations, background art layer only, bold mixed-sport arcade collage panel, CRT scanlines, remote-shuffle tape label graphics, wildcard multi-sport arcade energy, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the left and center text-safe for React overlays and let the right side carry the strongest visual detail, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 5:1 --style raw`
@@ -1000,7 +1002,7 @@ Midjourney: append `--ar 5:1 --style raw`
 ### Random Sports Compilations — profile-bg
 
 ```text
-vertical channel profile card background for Random Sports Compilations, background art layer only, compilation profile panel with archive tape texture, multi-sport collage fragments, and TV-static glow, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+vertical channel profile card background for Random Sports Compilations, background art layer only, bold mixed-sport arcade card, archive tape texture, collage fragment graphics, TV-static arcade glow, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, keep the upper-left and center readable behind title, metadata, and CTA copy, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 3:4 --style raw`
@@ -1010,7 +1012,7 @@ Midjourney: append `--ar 3:4 --style raw`
 ### Random Sports Compilations — logo
 
 ```text
-square static channel logo icon for Random Sports Compilations, collectible art only, static icon inspired by a remote-shuffle highlight badge, mixed-sport collage, and tape-label nostalgia, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square static channel logo icon for Random Sports Compilations, collectible art only, chunky remote-shuffle highlight badge icon, bold mixed-sport arcade collage, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered silhouette, readable at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -1020,7 +1022,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Random Sports Compilations — badge
 
 ```text
-square collectible badge emblem for Random Sports Compilations, collectible art only, collectible badge with archive-tape edges, highlight-pile energy, and wildcard sports-bar flavor, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+square collectible badge emblem for Random Sports Compilations, collectible art only, bold wildcard badge, archive-tape edges, highlight-pile energy, chunky sports-bar arcade emblem, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, centered sticker-like collectible, readable at small size, future badge surface, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`
@@ -1030,7 +1032,7 @@ Midjourney: append `--ar 1:1 --style raw`
 ### Random Sports Compilations — logo-spin
 
 ```text
-rotating 3D collectible item for Random Sports Compilations, collectible art only, rotating mixed-sport collectible with collage fragments, tape-label charm, and remote-shuffle chaos, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+rotating 3D collectible item for Random Sports Compilations, collectible art only, rotating mixed-sport collectible, bold collage fragments, tape-label arcade charm, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, transparent background preferred, centered object, collectible-item feel that reads at small size, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
 Midjourney: append `--ar 1:1 --style raw`

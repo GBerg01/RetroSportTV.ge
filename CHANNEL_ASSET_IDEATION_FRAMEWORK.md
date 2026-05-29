@@ -153,15 +153,25 @@ Future rotating collectible object.
 Use a consistent prompt skeleton so each channel still feels part of the same world:
 
 ```text
-{asset opener} for {channel name}, {channel-specific visual direction}, retro sports cable box aesthetic, premium sports nostalgia, CRT/VHS texture, sports-bar-at-night atmosphere, {safe-zone note}, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
+{asset opener} for {channel name}, {channel-specific visual direction}, retro arcade sports cable box aesthetic, NBA Jam-style 90s sports game energy, CRT cabinet glow, bold saturated team colors, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity, arcade sports menu panel feel, {safe-zone note}, no readable text, no letters, no numbers, no watermarks, no trademarks, no UI mockup, no screenshots
 ```
 
-For Midjourney, append the aspect ratio:
+Core style language every prompt should feel consistent with:
+- Retro arcade sports cable box
+- NBA Jam / NFL Blitz / 90s arcade sports game energy
+- Bold saturated team colors — not muted, not elegant, not generic
+- Chunky sports graphics and strong silhouettes
+- CRT cabinet glow and dramatic arcade lighting
+- 90s trading card / sports card intensity
+- Arcade sports menu panel compositions for backgrounds
+- Collectible game-item energy for logos, badges, and logo-spin
 
-- `--ar 5:1` for row backgrounds
-- `--ar 4:1` if a row composition needs more vertical room
-- `--ar 3:4` for profile cards
-- `--ar 1:1` for logo, badge, and logo-spin assets
+For Midjourney, append the aspect ratio and style flag:
+
+- `--ar 5:1 --style raw` for row backgrounds
+- `--ar 4:1 --style raw` if a row composition needs more vertical room
+- `--ar 3:4 --style raw` for profile cards
+- `--ar 1:1 --style raw` for logo, badge, and logo-spin assets
 
 ## 8. Safe-Zone Rules
 
@@ -173,12 +183,14 @@ For Midjourney, append the aspect ratio:
 
 ## 9. Consistency Rules
 
-- Every channel stays inside the same RetroSportTV.ge world.
-- Use retro sports cable-box energy, not generic stock art.
-- Make channels distinct through object choice, texture, palette, and era cues.
-- Prefer a single strong metaphor over a pile of unrelated details.
+- Every channel stays inside the same RetroSportTV.ge world: retro arcade sports cable box.
+- The shared style is NBA Jam / NFL Blitz / 90s arcade sports game energy — bold, saturated, chunky, dramatic.
+- Channels are distinct through object choice, color palette, and era cues, not through completely different art styles.
+- Backgrounds should feel like arcade sports menu panels, not cinematic posters.
+- Collectibles should feel like game-pickup items or trading cards, not premium product renders.
+- Prefer a single strong visual metaphor over a pile of unrelated details.
 - Keep background art and collectible art separate from React text.
-- If a channel lacks custom art, the fallback should still look good with gradients and textures.
+- If a channel lacks custom art, the fallback should still look good with generated gradients and accent colors.
 
 ## 10. Quality Checklist
 
@@ -188,9 +200,10 @@ Before approving an asset, check:
 2. Does it read at small size?
 3. Is the text-safe area still clear?
 4. Does the row art differ from the profile card without feeling unrelated?
-5. Does the logo or badge work as a collectible object?
+5. Does the logo or badge work as a collectible game-item object?
 6. Does the palette match the channel identity?
-7. Would this still look good when viewed in a broadcast guide?
+7. Does it fit the retro arcade sports cable box world — bold, chunky, saturated?
+8. Would this still look good when viewed in a broadcast guide?
 
 ## 11. What To Avoid
 
@@ -201,6 +214,10 @@ Before approving an asset, check:
 - generic sports montage art that could belong to any channel
 - overcomplicated objects that stop reading at small size
 - UI mockups or screenshots inside the artwork
+- overly realistic cinematic poster art — too premium, not arcade
+- elegant minimalism or flat corporate graphics
+- soft luxury premium look — push bold and saturated instead
+- art that looks like it belongs to a different game or a different channel
 
 ## 12. Example Walkthroughs
 
