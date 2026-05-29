@@ -6,10 +6,12 @@ import type { Channel } from "@/lib/channels";
 type Props = {
   channel: Channel;
   isActive?: boolean;
+  isFavorited?: boolean;
   onMouseEnter?: () => void;
+  onFavoriteToggle?: () => void;
 };
 
-export default function ChannelRow({ channel, isActive = false, onMouseEnter }: Props) {
+export default function ChannelRow({ channel, isActive = false, isFavorited = false, onMouseEnter, onFavoriteToggle }: Props) {
   const art = getChannelArt(channel);
   const accent = art.accent;
   const categoryLabel = channel.categories?.[0] ?? "SPORTS";
@@ -145,6 +147,25 @@ export default function ChannelRow({ channel, isActive = false, onMouseEnter }: 
           {channel.description}
         </p>
       </div>
+
+      {/* Favorite toggle */}
+      <button
+        type="button"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          onFavoriteToggle?.();
+        }}
+        className="flex-shrink-0 self-center cursor-pointer px-2 transition-opacity"
+        aria-label={isFavorited ? "Remove from favorites" : "Add to favorites"}
+      >
+        <span
+          className="text-[18px] leading-none transition-colors"
+          style={{ color: isFavorited ? "#f5c842" : "#252525" }}
+        >
+          ★
+        </span>
+      </button>
 
       {/* TUNE IN */}
       <div className="hidden flex-shrink-0 self-center md:block">

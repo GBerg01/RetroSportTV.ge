@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import ChannelRow from "@/components/ChannelRow";
 import ChannelPreview from "@/components/ChannelPreview";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 import type { Channel, ChannelCategory } from "@/lib/channels";
 
 const TABS = [
@@ -18,23 +19,59 @@ const TABS = [
 
 type ChannelTab = "ALL" | ChannelCategory;
 
+function applyFilters(
+  channels: Channel[],
+  tab: ChannelTab,
+  showFavsOnly: boolean,
+  favSlugs: string[],
+  query: string
+): Channel[] {
+  let result =
+    tab === "ALL" ? channels : channels.filter((ch) => ch.categories?.includes(tab));
+  if (showFavsOnly) result = result.filter((ch) => favSlugs.includes(ch.slug));
+  if (query.trim()) {
+    const q = query.toLowerCase();
+    result = result.filter(
+      (ch) =>
+        ch.name.toLowerCase().includes(q) ||
+        ch.slug.toLowerCase().includes(q) ||
+        ch.description.toLowerCase().includes(q) ||
+        ch.categories?.some((c) => c.toLowerCase().includes(q)) ||
+        ch.sport.toLowerCase().includes(q) ||
+        ch.era.toLowerCase().includes(q)
+    );
+  }
+  return result;
+}
+
 export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
   const [activeTab, setActiveTab] = useState<ChannelTab>("ALL");
-  const [activeChannel, setActiveChannel] = useState<Channel>(channels[0]);
+  const [activeChannelId, setActiveChannelId] = useState<string>(channels[0].id);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [showFavsOnly, setShowFavsOnly] = useState(false);
+  const [favSlugs, setFavSlugs] = useLocalStorage<string[]>("retro-tv-favorites", []);
 
-  function handleTabChange(tab: ChannelTab) {
-    setActiveTab(tab);
-    const next =
-      tab === "ALL"
-        ? channels
-        : channels.filter((ch) => ch.categories?.includes(tab));
-    if (next.length > 0) setActiveChannel(next[0]);
+  const filtered = useMemo(
+    () => applyFilters(channels, activeTab, showFavsOnly, favSlugs, searchQuery),
+    [channels, activeTab, showFavsOnly, favSlugs, searchQuery]
+  );
+
+  // Derive active channel — falls back to first visible channel if the hovered
+  // channel is filtered out, without needing a sync effect.
+  const activeChannel =
+    filtered.find((ch) => ch.id === activeChannelId) ?? filtered[0] ?? channels[0];
+
+  function toggleFavorite(slug: string) {
+    setFavSlugs((prev) =>
+      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
+    );
   }
 
-  const filtered =
-    activeTab === "ALL"
-      ? channels
-      : channels.filter((ch) => ch.categories?.includes(activeTab));
+  const emptyMessage = searchQuery.trim()
+    ? "NO SIGNAL FOUND"
+    : showFavsOnly
+      ? "NO FAVORITES SAVED"
+      : "NO CHANNELS IN THIS CATEGORY";
 
   return (
     <div className="w-full max-w-[1680px] border border-[#151515] bg-[#050505] shadow-[0_0_60px_rgba(0,0,0,0.45)]">
@@ -51,14 +88,34 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
             </span>
           </div>
 
-          {/* Category tabs */}
+          {/* Search strip */}
+          <div className="flex items-center gap-2 px-3 sm:px-5 py-2 bg-[#070707] border-b border-[#0e0e0e]">
+            <span className="text-[#272727] text-[11px] tracking-[0.3em] flex-shrink-0 select-none">▶</span>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="SEARCH CHANNELS..."
+              className="flex-1 bg-transparent text-[#888] text-[12px] tracking-[0.18em] placeholder:text-[#242424] outline-none border-none font-retro uppercase min-w-0"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="text-[#333] hover:text-[#777] text-[11px] tracking-widest cursor-pointer flex-shrink-0 transition-colors"
+              >
+                ✕
+              </button>
+            )}
+          </div>
+
+          {/* Category tabs + favorites toggle */}
           <div className="flex gap-1 overflow-x-auto no-scrollbar px-3 sm:px-5 py-2 bg-[#080808] border-b border-[#111]">
             {TABS.map((tab) => (
               <button
                 key={tab}
-                onClick={() => handleTabChange(tab)}
+                onClick={() => setActiveTab(tab)}
                 className={`text-sm tracking-[0.2em] whitespace-nowrap transition-colors cursor-pointer px-2 py-1 ${
-                  activeTab === tab
+                  activeTab === tab && !showFavsOnly
                     ? "text-[var(--phosphor-green)] phosphor-glow bg-[#0a1a0a] border-b border-[var(--phosphor-green)]"
                     : "text-[#333] hover:text-[#666]"
                 }`}
@@ -66,13 +123,24 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
                 {tab}
               </button>
             ))}
+            <span className="text-[#1a1a1a] self-center px-1 select-none flex-shrink-0">|</span>
+            <button
+              onClick={() => setShowFavsOnly((v) => !v)}
+              className={`text-sm tracking-[0.2em] whitespace-nowrap transition-colors cursor-pointer px-2 py-1 flex-shrink-0 ${
+                showFavsOnly
+                  ? "text-[#f5c842] bg-[#1a1500] border-b border-[#f5c842]"
+                  : "text-[#333] hover:text-[#666]"
+              }`}
+            >
+              ★&nbsp;FAV
+            </button>
           </div>
 
           {/* Channel rows */}
           <div className="bg-[#050505]">
             {filtered.length === 0 ? (
-              <p className="px-6 py-8 text-[#222] text-sm tracking-[0.3em] text-center">
-                NO CHANNELS IN THIS CATEGORY
+              <p className="px-6 py-12 text-[#252525] text-sm tracking-[0.35em] text-center">
+                {emptyMessage}
               </p>
             ) : (
               filtered.map((ch) => (
@@ -80,7 +148,9 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
                   key={ch.id}
                   channel={ch}
                   isActive={activeChannel.id === ch.id}
-                  onMouseEnter={() => setActiveChannel(ch)}
+                  isFavorited={favSlugs.includes(ch.slug)}
+                  onMouseEnter={() => setActiveChannelId(ch.id)}
+                  onFavoriteToggle={() => toggleFavorite(ch.slug)}
                 />
               ))
             )}
