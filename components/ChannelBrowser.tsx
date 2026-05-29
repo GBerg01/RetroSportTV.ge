@@ -89,23 +89,30 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
           </div>
 
           {/* Search strip */}
-          <div className="flex items-center gap-2 px-3 sm:px-5 py-2 bg-[#070707] border-b border-[#0e0e0e]">
-            <span className="text-[#272727] text-[11px] tracking-[0.3em] flex-shrink-0 select-none">▶</span>
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="SEARCH CHANNELS..."
-              className="flex-1 bg-transparent text-[#888] text-[12px] tracking-[0.18em] placeholder:text-[#242424] outline-none border-none font-retro uppercase min-w-0"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                className="text-[#333] hover:text-[#777] text-[11px] tracking-widest cursor-pointer flex-shrink-0 transition-colors"
-              >
-                ✕
-              </button>
-            )}
+          <div className="px-3 sm:px-5 py-3 bg-[#060606] border-b border-[#111]">
+            <p className="text-[#2d5c2d] text-[9px] tracking-[0.5em] mb-2 select-none">SIGNAL SEARCH</p>
+            <div className="flex items-center gap-3 border border-[#1d401d] bg-[#030803] px-3 py-2.5
+                            focus-within:border-[#39ff14]
+                            focus-within:shadow-[0_0_18px_rgba(57,255,20,0.13),inset_0_0_10px_rgba(57,255,20,0.05)]
+                            transition-all duration-150">
+              <span className="text-[#39ff14] text-[12px] flex-shrink-0 select-none opacity-50">▶</span>
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="SEARCH CHANNELS..."
+                className="flex-1 bg-transparent text-[#39ff14] text-[13px] tracking-[0.16em]
+                           placeholder:text-[#3d6a3d] outline-none border-none font-retro uppercase min-w-0"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="text-[#3d6a3d] hover:text-[#39ff14] text-[11px] cursor-pointer flex-shrink-0 transition-colors"
+                >
+                  ✕
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Category tabs + favorites toggle */}
@@ -129,7 +136,7 @@ export default function ChannelBrowser({ channels }: { channels: Channel[] }) {
               className={`text-sm tracking-[0.2em] whitespace-nowrap transition-colors cursor-pointer px-2 py-1 flex-shrink-0 ${
                 showFavsOnly
                   ? "text-[#f5c842] bg-[#1a1500] border-b border-[#f5c842]"
-                  : "text-[#333] hover:text-[#666]"
+                  : "text-[#555] hover:text-[#888]"
               }`}
             >
               ★&nbsp;FAV
