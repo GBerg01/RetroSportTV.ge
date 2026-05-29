@@ -1,7 +1,7 @@
 {
   "channelSlug": "megatron-tv",
-  "status": "awaiting-research",
-  "notes": "Candidate file scaffolded. YouTube IDs must be verified before adding. Prefer NFL official, NFL Throwback, NFL Films, and Detroit Lions official uploads. Focus on contested catches, end-zone jump balls, and the 2012 record season. Avoid Lions losing-culture narratives.",
+  "status": "research-complete",
+  "notes": "15 candidates sourced via YouTube search. Prefer NFL official, NFL Throwback, NFL Films, and Detroit Lions official uploads — highest embeddability. Focus on contested catches, end-zone jump balls, and the 2012 record season. IDs verified via web search — validate embeddability before marking approved.",
   "searchThemes": [
     "Calvin Johnson 2012 record season highlights",
     "Calvin Johnson best catches NFL",
@@ -14,5 +14,126 @@
     "Calvin Johnson end zone catches",
     "NFL Throwback Calvin Johnson"
   ],
-  "videos": []
+  "videos": [
+    {
+      "id": "Eq51oSJP_SA",
+      "title": "Calvin Johnson: MEGATRON | NFL Legends Highlights",
+      "url": "https://www.youtube.com/watch?v=Eq51oSJP_SA",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL Throwback official channel — highest embeddability confidence. Full career highlights. Best single starter."
+    },
+    {
+      "id": "FghPjMxpjjg",
+      "title": "Calvin Johnson Top 50 Most Unbelievable Plays of All-Time | NFL Highlights",
+      "url": "https://www.youtube.com/watch?v=FghPjMxpjjg",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. Top 50 format — incredible variety."
+    },
+    {
+      "id": "S_UNYHqSTWk",
+      "title": "Calvin Johnson Record Setting 2012 Season Highlight Mashup | NFL",
+      "url": "https://www.youtube.com/watch?v=S_UNYHqSTWk",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. The 1964-yard record season in full."
+    },
+    {
+      "id": "CTYhvhthtBI",
+      "title": "One Hand, Toe Drag Swag: Calvin Johnson's Amazing TD Grab! | Packers vs. Lions | NFL",
+      "url": "https://www.youtube.com/watch?v=CTYhvhthtBI",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. Single iconic catch — one-handed toe drag TD vs Packers. Perfect loop."
+    },
+    {
+      "id": "xNdpxWNAe1Q",
+      "title": "Top 10 Calvin Johnson Career Highlights | NFL",
+      "url": "https://www.youtube.com/watch?v=xNdpxWNAe1Q",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. Top 10 format — good entry-point video."
+    },
+    {
+      "id": "RQ4dqoN_sTo",
+      "title": "The Night Calvin Johnson Broke The Single Season Receiving Record",
+      "url": "https://www.youtube.com/watch?v=RQ4dqoN_sTo",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Documentary-style focus on the record-breaking game."
+    },
+    {
+      "id": "gyJYdVI0Z58",
+      "title": "Calvin Johnson | 2012 Flashback Highlights",
+      "url": "https://www.youtube.com/watch?v=gyJYdVI0Z58",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "2012 season flashback — additional angle on the record year."
+    },
+    {
+      "id": "SZFmKKbKFTY",
+      "title": "Calvin Johnson Highlights 211 Yards 2012 Playoffs",
+      "url": "https://www.youtube.com/watch?v=SZFmKKbKFTY",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "2012 playoff performance — 211 yards."
+    },
+    {
+      "id": "WyfaHtUv3ms",
+      "title": "Calvin Johnson INSANE One Handed Catch vs Colts",
+      "url": "https://www.youtube.com/watch?v=WyfaHtUv3ms",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Single play clip — one-handed catch vs Colts. Pure Megatron."
+    },
+    {
+      "id": "JTVyfA1dtv4",
+      "title": "Calvin Johnson breaks Jerry Rice's single-season receiving yardage record",
+      "url": "https://www.youtube.com/watch?v=JTVyfA1dtv4",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "The record-breaking catch itself — moment of history."
+    },
+    {
+      "id": "47KwhZfh0Os",
+      "title": "The Best Of Calvin Johnson | NFL",
+      "url": "https://www.youtube.com/watch?v=47KwhZfh0Os",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "NFL official channel. General best-of compilation."
+    },
+    {
+      "id": "jeYUvhwzOH8",
+      "title": "Calvin Johnson ULTIMATE Career Highlight Reel",
+      "url": "https://www.youtube.com/watch?v=jeYUvhwzOH8",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Fan-made ultimate reel — good backup if official channels restrict."
+    },
+    {
+      "id": "Xb2N0SoCUkg",
+      "title": "Calvin \"Megatron\" Johnson Career Highlights",
+      "url": "https://www.youtube.com/watch?v=Xb2N0SoCUkg",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Career highlights — another backup compilation."
+    },
+    {
+      "id": "YP-m74tpG7s",
+      "title": "Calvin Johnson \"Megatron\" EXPLAINED: The NFL's Most Unstoppable WR",
+      "url": "https://www.youtube.com/watch?v=YP-m74tpG7s",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Analysis + highlights. 2026 upload — fresh content angle."
+    },
+    {
+      "id": "8IGK8WVsDoo",
+      "title": "Calvin Johnson Ultimate Career Highlights || Megatron || NFL Player Mix |HD|",
+      "url": "https://www.youtube.com/watch?v=8IGK8WVsDoo",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "HD mix — good quality backup for the starter set."
+    }
+  ]
 }

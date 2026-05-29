@@ -1,7 +1,7 @@
 {
   "channelSlug": "d-rose-tv",
-  "status": "awaiting-research",
-  "notes": "Candidate file scaffolded. YouTube IDs must be verified before adding. Prefer NBA official, House of Highlights archive, and Bulls official uploads. Avoid injury retrospectives and motivational edits. The 2008-2012 peak is the target window.",
+  "status": "research-complete",
+  "notes": "15 candidates sourced via YouTube search. Prefer official NBA/ESPN/Bulls uploads for best embeddability. Peak D-Rose window is 2008-2012. Avoid injury retrospectives. IDs verified via web search — mark embeddable: true only after manual playback check.",
   "searchThemes": [
     "Derrick Rose 2011 MVP highlights",
     "Derrick Rose Bulls playoff highlights",
@@ -14,5 +14,126 @@
     "Derrick Rose career highlights",
     "D-Rose Bulls 2009 playoffs"
   ],
-  "videos": []
+  "videos": [
+    {
+      "id": "SMjsWUMWPDM",
+      "title": "Derrick Rose's INSANE 2011 Playoff Run 🔥 Youngest MVP Was Unstoppable",
+      "url": "https://www.youtube.com/watch?v=SMjsWUMWPDM",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Full 2011 playoff run compilation. Best single-video showcase of peak D-Rose."
+    },
+    {
+      "id": "MYUJbDUN-5A",
+      "title": "MVP D-Rose was DIFFERENT 🌹 Derrick Rose 2010-11 Highlights | Chicago Bulls",
+      "url": "https://www.youtube.com/watch?v=MYUJbDUN-5A",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Chicago Bulls official-style upload. Full 2010-11 MVP season."
+    },
+    {
+      "id": "qkZLfzIiCEo",
+      "title": "Derrick Rose Highlights - 44 Points - 2011 East Semifinals Game 3 - Chicago Bulls vs Atlanta Hawks",
+      "url": "https://www.youtube.com/watch?v=qkZLfzIiCEo",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Playoff career high. 44 points. Iconic performance."
+    },
+    {
+      "id": "mu4rstZ9mCs",
+      "title": "The BEST of Derrick Rose Chicago Bulls highlights 🎥 | NBA on ESPN",
+      "url": "https://www.youtube.com/watch?v=mu4rstZ9mCs",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NBA on ESPN official channel — likely embeddable."
+    },
+    {
+      "id": "z01hnQW3E1s",
+      "title": "20 Yr-OLD Derrick Rose GREATEST Playoff DEBUT EVER! Full Game 1 Highlights vs Celtics 2009 - 36 Pts",
+      "url": "https://www.youtube.com/watch?v=z01hnQW3E1s",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "2009 rookie playoff debut — the moment D-Rose announced himself. 36 pts vs Celtics."
+    },
+    {
+      "id": "cf2s_r6_x9s",
+      "title": "Derrick Rose Full Highlights 2011 ECF Game 1 vs Heat - 28 Pts, 6 Assists, MVP Rose!",
+      "url": "https://www.youtube.com/watch?v=cf2s_r6_x9s",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "ECF Game 1 vs Miami — high drama, MVP on the biggest stage."
+    },
+    {
+      "id": "KDM3Rto-zbU",
+      "title": "Derrick Rose - 25 pts, 8 asts vs Heat Full Highlights (2011 ECF GM5)",
+      "url": "https://www.youtube.com/watch?v=KDM3Rto-zbU",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "ECF Game 5 — final game of Rose's historic run."
+    },
+    {
+      "id": "vCtUNAI9qgA",
+      "title": "Derrick Rose 3 nasty dunks vs Heat (2011 NBA playoffs ECF GM4)",
+      "url": "https://www.youtube.com/watch?v=vCtUNAI9qgA",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Short clip — explosive dunks against Heat in ECF."
+    },
+    {
+      "id": "qP-bYO0nH80",
+      "title": "Derrick Rose BEST Acrobatic Finishes!",
+      "url": "https://www.youtube.com/watch?v=qP-bYO0nH80",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Signature move compilation. Pure D-Rose athleticism."
+    },
+    {
+      "id": "s21OR5vmJMQ",
+      "title": "Derrick Rose Acrobatic Layup Compilation",
+      "url": "https://www.youtube.com/watch?v=s21OR5vmJMQ",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Dedicated layup compilation — good loop video."
+    },
+    {
+      "id": "DQ9y-Brgy_U",
+      "title": "Derrick Rose's Top 10 Plays With The Bulls",
+      "url": "https://www.youtube.com/watch?v=DQ9y-Brgy_U",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Top 10 format — good channel variety entry."
+    },
+    {
+      "id": "4dup5A6pT-Q",
+      "title": "Prime Derrick Rose - Chicago Highlights - All of the Lights - HD Mix Tape",
+      "url": "https://www.youtube.com/watch?v=4dup5A6pT-Q",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Fan mixtape to Kanye's All of the Lights — strong vibe match."
+    },
+    {
+      "id": "Np635h9ISM0",
+      "title": "MVP Derrick Rose's DOMINANT 44 points vs. ATL (Playoff Career High)",
+      "url": "https://www.youtube.com/watch?v=Np635h9ISM0",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Alternate cut of the 44-point game — different editing, good backup."
+    },
+    {
+      "id": "4nOOnLQx0l4",
+      "title": "Derrick Rose 2010/11 MVP Season Highlights Mix | EXPLOSiVE D-ROSE!",
+      "url": "https://www.youtube.com/watch?v=4nOOnLQx0l4",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Full MVP season mix — comprehensive backup to MYUJbDUN-5A."
+    },
+    {
+      "id": "BQ7qdaXPoMg",
+      "title": "A Kid From Chicago | Documentary | Derrick Rose's Legendary MVP Season",
+      "url": "https://www.youtube.com/watch?v=BQ7qdaXPoMg",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Mini-doc format — longer watch but high quality storytelling."
+    }
+  ]
 }

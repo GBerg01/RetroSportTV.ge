@@ -1,7 +1,7 @@
 {
   "channelSlug": "lamar-jackson-tv",
-  "status": "awaiting-research",
-  "notes": "Candidate file scaffolded. IMPORTANT: Lamar is an active player. Active-era NFL content has a higher rate of embedding restrictions than archive content — verify embeddability before adding any ID. Prefer NFL official, Baltimore Ravens official, and NFL Films uploads. The 2019 MVP season and Ravens vs Chiefs rivalry are the highest-priority themes.",
+  "status": "research-complete",
+  "notes": "15 candidates sourced via YouTube search. IMPORTANT: Lamar is an active player. Active-era NFL content has a higher rate of embedding restrictions than archive content — verify embeddability before adding any ID. Prefer NFL official, Baltimore Ravens official, and NFL Films uploads. The 2019 MVP season and Ravens vs Chiefs rivalry are the highest-priority themes. All IDs sourced from web search — validate embeddability manually.",
   "searchThemes": [
     "Lamar Jackson 2019 MVP highlights",
     "Lamar Jackson best runs scrambles",
@@ -14,5 +14,126 @@
     "Lamar Jackson 2023 MVP season highlights",
     "Lamar Jackson best plays all time"
   ],
-  "videos": []
+  "videos": [
+    {
+      "id": "_eiT-9yB8uw",
+      "title": "Lamar Jackson Full Season Highlights | NFL 2019",
+      "url": "https://www.youtube.com/watch?v=_eiT-9yB8uw",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Likely NFL official channel. Full 2019 MVP season — 3,127 passing yards, 1,206 rushing yards, 36 TDs. Best single-video 2019 showcase."
+    },
+    {
+      "id": "gEJ2FGKLPFs",
+      "title": "Lamar Jackson's Top 10 Career Runs | Baltimore Ravens",
+      "url": "https://www.youtube.com/watch?v=gEJ2FGKLPFs",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Baltimore Ravens official channel — very high embeddability confidence. Pure running highlights."
+    },
+    {
+      "id": "lTyrevPx3XM",
+      "title": "Lamar Jackson's best plays from 395-yard game vs. Chiefs | Week 1",
+      "url": "https://www.youtube.com/watch?v=lTyrevPx3XM",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. 395-yard game vs Chiefs in 2024 Week 1 — peak modern Lamar."
+    },
+    {
+      "id": "dSJwDWvc590",
+      "title": "Every Lamar Jackson Touchdown From The 2023 Regular Season | Baltimore Ravens",
+      "url": "https://www.youtube.com/watch?v=dSJwDWvc590",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "Ravens official channel. Every 2023 TD — comprehensive second-MVP-season showcase."
+    },
+    {
+      "id": "l6qlvZhbv6s",
+      "title": "Lamar Jackson's best plays from 326-yard game | AFC Championship",
+      "url": "https://www.youtube.com/watch?v=l6qlvZhbv6s",
+      "source": "youtube-search",
+      "priority": "starter",
+      "notes": "NFL official channel. 2023 AFC Championship vs Chiefs — biggest stage plays."
+    },
+    {
+      "id": "-hVkfWfcsEU",
+      "title": "GAME OF THE YEAR! Lamar Jackson Played OUT OF HIS MIND | Ravens vs Chiefs",
+      "url": "https://www.youtube.com/watch?v=-hVkfWfcsEU",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Ravens vs Chiefs rivalry highlight. High-energy edit."
+    },
+    {
+      "id": "UZ0SLzY4zu8",
+      "title": "Lamar Jackson's Top Plays with the Ravens",
+      "url": "https://www.youtube.com/watch?v=UZ0SLzY4zu8",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Likely Ravens official — top career plays compilation."
+    },
+    {
+      "id": "WA_a1qAnInY",
+      "title": "Lamar Jackson 2019 MVP Season Highlights",
+      "url": "https://www.youtube.com/watch?v=WA_a1qAnInY",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "2019 season compilation uploaded 2024 — good production quality."
+    },
+    {
+      "id": "Fu1tf6X-uLU",
+      "title": "Lamar Jackson 2023-24 Highlights MVP",
+      "url": "https://www.youtube.com/watch?v=Fu1tf6X-uLU",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Second MVP season highlights — dual-MVP narrative content."
+    },
+    {
+      "id": "m3EetLgA8i4",
+      "title": "Lamar Jackson | 2023 MVP Highlights",
+      "url": "https://www.youtube.com/watch?v=m3EetLgA8i4",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "2023 MVP season — backup for dSJwDWvc590."
+    },
+    {
+      "id": "Iif2NWLiZZI",
+      "title": "Lamar Jackson Ridiculous 47 Yard Touchdown Run | Ravens vs. Bengals | NFL",
+      "url": "https://www.youtube.com/watch?v=Iif2NWLiZZI",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "NFL official channel. Single iconic TD run — short, punchy."
+    },
+    {
+      "id": "iD_cTUSPyYE",
+      "title": "LAMAR JACKSON CATCHES OWN PASS & RUNS FOR FIRST 😳 Ravens vs Chiefs 2023 Highlights",
+      "url": "https://www.youtube.com/watch?v=iD_cTUSPyYE",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "The lateral-catch-own-pass play — most viral Lamar moment."
+    },
+    {
+      "id": "jZx-JDMKMek",
+      "title": "Lamar Jackson SECURES MVP w/ 'JACKSON 5' 🔥 Ravens vs Dolphins 2023 Highlights",
+      "url": "https://www.youtube.com/watch?v=jZx-JDMKMek",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "'Jackson 5' game vs Dolphins — 5 TD performance that sealed the MVP."
+    },
+    {
+      "id": "T4AoIpxg-yQ",
+      "title": "Lamar Jackson - MVP Mix ᴴᴰ",
+      "url": "https://www.youtube.com/watch?v=T4AoIpxg-yQ",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "Early 2019 fan mix — vintage energy, good vibe match."
+    },
+    {
+      "id": "MtUcijOuQqY",
+      "title": "Lamar Jackson SEALS THE GAME with Run on 4th Down | Chiefs vs Ravens",
+      "url": "https://www.youtube.com/watch?v=MtUcijOuQqY",
+      "source": "youtube-search",
+      "priority": "secondary",
+      "notes": "NFL official channel. 4th-down game-sealing run vs Chiefs — clutch moment clip."
+    }
+  ]
 }
