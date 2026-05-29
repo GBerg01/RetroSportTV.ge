@@ -1,6 +1,6 @@
 # Progress — RetroSportTV.ge
 
-## Status: Phase 25 Complete — MVP Channels Fully Stocked, 213 Total Videos
+## Status: Phase 32 Complete — NFL Embed Fix + Spotify Soundtrack Mode Designed
 
 ---
 
@@ -261,10 +261,33 @@
   - [x] `data/channelArtPrompts.ts` — row-bg-focused blueprints added for d-rose-tv (CH 75), megatron-tv (CH 76), lamar-jackson-tv (CH 77) with full locked art direction prompts
   - [x] No live channel data changed, no images generated, no UI changes
 
+- [x] **Phase 31: Replace blocked NFL channel videos**
+  - [x] Audited all NFL-themed channels for videos from NFL official and team official YouTube channels (which block external iframe embedding)
+  - [x] Verified 38 blocked IDs across 18 channels using oEmbed author_name checks
+  - [x] Replaced all 38 with verified fan channels and NFL Throwback content that allows iframe embedding
+  - [x] Channels fixed: nfl-big-hits, super-bowl-channel, patriots-dynasty, steelers-classics, nfl-90s-smashmouth, peyton-manning-theater, nfl-classics-vault, brett-favre-packers, dan-marino-tv, randy-moss-channel, jim-brown-legacy, lt-giants-defense, lamar-jackson-tv, brady-channel, randy-moss-tv, vick-experience, beast-mode-tv, prime-time-tv
+  - [x] Added NFL embed warning section to `CONTENT_RESEARCH_GUIDE.md`
+  - [x] `npm run build` passes clean
+
+- [x] **Phase 32: Spotify soundtrack mode design**
+  - [x] `SPOTIFY_SOUNDTRACK_MODE.md` created — full product + technical design doc
+  - [x] Compared all four approaches: managed playlists, user-provided URLs, Spotify SDK, hybrid
+  - [x] Recommended MVP: managed sport/category playlists via Spotify iframe embed (no auth)
+  - [x] Designed 8 soundtrack categories with channel inheritance examples
+  - [x] Proposed `data/soundtracks.ts` types and `SoundtrackPreset` shape
+  - [x] Designed `getSoundtrackForChannel()` resolver with sport/category inference and fallback chain
+  - [x] Designed player UI (audio toggle, embed panel, autoplay note, channel-switch behavior)
+  - [x] Designed optional homepage badges
+  - [x] Documented key limitations (autoplay, Spotify Free ads, private playlist restriction)
+  - [x] 7-phase implementation plan from data layer through optional SDK
+  - [x] QA checklist and 10 open questions documented
+  - [x] No code, UI, or player changes made
+
 ## In Progress
 - [ ] —
 
 ## Up Next
+- [ ] Decide open questions from `SPOTIFY_SOUNDTRACK_MODE.md` (playlists, panel placement, persistence)
 - [ ] Research and fulfill candidate intake files for D-Rose TV, Megatron TV, Lamar Jackson TV
 - [ ] Manual browser QA of video playback (especially new MVP channels)
 - [ ] Deploy to Vercel
@@ -294,6 +317,9 @@
 | 2026-05-28 | Channel art resolves through `lib/channelArt.ts` | Keeps custom guide rectangles and profile cards data-driven without one-off component designs |
 | 2026-05-28 | OpenAI image generation is primary for production art | Better for repeatable custom assets, controlled edits, exact crops, and fast iteration; Midjourney remains useful for concepts |
 | 2026-05-28 | Asset ideation is split from prompt output | The framework doc teaches route generation, while the prompt bible and structured data hold the production prompts |
+| 2026-05-29 | NFL official and team channels block iframe embeds | oEmbed 200 does not guarantee playback; all NFL/team-official starters replaced with fan channels and NFL Throwback |
+| 2026-05-29 | Soundtrack MVP = managed playlists + Spotify iframe | No auth, no SDK, zero friction; curated playlists match the cable-channel product identity |
+| 2026-05-29 | Spotify Web Playback SDK deferred indefinitely | Premium-only, requires OAuth/backend, overkill for ambient background music use case |
 
 ## Blockers
 - None currently.
@@ -307,5 +333,7 @@
 | 2026-05-27 | categories[] added to Channel type | Enables tab filter without routing; maps naturally to guide concept; easy to extend |
 | 2026-05-27 | SportsTicker full-width, outside centered column | Real TV tickers span the screen; constraining it to max-w-4xl kills the broadcast feel |
 | 2026-05-27 | ChannelGuide is client component, ChannelRow is server-compatible | Tab state lives in ChannelGuide; rows have no interactivity so they stay server-renderable |
+
+## Status: Phase 32 Complete — NFL Embed Fix + Spotify Soundtrack Mode Designed
 
 *Last updated: 2026-05-29*
