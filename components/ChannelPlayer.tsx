@@ -185,7 +185,7 @@ export default function ChannelPlayer({ channel, prevChannel, nextChannel }: Pro
             CH {channel.channelNumber}
           </span>
           <h1 className="text-[var(--phosphor-green)] phosphor-glow text-4xl md:text-5xl tracking-wide font-retro">
-            <ChannelLogo channel={channel} className="mr-2" />
+            <ChannelLogo channel={channel} className="max-h-10 max-w-10 mr-2" />
             {channel.name}
           </h1>
           <span className="text-[var(--phosphor-amber)] amber-glow text-xl font-retro">
