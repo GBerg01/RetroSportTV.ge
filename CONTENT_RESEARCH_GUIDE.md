@@ -100,6 +100,20 @@ Every candidate should be:
 
 Avoid importing a weaker duplicate just to make a channel longer. Depth should feel curated, not padded.
 
+## NFL Embed Warning
+
+**NFL official channel videos and NFL team official channel videos frequently block external iframe embedding.** A video that passes the oEmbed check (HTTP 200) may still refuse to play inside the app — the oEmbed endpoint does not enforce embed restrictions.
+
+Channels that commonly block external embeds:
+- NFL (youtube.com/@NFL) — the main NFL channel
+- Individual team channels: Pittsburgh Steelers, New England Patriots, Baltimore Ravens, Dallas Cowboys, Indianapolis Colts, Cleveland Browns, and others
+
+Channels that generally **allow** embedding:
+- NFL Throwback (youtube.com/@NFLThrowback) — archival and throwback content
+- Fan highlight channels (Highlight Castle, Mike Vaz, Jsn Highlights, Duke Wilson 14, etc.)
+
+**Rule for NFL channels:** After adding a video from any NFL or team official source, browser-test the embed in the actual app before approving it as a starter. Prefer fan channels and NFL Throwback over NFL main or team channels for starters. If an official video must be included, mark `validationStatus: "needs-embed-test"` and test manually.
+
 ## Duplicate Handling
 
 Before importing, compare candidates against existing videos in `data/channels.ts`. The importer skips duplicate IDs already present in the target channel, but it cannot detect duplicate moments with different uploads. Human review should remove weaker duplicates before import.
