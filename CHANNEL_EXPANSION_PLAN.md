@@ -238,6 +238,250 @@ Each channel below includes its proposed channel number, category, sport, era, v
 | 99 | Underdog Stories | Multi-sport | 1980-present | Against odds | later | Cinderellas; upsets; Miracle on Ice; Boise State; Leicester City; small-market titles | greatest sports underdog stories; biggest sports upsets; Cinderella highlights | documentary trailers only |
 | 100 | GOAT Debate Channel | Multi-sport | 1990-present | Bar argument | later | Jordan/LeBron; Brady/Montana; Messi/Ronaldo; Serena; Tiger/Nicklaus; rankings | GOAT debate highlights sports; Jordan LeBron comparison; Brady Montana debate | hot takes without highlights |
 
+---
+
+## High-Resonance Expansion Queue
+
+Channels 101–112. Focused on NFL superstars, WWE Attitude Era characters, and pop-culture sports personalities with strong name recognition, clear visual identities, and rich YouTube highlight availability.
+
+All entries are **planning only**. None are live. The typed metadata lives in `data/channelRoadmap.ts` (CH 101–112).
+
+---
+
+### Status Check — User-Requested Channels
+
+Before building, know what already exists:
+
+| Channel | Status | Notes |
+|---|---|---|
+| D-Rose TV | **In roadmap (CH 15), priority bumped to next** | Was "later" — now "next" |
+| Iverson TV | **Live** | `iverson-tv` |
+| Vince Carter Airwaves | **Live** | `vince-carter-airwaves` |
+| T-Mac Time | **Live** | `t-mac-time` |
+| Steph Range TV | **Live** | `steph-range-tv` |
+| Shaq Diesel TV | **Live** | `shaq-diesel-tv` |
+| LeBron Archive | **Live** | `lebron-archive` |
+| Randy Moss TV | **Live** | `randy-moss-channel` — "Straight Cash Homie" |
+| Ali TV | **Live** | `ali-tv` |
+| LT Giants Defense | **Live** | `lt-giants-defense` |
+| WWE Attitude Era | **In roadmap (CH 78), priority: soon** | Not live yet |
+| WrestleMania Channel | **In roadmap (CH 79), priority: later** | Not live yet |
+| UFC Knockout Channel | **In roadmap (CH 75), priority: soon** | Not live yet |
+| Pride FC Vault | **In roadmap (CH 77), priority: later** | Not live yet |
+| Boxing Heavyweight Nights | **In roadmap (CH 80), priority: soon** | Not live yet |
+| Mayweather Money Channel | **In roadmap (CH 73), priority: later** | Not live yet |
+| Pacquiao TV | **In roadmap (CH 74), priority: later** | Not live yet |
+
+---
+
+### New NFL Superstar Channels (CH 101–107)
+
+#### CH 101 — Megatron TV *(Calvin Johnson)*
+
+- **Slug:** `megatron-tv`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 2007–2015
+- **Why it resonates:** Calvin Johnson is the benchmark for the "freakish receiver" archetype. His 1,964-yard 2012 season, contested 50-50 balls, and the `megatron-tv` name carry instant recognition even from non-Lions fans. Distinct from any existing channel.
+- **Visual anchors:** Ford Field arena lights, Honolulu blue / silver palette, receiver silhouette frozen at peak of contested catch, end-zone grid lines, mech/cyber receiver energy, chunky sports card typography
+- **Row-bg art direction:** Wide receiver silhouette pushed to right edge at full extension above double coverage. Ford Field arena lighting grid in background. Detroit silver/Honolulu blue color field. Deep dark zone left and center for React text overlays. Mech-titanium receiver energy, not a realistic photo style.
+- **Starter video themes:** Single-season record catches, jump-ball touchdowns, Lions vs NFC North rivals, contested end-zone moments
+- **Priority:** next
+
+---
+
+#### CH 102 — Lamar Jackson TV
+
+- **Slug:** `lamar-jackson-tv`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 2018–present
+- **Why it resonates:** Lamar is the closest thing to a Madden cheat code at quarterback. Joystick juke runs and the 2019 MVP season are cultural moments. Draws younger viewers who grew up watching him. Active player who generates fresh content.
+- **Visual anchors:** Ravens purple/black, open-field juke silhouette with lightning trail, M&T Bank Stadium lights, motion blur speed lines, controller/joystick Easter egg possible in background
+- **Row-bg art direction:** Juke run silhouette mid-stride right of center with motion lightning trails. Ravens deep purple fading to black background. Stadium spotlights angled from upper left. Dark safe zone left and center. Video-game energy, not photorealistic.
+- **Starter video themes:** 2019 MVP run, scramble compilations, deep ball strikes, Ravens vs Chiefs AFC games
+- **Priority:** next
+
+---
+
+#### CH 103 — Brady Channel *(Tom Brady)*
+
+- **Slug:** `brady-channel`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 2000–2022
+- **Why it resonates:** The most decorated quarterback in NFL history, carrying every major Super Bowl moment from 2001 through 2021. Patriots Dynasty (CH 24) covers the team; this channel is the individual player arc — cold-weather daggers, late-game drives, and ring ceremony moments. Complementary, not duplicate.
+- **Visual anchors:** Patriots navy/silver for early era, Buccaneers pewter/red/black for Tampa arc, Foxboro snowflakes, championship ring motif, playoff-cold atmosphere
+- **Row-bg art direction:** Game-winning drive silhouette on field right side. Foxboro sleet or snow falling. Two-tone palette (navy left, pewter right) to represent both eras. Championship ring geometry glowing center-right. Cold playoff intensity. Dark left safe zone.
+- **Starter video themes:** Super Bowl XXXVI, XLIX, LI, Foxboro snow games, playoff drives, Tampa LV
+- **Priority:** next
+
+---
+
+#### CH 104 — Prime Time TV *(Deion Sanders)*
+
+- **Slug:** `prime-time-tv`
+- **Category:** Player Channels
+- **Sport:** Football / Baseball
+- **Era:** 1989–2005
+- **Why it resonates:** Prime Time is pure personality and flash — pick-six returns, two-sport career, and celebration energy that reads as a cable-TV character, not just a player. The name "Prime Time" IS a cable TV show reference, which fits perfectly.
+- **Visual anchors:** Cowboys star blue/silver OR 49ers gold/crimson, neon Prime Time cable-graphics energy, celebration run silhouette, cornerback alignment stance
+- **Row-bg art direction:** Pick-six celebration run silhouette mid-stride, arms out, right edge. Cowboys or Falcons field behind. Neon cable-graphics energy overlay. Bold saturated retro colors. Dark left safe zone for text.
+- **Starter video themes:** Pick-six returns, Cowboys Super Bowl seasons, 49ers 1994 title, two-sport MLB clips, All-Pro reel
+- **Priority:** soon
+
+---
+
+#### CH 105 — Vick Experience *(Michael Vick)*
+
+- **Slug:** `vick-experience`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 2001–2012
+- **Why it resonates:** Michael Vick at peak Atlanta is the Madden-generation quarterback. His 2002 playoff run and highlight-reel scrambles shaped what a dual-threat QB could look like. The Madden 04 cover is a cultural touchstone for the target audience.
+- **Visual anchors:** Falcons black/red, Madden-era pixel impact effect, blur trail scramble, stadium hot-red lighting, 04 energy
+- **Row-bg art direction:** Scramble silhouette mid-juke on black/red field. Madden pixel-burst impact effect right side. Hot red and black color field. Stadium haze. Dark left center safe zone. Arcade sports-game energy.
+- **Starter video themes:** 2002 NFC playoff run, scramble compilations, deep ball throws, Atlanta home games
+- **Priority:** next
+
+---
+
+#### CH 106 — Beast Mode TV *(Marshawn Lynch)*
+
+- **Slug:** `beast-mode-tv`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 2007–2019
+- **Why it resonates:** Beastquake is one of the most iconic single runs in NFL history. "Beast Mode" as a phrase entered pop culture. Seahawks Super Bowl era gives it championship weight.
+- **Visual anchors:** Seahawks navy/neon green, power run silhouette bulldozing through defenders, Beastquake seismic-wave Easter egg, dark rain-soaked turf
+- **Row-bg art direction:** Power run silhouette with defenders bouncing off right side. Neon green trail through dark navy field. Seattle rain/stadium atmosphere. Seismic wave crack in turf right zone. Dark left safe zone.
+- **Starter video themes:** Beastquake run 2011 vs Saints, Super Bowl XLVIII dominant run game, NFC Championship moments, power TD collection
+- **Priority:** soon
+
+---
+
+#### CH 107 — Ray Lewis Channel
+
+- **Slug:** `ray-lewis-channel`
+- **Category:** Player Channels
+- **Sport:** Football
+- **Era:** 1996–2012
+- **Why it resonates:** Ray Lewis is the definitive linebacker persona — physical dominance, emotional intensity, the pre-game ritual, and two Super Bowl rings. The Ravens defense of 2000 is one of the greatest defensive seasons in NFL history.
+- **Visual anchors:** Ravens purple/black, pre-game dance ritual silhouette, stadium smoke and crowd energy, linebacker alignment stance, M&T Bank atmosphere
+- **Row-bg art direction:** Pre-game ritual dance silhouette right of center, arms wide, stadium lights behind. Ravens purple/black color field with smoke and crowd silhouettes. Championship energy. Dark left safe zone.
+- **Starter video themes:** 2000 Ravens defensive season, Super Bowl XXXV, Super Bowl XLVII title run, tackle compilations, pre-game ritual moments
+- **Priority:** soon
+
+---
+
+### New WWE / Wrestling Channels (CH 108–112)
+
+**Art style note for all wrestling channels:** Same retro arcade sports cable box system. WWE gets the same treatment as NFL and NBA: bold saturated colors, CRT cabinet glow, trading-card intensity, arena energy. Lean into the Monday Night chaos, pyro, crowd signs, and steel ramp aesthetic. These ARE sports entertainment channels in the same product family.
+
+---
+
+#### CH 108 — Stone Cold TV *(Steve Austin)*
+
+- **Slug:** `stone-cold-tv`
+- **Category:** Combat Sports Channels
+- **Sport:** Pro Wrestling
+- **Era:** 1996–2003
+- **Why it resonates:** Stone Cold Steve Austin is the face of the Attitude Era and the best-drawing character in WWF/WWE history. "Austin 3:16" and the beer bash are cultural touchstones that transcend wrestling fandom. Instant recognition for anyone who watched TV in the late 90s.
+- **Visual anchors:** Dark steel arena, broken glass shatter motif, vest silhouette at entrance ramp, beer cans, entrance flood lighting
+- **Row-bg art direction:** Stone Cold vest silhouette at entrance ramp top, broken glass shards scattered across right zone, beer-can scatter right side, arena flood lighting from ramp. Dark steel background. CRT pyro flash. Heavy dark left safe zone for text overlay.
+- **Starter video themes:** Austin 3:16 King of the Ring 1996, stunner highlight reel, Royal Rumble wins, WrestleMania 13 submission vs Bret Hart, McMahon feud moments, beer bash entrances
+- **Priority:** next
+
+---
+
+#### CH 109 — The Rock Channel
+
+- **Slug:** `the-rock-channel`
+- **Category:** Combat Sports Channels
+- **Sport:** Pro Wrestling
+- **Era:** 1997–2004
+- **Why it resonates:** The Rock is the most charismatic performer in wrestling history and a crossover name even for non-wrestling fans. "If you smell…" is brand-level recognition. Rock vs Austin WrestleMania is peak Attitude Era programming.
+- **Visual anchors:** Arena ramp spotlight, eyebrow-raised silhouette in gold, title belt glow, electrified crowd
+- **Row-bg art direction:** The Rock silhouette at entrance ramp in gold spotlight, right side. Raised eyebrow moment captured in trading-card energy. Title belt championship glow center-right. Crowd electric behind. Dark left safe zone.
+- **Starter video themes:** People's Elbow compilation, Rock vs Austin WrestleMania XVII, Nation of Domination era, Hollywood heel Rock, "Know Your Role" promo moments
+- **Priority:** soon
+
+---
+
+#### CH 110 — DX / Monday Night Wars
+
+- **Slug:** `dx-monday-night-wars`
+- **Category:** Combat Sports Channels
+- **Sport:** Pro Wrestling
+- **Era:** 1996–2001
+- **Why it resonates:** D-Generation X and the Monday Night Wars represent the peak of wrestling's pop-culture moment. The ratings battle between Raw and Nitro was appointment television. DX is the chaos-energy character faction of the Attitude Era.
+- **Visual anchors:** Split WWF/WCW arena lighting, DX lightning bolt graphic, neon Monday Night TV energy, crowd sign chaos
+- **Row-bg art direction:** Split-screen arena lighting (Raw left, Nitro right) behind a DX lightning bolt crest center. Neon TV-graphic energy. Bold WWF and WCW color clash. Dark left text-safe zone. Monday Night Wars CRT energy.
+- **Starter video themes:** DX entrance moments, Monday Night War head-to-head nights, DX promo chaos, nWo crossover context nights, Vince McMahon DX confrontations
+- **Priority:** soon
+
+---
+
+#### CH 111 — Undertaker Streak TV
+
+- **Slug:** `undertaker-streak-tv`
+- **Category:** Combat Sports Channels
+- **Sport:** Pro Wrestling
+- **Era:** 1991–2014
+- **Why it resonates:** The Undertaker's 21-0 WrestleMania streak is the most legendary narrative in professional wrestling. The character, entrances, and tombstone moments are iconic even to casual fans. The streak ending makes it a closed, finite story with clear arc — ideal for a highlight channel.
+- **Visual anchors:** WrestleMania dark arena, purple funeral lights, black coat silhouette rising from kneeling, streak counter glow, smoke/fog entrance
+- **Row-bg art direction:** Undertaker rising silhouette in long black coat right side. WrestleMania dark arena behind with purple/blue funeral spotlights. Streak number glow (21-0) center-right in championship gold. Heavy fog/smoke. Dark left safe zone.
+- **Starter video themes:** WrestleMania streak compilation, iconic arena entrances, tombstone piledriver reel, HBK WrestleMania matches, Mankind Hell in a Cell, streak ending context
+- **Priority:** soon
+
+---
+
+#### CH 112 — WCW Nitro Channel
+
+- **Slug:** `wcw-nitro-channel`
+- **Category:** Combat Sports Channels
+- **Sport:** Pro Wrestling
+- **Era:** 1995–2001
+- **Why it resonates:** WCW Monday Nitro was the competitor that made the Monday Night Wars real. The nWo formation is arguably the biggest moment in wrestling history. Goldberg, Sting, and Hollywood Hogan are characters with strong standalone recognition.
+- **Visual anchors:** Nitro thunder logo glow, nWo black/white/red spray paint, Goldberg pyro, Sting crow face, Atlanta arena atmosphere
+- **Row-bg art direction:** nWo spray-paint energy right side, Nitro logo thunder bolt motif. Goldberg stadium pyro lighting behind. Black/white/red color scheme. Sting crow silhouette possible secondary element. Dark left safe zone. CRT arena cable TV energy.
+- **Starter video themes:** nWo formation Bash at the Beach 1996, Goldberg undefeated streak, Sting crow era moments, WCW Nitro opening credits energy, Hollywood Hogan WCW moments
+- **Priority:** later
+
+---
+
+### Recommended Build Order — Next 10 After Current 74
+
+These are the highest-impact channels to build first from the full expansion queue (CH 75–112). "Build" means: research candidate videos, stage in `data/intake/`, review, then add to live `data/channels.ts`.
+
+| # | Channel | Slug | Why First |
+|---|---|---|---|
+| 1 | D-Rose TV | `d-rose-tv` | Explosive identity, Chicago nostalgia, 2011 MVP resonance, clear visual palette |
+| 2 | Megatron TV | `megatron-tv` | Instant NFL receiver name, distinct visual, no existing receiver-specific channel |
+| 3 | Lamar Jackson TV | `lamar-jackson-tv` | Active player with massive following, video-game energy draws younger viewers |
+| 4 | Brady Channel | `brady-channel` | Most Super Bowl wins ever, complement to Patriots Dynasty team channel |
+| 5 | WWE Attitude Era | `wwe-attitude-era` | Already in roadmap CH 78. Late-90s pop culture — draws wrestling AND sports fans |
+| 6 | Stone Cold TV | `stone-cold-tv` | Highest individual wrestling name recognition, beer-bash chaos energy |
+| 7 | Vick Experience | `vick-experience` | Madden-generation nostalgia, scramble-QB archetype, visually distinct |
+| 8 | The Rock Channel | `the-rock-channel` | Crossover recognition even for non-wrestling fans, promo + match content |
+| 9 | Beast Mode TV | `beast-mode-tv` | Beastquake is a cultural moment, Seahawks era gives championship weight |
+| 10 | Undertaker Streak TV | `undertaker-streak-tv` | Closed finite story (21-0), legendary entrances, high visual drama |
+
+**Why these 10 first:**
+- All have strong individual name recognition that drives the "oh this is a channel" moment
+- All have clear, distinct visual identities that translate to row-bg and profile art
+- All have rich, publicly-indexed YouTube highlight content from official or trusted sources
+- All are meaningfully different from the 74 live channels — no overlap or cannibalization
+- Together they add NFL superstars, Madden-era QBs, and wrestling without clustering in one sport
+
+**Channels deliberately held for later:**
+- Prime Time TV, Ray Lewis, Beast Mode — solid but slightly less urgent than the top 7 NFL picks above
+- DX/Monday Night Wars, WCW Nitro — great content but depend on Attitude Era channel succeeding first
+- Lamar Jackson is active; content pipeline stays fresh but requires current-season awareness
+- UFC, Pride FC, Mayweather, Pacquiao — already in roadmap CH 73–77; build after wrestling proves out
+
+---
+
 ## Connection To The Content Pipeline
 
 This roadmap should feed the existing content workflow:
