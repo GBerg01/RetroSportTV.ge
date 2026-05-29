@@ -246,10 +246,26 @@
   - [x] Updated `CHANNEL_ART_MASTER_PRODUCTION_DOC.md`, `CHANNEL_ART_PRODUCTION_WORKFLOW.md`, `public/channel-art/_README.md` with script documentation
   - [x] `npm run lint` and `npm run build` pass clean
 
+- [x] **Phase 30: High-resonance expansion queue + superstar channel build plans**
+  - [x] `CHANNEL_EXPANSION_PLAN.md` expanded with High-Resonance Expansion Queue section (CH 101–112)
+  - [x] Status table added — identifies which user-requested channels are already live vs in-roadmap vs new
+  - [x] 12 new channel entries added to `data/channelRoadmap.ts` (CH 101–112): Megatron TV, Lamar Jackson TV, Brady Channel, Prime Time TV, Vick Experience, Beast Mode TV, Ray Lewis Channel, Stone Cold TV, The Rock Channel, DX/Monday Night Wars, Undertaker Streak TV, WCW Nitro Channel
+  - [x] D-Rose TV priority bumped from "later" to "next" in `data/channelRoadmap.ts`
+  - [x] Top 10 recommended next-build order documented in `CHANNEL_EXPANSION_PLAN.md`
+  - [x] `data/channel-plans/d-rose-tv.md` — full channel plan: identity, visual anchors, row-bg art direction, starter video themes, search phrases, avoid list, MVP and strong-channel checklists
+  - [x] `data/channel-plans/megatron-tv.md` — full channel plan (same format)
+  - [x] `data/channel-plans/lamar-jackson-tv.md` — full channel plan with active-player embeddability note
+  - [x] `data/intake/d-rose-tv-candidates.json` — scaffolded, `videos: []`, search themes included, awaiting research
+  - [x] `data/intake/megatron-tv-candidates.json` — scaffolded, `videos: []`, search themes included, awaiting research
+  - [x] `data/intake/lamar-jackson-tv-candidates.json` — scaffolded, `videos: []`, active-player embedding warning included
+  - [x] `data/channelArtPrompts.ts` — row-bg-focused blueprints added for d-rose-tv (CH 75), megatron-tv (CH 76), lamar-jackson-tv (CH 77) with full locked art direction prompts
+  - [x] No live channel data changed, no images generated, no UI changes
+
 ## In Progress
 - [ ] —
 
 ## Up Next
+- [ ] Research and fulfill candidate intake files for D-Rose TV, Megatron TV, Lamar Jackson TV
 - [ ] Manual browser QA of video playback (especially new MVP channels)
 - [ ] Deploy to Vercel
 
@@ -292,4 +308,4 @@
 | 2026-05-27 | SportsTicker full-width, outside centered column | Real TV tickers span the screen; constraining it to max-w-4xl kills the broadcast feel |
 | 2026-05-27 | ChannelGuide is client component, ChannelRow is server-compatible | Tab state lives in ChannelGuide; rows have no interactivity so they stay server-renderable |
 
-*Last updated: 2026-05-28*
+*Last updated: 2026-05-29*

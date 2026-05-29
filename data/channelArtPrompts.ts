@@ -1948,6 +1948,7 @@ export const CHANNEL_ASSET_IDEATION_BLUEPRINTS: ChannelArtBlueprint[] = [
   {
     channelSlug: "cwebb-kings-tv",
     channelNumber: "74",
+
     channelName: "CWebb Kings TV",
     channelType: "player",
     sport: "Basketball",
@@ -1968,6 +1969,88 @@ export const CHANNEL_ASSET_IDEATION_BLUEPRINTS: ChannelArtBlueprint[] = [
       logo: "chunky CWebb post icon, bold Kings purple and silver, Sacramento arcade basketball emblem",
       badge: "bold Kings badge, ARCO geometry seal, purple-silver arcade relief, 2002 heartbreak glory emblem",
       "logo-spin": "rotating basketball jersey collectible, bold Kings purple-silver, ARCO arc, CWebb arcade energy",
+    },
+  },
+
+  // ── High-Resonance Expansion Queue — CH 75–77 ────────────────────────────
+  // Row-bg prompts are the primary focus. Other asset directions are rough
+  // placeholders for future art production passes.
+
+  {
+    channelSlug: "d-rose-tv",
+    channelNumber: "75",
+    channelName: "D-Rose TV",
+    channelType: "player",
+    sport: "Basketball",
+    era: "2008–2012",
+    tone: "explosive",
+    identitySummary: "Derrick Rose's MVP peak — Chicago red-black, explosive first step, United Center hardwood, 2011 dagger energy.",
+    visualAnchors: [
+      "Chicago Bulls red and black hardwood",
+      "explosive first-step drive silhouette",
+      "United Center arena spotlight",
+      "MVP trophy gold geometry",
+      "rose petal motif accent",
+    ],
+    conceptRoute: "Chicago MVP Explosion Panel",
+    assetDirections: {
+      "row-bg": "bold Chicago Bulls red fading to black Mamba-speed MVP legend arcade basketball panel, deep United Center hardwood with red court-light glint, dramatic arena spotlight cone sweeping from upper-right toward center, bold explosive first-step drive silhouette pushed to right edge, MVP trophy geometry glowing in mid-right zone, rose petal scatter as secondary right-zone accent, dark safe zone on left and center for React text overlays, red-to-black gradient depth, cold-blooded Chicago winter basketball intensity, NBA Jam-style 2000s sports game legend unlock screen feel, retro arcade sports cable box aesthetic, CRT cabinet glow, bold saturated Bulls red and black, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity",
+      "profile-bg": "bold Chicago red-black arcade player-select card, United Center spotlight from above, MVP trophy glow, rose petal detail, D-Rose player-select arcade energy",
+      logo: "chunky rose bloom basketball icon, bold Bulls red and black, arcade collectible emblem, MVP crown detail",
+      badge: "bold 2011 MVP seal badge, Bulls red-black-gold metallic relief, rose petal border, arcade unlock collectible",
+      "logo-spin": "rotating basketball jersey collectible, bold Bulls red body black trim, rose arc detail, gold MVP glint, arcade game-pickup item",
+    },
+  },
+
+  {
+    channelSlug: "megatron-tv",
+    channelNumber: "76",
+    channelName: "Megatron TV",
+    channelType: "player",
+    sport: "Football",
+    era: "2007–2015",
+    tone: "unstoppable receiver",
+    identitySummary: "Calvin Johnson — Honolulu blue and Detroit silver, mech receiver energy, end-zone jump balls, Ford Field dominance.",
+    visualAnchors: [
+      "Ford Field arena light grid",
+      "Honolulu blue and Detroit silver",
+      "receiver silhouette at full extension above defender",
+      "end-zone back-line geometry",
+      "mech-cyber metallic texture accent",
+    ],
+    conceptRoute: "Mech Receiver End Zone Panel",
+    assetDirections: {
+      "row-bg": "bold Honolulu blue Detroit silver mech receiver legend arcade football panel, Ford Field arena light grid cast from above, dramatic receiver silhouette fully extended above defender at back of end zone pushed to right edge, silver metallic geometric frame in mid-right zone, mech-cyber metallic texture energy in right half, end-zone chalk line geometry, dark safe zone left and center for React text overlays, Honolulu blue fading to near-black gradient, unstoppable receiver NFL Blitz-style legend unlock screen feel, retro arcade sports cable box aesthetic, CRT cabinet glow, bold saturated Honolulu blue and silver, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity",
+      "profile-bg": "bold Honolulu blue-silver arcade player-select card, Ford Field lights above, mech receiver silhouette, end-zone glow, Megatron player-select arcade energy",
+      logo: "chunky mech receiver helmet icon, bold Honolulu blue with silver visor, cyber arcade emblem energy",
+      badge: "bold Megatron badge, single-season record seal geometry, blue-silver metallic relief, end-zone collectible arcade emblem",
+      "logo-spin": "rotating mech football helmet collectible, Honolulu blue shell, chrome silver visor, spinning arcade pickup item",
+    },
+  },
+
+  {
+    channelSlug: "lamar-jackson-tv",
+    channelNumber: "77",
+    channelName: "Lamar Jackson TV",
+    channelType: "player",
+    sport: "Football",
+    era: "2018–present",
+    tone: "joystick juke",
+    identitySummary: "Lamar Jackson — Ravens purple-black, open-field juke lightning trails, arcade QB cheat code energy, 2019 MVP explosion.",
+    visualAnchors: [
+      "Ravens deep purple fading to black",
+      "open-field juke run silhouette with lightning trail",
+      "M&T Bank Stadium outdoor lights",
+      "electric arc speed lines through mid-field",
+      "Ravens gold accent stripe detail",
+    ],
+    conceptRoute: "Joystick QB Lightning Juke Panel",
+    assetDirections: {
+      "row-bg": "bold Ravens deep purple fading to black joystick juke quarterback legend arcade football panel, M&T Bank Stadium outdoor arena lights from above, dramatic open-field juke run silhouette mid-stride hard cut pushed to right edge with electric lightning trail streaming behind, Ravens gold accent arc detail in right zone, electric arc speed-blur lines through mid-field, dark safe zone left and center for React text overlays, purple-to-black gradient depth, video game QB cheat code NFL Blitz-style arcade unlock screen energy, retro arcade sports cable box aesthetic, CRT cabinet glow, bold saturated Ravens purple and gold, chunky sports graphics, dramatic arcade sports lighting, 90s trading card intensity",
+      "profile-bg": "bold Ravens purple-black arcade player-select card, outdoor stadium lights, juke run silhouette with lightning trail, gold glow, Lamar QB cheat code arcade energy",
+      logo: "chunky Ravens lightning bolt shield icon, deep purple and gold, electric arc arcade emblem energy",
+      badge: "bold Ravens MVP seal badge, 2019 lightning bolt geometry, purple-gold metallic relief, joystick QB collectible arcade emblem",
+      "logo-spin": "rotating Ravens football helmet collectible, deep purple shell, gold stripe, lightning bolt accent, spinning arcade pickup item",
     },
   },
 ];
