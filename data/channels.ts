@@ -2350,6 +2350,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#F59E0B",
+    rowBackgroundUrl: "/channel-art/lebron-archive/row-bg.png",
+    profileBackgroundUrl: "/channel-art/lebron-archive/row-bg.png",
     playlistRules: [
       { id: "lebron-iconic", description: "Prioritize playoff runs, Finals moments, and defining career highlights.", minQualityScore: 85 },
     ],
@@ -2474,6 +2476,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#7C3AED",
+    rowBackgroundUrl: "/channel-art/shaq-diesel-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/shaq-diesel-tv/row-bg.png",
     playlistRules: [
       { id: "shaq-dominant", description: "Prioritize Lakers three-peat era, Finals performances, and iconic power plays.", minQualityScore: 85 },
     ],
@@ -2958,6 +2962,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#1E3A5F",
+    rowBackgroundUrl: "/channel-art/yankees-dynasty-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/yankees-dynasty-tv/row-bg.png",
     playlistRules: [
       { id: "yankees-dynasty", description: "Focus on Jeter-era Yankees postseason moments and dynasty highlights.", minQualityScore: 85 },
     ],
@@ -3298,6 +3304,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#EAB308",
+    rowBackgroundUrl: "/channel-art/lakers-classics/row-bg.png",
+    profileBackgroundUrl: "/channel-art/lakers-classics/row-bg.png",
     playlistRules: [
       { id: "lakers-dynasty", description: "Prioritize Showtime era, Shaq/Kobe three-peat, and key Finals moments.", minQualityScore: 85 },
     ],
@@ -3468,6 +3476,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "ERAS"],
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/warriors-dynasty/row-bg.png",
+    profileBackgroundUrl: "/channel-art/warriors-dynasty/row-bg.png",
     playlistRules: [
       { id: "warriors-splash", description: "Prioritize Curry highlights, 2015-2022 championship moments, and Splash Brothers plays.", minQualityScore: 85 },
     ],
@@ -3795,6 +3805,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#EAB308",
+    rowBackgroundUrl: "/channel-art/magic-showtime/row-bg.png",
+    profileBackgroundUrl: "/channel-art/magic-showtime/row-bg.png",
     playlistRules: [
       { id: "magic-showtime", description: "Prioritize no-look passes, Showtime fast breaks, Finals highlights, and Celtics rivalry.", minQualityScore: 85 },
     ],
@@ -3880,6 +3892,8 @@ export const CHANNELS: Channel[] = [
     category: "PLAYERS",
     categories: ["PLAYERS", "CLASSICS"],
     accentColor: "#15803D",
+    rowBackgroundUrl: "/channel-art/larry-legend-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/larry-legend-tv/row-bg.png",
     playlistRules: [
       { id: "bird-clutch", description: "Prioritize clutch moments, 1986 Celtics dynasty, Bird-Magic rivalry, and Finals highlights.", minQualityScore: 85 },
     ],
@@ -4037,6 +4051,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#15803D",
+    rowBackgroundUrl: "/channel-art/celtics-vault/row-bg.png",
+    profileBackgroundUrl: "/channel-art/celtics-vault/row-bg.png",
     playlistRules: [
       { id: "celtics-dynasty", description: "Prioritize Bird 1986 dynasty, 2008 Big Three, Finals matchups, and Garden playoff moments.", minQualityScore: 85 },
     ],
@@ -6538,6 +6554,8 @@ export const CHANNELS: Channel[] = [
     vibe: "iconic",
     emoji: "🥇",
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/dream-team-92/row-bg.png",
+    profileBackgroundUrl: "/channel-art/dream-team-92/row-bg.png",
     playlistRules: [
       {
         id: "dream-team-92",
@@ -6718,6 +6736,8 @@ export const CHANNELS: Channel[] = [
     vibe: "legendary",
     emoji: "🥊",
     accentColor: "#B91C1C",
+    rowBackgroundUrl: "/channel-art/ali-tv/row-bg.png",
+    profileBackgroundUrl: "/channel-art/ali-tv/row-bg.png",
     playlistRules: [
       {
         id: "ali-classics",
