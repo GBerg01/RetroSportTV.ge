@@ -496,6 +496,8 @@ export const CHANNELS: Channel[] = [
     category: "GOLF",
     categories: ["GOLF", "PLAYERS"],
     accentColor: "#EF4444",
+    rowBackgroundUrl: "/channel-art/tiger-sundays/row-bg.png",
+    profileBackgroundUrl: "/channel-art/tiger-sundays/row-bg.png",
     videos: [
       { id: "4P5_Ld07sMA", title: "1997 Masters Tournament — Final Round Full Broadcast" },
       { id: "xt0D6BCGFKw", title: "Tiger Dominates for First Masters Win | The Masters Golf Tournament" },
