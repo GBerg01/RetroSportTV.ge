@@ -1324,6 +1324,8 @@ export const CHANNELS: Channel[] = [
     category: "CHAOS",
     categories: ["CHAOS", "CLASSICS"],
     accentColor: "#A3E635",
+    rowBackgroundUrl: "/channel-art/random-sports-compilations/row-bg.png",
+    profileBackgroundUrl: "/channel-art/random-sports-compilations/row-bg.png",
     playlistRules: [
       { id: "multi-sport-compilations", description: "Prioritize high-quality multi-sport compilations with real highlight footage.", minQualityScore: 70 },
     ],
@@ -2052,6 +2054,8 @@ export const CHANNELS: Channel[] = [
     category: "TEAMS",
     categories: ["TEAMS", "CLASSICS"],
     accentColor: "#1D4ED8",
+    rowBackgroundUrl: "/channel-art/patriots-dynasty/row-bg.png",
+    profileBackgroundUrl: "/channel-art/patriots-dynasty/row-bg.png",
     playlistRules: [
       { id: "patriots-dynasty", description: "Prioritize Patriots playoff highlights, Brady comeback games, and Super Bowl moments.", minQualityScore: 78 },
     ],
